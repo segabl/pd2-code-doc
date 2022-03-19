@@ -1,0 +1,2 @@
+---@class MultiBitmap : Rect
+MultiBitmap = {}

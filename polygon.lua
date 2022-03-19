@@ -1,0 +1,2 @@
+---@class Polygon : Rect
+Polygon = {}

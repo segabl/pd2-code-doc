@@ -1,0 +1,2 @@
+---@class Gradient : Rect
+Gradient = {}

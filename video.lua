@@ -1,0 +1,2 @@
+---@class Video : Rect
+Video = {}

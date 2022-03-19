@@ -1,0 +1,2 @@
+---@class Polyline : Rect
+Polyline = {}
