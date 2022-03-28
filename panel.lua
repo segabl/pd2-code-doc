@@ -29,7 +29,7 @@ function Panel:polyline(config) end
 ---Creates a `Polygon` child element on this panel.
 ---@param config? table Table containing configuration options for the element to be created.
 ---@return Polygon
-function UIElement:polygon(config) end
+function Panel:polygon(config) end
 
 ---Creates a `Bitmap` child element on this panel.
 ---@param config? table Table containing configuration options for the element to be created.
@@ -63,18 +63,3 @@ function Panel:num_children() end
 ---@param element UIElement
 function Panel:remove(element) end
 
-function Panel:mouse_move(func) end
-function Panel:mouse_enter(func) end
-function Panel:mouse_exit(func) end
-function Panel:mouse_click(func) end
-function Panel:mouse_double_click(func) end
-function Panel:mouse_press(func) end
-function Panel:mouse_release(func) end
-function Panel:key_click(func) end
-function Panel:key_press(func) end
-function Panel:key_release(func) end
-function Panel:enter_text(func) end
-function Panel:button_click(func) end
-function Panel:button_press(func) end
-function Panel:button_release(func) end
-function Panel:axis_move(func) end

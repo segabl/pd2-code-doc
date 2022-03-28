@@ -410,6 +410,23 @@ function UIElement:alive() end
 function UIElement:tostring() end
 
 
+function UIElement:mouse_move(func) end
+function UIElement:mouse_enter(func) end
+function UIElement:mouse_exit(func) end
+function UIElement:mouse_click(func) end
+function UIElement:mouse_double_click(func) end
+function UIElement:mouse_press(func) end
+function UIElement:mouse_release(func) end
+function UIElement:key_click(func) end
+function UIElement:key_press(func) end
+function UIElement:key_release(func) end
+function UIElement:enter_text(func) end
+function UIElement:button_click(func) end
+function UIElement:button_press(func) end
+function UIElement:button_release(func) end
+function UIElement:axis_move(func) end
+
+
 function UIElement:after(...) end
 function UIElement:configure(...) end
 function UIElement:extension(...) end
