@@ -1,4 +1,5 @@
 ---@class Vector3
+---@overload fun(x: number?, y: number?, z: number?):Vector3
 ---@field x number
 ---@field y number
 ---@field z number
