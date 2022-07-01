@@ -1,3 +1,5 @@
+---@meta
+
 -- Rect is used as base class for all "drawable" UI elements here.
 -- It is unclear wether this applies to the actual game,
 -- but it's sufficient for this documentation to pass down functionality.

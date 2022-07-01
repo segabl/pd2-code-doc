@@ -1,3 +1,5 @@
+---@meta
+
 ---@class Text : Rect
 Text = {}
 

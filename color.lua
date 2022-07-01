@@ -1,7 +1,10 @@
+---@meta
+
 ---@class Color
 ---@overload fun(a: number, r: number, g: number, b: number):Color
 ---@overload fun(r: number, g: number, b: number):Color
 ---@overload fun(hex: string):Color
+---@overload fun():Color
 ---@field black Color
 ---@field blue Color
 ---@field cyan Color

@@ -1,3 +1,5 @@
+---@meta
+
 ---@class Bitmap : Rect
 Bitmap = {}
 
@@ -35,7 +37,6 @@ function Bitmap:set_texture_rect(x, y, w, h) end
 ---@param u2 number
 ---@param v2 number
 function Bitmap:set_texture_coordinates(u1, v1, u2, v2) end
-
 
 ---Sets the texture's wrap mode.
 ---@param mode "wrap"|nil
