@@ -1,5 +1,6 @@
 ---@meta
 
+---RGBA Color
 ---@class Color
 ---@overload fun(a: number, r: number, g: number, b: number):Color
 ---@overload fun(r: number, g: number, b: number):Color
@@ -21,26 +22,26 @@
 ---@field a number
 Color = {}
 
----Returns the color's components.
+---Returns the color's components
 ---@return number r, number g, number b, number a
 function Color:unpack() end
 
----Returns a copy of the color with the red channel set to `r`.
+---Returns a copy of the color with the red channel set to `r`
 ---@param r number
 ---@return Color
 function Color:with_red(r) end
 
----Returns a copy of the color with the green channel set to `g`.
+---Returns a copy of the color with the green channel set to `g`
 ---@param g number
 ---@return Color
 function Color:with_green(g) end
 
----Returns a copy of the color with the blue channel set to `b`.
+---Returns a copy of the color with the blue channel set to `b`
 ---@param b number
 ---@return Color
 function Color:with_blue(b) end
 
----Returns a copy of the color with the alpha channel set to `a`.
+---Returns a copy of the color with the alpha channel set to `a`
 ---@param a number
 ---@return Color
 function Color:with_alpha(a) end

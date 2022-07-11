@@ -1,5 +1,6 @@
 ---@meta
 
+---Text UI element
 ---@class Text : Rect
 Text = {}
 
