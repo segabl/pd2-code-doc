@@ -76,19 +76,25 @@ function Unit:body_group(...) end
 
 function Unit:bounding_sphere_radius(...) end
 
-function Unit:camera(...) end
+---Returns the unit's camera extension
+---@return table?
+function Unit:camera() end
 
 function Unit:can_activate_mover(...) end
 
 function Unit:can_activate_mover_isolated(...) end
 
-function Unit:carry_data(...) end
+---Returns the unit's carry data extension
+---@return table?
+function Unit:carry_data() end
 
 ---Returns the unit's character damage extension
 ---@return table?
 function Unit:character_damage() end
 
-function Unit:children(...) end
+---Returns the unit's linked units
+---@return Unit[]
+function Unit:children() end
 
 function Unit:clear_body_activation_callbacks(...) end
 
@@ -237,7 +243,10 @@ function Unit:make_limited_hinge(...) end
 
 function Unit:mass(...) end
 
-function Unit:material(...) end
+---Returns the specified material of the unit
+---@param name Idstring
+---@return Material?
+function Unit:material(name) end
 
 function Unit:material_config(...) end
 
@@ -265,7 +274,9 @@ function Unit:name() end
 ---@return table?
 function Unit:network() end
 
-function Unit:network_sync(...) end
+---Returns the unit's network sync type
+---@return '"none"'|"'client'"|"'spawn'"|nil
+function Unit:network_sync() end
 
 function Unit:num_bodies(...) end
 
@@ -279,7 +290,9 @@ function Unit:occluded(...) end
 
 function Unit:occlusion_time(...) end
 
-function Unit:oobb(...) end
+---Returns the unit's object oriented bounding box
+---@return OOBB
+function Unit:oobb() end
 
 ---Returns the root object name of the unit as an Idstring
 ---@return Idstring
@@ -440,7 +453,9 @@ function Unit:shadows_disabled(...) end
 ---@return integer
 function Unit:slot() end
 
-function Unit:sound(...) end
+---Returns the unit's sound extension
+---@return table?
+function Unit:sound() end
 
 function Unit:sound_source(...) end
 
@@ -452,9 +467,13 @@ function Unit:switch_body_on(...) end
 
 function Unit:switch_body_on_with_no_velocity(...) end
 
-function Unit:timer(...) end
+---Returns the unit's timer
+---@return table?
+function Unit:timer() end
 
-function Unit:timer_gui(...) end
+---Returns the unit's timer GUI extension
+---@return table?
+function Unit:timer_gui() end
 
 function Unit:type(...) end
 
@@ -462,7 +481,8 @@ function Unit:type(...) end
 ---@return table?
 function Unit:unit_data() end
 
-function Unit:unlink(...) end
+---Unlinks the unit from it's parent unit
+function Unit:unlink() end
 
 function Unit:update_render_templates(...) end
 
