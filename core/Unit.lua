@@ -475,6 +475,8 @@ function Unit:timer() end
 ---@return table?
 function Unit:timer_gui() end
 
+function Unit:tostring(...) end
+
 function Unit:type(...) end
 
 ---Returns the unit's data

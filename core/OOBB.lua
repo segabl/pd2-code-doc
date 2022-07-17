@@ -40,6 +40,8 @@ function OOBB:size(...) end
 
 function OOBB:to_local(...) end
 
+function OOBB:tostring(...) end
+
 function OOBB:volume(...) end
 
 function OOBB:x(...) end

@@ -165,6 +165,8 @@ function Body:set_wind_coefficient(...) end
 
 function Body:tag(...) end
 
+function Body:tostring(...) end
+
 function Body:unit(...) end
 
 function Body:velocity(...) end

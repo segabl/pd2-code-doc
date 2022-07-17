@@ -33,3 +33,5 @@ function DB:remove_entry(...) end
 function DB:set_extension(...) end
 
 function DB:set_mod_enabled(...) end
+
+function DB:tostring(...) end

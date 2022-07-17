@@ -47,6 +47,8 @@ function Material:texture_type(...) end
 
 function Material:time(...) end
 
+function Material:tostring(...) end
+
 function Material:variable_exists(...) end
 
 function Material:variables(...) end

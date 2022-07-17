@@ -39,11 +39,6 @@ function Panel:polygon(config) end
 ---@return Bitmap
 function Panel:bitmap(config) end
 
----Creates a `MultiBitmap` child element on this panel
----@param config? table Table containing configuration options for the element to be created
----@return MultiBitmap
-function Panel:multi_bitmap(config) end
-
 ---Creates a `Video` child element on this panel
 ---@param config? table Table containing configuration options for the element to be created
 ---@return Video
@@ -68,3 +63,6 @@ function Panel:remove(element) end
 
 ---Removes all child elements from the panel
 function Panel:clear() end
+
+
+function Panel:multi_bitmap(config) end

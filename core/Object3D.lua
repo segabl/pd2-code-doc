@@ -57,6 +57,8 @@ function Object3D:to_local(...) end
 
 function Object3D:to_world(...) end
 
+function Object3D:tostring(...) end
+
 function Object3D:unlink(...) end
 
 function Object3D:visibility(...) end
