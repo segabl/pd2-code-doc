@@ -177,7 +177,10 @@ function Unit:get_destructible_index(...) end
 ---@return Object3D?
 function Unit:get_object(name) end
 
-function Unit:get_objects_by_type(...) end
+---Returns a list of all the unit's objects of a given type
+---@param type Idstring
+---@return any[]
+function Unit:get_objects_by_type(type) end
 
 function Unit:get_phantom_index(...) end
 
@@ -278,7 +281,9 @@ function Unit:network() end
 ---@return '"none"'|"'client'"|"'spawn'"|nil
 function Unit:network_sync() end
 
-function Unit:num_bodies(...) end
+---Returns the number of bodies of the unit
+---@return integer
+function Unit:num_bodies() end
 
 function Unit:num_destructibles(...) end
 
@@ -286,7 +291,9 @@ function Unit:num_phantoms(...) end
 
 function Unit:num_ropes(...) end
 
-function Unit:occluded(...) end
+---Returns wether the unit is occluded
+---@return boolean
+function Unit:occluded() end
 
 function Unit:occlusion_time(...) end
 
@@ -431,7 +438,9 @@ function Unit:set_separate_distance(...) end
 
 function Unit:set_separate_weight(...) end
 
-function Unit:set_shadows_disabled(...) end
+---Disables or enables the unit's shadow casters
+---@param disabled boolean
+function Unit:set_shadows_disabled(disabled) end
 
 ---Sets the unit's slot
 ---@param slot integer
@@ -445,9 +454,13 @@ function Unit:set_velocity(...) end
 
 function Unit:set_visibility(...) end
 
-function Unit:set_visible(...) end
+---Shows or hides the unit
+---@param visible boolean
+function Unit:set_visible(visible) end
 
-function Unit:shadows_disabled(...) end
+---Returns wether the unit's shadow casters are enabled
+---@return boolean
+function Unit:shadows_disabled() end
 
 ---Returns the unit's slot
 ---@return integer
@@ -457,7 +470,9 @@ function Unit:slot() end
 ---@return table?
 function Unit:sound() end
 
-function Unit:sound_source(...) end
+---Returns the unit's sound source
+---@return SoundSource?
+function Unit:sound_source() end
 
 function Unit:spawn_manager(...) end
 
@@ -475,9 +490,13 @@ function Unit:timer() end
 ---@return table?
 function Unit:timer_gui() end
 
-function Unit:tostring(...) end
+---Returns a string representation of the unit
+---@return string
+function Unit:tostring() end
 
-function Unit:type(...) end
+---Returns the unit's type
+---@return Idstring
+function Unit:type() end
 
 ---Returns the unit's data
 ---@return table?
@@ -496,7 +515,9 @@ function Unit:velocity(...) end
 
 function Unit:visibility(...) end
 
-function Unit:visible(...) end
+---Returns wether the unit is visible or not
+---@return boolean
+function Unit:visible() end
 
 function Unit:warp_to(...) end
 
