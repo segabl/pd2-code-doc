@@ -10,6 +10,8 @@ function SlotMask:save(...) end
 
 function SlotMask:temp(...) end
 
-function SlotMask:tostring(...) end
+---Returns a string representation of the slot mask
+---@return string
+function SlotMask:tostring() end
 
 function SlotMask:untemp(...) end

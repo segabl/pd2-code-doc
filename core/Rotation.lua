@@ -8,9 +8,14 @@ Rotation = {}
 
 function Rotation:free(...) end
 
-function Rotation:inverse(...) end
+---Returns the inverse of the rotation
+---@return Rotation
+function Rotation:inverse() end
 
-function Rotation:look_at(...) end
+---Returns a rotation based on a direction and up vector
+---@param dir Vector3
+---@param up Vector3
+function Rotation:look_at(dir, up) end
 
 ---Returns the rotation's pitch
 ---@return number
@@ -28,7 +33,9 @@ function Rotation:slerp(...) end
 
 function Rotation:temp(...) end
 
-function Rotation:tostring(...) end
+---Returns a string representation of the rotation
+---@return string
+function Rotation:tostring() end
 
 function Rotation:untemp(...) end
 

@@ -32,7 +32,9 @@ function Color:save(...) end
 
 function Color:temp(...) end
 
-function Color:tostring(...) end
+---Returns a string representation of the color
+---@return string
+function Color:tostring() end
 
 ---Returns the color's components
 ---@return number r, number g, number b, number a
