@@ -338,7 +338,7 @@ function Unit:radius(...) end
 ---@param from Vector3
 ---@param to Vector3
 ---@param ... any @Additional parameters (parameter option name followed by the value if it takes one)
----@return table|boolean
+---@return table
 function Unit:raycast(type, from, to, ...) end
 
 function Unit:refresh_object_materials(...) end
