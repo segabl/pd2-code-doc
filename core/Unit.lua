@@ -76,6 +76,10 @@ function Unit:body_group(...) end
 
 function Unit:bounding_sphere_radius(...) end
 
+---Returns the unit's brain extension
+---@return table?
+function Unit:brain() end
+
 ---Returns the unit's camera extension
 ---@return table?
 function Unit:camera() end
