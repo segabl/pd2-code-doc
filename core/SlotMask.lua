@@ -2,6 +2,8 @@
 
 ---Collision group for raycasts
 ---@class SlotMask
+---@operator add(SlotMask): SlotMask
+---@operator sub(SlotMask): SlotMask
 SlotMask = {}
 
 function SlotMask:free(...) end
