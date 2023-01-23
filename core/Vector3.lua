@@ -5,6 +5,7 @@
 ---@operator add(Vector3): Vector3
 ---@operator sub(Vector3): Vector3
 ---@operator mul(Vector3|number): Vector3
+---@operator unm: Vector3
 ---@field x number
 ---@field y number
 ---@field z number
