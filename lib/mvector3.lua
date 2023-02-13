@@ -3,11 +3,11 @@
 ---@class mvector3lib
 mvector3 = {}
 
----Scales `v2` to length `length` and adds it to `v1`
+---Scales `v2` by `scale` and adds it to `v1`
 ---@param v1 Vector3
 ---@param v2 Vector3
----@param length number
-function mvector3.add_scaled(v1, v2, length) end
+---@param scale number
+function mvector3.add_scaled(v1, v2, scale) end
 
 ---Adds `v2` to `v1`
 ---@param v1 Vector3
@@ -177,11 +177,11 @@ function mvector3.spread(v, spread) end
 ---@param step number
 function mvector3.step(v1, v2, v3, step) end
 
----Scales `v2` to length `length` and subtracts it from `v1`
+---Scales `v2` by `scale` and subtracts it from `v1`
 ---@param v1 Vector3
 ---@param v2 Vector3
----@param length number
-function mvector3.subtract_scaled(v1, v2, length) end
+---@param scale number
+function mvector3.subtract_scaled(v1, v2, scale) end
 
 ---Subtracts `v2` from `v1`
 ---@param v1 Vector3
