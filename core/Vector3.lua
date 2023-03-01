@@ -37,6 +37,7 @@ function Vector3:free(...) end
 function Vector3:length() end
 
 ---Returns a normalized copy of the vector
+---@return Vector3
 function Vector3:normalized() end
 
 ---@param ratio number
