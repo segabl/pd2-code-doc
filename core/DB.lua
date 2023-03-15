@@ -4,7 +4,9 @@
 ---@class DB
 DB = {}
 
-function DB:alive(...) end
+---Returns if the database reference is still valid
+---@return boolean
+function DB:alive() end
 
 ---Adds an asset to the database
 ---@param type Idstring
@@ -48,7 +50,10 @@ function DB:reload_extra_overrides(...) end
 
 function DB:reload_override_mods(...) end
 
-function DB:remove_entry(...) end
+---Removes an asset from the database
+---@param type Idstring
+---@param id Idstring
+function DB:remove_entry(type, id) end
 
 function DB:set_extension(...) end
 
