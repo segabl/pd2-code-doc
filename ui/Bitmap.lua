@@ -33,11 +33,11 @@ function Bitmap:set_texture_rect(x, y, w, h) end
 
 ---Sets the UV coordinates of the bitmap's used texture  
 ---These are values in the range 0-1 as opposed to `Bitmap:set_texture_rect`
----@param u1 number
----@param v1 number
----@param u2 number
----@param v2 number
-function Bitmap:set_texture_coordinates(u1, v1, u2, v2) end
+---@param top_left Vector3
+---@param top_right Vector3
+---@param bottom_left Vector3
+---@param bottom_right Vector3
+function Bitmap:set_texture_coordinates(top_left, top_right, bottom_left, bottom_right) end
 
 ---Sets the texture's wrap mode
 ---@param mode "wrap"|nil
