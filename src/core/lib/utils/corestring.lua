@@ -1,5 +1,11 @@
 ---@meta
 
+---Returns the index of `char` in `s`, or `nil` if not found
+---@param s string
+---@param char string
+---@return integer?
+function utf8.find_char(s, char) end
+
 ---Returns wether `s` starts with `beginning`
 ---@param s string
 ---@param beginning string
