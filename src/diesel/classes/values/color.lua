@@ -19,31 +19,45 @@
 ---@field private __newindex function
 Color = {
 	---@type Color
-	white = Color(1,1,1),
+	white = Color(1, 1, 1),
 	---@type Color
-	black = Color(0,0,0),
+	black = Color(0, 0, 0),
 	---@type Color
-	red = Color(1,0,0),
+	red = Color(1, 0, 0),
 	---@type Color
-	green = Color(0,1,0),
+	green = Color(0, 1, 0),
 	---@type Color
-	blue = Color(0,0,1),
+	blue = Color(0, 0, 1),
 	---@type Color
-	cyan = Color(0,0,1),
+	cyan = Color(0, 0, 1),
 	---@type Color
-	yellow = Color(1,1,0),
+	yellow = Color(1, 1, 0),
 	---@type Color
-	purple = Color(1,0,1),
+	purple = Color(1, 0, 1),
 	---@type Color
-	transparent = Color(0,0,0,0),
+	transparent = Color(0, 0, 0, 0),
 	---@type Color
-	transparent_white = Color(0,1,1,1),
+	transparent_white = Color(0, 1, 1, 1),
 }
 
+---@param a number?
+---@param r number?
+---@param g number?
+---@param b number?
 ---@return Color
----@overload fun(a: number, r: number, g: number, b: number): Color
----@overload fun(r: number, g: number, b: number): Color
----@overload fun(hex: string): Color
+function Color(a, r, g, b) end
+
+---@param r number?
+---@param g number?
+---@param b number?
+---@return Color
+function Color(r, g, b) end
+
+---@param hex string Hexadecimal representation of the color
+---@return Color
+function Color(hex) end
+
+---@return Color
 function Color() end
 
 ---Returns the color's components

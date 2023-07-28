@@ -19,8 +19,13 @@
 ---@field private __newindex function
 Polar = {}
 
+---@param radius number
+---@param pitch number
+---@param spin number
 ---@return Polar
----@overload fun(radius: number, pitch: number, spin: number): Polar
+function Polar(radius, pitch, spin) end
+
+---@return Polar
 function Polar() end
 
 ---Returns a copy of the Polar with its spin coordinate set to `spin`

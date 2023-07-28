@@ -7,11 +7,27 @@
 ---@field private __eq function
 Rotation = {}
 
+---@param yaw number
+---@param pitch number
+---@param roll number
 ---@return Rotation
----@overload fun(yaw: number, pitch: number, roll: number): Rotation
----@overload fun(yaw: number, pitch: number): Rotation
----@overload fun(yaw: number): Rotation
----@overload fun(forward: Vector3, up: Vector3): Rotation
+function Rotation(yaw, pitch, roll) end
+
+---@param yaw number
+---@param pitch number
+---@return Rotation
+function Rotation(yaw, pitch) end
+
+---@param yaw number
+---@return Rotation
+function Rotation(yaw) end
+
+---@param forward Vector3
+---@param up Vector3
+---@return Rotation
+function Rotation(forward, up) end
+
+---@return Rotation
 function Rotation() end
 
 ---@return Rotation inverse

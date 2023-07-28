@@ -23,10 +23,13 @@
 ---@field private __newindex function
 Vector3 = {}
 
+---@param x number?
+---@param y number?
+---@param z number?
 ---@return Vector3
----@overload fun(x: number, y: number, z: number): Vector3
----@overload fun(x: number, y: number): Vector3
----@overload fun(x: number): Vector3
+function Vector3(x, y, z) end
+
+---@return Vector3
 function Vector3() end
 
 ---Returns the smallest angle between the vector and `vec`
