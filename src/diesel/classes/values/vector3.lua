@@ -1,6 +1,6 @@
 ---@meta
 
----@class Vector3:ScriptValue
+---@class Vector3: ScriptValue
 ---@operator add(Vector3): Vector3
 ---@operator sub(Vector3): Vector3
 ---@operator mul(Vector3|number): Vector3
@@ -22,6 +22,12 @@
 ---@field private __concat function
 ---@field private __newindex function
 Vector3 = {}
+
+---@return Vector3
+---@overload fun(x: number, y: number, z: number): Vector3
+---@overload fun(x: number, y: number): Vector3
+---@overload fun(x: number): Vector3
+function Vector3() end
 
 ---Returns the smallest angle between the vector and `vec`
 ---@param vec Vector3
@@ -109,12 +115,3 @@ function Vector3:with_y(y) end
 ---@param z number
 ---@return Vector3
 function Vector3:with_z(z) end
-
----@param x number
----@param y number
----@param z number
----@return Vector3
-function Vector3(x,y,z) end
-
----@return Vector3
-function Vector3() end
