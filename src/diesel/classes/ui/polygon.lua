@@ -1,5 +1,5 @@
 ---@meta
 
 ---Polygon UI element
----@class Polygon : Rect
+---@class Polygon: Rect
 Polygon = {}

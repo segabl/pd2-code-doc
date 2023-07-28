@@ -1,7 +1,7 @@
 ---@meta
 
 ---Color gradient UI element
----@class Gradient : Rect
+---@class Gradient: Rect
 Gradient = {}
 
 ---Sets the gradient's points  

@@ -19,6 +19,10 @@
 ---@field private __newindex function
 Polar = {}
 
+---@return Polar
+---@overload fun(radius: number, pitch: number, spin: number): Polar
+function Polar() end
+
 ---Returns a copy of the Polar with its spin coordinate set to `spin`
 ---@param spin number
 ---@return Polar
@@ -50,12 +54,3 @@ function Polar:to_vector() end
 ---@return Vector3 forward The forward direction of this polar using `fwd` and `up` as basis vectors
 ---If `fwd` is `Vector3(1,0,0)` and `up` is `Vector3(0,0,1)` then this function is equivalent to `Polar:to_vector()`
 function Polar:to_vector_with_reference(fwd,up) end
-
----@param radius number
----@param pitch number
----@param spin number
----@return Polar
-function Polar(radius,pitch,spin) end
-
----@return Polar
-function Polar() end

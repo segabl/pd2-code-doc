@@ -2,6 +2,7 @@
 
 ---@class World: ScriptReference
 World = {}
+
 function World:ballistic_raycast(...) end
 
 function World:cloths_enabled(...) end

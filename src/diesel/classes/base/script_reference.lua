@@ -1,6 +1,6 @@
 ---@meta
 
----@class ScriptReference:Entity
+---@class ScriptReference: Entity
 ---@field type_name "ScriptReference"
 ---@field protected script_value false
 ---@field protected script_reference true
@@ -13,6 +13,7 @@ function ScriptReference:set_extension(extension) end
 ---@return unknown?
 function ScriptReference:extension() end
 
+---Returns wether the reference of this object is still valid
 ---@return boolean
 function ScriptReference:alive() end
 

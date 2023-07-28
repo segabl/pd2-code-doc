@@ -1,6 +1,6 @@
 ---@meta
 
----@class Timer:ScriptReference
+---@class Timer: ScriptReference
 ---@field type_name "Timer"
 ---@field private __eq function
 Timer = {}

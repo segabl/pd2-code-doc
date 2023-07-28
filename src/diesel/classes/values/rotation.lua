@@ -1,11 +1,18 @@
 ---@meta
 
----@class Rotation:ScriptValue
+---@class Rotation: ScriptValue
 ---@operator mul(Rotation): Rotation
 ---@field type_name "Rotation"
 ---@field private __mul function
 ---@field private __eq function
 Rotation = {}
+
+---@return Rotation
+---@overload fun(yaw: number, pitch: number, roll: number): Rotation
+---@overload fun(yaw: number, pitch: number): Rotation
+---@overload fun(yaw: number): Rotation
+---@overload fun(forward: Vector3, up: Vector3): Rotation
+function Rotation() end
 
 ---@return Rotation inverse
 function Rotation:inverse() end
@@ -67,17 +74,3 @@ function Rotation:yaw_pitch_roll(yaw,pitch,roll) end
 
 ---@return Vector3 zVector the z axis of the rotation
 function Rotation:z() end
-
----@param yaw number
----@param pitch number
----@param roll number
----@return Rotation
-function Rotation(yaw,pitch,roll) end
-
----@param forward Vector3
----@param up Vector3
----@return Rotation
-function Rotation(forward,up) end
-
----@return Rotation
-function Rotation() end

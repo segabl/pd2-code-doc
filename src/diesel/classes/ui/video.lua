@@ -1,5 +1,5 @@
 ---@meta
 
 ---Video UI element
----@class Video : Rect
+---@class Video: Rect
 Video = {}

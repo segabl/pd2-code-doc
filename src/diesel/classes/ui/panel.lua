@@ -1,7 +1,7 @@
 ---@meta
 
 ---Panel UI element
----@class Panel : Object
+---@class Panel: Object
 Panel = {}
 
 ---Creates a `Panel` child element on this panel

@@ -1,7 +1,7 @@
 ---@meta
 
 ---Polyline UI element
----@class Polyline : Rect
+---@class Polyline: Rect
 Polyline = {}
 
 ---Returns if the polyline is closed  

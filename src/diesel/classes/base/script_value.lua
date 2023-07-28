@@ -1,4 +1,6 @@
----@class ScriptValue:Entity
+---@meta
+
+---@class ScriptValue: Entity
 ---@field type_name "ScriptValue"
 ---@field protected script_value true
 ---@field protected script_reference false

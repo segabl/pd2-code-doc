@@ -1,7 +1,7 @@
 ---@meta
 
 ---Text UI element
----@class Text : Rect
+---@class Text: Rect
 Text = {}
 
 function Text:align(...) end

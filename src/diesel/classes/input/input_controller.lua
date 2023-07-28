@@ -1,3 +1,5 @@
+---@meta
+
 ---@class InputController: ScriptReference
 local InputController = {}
 
