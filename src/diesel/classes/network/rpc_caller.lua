@@ -21,8 +21,4 @@ function RPCCaller:protocol_at_index(...) end
 
 function RPCCaller:remove(...) end
 
-<<<<<<< HEAD
 function RPCCaller:to_string(...) end
-=======
-function RPCCaller:to_string(...) end
->>>>>>> 1f46c8d4c1d473eacdc8213df37907757b54ef92
