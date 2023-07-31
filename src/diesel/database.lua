@@ -47,10 +47,4 @@ function DB:reload_override_mods(...) end
 ---@param id Idstring
 function DB:remove_entry(type, id) end
 
-function DB:set_extension(...) end
-
 function DB:set_mod_enabled(...) end
-
----Returns the string representation of the database
----@return string
-function DB:tostring() end

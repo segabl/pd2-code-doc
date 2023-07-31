@@ -18,8 +18,8 @@ function alive(unit) end
 ---@param obj table The object where function `funcName` resides 
 ---@param funcName string the index in `obj` where function `funcName` is located
 ---@param arg1 any? An optional, constant argument that will always be passed first (after `self`), before `...args`
----@return fun(args:...):... callback A function which, when called, will locate function `funcName` in `obj` and invoke it with the arguments (`self`,`arg1`,`...args`). If `self` or `arg1` are not present, they are not replaced with nil and instead the remaining arguments shift leftward to fill the gap.
-function callback(self,obj,funcName,arg1) end
+---@return fun(...:unknown):... callback A function which, when called, will locate function `funcName` in `obj` and invoke it with the arguments (`self`,`arg1`,`...args`). If `self` or `arg1` are not present, they are not replaced with nil and instead the remaining arguments shift leftward to fill the gap.
+function callback(self, obj, funcName, arg1) end
 
 ---@generic T: table
 ---@param super T? A base class which `class` will derive from

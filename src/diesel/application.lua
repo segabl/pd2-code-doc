@@ -213,8 +213,6 @@ function Application:set_default_letter(...) end
 
 function Application:set_dynamic_timestep(...) end
 
-function Application:set_extension(...) end
-
 function Application:set_file_streamer_settings(...) end
 
 function Application:set_fixed_timestep(...) end
