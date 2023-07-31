@@ -39,4 +39,8 @@ function SoundSource:set_rtpc(...) end
 
 function SoundSource:set_switch(...) end
 
+<<<<<<< HEAD
 function SoundSource:stop(...) end
+=======
+function SoundSource:stop(...) end
+>>>>>>> 1f46c8d4c1d473eacdc8213df37907757b54ef92

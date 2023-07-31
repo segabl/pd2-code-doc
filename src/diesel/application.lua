@@ -1,11 +1,7 @@
 ---@meta
 
----@class Application
+---@class Application: ScriptReference
 Application = {}
-
----Returns if the application reference is still valid
----@return boolean
-function Application:alive() end
 
 function Application:apply_render_settings(...) end
 
@@ -111,8 +107,6 @@ function Application:ews_enabled(...) end
 
 function Application:exec(...) end
 
-function Application:extension(...) end
-
 function Application:file_streamer_workload(...) end
 
 function Application:fps(...) end
@@ -139,8 +133,6 @@ function Application:is_northamerica(...) end
 
 function Application:is_showing_system_dialog(...) end
 
-function Application:key(...) end
-
 function Application:last_camera_position(...) end
 
 function Application:last_camera_rotation(...) end
@@ -156,30 +148,6 @@ function Application:md5_encrypt(...) end
 function Application:mode(...) end
 
 function Application:nice_path(...) end
-
-function Application:old_draw(...) end
-
-function Application:old_draw_arrow(...) end
-
-function Application:old_draw_circle(...) end
-
-function Application:old_draw_cone(...) end
-
-function Application:old_draw_cylinder(...) end
-
-function Application:old_draw_line(...) end
-
-function Application:old_draw_line_unpaused(...) end
-
-function Application:old_draw_link(...) end
-
-function Application:old_draw_rotation(...) end
-
-function Application:old_draw_rotation_size(...) end
-
-function Application:old_draw_sphere(...) end
-
-function Application:old_draw_sphere_unpaused(...) end
 
 function Application:on_game_authentication_failed(...) end
 

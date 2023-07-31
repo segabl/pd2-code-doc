@@ -1,6 +1,6 @@
 ---@meta
 
----@class Body
+---@class Body: ScriptReference
 Body = {}
 
 function Body:accelerate(...) end
@@ -12,8 +12,6 @@ function Body:activate_tag(...) end
 function Body:active(...) end
 
 function Body:add_ray_type(...) end
-
-function Body:alive(...) end
 
 function Body:angular_velocity(...) end
 
@@ -47,8 +45,6 @@ function Body:enable_with_no_velocity(...) end
 
 function Body:enabled(...) end
 
-function Body:extension(...) end
-
 function Body:fixed(...) end
 
 function Body:get_overlapping_bodies(...) end
@@ -66,8 +62,6 @@ function Body:interpolate(...) end
 function Body:is_body(...) end
 
 function Body:is_phantom(...) end
-
-function Body:key(...) end
 
 function Body:keyframed(...) end
 

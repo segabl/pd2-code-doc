@@ -2,7 +2,7 @@
 
 ---Colored rectangle UI element  
 ---Base for other drawable UI elements
----@class Rect : Object
+---@class Rect: Object
 Rect = {}
 
 ---Returns the element's color

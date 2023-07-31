@@ -2,7 +2,7 @@
 
 ---@alias Idstring.raw {[1]: integer,[2]: integer,[3]: integer}
 
----@class Idstring:ScriptValue
+---@class Idstring: ScriptValue
 ---@operator concat(unknown): string
 ---@field type_name "Idstring"
 ---@field private __eq function
@@ -10,6 +10,9 @@
 ---@field private __newindex function
 Idstring = {}
 
+---@param str string
+---@return Idstring
+function Idstring(str) end
 
 ---@return Idstring self a copy of the reference to this Idstring
 function Idstring:id() end
@@ -27,7 +30,3 @@ function Idstring:raw() end
 
 ---@return string key a hexadecimal representation of this Idstring's `key`
 function Idstring:key() end
-
----@param str string
----@return Idstring
-function Idstring(str) end

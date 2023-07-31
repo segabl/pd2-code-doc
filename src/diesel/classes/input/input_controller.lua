@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+---@meta
+
+>>>>>>> 1f46c8d4c1d473eacdc8213df37907757b54ef92
 ---@class InputController: ScriptReference
 local InputController = {}
 
@@ -32,4 +37,8 @@ function InputController:has_axis() end
 function InputController:name() end
 function InputController:pressed_list() end
 function InputController:num_axes() end
+<<<<<<< HEAD
 function InputController:name_button() end
+=======
+function InputController:name_button() end
+>>>>>>> 1f46c8d4c1d473eacdc8213df37907757b54ef92

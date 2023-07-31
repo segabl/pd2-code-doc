@@ -1,7 +1,7 @@
 ---@meta
 
 ---Collision group for raycasts
----@class SlotMask:ScriptValue
+---@class SlotMask: ScriptValue
 ---@operator add(SlotMask|number): SlotMask
 ---@operator sub(SlotMask|number): SlotMask
 ---@field type_name "SlotMask"

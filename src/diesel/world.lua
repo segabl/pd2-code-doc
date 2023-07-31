@@ -8,7 +8,11 @@ function World:cloths_enabled(...) end
 
 function World:create_camera(...) end
 
-function World:create_light(...) end
+---Creates a light object
+---@param properties string
+---@param texture string?
+---@return Light
+function World:create_light(properties, texture) end
 
 function World:culling_octree(...) end
 
@@ -18,7 +22,9 @@ function World:delete_all_units(...) end
 
 function World:delete_camera(...) end
 
-function World:delete_light(...) end
+---Removes a light object from the world
+---@param light Light
+function World:delete_light(light) end
 
 ---Removes a unit from the world
 ---@param unit Unit

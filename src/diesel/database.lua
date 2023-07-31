@@ -1,20 +1,14 @@
 ---@meta
 
 ---Asset database
----@class DB
+---@class DB: ScriptReference
 DB = {}
-
----Returns if the database reference is still valid
----@return boolean
-function DB:alive() end
 
 ---Adds an asset to the database
 ---@param type Idstring
 ---@param id Idstring
 ---@param path string
 function DB:create_entry(type, id, path) end
-
-function DB:extension(...) end
 
 ---Returns if the asset with the given id exists in the database
 ---@param type string|Idstring
@@ -24,8 +18,6 @@ function DB:has(type, id) end
 
 ---@return boolean
 function DB:is_bundled() end
-
-function DB:key(...) end
 
 function DB:load_node(...) end
 

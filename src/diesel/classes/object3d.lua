@@ -1,6 +1,10 @@
 ---@meta
 
+<<<<<<< HEAD
 ---@class Object3D:ScriptReference
+=======
+---@class Object3D: ScriptReference
+>>>>>>> 1f46c8d4c1d473eacdc8213df37907757b54ef92
 Object3D = {}
 
 function Object3D:children(...) end

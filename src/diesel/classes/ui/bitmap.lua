@@ -1,7 +1,7 @@
 ---@meta
 
 ---Bitmap UI element
----@class Bitmap : Rect
+---@class Bitmap: Rect
 Bitmap = {}
 
 ---Returns the texture width of bitmap
