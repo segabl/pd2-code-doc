@@ -1,6 +1,6 @@
 ---@meta
 
----@class Entity
+---@class Entity: userdata
 ---@field type_name string The class of the entity
 ---@field protected type_id userdata
 ---@field protected script_value boolean
