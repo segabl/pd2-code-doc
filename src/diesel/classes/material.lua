@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class Material: ScriptReference
+---@field type_name "Material"
 Material = {}
 
 function Material:diffuse_color(...) end

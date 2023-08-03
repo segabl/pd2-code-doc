@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TimerManager: ScriptReference
+---@field type_name "TimerManager"
 TimerManager = {}
 
 ---Returns the game animation timer

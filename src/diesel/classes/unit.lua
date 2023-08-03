@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class Unit: ScriptReference
+---@field type_name "Unit"
 Unit = {}
 
 function Unit:activate(...) end

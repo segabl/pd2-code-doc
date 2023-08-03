@@ -69,8 +69,6 @@ function Light:set_color(...) end
 
 function Light:set_enable(...) end
 
-function Light:set_extension(...) end
-
 function Light:set_falloff_exponent(...) end
 
 function Light:set_far_range(...) end

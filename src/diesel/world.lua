@@ -1,12 +1,16 @@
 ---@meta
 
 ---@class World: ScriptReference
+---@field type_name "World"
 World = {}
+
 function World:ballistic_raycast(...) end
 
 function World:cloths_enabled(...) end
 
-function World:create_camera(...) end
+---Creates a camera object
+---@return Camera
+function World:create_camera() end
 
 ---Creates a light object
 ---@param properties string
@@ -20,7 +24,9 @@ function World:damage_destructibles(...) end
 
 function World:delete_all_units(...) end
 
-function World:delete_camera(...) end
+---Removes a light object from the world
+---@param camera Camera
+function World:delete_camera(camera) end
 
 ---Removes a light object from the world
 ---@param light Light

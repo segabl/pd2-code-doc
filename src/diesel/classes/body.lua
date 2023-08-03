@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class Body: ScriptReference
+---@field type_name "Body"
 Body = {}
 
 function Body:accelerate(...) end
@@ -122,8 +123,6 @@ function Body:set_disable_collision_with_unit(...) end
 function Body:set_dynamic(...) end
 
 function Body:set_enabled(...) end
-
-function Body:set_extension(...) end
 
 function Body:set_fixed(...) end
 

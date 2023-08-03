@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ChildTimer: Timer
+---@field type_name "ChildTimer"
 ChildTimer = {}
 
 function ChildTimer:is_paused(...) end

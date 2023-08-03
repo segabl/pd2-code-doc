@@ -48,8 +48,6 @@ function MainDB:reload_override_mods(...) end
 ---@param id Idstring
 function MainDB:remove_entry(type, id) end
 
-function MainDB:set_extension(...) end
-
 ---Enables or disables a mod_override mod
 ---@param name string
 ---@param enabled boolean

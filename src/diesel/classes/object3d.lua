@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class Object3D: ScriptReference
+---@field type_name "Object3D"
 Object3D = {}
 
 function Object3D:children(...) end

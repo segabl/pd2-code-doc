@@ -2,6 +2,7 @@
 
 ---Object oriented bounding box
 ---@class OOBB: ScriptReference
+---@field type_name "OOBB"
 OOBB = {}
 
 function OOBB:area(...) end

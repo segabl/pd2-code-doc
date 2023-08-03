@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class Input: ScriptReference
+---@field type_name "Input"
 Input = {}
 
 function Input:keyboard() end

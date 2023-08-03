@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SoundSource: ScriptReference
+---@field type_name "SoundSource"
 SoundSource = {}
 
 function SoundSource:audio_effect_bus(...) end
