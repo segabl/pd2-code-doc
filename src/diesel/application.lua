@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class Application: ScriptReference
+---@field type_name "Application"
 Application = {}
 
 function Application:apply_render_settings(...) end
@@ -11,7 +12,9 @@ function Application:argv() end
 
 function Application:autodetect_render_settings(...) end
 
-function Application:base_path(...) end
+---Returns the install directory of the game
+---@return string
+function Application:base_path() end
 
 function Application:brake(...) end
 
@@ -51,7 +54,9 @@ function Application:current_storage_device_id(...) end
 
 function Application:current_storage_device_total_space(...) end
 
-function Application:date(...) end
+---Returns the current date and time as a string
+---@return string
+function Application:date() end
 
 function Application:debug(...) end
 
@@ -59,7 +64,12 @@ function Application:debug_enabled(...) end
 
 function Application:destroy_viewport(...) end
 
-function Application:digest_value(...) end
+---Encrypts or decrypts a value  
+---Encrypts numbers to strings and decrypts strings to numbers
+---@param value number|string
+---@param encrypt boolean?
+---@return string|number
+function Application:digest_value(value, encrypt) end
 
 function Application:disc_id(...) end
 
@@ -111,7 +121,9 @@ function Application:file_streamer_workload(...) end
 
 function Application:fps(...) end
 
-function Application:full_game_name(...) end
+---Returns the game name
+---@return string
+function Application:full_game_name() end
 
 ---Returns the clipboard content
 ---@return string
@@ -123,9 +135,13 @@ function Application:get_usercountry(...) end
 
 function Application:global_material(...) end
 
-function Application:host_name(...) end
+---Returns the system's host name
+---@return string
+function Application:host_name() end
 
-function Application:in_focus(...) end
+---Returns wether the game window has focus
+---@return boolean
+function Application:in_focus() end
 
 function Application:installer(...) end
 
@@ -141,13 +157,22 @@ function Application:load_data(...) end
 
 function Application:log(...) end
 
-function Application:long_game_name(...) end
+---Returns the full game name
+---@return string
+function Application:long_game_name() end
 
-function Application:md5_encrypt(...) end
+---Creates an MD5 hash from the string representation of a value
+---@param value any
+---@return string
+function Application:md5_encrypt(value) end
 
 function Application:mode(...) end
 
-function Application:nice_path(...) end
+---Formats a path according to the system path separator
+---@param path string
+---@param final_separator boolean?
+---@return string
+function Application:nice_path(path, final_separator) end
 
 function Application:on_game_authentication_failed(...) end
 
@@ -165,9 +190,13 @@ function Application:push_debug_scope(...) end
 
 function Application:quit(...) end
 
-function Application:region(...) end
+---Returns the region
+---@return Idstring
+function Application:region() end
 
-function Application:reload_textures(...) end
+---Reloads the textures given in `textures`
+---@param textures Idstring[]
+function Application:reload_textures(textures) end
 
 function Application:render(...) end
 
@@ -187,7 +216,9 @@ function Application:save_data(...) end
 
 function Application:save_render_settings(...) end
 
-function Application:screen_resolution(...) end
+---Returns the screen resolution
+---@return Vector3
+function Application:screen_resolution() end
 
 ---Saves a screenshot with optional size parameters and callback function
 ---@param path string
@@ -237,7 +268,9 @@ function Application:set_scene_layer_setup(...) end
 
 function Application:shell_explore_to_folder(...) end
 
-function Application:short_game_name(...) end
+---Returns the short game name
+---@return string
+function Application:short_game_name() end
 
 function Application:sleep(...) end
 
@@ -265,10 +298,14 @@ function Application:unpause_streaming(...) end
 
 function Application:verify_memory(...) end
 
-function Application:version(...) end
+---Returns the game version
+---@return string
+function Application:version() end
 
 function Application:warn(...) end
 
-function Application:windows_user_folder(...) end
+---Returns the local appdata folder
+---@return string
+function Application:windows_user_folder() end
 
 function Application:write_shared_data(...) end
