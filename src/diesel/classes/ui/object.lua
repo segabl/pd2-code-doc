@@ -394,12 +394,31 @@ function Object:root() end
 
 ---Animates the element using a function and optional data that is passed to it  
 ---The function is called as a coroutine and does not stop the main game thread
----@param func function Function to animate the element with. The first argument it receives is the element it is animating, the second argument is `data`
----@param data? any Optional data to pass to `func`
-function Object:animate(func, data) end
+---@generic O: Object
+---@param self O
+---@param func fun(o: O, ...: any) to animate the element with
+---@param ... any Additional arguments to pass to `func`
+function Object:animate(func, ...) end
 
 ---Stops the current animation
 function Object:stop() end
+
+---Returns a table containing functions attached to this element
+---@generic O: Object
+---@param self O
+---@return { self: O, panel: Panel }?
+function Object:script() end
+
+---Sets a table of functions to be available to this element
+---@generic O: Object
+---@param self O
+---@param script table<string, fun(o: O?, ...)>
+function Object:set_script(script) end
+
+---Returns wether there is a script table attached to the object
+---@return boolean
+function Object:has_script() end
+
 
 function Object:mouse_move(func) end
 function Object:mouse_enter(func) end
@@ -417,12 +436,7 @@ function Object:button_press(func) end
 function Object:button_release(func) end
 function Object:axis_move(func) end
 
-
 function Object:after(...) end
 function Object:configure(...) end
 function Object:gui(...) end
-function Object:has_script(...) end
-function Object:key(...) end
-function Object:script(...) end
-function Object:set_script(...) end
 function Object:unit(...) end
