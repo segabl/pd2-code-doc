@@ -324,24 +324,28 @@ function Object:show() end
 ---Hides the panel. Identical to `Object:set_visible(false)`
 function Object:hide() end
 
+---Returns the element's alignment
+---@return "left"|"right"|"center"|"scale"|"justified"
+function Object:align(align) end
+
 ---Sets the element's alignment
----@param align '"left"'|'"right"'|'"center"'|'"scale"'|"'justified'"
+---@param align "left"|"right"|"center"|"scale"|"justified"
 function Object:set_align(align) end
 
 ---Returns the element's horizontal alignment
----@return '"left"'|'"right"'|'"center"'|'"scale"'|'"grow"'
+---@return "left"|"right"|"center"|"scale"|"grow"
 function Object:halign() end
 
 ---Sets the element's horizontal alignment
----@param halign '"left"'|'"right"'|'"center"'|'"scale"'|'"grow"'
+---@param halign "left"|"right"|"center"|"scale"|"grow"
 function Object:set_halign(halign) end
 
 ---Returns the element's vertical alignment
----@return '"top"'|'"bottom"'|'"center"'|'"scale"'|'"grow"'
+---@return "top"|"bottom"|"center"|"scale"|"grow"
 function Object:valign() end
 
 ---Sets the element's vertical alignment
----@param valign '"top"'|'"bottom"'|'"center"'|'"scale"'|'"grow"'
+---@param valign "top"|"bottom"|"center"|"scale"|"grow"
 function Object:set_valign(valign) end
 
 ---Returns the element's alpha value

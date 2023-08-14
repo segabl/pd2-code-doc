@@ -48,10 +48,15 @@ function Panel:video(config) end
 ---@return Object[]
 function Panel:children() end
 
----Returns a child element of the panel by either its name or by its index
----@param name_or_index integer|string
+---Returns a child element of the panel by its name
+---@param name string
 ---@return Object?
-function Panel:child(name_or_index) end
+function Panel:child(name) end
+
+---Returns a child element of the panel by its index
+---@param index integer
+---@return Object?
+function Panel:child(index) end
 
 ---Returns the number of child elements in the panel
 ---@return integer

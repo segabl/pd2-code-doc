@@ -14,11 +14,11 @@ function Rect:color() end
 function Rect:set_color(color) end
 
 ---Returns the element's blend mode
----@return '"add"'|'"mul"'|'"mulx2"'|'"normal"'|'"opacity_add"'|'"sub"'
+---@return "add"|"mul"|"mulx2"|"normal"|"opacity_add"|"sub"
 function Rect:blend_mode() end
 
 ---Sets the element's blend mode
----@param mode '"add"'|'"mul"'|'"mulx2"'|'"normal"'|'"opacity_add"'|'"sub"'
+---@param mode "add"|"mul"|"mulx2"|"normal"|"opacity_add"|"sub"
 function Rect:set_blend_mode(mode) end
 
 ---Returns the element's render template  

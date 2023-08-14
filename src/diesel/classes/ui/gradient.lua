@@ -18,9 +18,9 @@ function Gradient:add_gradient_point(position, color) end
 function Gradient:clear_gradient_points() end
 
 ---Returns the gradient's orientation
----@return '"horizontal"'|'"vertical"'
+---@return "horizontal"|"vertical"
 function Gradient:orientation() end
 
 ---Sets the gradient's orientation
----@param orientation '"horizontal"'|'"vertical"'
+---@param orientation "horizontal"|"vertical"
 function Gradient:set_orientation(orientation) end
