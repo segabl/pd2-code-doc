@@ -5,6 +5,6 @@
 ---@return T
 function class(super) end
 
----@param obj userdata|table
+---@param obj any
 ---@return string type The type of `obj`
 function type_name(obj) end

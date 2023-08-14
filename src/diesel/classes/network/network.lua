@@ -83,7 +83,7 @@ function Network:reset_connection(...) end
 function Network:resign_ownership(...) end
 
 ---Returns the local RPCCaller of a given type
----@param type '"STEAM"'|'"TCP_IP"'
+---@param type "STEAM"|"TCP_IP"
 ---@return RPCCaller
 function Network:self(type) end
 

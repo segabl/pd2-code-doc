@@ -4,7 +4,9 @@
 ---@field type_name "Object3D"
 Object3D = {}
 
-function Object3D:children(...) end
+---Returns a list of children of this object
+---@return Object3D[]
+function Object3D:children() end
 
 function Object3D:inside_bs(...) end
 
@@ -12,44 +14,77 @@ function Object3D:inside_bv(...) end
 
 function Object3D:inside_oobb(...) end
 
-function Object3D:link(...) end
+---Links the object to `obj`, making it its parent
+---@param obj Object3D
+function Object3D:link(obj) end
 
-function Object3D:local_position(...) end
+---Returns the position of the object in local space
+---@return Vector3
+function Object3D:local_position() end
 
-function Object3D:local_rotation(...) end
+---Returns the rotation of the object in local space
+---@return Rotation
+function Object3D:local_rotation() end
 
-function Object3D:m_position(...) end
+---Sets `v` to the object's position
+---@param v Vector3
+function Object3D:m_position(v) end
 
-function Object3D:m_rotation(...) end
+---Sets `r` to the object's rotation
+---@param r Rotation
+function Object3D:m_rotation(r) end
 
-function Object3D:name(...) end
+---Returns the object's name
+---@return Idstring
+function Object3D:name() end
 
-function Object3D:oobb(...) end
+---Returns the object's bounding box
+---@return OOBB
+function Object3D:oobb() end
 
-function Object3D:parent(...) end
+---Returns the parent object
+---@return Object3D
+function Object3D:parent() end
 
-function Object3D:position(...) end
+---Returns the position of the object in world space
+---@return Vector3
+function Object3D:position() end
 
 function Object3D:root(...) end
 
-function Object3D:rotation(...) end
+---Returns the rotation of the object in world space
+---@return Rotation
+function Object3D:rotation() end
 
 function Object3D:set_final_position(...) end
 
-function Object3D:set_local_position(...) end
+---Sets the position of the object relative to its parent
+---@param pos Vector3
+function Object3D:set_local_position(pos) end
 
-function Object3D:set_local_rotation(...) end
+---Sets the rotation of the object relative to its parent
+---@param rot Rotation
+function Object3D:set_local_rotation(rot) end
 
-function Object3D:set_position(...) end
+---Sets the position of the object
+---@param pos Vector3
+function Object3D:set_position(pos) end
 
-function Object3D:set_rotation(...) end
+---Sets the rotation of the object
+---@param rot Rotation
+function Object3D:set_rotation(rot) end
 
-function Object3D:set_visibility(...) end
+---Sets the visibility state of thhe object
+---@param visible boolean
+function Object3D:set_visibility(visible) end
 
 function Object3D:to_local(...) end
 
 function Object3D:to_world(...) end
 
-function Object3D:unlink(...) end
+---Unlinks the object from its parent
+function Object3D:unlink() end
 
-function Object3D:visibility(...) end
+---Returns wether the object is set to be visible
+---@return boolean
+function Object3D:visibility() end

@@ -193,10 +193,15 @@ function Unit:has_material_assigned(...) end
 ---@return integer
 function Unit:id() end
 
----Returns if the unit matches a slot or slot mask
----@param slot_or_mask integer|SlotMask
+---Returns if the unit is in slot `slot`
+---@param slot integer
 ---@return boolean
-function Unit:in_slot(slot_or_mask) end
+function Unit:in_slot(slot) end
+
+---Returns if the unit slot is contained in `slot_mask`
+---@param slot_mask SlotMask
+---@return boolean
+function Unit:in_slot(slot_mask) end
 
 ---Returns the unit's interaction extension
 ---@return table?
@@ -273,7 +278,7 @@ function Unit:name() end
 function Unit:network() end
 
 ---Returns the unit's network sync type
----@return '"none"'|"'client'"|"'spawn'"|nil
+---@return "none"|"client"|"spawn"|nil
 function Unit:network_sync() end
 
 ---Returns the number of bodies of the unit
