@@ -252,12 +252,12 @@ function table.unpack_map(map) end
 
 ---Creates a set from the parameters `...`
 ---@param ... any
----@return table
+---@return table<any, true>
 function table.set(...) end
 
 ---Creates a set from `list`
----@param list table
----@return table
+---@param list table<any>
+---@return table<any, true>
 function table.list_to_set(list) end
 
 ---Creates a list from `map` by inserting keys followed by their values

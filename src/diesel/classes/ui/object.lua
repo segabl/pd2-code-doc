@@ -306,7 +306,7 @@ function Object:set_shape(x, y, w, h) end
 ---@param h number
 function Object:set_world_shape(x, y, w, h) end
 
----Returns if the panel is visble
+---Returns if the object is visble
 ---@return boolean
 function Object:visible() end
 
@@ -314,14 +314,14 @@ function Object:visible() end
 ---@return boolean
 function Object:tree_visible() end
 
----Sets the visibility of the panel
+---Sets the visibility of the object
 ---@param visible boolean
 function Object:set_visible(visible) end
 
----Shows the panel. Identical to `Object:set_visible(true)`
+---Shows the object. Identical to `Object:set_visible(true)`
 function Object:show() end
 
----Hides the panel. Identical to `Object:set_visible(false)`
+---Hides the object. Identical to `Object:set_visible(false)`
 function Object:hide() end
 
 ---Returns the element's alignment
@@ -388,7 +388,7 @@ function Object:inside(x, y) end
 ---@return boolean
 function Object:outside(x, y) end
 
----Returns the element's parent panel
+---Returns the element's parent object
 ---@return Object
 function Object:parent() end
 
