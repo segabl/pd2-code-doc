@@ -55,9 +55,11 @@ function Object:set_position(x, y) end
 function Object:set_world_position(x, y) end
 
 ---Returns the element's x position given by its left side. Identical to `Object:x()`
+---@return number
 function Object:left() end
 
 ---Returns the element's x position relative to its root panel, given by its left side. Identical to `Object:world_x()`
+---@return number
 function Object:world_left() end
 
 ---Sets the element's x position aligned on its left side. Identical to `Object:set_x(x)`
@@ -85,9 +87,11 @@ function Object:set_right(x) end
 function Object:set_world_right(x) end
 
 ---Returns the element's y position given by its top side. Identical to `Object:y()`
+---@return number
 function Object:top() end
 
 ---Returns the element's y position relative to its root panel, given by its top side. Identical to `Object:world_y()`
+---@return number
 function Object:world_top() end
 
 ---Sets the element's y position aligned on its top side. Identical to `Object:set_y(y)`

@@ -24,7 +24,7 @@ function World:damage_destructibles(...) end
 
 function World:delete_all_units(...) end
 
----Removes a light object from the world
+---Removes a camera object from the world
 ---@param camera Camera
 function World:delete_camera(camera) end
 
@@ -46,9 +46,17 @@ function World:find_bodies(...) end
 
 function World:find_phantoms(...) end
 
-function World:find_units(...) end
+---Returns a list of units based on specific parameters
+---@param type string
+---@param ... any @Additional parameters based on the type
+---@return Unit[]
+function World:find_units(type, ...) end
 
-function World:find_units_quick(...) end
+---Returns a list of units based on specific parameters
+---@param type string
+---@param ... any @Additional parameters based on the type
+---@return Unit[]
+function World:find_units_quick(type, ...) end
 
 function World:fluids_enabled(...) end
 

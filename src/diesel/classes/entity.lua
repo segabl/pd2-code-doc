@@ -11,5 +11,6 @@
 ---@field private __index function
 local Entity = {}
 
+---Returns the string representation of the entity
 ---@return string
 function Entity:tostring() end

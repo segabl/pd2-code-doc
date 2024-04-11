@@ -16,7 +16,7 @@ Global.game_settings.auto_kick = nil
 ---@type integer
 Global.game_settings.drop_in_option = nil
 
----@type '"public"'|'"friends_only"'|'"private"'
+---@type "public"|"friends_only"|"private"
 Global.game_settings.permission = nil
 
 ---@type integer
@@ -28,7 +28,7 @@ Global.game_settings.search_modded_lobbies = nil
 ---@type boolean
 Global.game_settings.search_appropriate_jobs = nil
 
----@type '"standard"'|'"crime_spree"'
+---@type "standard"|"crime_spree"
 Global.game_settings.gamemode = nil
 
 ---@type boolean
@@ -37,7 +37,7 @@ Global.game_settings.drop_in_allowed = nil
 ---@type integer
 Global.game_settings.reputation_permission = nil
 
----@type '"easy"'|'"normal"'|'"hard"'|'"overkill"'|'"overkill_145"'|'"easy_wish"'|'"overkill_290"'|'"sm_wish"'
+---@type "easy"|"normal"|"hard"|"overkill"|"overkill_145"|"easy_wish"|"overkill_290"|"sm_wish"
 Global.game_settings.difficulty = nil
 
 ---@type integer
@@ -101,7 +101,7 @@ managers.generic_side_jobs = {}
 managers.groupai = {}
 managers.gui_data = {}
 managers.hint = {}
-managers.hud = {}
+managers.hud = HUDManager:new()
 managers.infamy = {}
 managers.interaction = {}
 managers.job = {}
@@ -123,13 +123,14 @@ managers.network = {}
 managers.objectives = {}
 managers.occlusion = {}
 managers.platform = {}
-managers.player = {}
+managers.player = PlayerManager:new()
 managers.preplanning = {}
 managers.promo_unlocks = {}
 managers.raid_jobs = {}
 managers.savefile = {}
 managers.skilltree = {}
 managers.skirmish = {}
+managers.slot = SlotManager:new()
 managers.spawn = {}
 managers.statistics = {}
 managers.story = {}

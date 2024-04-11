@@ -56,11 +56,12 @@ function mrotation.set_axis_angle(r, axis, angle) end
 ---@param up Vector3
 function mrotation.set_look_at(r, dir, up) end
 
----Sets `r` to the rotation representing looking from `from` towards `to`
+---Sets `r` to the rotation representing looking from `from` towards `to` with up direction `up`
 ---@param r Rotation
 ---@param from Vector3
 ---@param to Vector3
-function mrotation.set_look_from_to(r, from, to) end
+---@param up Vector3
+function mrotation.set_look_from_to(r, from, to, up) end
 
 ---Sets the pitch of `r`
 ---@param r Rotation

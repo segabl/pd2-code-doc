@@ -53,9 +53,5 @@ function MainDB:remove_entry(type, id) end
 ---@param enabled boolean
 function MainDB:set_mod_enabled(name, enabled) end
 
----Returns the string representation of the database
----@return string
-function MainDB:tostring() end
-
 
 DB = MainDB

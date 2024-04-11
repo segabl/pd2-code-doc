@@ -412,7 +412,12 @@ function Unit:set_local_position(pos) end
 ---@param rot Rotation
 function Unit:set_local_rotation(rot) end
 
-function Unit:set_material_config(...) end
+---Changes the unit's material configuration file
+---@param material_name Idstring
+---@param b boolean?
+---@param callback function?
+---@param n number?
+function Unit:set_material_config(material_name, b, callback, n) end
 
 function Unit:set_mover_collision_callback(...) end
 
