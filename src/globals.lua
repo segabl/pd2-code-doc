@@ -106,6 +106,7 @@ managers.infamy = {}
 managers.interaction = {}
 managers.job = {}
 managers.killzone = {}
+managers.localization = {}
 managers.loot = {}
 managers.lootdrop = {}
 managers.menu = {}

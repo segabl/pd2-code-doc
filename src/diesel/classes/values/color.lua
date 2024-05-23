@@ -42,10 +42,10 @@ Color = {
     transparent_white = Color(0,1,1,1),
 }
 
----@param a number?
----@param r number?
----@param g number?
----@param b number?
+---@param a number
+---@param r number
+---@param g number
+---@param b number
 ---@return Color
 function Color(a, r, g, b) end
 

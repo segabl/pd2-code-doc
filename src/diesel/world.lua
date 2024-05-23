@@ -42,7 +42,11 @@ function World:destructibles_enabled(...) end
 
 function World:effect_manager(...) end
 
-function World:find_bodies(...) end
+---Returns a list of bodies based on specific parameters
+---@param type string
+---@param ... any @Additional parameters based on the type
+---@return Body[]
+function World:find_bodies(type, ...) end
 
 function World:find_phantoms(...) end
 
