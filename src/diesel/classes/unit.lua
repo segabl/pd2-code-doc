@@ -301,8 +301,8 @@ function Unit:occlusion_time(...) end
 ---@return OOBB
 function Unit:oobb() end
 
----Returns the root object name of the unit as an Idstring
----@return Idstring
+---Returns the root object of the unit
+---@return Object3D
 function Unit:orientation_object() end
 
 ---Returns the unit's parent unit
@@ -338,7 +338,7 @@ function Unit:radius(...) end
 ---@param from Vector3
 ---@param to Vector3
 ---@param ... any @Additional parameters (parameter option name followed by the value if it takes one)
----@return table
+---@return ray_res?
 function Unit:raycast(type, from, to, ...) end
 
 function Unit:refresh_object_materials(...) end

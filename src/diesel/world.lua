@@ -140,7 +140,7 @@ function World:quad_field(...) end
 ---@param from Vector3
 ---@param to Vector3
 ---@param ... any @Additional parameters (parameter option name followed by the value if it takes one)
----@return table
+---@return ray_res?
 function World:raycast(type, from, to, ...) end
 
 function World:raycast_all(...) end

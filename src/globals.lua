@@ -2,153 +2,113 @@
 
 ---Table containing data that persists across loading screens
 Global = {}
+Global.editor_mode = nil ---@type boolean
 Global.game_settings = {}
-
----@type boolean
-Global.editor_mode = nil
-
----@type boolean
-Global.game_settings.is_playing = nil
-
----@type boolean
-Global.game_settings.auto_kick = nil
-
----@type integer
-Global.game_settings.drop_in_option = nil
-
----@type "public"|"friends_only"|"private"
-Global.game_settings.permission = nil
-
----@type integer
-Global.game_settings.job_plan = nil
-
----@type boolean
-Global.game_settings.search_modded_lobbies = nil
-
----@type boolean
-Global.game_settings.search_appropriate_jobs = nil
-
----@type "standard"|"crime_spree"
-Global.game_settings.gamemode = nil
-
----@type boolean
-Global.game_settings.drop_in_allowed = nil
-
----@type integer
-Global.game_settings.reputation_permission = nil
-
----@type "easy"|"normal"|"hard"|"overkill"|"overkill_145"|"easy_wish"|"overkill_290"|"sm_wish"
-Global.game_settings.difficulty = nil
-
----@type integer
-Global.game_settings.team_ai_option = nil
-
----@type boolean
-Global.game_settings.team_ai = nil
-
----@type integer
-Global.game_settings.kick_option = nil
-
----@type boolean
-Global.game_settings.one_down = nil
-
----@type boolean
-Global.game_settings.allow_modded_players = nil
-
----@type boolean
-Global.game_settings.search_one_down_lobbies = nil
-
----@type boolean
-Global.game_settings.single_player = nil
-
----@type string
-Global.game_settings.mission = nil
-
----@type string
-Global.game_settings.level_id = nil
+Global.game_settings.is_playing = nil ---@type boolean
+Global.game_settings.auto_kick = nil ---@type boolean
+Global.game_settings.drop_in_option = nil ---@type integer
+Global.game_settings.permission = nil ---@type "public"|"friends_only"|"private"
+Global.game_settings.job_plan = nil ---@type integer
+Global.game_settings.search_modded_lobbies = nil ---@type boolean
+Global.game_settings.search_appropriate_jobs = nil ---@type boolean
+Global.game_settings.gamemode = nil ---@type "standard"|"crime_spree"
+Global.game_settings.drop_in_allowed = nil ---@type boolean
+Global.game_settings.reputation_permission = nil ---@type integer
+Global.game_settings.difficulty = nil ---@type "easy"|"normal"|"hard"|"overkill"|"overkill_145"|"easy_wish"|"overkill_290"|"sm_wish"
+Global.game_settings.team_ai_option = nil ---@type integer
+Global.game_settings.team_ai = nil ---@type boolean
+Global.game_settings.kick_option = nil ---@type integer
+Global.game_settings.one_down = nil ---@type boolean
+Global.game_settings.allow_modded_players = nil ---@type boolean
+Global.game_settings.search_one_down_lobbies = nil ---@type boolean
+Global.game_settings.single_player = nil ---@type boolean
+Global.game_settings.mission = nil ---@type string
+Global.game_settings.level_id = nil ---@type string
 
 ---Table containing all manager instances
 managers = {}
-managers.achievment = {}
-managers.action_messaging = {}
-managers.ai_data = {}
-managers.assets = {}
-managers.ban_list = {}
-managers.belt = {}
-managers.blackmarket = {}
-managers.briefing = {}
-managers.butler_mirroring = {}
-managers.challenge = {}
-managers.charm = {}
-managers.chat = {}
-managers.crime_spree = {}
-managers.crimenet = {}
-managers.criminals = {}
-managers.custom_safehouse = {}
-managers.dialog = {}
-managers.dot = {}
-managers.dyn_resource = {}
-managers.enemy = {}
-managers.event_jobs = {}
-managers.experience = {}
-managers.explosion = {}
-managers.features = {}
-managers.feedback = {}
-managers.fire = {}
-managers.gage_assignment = {}
-managers.game_play_central = {}
-managers.generic_side_jobs = {}
-managers.groupai = {}
-managers.gui_data = {}
-managers.hint = {}
-managers.hud = HUDManager:new()
-managers.infamy = {}
-managers.interaction = {}
-managers.job = {}
-managers.killzone = {}
-managers.localization = {}
-managers.loot = {}
-managers.lootdrop = {}
-managers.menu = {}
-managers.menu_component = {}
-managers.menu_scene = {}
-managers.modifiers = {}
-managers.money = {}
-managers.motion_path = {}
-managers.mouse_pointer = {}
-managers.multi_profile = {}
-managers.music = {}
-managers.mutators = {}
-managers.navigation = {}
-managers.network = {}
-managers.objectives = {}
-managers.occlusion = {}
-managers.platform = {}
-managers.player = PlayerManager:new()
-managers.preplanning = {}
-managers.promo_unlocks = {}
-managers.raid_jobs = {}
-managers.savefile = {}
-managers.skilltree = {}
-managers.skirmish = {}
-managers.slot = SlotManager:new()
-managers.spawn = {}
-managers.statistics = {}
-managers.story = {}
-managers.sync = {}
-managers.system_menu = {}
-managers.tango = {}
-managers.time_speed = {}
-managers.trade = {}
-managers.upgrades = {}
-managers.user = {}
-managers.vehicle = {}
-managers.video = {}
-managers.vote = {}
-managers.vr = {}
-managers.wait = {}
-managers.weapon_factory = {}
-managers.workshop = {}
+managers.achievment = nil ---@type AchievmentManager
+managers.action_messaging = nil ---@type ActionMessagingManager
+managers.ai_data = nil ---@type CoreAiDataManager.AiDataManager
+managers.assets = nil ---@type MissionAssetsManager
+managers.ban_list = nil ---@type BanListManager
+managers.belt = nil ---@type MachineGunBeltManager
+managers.blackmarket = nil ---@type BlackMarketManager
+managers.briefing = nil ---@type VoiceBriefingManager
+managers.butler_mirroring = nil ---@type ButlerMirroringManager
+managers.challenge = nil ---@type ChallengeManager
+managers.charm = nil ---@type CharmManager
+managers.chat = nil ---@type ChatManager
+managers.crime_spree = nil ---@type CrimeSpreeManager
+managers.crimenet = nil ---@type CrimeNetManager
+managers.criminals = nil ---@type CriminalsManager
+managers.custom_safehouse = nil ---@type CustomSafehouseManager
+managers.dialog = nil ---@type DialogManager
+managers.dot = nil ---@type DOTManager
+managers.dyn_resource = nil ---@type DynamicResourceManager
+managers.enemy = nil ---@type EnemyManager
+managers.event_jobs = nil ---@type SideJobEventManager
+managers.experience = nil ---@type ExperienceManager
+managers.explosion = nil ---@type ExplosionManager
+managers.features = nil ---@type FeatureManager
+managers.feedback = nil ---@type FeedBackManager
+managers.fire = nil ---@type FireManager
+managers.gage_assignment = nil ---@type GageAssignmentManager
+managers.game_play_central = nil ---@type GamePlayCentralManager
+managers.generic_side_jobs = nil ---@type GenericSideJobsManager
+managers.groupai = nil ---@type GroupAIManager
+managers.gui_data = nil ---@type CoreGuiDataManager.GuiDataManager
+managers.hint = nil ---@type HintManager
+managers.hud = nil ---@type HUDManager
+managers.infamy = nil ---@type InfamyManager
+managers.interaction = nil ---@type ObjectInteractionManager
+managers.job = nil ---@type JobManager
+managers.killzone = nil ---@type KillzoneManager
+managers.localization = nil ---@type 
+managers.loot = nil ---@type LootManager
+managers.lootdrop = nil ---@type LootDropManager
+managers.menu = nil ---@type MenuManager
+managers.menu_component = nil ---@type MenuComponentManager
+managers.menu_scene = nil ---@type MenuSceneManager
+managers.modifiers = nil ---@type ModifiersManager
+managers.money = nil ---@type MoneyManager
+managers.motion_path = nil ---@type MotionPathManager
+managers.mouse_pointer = nil ---@type MousePointerManager
+managers.multi_profile = nil ---@type MultiProfileManager
+managers.music = nil ---@type MusicManager
+managers.mutators = nil ---@type MutatorsManager
+managers.navigation = nil ---@type NavigationManager
+managers.network = nil ---@type NetworkManager
+managers.objectives = nil ---@type ObjectivesManager
+managers.occlusion = nil ---@type _OcclusionManager
+managers.perpetual_event = nil ---@type PerpetualEventManager
+managers.platform = nil ---@type PlatformManager.PlatformManager
+managers.player = nil ---@type PlayerManager
+managers.preplanning = nil ---@type PrePlanningManager
+managers.promo_unlocks = nil ---@type PromoUnlockManager
+managers.raid_jobs = nil ---@type RaidJobsManager
+managers.savefile = nil ---@type SavefileManager
+managers.skilltree = nil ---@type SkillTreeManager
+managers.skirmish = nil ---@type SkirmishManager
+managers.slot = nil ---@type SlotManager
+managers.socialhub = nil ---@type SocialHubManager
+managers.spawn = nil ---@type SpawnManager
+managers.statistics = nil ---@type StatisticsManager
+managers.story = nil ---@type StoryMissionsManager
+managers.sync = nil ---@type SyncManager
+managers.system_menu = nil ---@type SystemMenuManager.SystemMenuManager
+managers.tango = nil ---@type TangoManager
+managers.time_speed = nil ---@type TimeSpeedManager
+managers.trade = nil ---@type TradeManager
+managers.upgrades = nil ---@type UpgradesManager
+managers.user = nil ---@type UserManager.UserManager
+managers.vehicle = nil ---@type VehicleManager
+managers.video = nil ---@type VideoManager
+managers.vote = nil ---@type VoteManager
+managers.vr = nil ---@type VRManagerPD2
+managers.wait = nil ---@type WaitManager
+managers.weapon_factory = nil ---@type WeaponFactoryManager
+managers.workshop = nil ---@type WorkshopManager
 
 ---General game tweak data
 tweak_data = {}

@@ -108,8 +108,9 @@ function mvector3.multiply(v, mul) end
 ---@param v Vector3
 function mvector3.negate(v) end
 
----Normalizes `v`
+---Normalizes `v` and returns its previous length
 ---@param v Vector3
+---@return number
 function mvector3.normalize(v) end
 
 ---Returns wether `v1` and `v2` are not equal

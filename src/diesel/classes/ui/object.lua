@@ -392,8 +392,8 @@ function Object:inside(x, y) end
 ---@return boolean
 function Object:outside(x, y) end
 
----Returns the element's parent object
----@return Object
+---Returns the element's parent panel
+---@return Panel
 function Object:parent() end
 
 ---Returns the element's root panel
@@ -404,7 +404,7 @@ function Object:root() end
 ---The function is called as a coroutine and does not stop the main game thread
 ---@generic O: Object
 ---@param self O
----@param func fun(o: O, ...: any) to animate the element with
+---@param func fun(o: O, ...: any) Function to animate the element with
 ---@param ... any Additional arguments to pass to `func`
 function Object:animate(func, ...) end
 
@@ -423,10 +423,14 @@ function Object:script() end
 ---@param script table<string, fun(o: O?, ...)>
 function Object:set_script(script) end
 
----Returns wether there is a script table attached to the object
+---Returns wether there is a script table attached to this element
 ---@return boolean
 function Object:has_script() end
 
+---Configure multiple element parameters at once  
+---Takes the same parameters as creating an element through a panel
+---@param config table Table containing configuration options for the element
+function Object:configure(config) end
 
 function Object:mouse_move(func) end
 function Object:mouse_enter(func) end
@@ -445,6 +449,5 @@ function Object:button_release(func) end
 function Object:axis_move(func) end
 
 function Object:after(...) end
-function Object:configure(...) end
 function Object:gui(...) end
 function Object:unit(...) end
