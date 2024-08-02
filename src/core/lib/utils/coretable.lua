@@ -123,12 +123,12 @@ function table.get_key(t, value) end
 ---@deprecated
 function table.has(t, k) end
 
----Returns the amount of values in `t`
+---Returns the number of values in `t`
 ---@param t table
 ---@return integer
 function table.size(t) end
 
----Returns the amount of values in `t` that `func` holds true for
+---Returns the number of values in `t` that `func` holds true for
 ---@generic K, V
 ---@param t table<K, V>
 ---@param func fun(value: V, key:K):boolean
@@ -163,7 +163,7 @@ function table.random_key(t) end
 ---@param wrap any
 ---@param sep any
 ---@param last_sep any
----@return unknown
+---@return any
 function table.concat_map(map, concat_values, none_string, wrap, sep, last_sep) end
 
 ---@param prioritized_order_list any

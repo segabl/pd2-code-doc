@@ -135,6 +135,15 @@ function World:project_decal(...) end
 
 function World:quad_field(...) end
 
+---@class ray_res
+---@field body Body
+---@field distance number
+---@field hit_position Vector3
+---@field normal Vector3
+---@field position Vector3
+---@field ray Vector3
+---@field unit Unit
+
 ---Tests for collisions between two positions
 ---@param type "ray"
 ---@param from Vector3
