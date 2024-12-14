@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AwardAchievmentElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : AwardAchievmentElement
 AwardAchievmentElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FPCameraPlayerBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : FPCameraPlayerBase
 FPCameraPlayerBase = {}
 

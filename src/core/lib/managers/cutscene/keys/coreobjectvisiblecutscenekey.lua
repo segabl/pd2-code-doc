@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreObjectVisibleCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreObjectVisibleCutsceneKey
 CoreObjectVisibleCutsceneKey = {}
 

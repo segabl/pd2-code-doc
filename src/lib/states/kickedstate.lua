@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class KickedState : MissionEndState
+---@field super MissionEndState
 ---@field new fun(self, ...) : KickedState
 KickedState = {}
 

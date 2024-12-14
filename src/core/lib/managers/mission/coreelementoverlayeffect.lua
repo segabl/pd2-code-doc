@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementOverlayEffect.ElementOverlayEffect : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementOverlayEffect.ElementOverlayEffect
 ElementOverlayEffect = {}
 

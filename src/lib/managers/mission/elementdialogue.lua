@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementDialogue : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementDialogue
 ElementDialogue = {}
 

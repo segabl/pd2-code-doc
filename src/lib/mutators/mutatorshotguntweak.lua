@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MutatorShotgunTweak : BaseMutator
+---@field super BaseMutator
 ---@field new fun(self, ...) : MutatorShotgunTweak
 MutatorShotgunTweak = {}
 

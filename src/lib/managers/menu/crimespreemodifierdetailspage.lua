@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeSpreeModifierDetailsPage : CrimeSpreeDetailsPage
+---@field super CrimeSpreeDetailsPage
 ---@field new fun(self, ...) : CrimeSpreeModifierDetailsPage
 CrimeSpreeModifierDetailsPage = {}
 

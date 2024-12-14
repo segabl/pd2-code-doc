@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreInstanceInputUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreInstanceInputUnitElement
 CoreInstanceInputUnitElement = {}
 
 ---@class InstanceInputUnitElement : CoreInstanceInputUnitElement
+---@field super CoreInstanceInputUnitElement
 ---@field new fun(self, ...) : InstanceInputUnitElement
 InstanceInputUnitElement = {}
 
@@ -18,10 +20,12 @@ function InstanceInputUnitElement:init(...) end
 function InstanceInputUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreInstanceOutputUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreInstanceOutputUnitElement
 CoreInstanceOutputUnitElement = {}
 
 ---@class InstanceOutputUnitElement : CoreInstanceOutputUnitElement
+---@field super CoreInstanceOutputUnitElement
 ---@field new fun(self, ...) : InstanceOutputUnitElement
 InstanceOutputUnitElement = {}
 
@@ -35,10 +39,12 @@ function InstanceOutputUnitElement:init(...) end
 function InstanceOutputUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreInstanceEventUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreInstanceEventUnitElement
 CoreInstanceEventUnitElement = {}
 
 ---@class InstanceEventUnitElement : CoreInstanceEventUnitElement
+---@field super CoreInstanceEventUnitElement
 ---@field new fun(self, ...) : InstanceEventUnitElement
 InstanceEventUnitElement = {}
 
@@ -128,10 +134,12 @@ function InstanceEventUnitElement:_build_panel(panel, panel_sizer) end
 function InstanceEventUnitElement:add_triggers(vc) end
 
 ---@class CoreInstanceInputEventUnitElement : InstanceEventUnitElement
+---@field super InstanceEventUnitElement
 ---@field new fun(self, ...) : CoreInstanceInputEventUnitElement
 CoreInstanceInputEventUnitElement = {}
 
 ---@class InstanceInputEventUnitElement : CoreInstanceInputEventUnitElement
+---@field super CoreInstanceInputEventUnitElement
 ---@field new fun(self, ...) : InstanceInputEventUnitElement
 InstanceInputEventUnitElement = {}
 
@@ -140,10 +148,12 @@ InstanceInputEventUnitElement = {}
 function InstanceInputEventUnitElement:init(...) end
 
 ---@class CoreInstanceOutputEventUnitElement : InstanceEventUnitElement
+---@field super InstanceEventUnitElement
 ---@field new fun(self, ...) : CoreInstanceOutputEventUnitElement
 CoreInstanceOutputEventUnitElement = {}
 
 ---@class InstanceOutputEventUnitElement : CoreInstanceOutputEventUnitElement
+---@field super CoreInstanceOutputEventUnitElement
 ---@field new fun(self, ...) : InstanceOutputEventUnitElement
 InstanceOutputEventUnitElement = {}
 
@@ -152,10 +162,12 @@ InstanceOutputEventUnitElement = {}
 function InstanceOutputEventUnitElement:init(...) end
 
 ---@class CoreInstancePointUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreInstancePointUnitElement
 CoreInstancePointUnitElement = {}
 
 ---@class InstancePointUnitElement : CoreInstancePointUnitElement
+---@field super CoreInstancePointUnitElement
 ---@field new fun(self, ...) : InstancePointUnitElement
 InstancePointUnitElement = {}
 
@@ -199,10 +211,12 @@ function InstancePointUnitElement:_build_panel(panel, panel_sizer) end
 function InstancePointUnitElement:add_triggers(vc) end
 
 ---@class CoreInstanceParamsUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreInstanceParamsUnitElement
 CoreInstanceParamsUnitElement = {}
 
 ---@class InstanceParamsUnitElement : CoreInstanceParamsUnitElement
+---@field super CoreInstanceParamsUnitElement
 ---@field new fun(self, ...) : InstanceParamsUnitElement
 InstanceParamsUnitElement = {}
 
@@ -254,10 +268,12 @@ function InstanceParamsUnitElement:_on_gui_select_name_dialog(params) end
 function InstanceParamsUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreInstanceSetParamsUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreInstanceSetParamsUnitElement
 CoreInstanceSetParamsUnitElement = {}
 
 ---@class InstanceSetParamsUnitElement : CoreInstanceSetParamsUnitElement
+---@field super CoreInstanceSetParamsUnitElement
 ---@field new fun(self, ...) : InstanceSetParamsUnitElement
 InstanceSetParamsUnitElement = {}
 

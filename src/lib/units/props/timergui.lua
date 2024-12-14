@@ -154,6 +154,7 @@ function TimerGui:load(data) end
 function TimerGui:post_event(event) end
 
 ---@class DrillTimerGui : TimerGui
+---@field super TimerGui
 ---@field new fun(self, ...) : DrillTimerGui
 DrillTimerGui = {}
 

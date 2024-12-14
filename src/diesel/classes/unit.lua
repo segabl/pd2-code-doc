@@ -50,12 +50,14 @@ function Unit:anim_stop(...) end
 
 function Unit:anim_time(...) end
 
-function Unit:animation_timer(...) end
+---Returns the unit's animation timer
+---@return Timer|nil
+function Unit:animation_timer() end
 
 function Unit:approximate_orientation(...) end
 
 ---Returns the unit's armor skin extension
----@return table?
+---@return ArmorSkinExt|MenuArmourBase|nil
 function Unit:armor_skin() end
 
 function Unit:ballistic_raycast(...) end
@@ -64,21 +66,26 @@ function Unit:ballistic_raycast(...) end
 ---@return table?
 function Unit:base() end
 
----Returns a unit body by name or index
----@param name_or_index string|integer
+---Returns a unit body by name
+---@param name string
 ---@return Body?
-function Unit:body(name_or_index) end
+function Unit:body(name) end
+
+---Returns a unit body by index
+---@param index integer
+---@return Body?
+function Unit:body(index) end
 
 function Unit:body_group(...) end
 
 function Unit:bounding_sphere_radius(...) end
 
 ---Returns the unit's brain extension
----@return table?
+---@return CopBrain|HuskCopBrain|CivilianBrain|TeamAIBrain|PlayerTurretBrain|SentryGunBrain|nil
 function Unit:brain() end
 
 ---Returns the unit's camera extension
----@return table?
+---@return PlayerCamera|nil
 function Unit:camera() end
 
 function Unit:can_activate_mover(...) end
@@ -106,7 +113,7 @@ function Unit:configure_constraint(...) end
 function Unit:constraint_type(...) end
 
 ---Returns the unit's contour extension
----@return table?
+---@return ContourExt|nil
 function Unit:contour() end
 
 ---Returns the unit's damage extension
@@ -155,10 +162,13 @@ function Unit:extensions() end
 
 function Unit:extensions_infos(...) end
 
+---@return Body[]
 function Unit:find_bodies(...) end
 
+---@return Unit[]
 function Unit:find_units(...) end
 
+---@return Unit[]
 function Unit:find_units_quick(...) end
 
 function Unit:get_active_mover_offset(...) end
@@ -208,7 +218,7 @@ function Unit:in_slot(slot_mask) end
 function Unit:interaction() end
 
 ---Returns the unit's inventory extension
----@return table?
+---@return PlayerInventory|HuskPlayerInventory|CopInventory|HuskCopInventory|TeamAIInventory|HuskTeamAIInventory|nil
 function Unit:inventory() end
 
 function Unit:is_constraint_enabled(...) end
@@ -217,11 +227,14 @@ function Unit:kill_mover(...) end
 
 function Unit:light_group(...) end
 
+---Links `unit` to the unit
+---@param unit Unit
+function Unit:link(unit) end
+
 ---Links `unit` by its `from_obj` to the object `obj` on the unit
 ---@param obj Idstring
 ---@param unit Unit
 ---@param from_obj? Idstring
----@overload fun(self:Unit, unit:Unit)
 function Unit:link(obj, unit, from_obj) end
 
 ---Returns the unit's position relative to its parent
@@ -251,21 +264,25 @@ function Unit:mass(...) end
 ---@return Material?
 function Unit:material(name) end
 
-function Unit:material_config(...) end
+---Returns the material config name
+---@return Idstring
+function Unit:material_config() end
 
 function Unit:mission_door_device(...) end
 
 function Unit:move(...) end
 
 ---Returns the unit's movement extension
----@return table?
+---@return PlayerMovement|HuskPlayerMovement|CopMovement|HuskCopMovement|TeamAIMovement|HuskTeamAIMovement|PlayerTurretMovement|SentryGunMovement|nil
 function Unit:movement() end
 
 function Unit:mover(...) end
 
 function Unit:mover_by_name(...) end
 
-function Unit:moving(...) end
+---Returns whether the unit is moving
+---@return boolean
+function Unit:moving() end
 
 function Unit:moving_reason(...) end
 
@@ -274,7 +291,7 @@ function Unit:moving_reason(...) end
 function Unit:name() end
 
 ---Returns the unit's network extension
----@return table?
+---@return NetworkBaseExtension|nil
 function Unit:network() end
 
 ---Returns the unit's network sync type
@@ -291,7 +308,7 @@ function Unit:num_phantoms(...) end
 
 function Unit:num_ropes(...) end
 
----Returns wether the unit is occluded
+---Returns whether the unit is occluded
 ---@return boolean
 function Unit:occluded() end
 
@@ -461,7 +478,7 @@ function Unit:set_visibility(...) end
 ---@param visible boolean
 function Unit:set_visible(visible) end
 
----Returns wether the unit's shadow casters are enabled
+---Returns whether the unit's shadow casters are enabled
 ---@return boolean
 function Unit:shadows_disabled() end
 
@@ -470,7 +487,7 @@ function Unit:shadows_disabled() end
 function Unit:slot() end
 
 ---Returns the unit's sound extension
----@return table?
+---@return PlayerSound|CopSound|BossSound|CivilianHeisterSound|SafehouseNPCSound|TeamAISound|nil
 function Unit:sound() end
 
 ---Returns the unit's sound source
@@ -486,7 +503,7 @@ function Unit:switch_body_on(...) end
 function Unit:switch_body_on_with_no_velocity(...) end
 
 ---Returns the unit's timer
----@return table?
+---@return Timer|nil
 function Unit:timer() end
 
 ---Returns the unit's timer GUI extension
@@ -501,7 +518,7 @@ function Unit:type() end
 ---@return table?
 function Unit:unit_data() end
 
----Unlinks the unit from it's parent unit
+---Unlinks the unit from its parent unit
 function Unit:unlink() end
 
 function Unit:update_render_templates(...) end
@@ -510,15 +527,20 @@ function Unit:updated(...) end
 
 function Unit:vehicle(...) end
 
-function Unit:velocity(...) end
+---Returns the unit's current velocity
+---@return Vector3
+function Unit:velocity() end
 
 function Unit:visibility(...) end
 
----Returns wether the unit is visible or not
+---Returns whether the unit is visible or not
 ---@return boolean
 function Unit:visible() end
 
-function Unit:warp_to(...) end
+---Warps the unit to the specified position with the specified rotation
+---@param rot Rotation
+---@param pos Vector3
+function Unit:warp_to(rot, pos) end
 
 function Unit:warp_to_floor(...) end
 

@@ -21,7 +21,7 @@ function PlayerCamera:spawn_camera_unit() end
 ---@return unknown
 function PlayerCamera:camera_object() end
 
----@return unknown
+---@return Unit
 function PlayerCamera:camera_unit() end
 
 ---@return unknown
@@ -95,34 +95,32 @@ function PlayerCamera:set_default_listener_object() end
 ---@return unknown
 function PlayerCamera:set_listener_object(object) end
 
----@return unknown
+---@return Vector3
 function PlayerCamera:position() end
 
----@return unknown
+---@return Rotation
 function PlayerCamera:rotation() end
 
----@return unknown
+---@return Vector3
 function PlayerCamera:forward() end
 
----@return unknown
+---@return Vector3
 function PlayerCamera:right() end
 
----@return unknown
+---@return Vector3
 function PlayerCamera:position_with_shake() end
 
 ---@param reticle_obj any
----@return unknown
+---@return Vector3
 function PlayerCamera:forward_with_shake_toward_reticle(reticle_obj) end
 
----@param pos any
----@return unknown
+---@param pos Vector3
 function PlayerCamera:set_position(pos) end
 
 ---@return unknown
 function PlayerCamera:update_transform() end
 
----@param rot any
----@return unknown
+---@param rot Rotation
 function PlayerCamera:set_rotation(rot) end
 
 ---@param t any
@@ -131,8 +129,7 @@ function PlayerCamera:set_rotation(rot) end
 ---@return unknown
 function PlayerCamera:set_timed_locked_look_dir(t, yaw, pitch) end
 
----@param fov_value any
----@return unknown
+---@param fov_value number
 function PlayerCamera:set_FOV(fov_value) end
 
 ---@return unknown

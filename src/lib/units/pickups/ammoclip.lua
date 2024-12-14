@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AmmoClip : Pickup
+---@field super Pickup
 ---@field new fun(self, ...) : AmmoClip
 AmmoClip = {}
 

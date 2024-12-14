@@ -116,6 +116,7 @@ function PrePlanningPoint:mouse_pressed(x, y) end
 function PrePlanningPoint:mouse_released(x, y) end
 
 ---@class PrePlanningCustomPoint : PrePlanningPoint
+---@field super PrePlanningPoint
 ---@field new fun(self, ...) : PrePlanningCustomPoint
 PrePlanningCustomPoint = {}
 

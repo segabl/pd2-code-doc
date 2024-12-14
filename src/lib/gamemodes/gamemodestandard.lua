@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GamemodeStandard : Gamemode
+---@field super Gamemode
 ---@field new fun(self, ...) : GamemodeStandard
 GamemodeStandard = {}
 

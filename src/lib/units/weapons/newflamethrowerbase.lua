@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NewFlamethrowerBase : NewRaycastWeaponBase
+---@field super NewRaycastWeaponBase
 ---@field new fun(self, ...) : NewFlamethrowerBase
 NewFlamethrowerBase = {}
 

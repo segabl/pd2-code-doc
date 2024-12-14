@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementClock : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementClock
 ElementClock = {}
 

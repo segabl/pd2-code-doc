@@ -7,6 +7,7 @@
 function RecentMilestoneItem:init(parent, data, black_bg) end
 
 ---@class AchievementMilestoneRewardGui : GrowPanel
+---@field super GrowPanel
 ---@field new fun(self, ...) : AchievementMilestoneRewardGui
 AchievementMilestoneRewardGui = {}
 

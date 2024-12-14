@@ -1,10 +1,11 @@
 ---@meta
 
 ---@class CivilianLogicTrade : CopLogicTrade
+---@field super CopLogicTrade
 ---@field new fun(self, ...) : CivilianLogicTrade
 CivilianLogicTrade = {}
 
----@param data any
+---@param data logicdata
 ---@param my_data any
 ---@param end_rot any
 ---@return unknown

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreCollisionCameraNode.CollisionCameraNode : CoreTransformCameraNode.TransformCameraNode
+---@field super CoreTransformCameraNode.TransformCameraNode
 ---@field new fun(self, ...) : CoreCollisionCameraNode.CollisionCameraNode
 CollisionCameraNode = {}
 

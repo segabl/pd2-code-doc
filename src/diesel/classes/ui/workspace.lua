@@ -113,7 +113,7 @@ function Workspace:show() end
 ---@return integer w, integer h
 function Workspace:size() end
 
----Returns wether the workspace is visible
+---Returns whether the workspace is visible
 ---@return boolean
 function Workspace:visible() end
 

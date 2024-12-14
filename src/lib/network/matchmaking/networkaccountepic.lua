@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NetworkAccountEPIC : NetworkAccount
+---@field super NetworkAccount
 ---@field new fun(self, ...) : NetworkAccountEPIC
 NetworkAccountEPIC = {}
 

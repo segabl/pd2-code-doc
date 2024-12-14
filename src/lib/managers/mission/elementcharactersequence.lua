@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementCharacterSequence : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementCharacterSequence
 ElementCharacterSequence = {}
 

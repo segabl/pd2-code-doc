@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierExplosionImmunity : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierExplosionImmunity
 ModifierExplosionImmunity = {}
 

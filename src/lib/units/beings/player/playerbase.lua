@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : PlayerBase
 PlayerBase = {}
 

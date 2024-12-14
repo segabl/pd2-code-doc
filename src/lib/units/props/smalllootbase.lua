@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SmallLootBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : SmallLootBase
 SmallLootBase = {}
 

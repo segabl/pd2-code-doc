@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TeamAIBrain : CopBrain
+---@field super CopBrain
 ---@field new fun(self, ...) : TeamAIBrain
 TeamAIBrain = {}
 

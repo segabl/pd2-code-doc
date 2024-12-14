@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TeamAIBase : CopBase
+---@field super CopBase
 ---@field new fun(self, ...) : TeamAIBase
 TeamAIBase = {}
 

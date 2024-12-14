@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TeamAISound : PlayerSound
+---@field super PlayerSound
 ---@field new fun(self, ...) : TeamAISound
 TeamAISound = {}
 

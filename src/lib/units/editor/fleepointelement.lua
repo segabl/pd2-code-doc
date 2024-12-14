@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FleePointElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : FleePointElement
 FleePointElement = {}
 

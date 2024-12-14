@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IncendiaryBurstGrenade : FragGrenade
+---@field super FragGrenade
 ---@field new fun(self, ...) : IncendiaryBurstGrenade
 IncendiaryBurstGrenade = {}
 

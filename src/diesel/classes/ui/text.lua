@@ -40,7 +40,7 @@ function Text:line_breaks() end
 ---@return number
 function Text:line_height() end
 
----Returns wether the text is displayed in monospace
+---Returns whether the text is displayed in monospace
 function Text:monospace() end
 
 ---Returns the effective number of lines in the text
@@ -93,7 +93,7 @@ function Text:set_font_size(s) end
 ---@param k number
 function Text:set_kern(k) end
 
----Sets wether the text should be displayed in monospace or not  
+---Sets whether the text should be displayed in monospace or not  
 ---In monospace each letter takes up the same amount of space, independent of its shape
 ---@param state boolean
 function Text:set_monospace(state) end

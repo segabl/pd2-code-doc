@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CustomSafehouseGuiPageMap : CustomSafehouseGuiPage
+---@field super CustomSafehouseGuiPage
 ---@field new fun(self, ...) : CustomSafehouseGuiPageMap
 CustomSafehouseGuiPageMap = {}
 
@@ -365,6 +366,7 @@ function CustomSafehouseMapPoint:update_help_text(tier_id) end
 function CustomSafehouseMapPoint:set_zoom_value(zoom, alpha_limit) end
 
 ---@class CustomSafehouseGuiRaidButton : CustomSafehouseGuiItem
+---@field super CustomSafehouseGuiItem
 ---@field new fun(self, ...) : CustomSafehouseGuiRaidButton
 CustomSafehouseGuiRaidButton = {}
 

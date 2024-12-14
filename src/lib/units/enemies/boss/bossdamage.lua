@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BossDamage : CopDamage
+---@field super CopDamage
 ---@field new fun(self, ...) : BossDamage
 BossDamage = {}
 

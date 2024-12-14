@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuNodeAchievementFilterCreator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuNodeAchievementFilterCreator
 MenuNodeAchievementFilterCreator = {}
 
@@ -23,6 +24,7 @@ function MenuNodeAchievementFilterCreator:create_divider(node, params) end
 function MenuNodeAchievementFilterCreator:create_tags_option(node, category_name, text_func, sort_func) end
 
 ---@class MenuNodeAchievementFilterGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeAchievementFilterGui
 MenuNodeAchievementFilterGui = {}
 

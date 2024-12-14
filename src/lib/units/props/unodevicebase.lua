@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class UnoDeviceBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : UnoDeviceBase
 UnoDeviceBase = {}
 

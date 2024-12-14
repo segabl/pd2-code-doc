@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class RumbleManager.RumbleManager : CoreRumbleManager.RumbleManager
+---@field super CoreRumbleManager.RumbleManager
 ---@field new fun(self, ...) : RumbleManager.RumbleManager
 RumbleManager = {}
 

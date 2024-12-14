@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NpcVehicleStatePlayerProximity : NpcBaseVehicleState
+---@field super NpcBaseVehicleState
 ---@field new fun(self, ...) : NpcVehicleStatePlayerProximity
 NpcVehicleStatePlayerProximity = {}
 

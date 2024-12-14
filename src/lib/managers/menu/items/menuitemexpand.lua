@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemExpand : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemExpand
 MenuItemExpand = {}
 
@@ -131,6 +132,7 @@ function MenuItemExpand:toggle() end
 function MenuItemExpand:is_parent_to_item(child_item) end
 
 ---@class MenuItemExpandAction : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemExpandAction
 MenuItemExpandAction = {}
 

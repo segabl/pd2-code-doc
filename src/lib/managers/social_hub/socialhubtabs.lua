@@ -23,6 +23,7 @@ function SocialHubTab:on_user_item_pressed(action, user_id) end
 function SocialHubTab:on_user_lobby_pressed(first, second, third) end
 
 ---@class SocialHubFriendTab : SocialHubTab
+---@field super SocialHubTab
 ---@field new fun(self, ...) : SocialHubFriendTab
 SocialHubFriendTab = {}
 
@@ -90,6 +91,7 @@ function SocialHubFriendTab:move_right() end
 function SocialHubFriendTab:confirm_pressed() end
 
 ---@class SocialHubInviteTab : SocialHubTab
+---@field super SocialHubTab
 ---@field new fun(self, ...) : SocialHubInviteTab
 SocialHubInviteTab = {}
 
@@ -173,6 +175,7 @@ function SocialHubInviteTab:special_btn_pressed(button) end
 function SocialHubInviteTab:invite_tab_valid() end
 
 ---@class SocialHubBlockedTab : SocialHubTab
+---@field super SocialHubTab
 ---@field new fun(self, ...) : SocialHubBlockedTab
 SocialHubBlockedTab = {}
 

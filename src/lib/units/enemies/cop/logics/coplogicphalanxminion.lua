@@ -1,26 +1,27 @@
 ---@meta
 
 ---@class CopLogicPhalanxMinion : CopLogicBase
+---@field super CopLogicBase
 ---@field new fun(self, ...) : CopLogicPhalanxMinion
 CopLogicPhalanxMinion = {}
 
----@param data any
----@param new_logic_name any
+---@param data logicdata
+---@param new_logic_name string
 ---@param enter_params any
 ---@return unknown
 function CopLogicPhalanxMinion.enter(data, new_logic_name, enter_params) end
 
----@param data any
----@param new_logic_name any
+---@param data logicdata
+---@param new_logic_name string
 ---@param enter_params any
 ---@return unknown
 function CopLogicPhalanxMinion.exit(data, new_logic_name, enter_params) end
 
----@param data any
+---@param data logicdata
 ---@return unknown
 function CopLogicPhalanxMinion.queued_update(data) end
 
----@param data any
+---@param data logicdata
 ---@param my_data any
 ---@return unknown
 function CopLogicPhalanxMinion.chk_should_turn(data, my_data) end
@@ -39,21 +40,21 @@ function CopLogicPhalanxMinion.chk_should_reposition() end
 ---@return unknown
 function CopLogicPhalanxMinion.breakup(remote_call) end
 
----@param data any
+---@param data logicdata
 ---@return unknown
 function CopLogicPhalanxMinion._upd_enemy_detection(data) end
 
----@param data any
+---@param data logicdata
 ---@param my_data any
 ---@return unknown
 function CopLogicPhalanxMinion._upd_turn_outwards(data, my_data) end
 
----@param data any
+---@param data logicdata
 ---@param action any
 ---@return unknown
 function CopLogicPhalanxMinion.action_complete_clbk(data, action) end
 
----@param data any
+---@param data logicdata
 ---@param objective any
 ---@return unknown
 function CopLogicPhalanxMinion.is_available_for_assignment(data, objective) end

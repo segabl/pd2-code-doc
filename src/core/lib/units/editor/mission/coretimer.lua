@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreTimerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreTimerUnitElement
 CoreTimerUnitElement = {}
 
 ---@class TimerUnitElement : CoreTimerUnitElement
+---@field super CoreTimerUnitElement
 ---@field new fun(self, ...) : TimerUnitElement
 TimerUnitElement = {}
 
@@ -69,10 +71,12 @@ function CoreTimerUnitElement:_remove_unit_filter(unit) end
 function CoreTimerUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreTimerOperatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreTimerOperatorUnitElement
 CoreTimerOperatorUnitElement = {}
 
 ---@class TimerOperatorUnitElement : CoreTimerOperatorUnitElement
+---@field super CoreTimerOperatorUnitElement
 ---@field new fun(self, ...) : TimerOperatorUnitElement
 TimerOperatorUnitElement = {}
 
@@ -111,10 +115,12 @@ function CoreTimerOperatorUnitElement:add_triggers(vc) end
 function CoreTimerOperatorUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreTimerTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreTimerTriggerUnitElement
 CoreTimerTriggerUnitElement = {}
 
 ---@class TimerTriggerUnitElement : CoreTimerTriggerUnitElement
+---@field super CoreTimerTriggerUnitElement
 ---@field new fun(self, ...) : TimerTriggerUnitElement
 TimerTriggerUnitElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerTurret : PlayerStandard
+---@field super PlayerStandard
 ---@field new fun(self, ...) : PlayerTurret
 PlayerTurret = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementInstance.ElementInstanceInput : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementInstance.ElementInstanceInput
 ElementInstanceInput = {}
 
@@ -17,6 +18,7 @@ function ElementInstanceInput:client_on_executed(...) end
 function ElementInstanceInput:on_executed(instigator) end
 
 ---@class CoreElementInstance.ElementInstanceOutput : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementInstance.ElementInstanceOutput
 ElementInstanceOutput = {}
 
@@ -36,6 +38,7 @@ function ElementInstanceOutput:client_on_executed(...) end
 function ElementInstanceOutput:on_executed(instigator) end
 
 ---@class CoreElementInstance.ElementInstanceInputEvent : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementInstance.ElementInstanceInputEvent
 ElementInstanceInputEvent = {}
 
@@ -55,6 +58,7 @@ function ElementInstanceInputEvent:client_on_executed(...) end
 function ElementInstanceInputEvent:on_executed(instigator) end
 
 ---@class CoreElementInstance.ElementInstanceOutputEvent : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementInstance.ElementInstanceOutputEvent
 ElementInstanceOutputEvent = {}
 
@@ -71,6 +75,7 @@ function ElementInstanceOutputEvent:client_on_executed(...) end
 function ElementInstanceOutputEvent:on_executed(instigator) end
 
 ---@class CoreElementInstance.ElementInstancePoint : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementInstance.ElementInstancePoint
 ElementInstancePoint = {}
 
@@ -94,10 +99,12 @@ function ElementInstancePoint:save(data) end
 function ElementInstancePoint:load(data) end
 
 ---@class CoreElementInstance.ElementInstanceParams : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementInstance.ElementInstanceParams
 ElementInstanceParams = {}
 
 ---@class CoreElementInstance.ElementInstanceSetParams : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementInstance.ElementInstanceSetParams
 ElementInstanceSetParams = {}
 

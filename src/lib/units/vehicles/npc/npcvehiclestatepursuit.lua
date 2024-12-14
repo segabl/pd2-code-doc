@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NpcVehicleStatePursuit : NpcBaseVehicleState
+---@field super NpcBaseVehicleState
 ---@field new fun(self, ...) : NpcVehicleStatePursuit
 NpcVehicleStatePursuit = {}
 

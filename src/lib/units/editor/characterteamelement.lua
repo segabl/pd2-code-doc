@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CharacterTeamElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CharacterTeamElement
 CharacterTeamElement = {}
 

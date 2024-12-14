@@ -29,7 +29,7 @@ function NetworkManager:dispatch_event(...) end
 ---@return unknown
 function NetworkManager:ps3_determine_voice(lan) end
 
----@return unknown
+---@return ClientNetworkSession|HostNetworkSession
 function NetworkManager:session() end
 
 ---@return unknown

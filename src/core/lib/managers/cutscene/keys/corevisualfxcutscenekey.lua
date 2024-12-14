@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreVisualFXCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreVisualFXCutsceneKey
 CoreVisualFXCutsceneKey = {}
 

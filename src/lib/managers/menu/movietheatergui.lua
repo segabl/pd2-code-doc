@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MovieListItem : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : MovieListItem
 MovieListItem = {}
 
@@ -22,6 +23,7 @@ function MovieListItem:_selected_changed(state) end
 function MovieListItem:mouse_clicked(o, button, x, y) end
 
 ---@class MovieTheaterGui : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : MovieTheaterGui
 MovieTheaterGui = {}
 

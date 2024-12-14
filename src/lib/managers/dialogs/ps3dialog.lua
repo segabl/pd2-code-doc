@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.PS3Dialog : SystemMenuManager.Dialog
+---@field super SystemMenuManager.Dialog
 ---@field new fun(self, ...) : SystemMenuManager.PS3Dialog
 PS3Dialog = {}
 

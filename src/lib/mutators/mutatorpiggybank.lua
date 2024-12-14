@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MutatorPiggyBank : BaseMutator
+---@field super BaseMutator
 ---@field new fun(self, ...) : MutatorPiggyBank
 MutatorPiggyBank = {}
 

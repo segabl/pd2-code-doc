@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementJobValue : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementJobValue
 ElementJobValue = {}
 
@@ -17,6 +18,7 @@ function ElementJobValue:client_on_executed(...) end
 function ElementJobValue:on_executed(instigator) end
 
 ---@class ElementJobValueFilter : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementJobValueFilter
 ElementJobValueFilter = {}
 
@@ -37,6 +39,7 @@ function ElementJobValueFilter:on_executed(instigator) end
 function ElementJobValueFilter:_check_value(value) end
 
 ---@class ElementApplyJobValue : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementApplyJobValue
 ElementApplyJobValue = {}
 

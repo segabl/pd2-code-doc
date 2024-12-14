@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementTimer.ElementTimer : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementTimer.ElementTimer
 ElementTimer = {}
 
@@ -87,6 +88,7 @@ function ElementTimer:remove_trigger(id) end
 function ElementTimer:enable_trigger(id) end
 
 ---@class CoreElementTimer.ElementTimerOperator : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementTimer.ElementTimerOperator
 ElementTimerOperator = {}
 
@@ -103,6 +105,7 @@ function ElementTimerOperator:client_on_executed(...) end
 function ElementTimerOperator:on_executed(instigator) end
 
 ---@class CoreElementTimer.ElementTimerTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementTimer.ElementTimerTrigger
 ElementTimerTrigger = {}
 

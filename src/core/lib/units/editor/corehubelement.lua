@@ -5,6 +5,7 @@
 CoreHubElement = {}
 
 ---@class HubElement : CoreHubElement
+---@field super CoreHubElement
 ---@field new fun(self, ...) : HubElement
 HubElement = {}
 

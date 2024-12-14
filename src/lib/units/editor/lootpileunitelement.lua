@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class LootPileUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : LootPileUnitElement
 LootPileUnitElement = {}
 

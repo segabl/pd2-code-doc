@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TripMineBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : TripMineBase
 TripMineBase = {}
 

@@ -26,6 +26,7 @@ function WarpCommonState:transition() end
 function WarpCommonState:_setup_warp(warp_type, target, cost) end
 
 ---@class WarpTargetState : WarpCommonState
+---@field super WarpCommonState
 ---@field new fun(self, ...) : WarpTargetState
 WarpTargetState = {}
 
@@ -48,6 +49,7 @@ function WarpTargetState:update(t, dt) end
 function WarpTargetState:transition() end
 
 ---@class WarpLadderState : WarpCommonState
+---@field super WarpCommonState
 ---@field new fun(self, ...) : WarpLadderState
 WarpLadderState = {}
 
@@ -62,6 +64,7 @@ function WarpLadderState:ladder_unit() end
 function WarpLadderState:transition() end
 
 ---@class WarpWarpingState : WarpCommonState
+---@field super WarpCommonState
 ---@field new fun(self, ...) : WarpWarpingState
 WarpWarpingState = {}
 
@@ -73,6 +76,7 @@ function WarpWarpingState:init(args) end
 function WarpWarpingState:transition() end
 
 ---@class WarpIdleState : WarpCommonState
+---@field super WarpCommonState
 ---@field new fun(self, ...) : WarpIdleState
 WarpIdleState = {}
 

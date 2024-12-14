@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SpecialEquipmentPickup : Pickup
+---@field super Pickup
 ---@field new fun(self, ...) : SpecialEquipmentPickup
 SpecialEquipmentPickup = {}
 

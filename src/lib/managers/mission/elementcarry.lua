@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementCarry : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementCarry
 ElementCarry = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ConnectionNetworkHandler : BaseNetworkHandler
+---@field super BaseNetworkHandler
 ---@field new fun(self, ...) : ConnectionNetworkHandler
 ConnectionNetworkHandler = {}
 

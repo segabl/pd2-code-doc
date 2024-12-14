@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerStateTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : PlayerStateTriggerUnitElement
 PlayerStateTriggerUnitElement = {}
 

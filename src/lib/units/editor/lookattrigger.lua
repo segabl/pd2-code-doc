@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class LookAtTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : LookAtTriggerUnitElement
 LookAtTriggerUnitElement = {}
 

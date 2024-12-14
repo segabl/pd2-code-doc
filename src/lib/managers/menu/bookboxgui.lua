@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BookBoxGui : TextBoxGui
+---@field super TextBoxGui
 ---@field new fun(self, ...) : BookBoxGui
 BookBoxGui = {}
 

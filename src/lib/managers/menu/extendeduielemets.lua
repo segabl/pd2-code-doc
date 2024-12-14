@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GrowPanel : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : GrowPanel
 GrowPanel = {}
 
@@ -37,6 +38,7 @@ function GrowPanel:_set_ensure_size(w, h) end
 function GrowPanel:row_w() end
 
 ---@class ScrollGrowPanel : GrowPanel
+---@field super GrowPanel
 ---@field new fun(self, ...) : ScrollGrowPanel
 ScrollGrowPanel = {}
 
@@ -68,6 +70,7 @@ function ScrollablePanelExt:scrollbar_padding() end
 function ScrollablePanelExt:set_canvas_size(w, h) end
 
 ---@class ScrollableList : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : ScrollableList
 ScrollableList = {}
 
@@ -150,6 +153,7 @@ function ScrollableList:scroll_to_show_item_at_world(item, world_y) end
 function ScrollableList:add_lines_and_static_down_indicator(layer) end
 
 ---@class ScrollItemList : ScrollableList
+---@field super ScrollableList
 ---@field new fun(self, ...) : ScrollItemList
 ScrollItemList = {}
 
@@ -249,6 +253,7 @@ function ScrollItemList:place_items_in_order(mod_placer, keep_selection, reverse
 function ScrollItemList:filter_items(filter_function, mod_start, keep_selection) end
 
 ---@class HorizontalScrollItemList : ScrollItemList
+---@field super ScrollItemList
 ---@field new fun(self, ...) : HorizontalScrollItemList
 HorizontalScrollItemList = {}
 
@@ -283,6 +288,7 @@ function HorizontalScrollItemList:scroll_to_show_item_at_world(item, world_x) en
 function HorizontalScrollItemList:sort_items(sort_function, mod_placer, keep_selection) end
 
 ---@class ListItem : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : ListItem
 ListItem = {}
 
@@ -299,6 +305,7 @@ function ListItem:_selected_changed(state) end
 function ListItem:set_selected(state) end
 
 ---@class BaseButton : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : BaseButton
 BaseButton = {}
 
@@ -343,6 +350,7 @@ function BaseButton:mouse_clicked(o, button, x, y) end
 function BaseButton:special_btn_pressed(button) end
 
 ---@class TextButton : BaseButton
+---@field super BaseButton
 ---@field new fun(self, ...) : TextButton
 TextButton = {}
 
@@ -366,6 +374,7 @@ function TextButton:_hover_changed(hover) end
 function TextButton:set_text(text) end
 
 ---@class IconButton : BaseButton
+---@field super BaseButton
 ---@field new fun(self, ...) : IconButton
 IconButton = {}
 
@@ -391,6 +400,7 @@ function IconButton:_hover_changed(hover) end
 function IconButton:_enabled_changed(state) end
 
 ---@class ToggleButton : BaseButton
+---@field super BaseButton
 ---@field new fun(self, ...) : ToggleButton
 ToggleButton = {}
 
@@ -427,6 +437,7 @@ function ToggleButton:_hover_changed(hover) end
 function ToggleButton:_enabled_changed(state) end
 
 ---@class CompositeButton : BaseButton
+---@field super BaseButton
 ---@field new fun(self, ...) : CompositeButton
 CompositeButton = {}
 
@@ -453,6 +464,7 @@ function CompositeButton:_enabled_changed(state) end
 function CompositeButton:register_child(item) end
 
 ---@class ProgressBar : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : ProgressBar
 ProgressBar = {}
 
@@ -475,6 +487,7 @@ function ProgressBar:set_progress(v) end
 function ProgressBar:set_max(v, dont_scale_current) end
 
 ---@class TextProgressBar : ProgressBar
+---@field super ProgressBar
 ---@field new fun(self, ...) : TextProgressBar
 TextProgressBar = {}
 
@@ -517,6 +530,7 @@ function SpecialButtonBinding:special_btn_pressed(button) end
 function SpecialButtonBinding:set_enabled(state) end
 
 ---@class ButtonLegendsBar : GrowPanel
+---@field super GrowPanel
 ---@field new fun(self, ...) : ButtonLegendsBar
 ButtonLegendsBar = {}
 
@@ -555,6 +569,7 @@ function ButtonLegendsBar:set_item_enabled(id_or_pos, state) end
 function ButtonLegendsBar:_update_items() end
 
 ---@class TextLegendsBar : ButtonLegendsBar
+---@field super ButtonLegendsBar
 ---@field new fun(self, ...) : TextLegendsBar
 TextLegendsBar = {}
 

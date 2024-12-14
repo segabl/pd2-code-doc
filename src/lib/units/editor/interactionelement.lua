@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class InteractionUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : InteractionUnitElement
 InteractionUnitElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NewHeistsGui : MenuGuiComponent
+---@field super MenuGuiComponent
 ---@field new fun(self, ...) : NewHeistsGui
 NewHeistsGui = {}
 

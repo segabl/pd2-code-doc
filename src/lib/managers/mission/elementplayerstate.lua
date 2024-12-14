@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementPlayerState : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementPlayerState
 ElementPlayerState = {}
 
@@ -33,6 +34,7 @@ function ElementPlayerState:on_executed(instigator, alternative, skip_execute_on
 function ElementPlayerState:set_state(instigator) end
 
 ---@class ElementPlayerStateTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementPlayerStateTrigger
 ElementPlayerStateTrigger = {}
 

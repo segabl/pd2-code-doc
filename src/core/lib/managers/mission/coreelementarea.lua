@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementArea.ElementAreaTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementArea.ElementAreaTrigger
 ElementAreaTrigger = {}
 
@@ -121,6 +122,7 @@ function ElementAreaTrigger:save(data) end
 function ElementAreaTrigger:load(data) end
 
 ---@class CoreElementArea.ElementAreaOperator : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementArea.ElementAreaOperator
 ElementAreaOperator = {}
 
@@ -137,6 +139,7 @@ function ElementAreaOperator:client_on_executed(...) end
 function ElementAreaOperator:on_executed(instigator) end
 
 ---@class CoreElementArea.ElementAreaReportTrigger : ElementAreaTrigger
+---@field super ElementAreaTrigger
 ---@field new fun(self, ...) : CoreElementArea.ElementAreaReportTrigger
 ElementAreaReportTrigger = {}
 

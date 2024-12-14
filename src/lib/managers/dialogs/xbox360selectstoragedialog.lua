@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.Xbox360SelectStorageDialog : SystemMenuManager.SelectStorageDialog
+---@field super SystemMenuManager.SelectStorageDialog
 ---@field new fun(self, ...) : SystemMenuManager.Xbox360SelectStorageDialog
 Xbox360SelectStorageDialog = {}
 

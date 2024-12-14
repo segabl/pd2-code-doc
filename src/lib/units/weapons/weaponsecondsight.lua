@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class WeaponSecondSight : WeaponGadgetBase
+---@field super WeaponGadgetBase
 ---@field new fun(self, ...) : WeaponSecondSight
 WeaponSecondSight = {}
 

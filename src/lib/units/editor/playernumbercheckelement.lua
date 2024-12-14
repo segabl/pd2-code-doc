@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerNumberCheckElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : PlayerNumberCheckElement
 PlayerNumberCheckElement = {}
 

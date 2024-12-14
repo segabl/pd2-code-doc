@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementEnemyPreferedAdd : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementEnemyPreferedAdd
 ElementEnemyPreferedAdd = {}
 
@@ -22,6 +23,7 @@ function ElementEnemyPreferedAdd:remove() end
 function ElementEnemyPreferedAdd:on_executed(instigator) end
 
 ---@class ElementEnemyPreferedRemove : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementEnemyPreferedRemove
 ElementEnemyPreferedRemove = {}
 

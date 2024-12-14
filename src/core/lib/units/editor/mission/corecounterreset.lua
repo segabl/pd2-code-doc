@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreCounterResetUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreCounterResetUnitElement
 CoreCounterResetUnitElement = {}
 
 ---@class CounterResetUnitElement : CoreCounterResetUnitElement
+---@field super CoreCounterResetUnitElement
 ---@field new fun(self, ...) : CounterResetUnitElement
 CounterResetUnitElement = {}
 

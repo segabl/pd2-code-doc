@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class OnPressedTextButton : TextButton
+---@field super TextButton
 ---@field new fun(self, ...) : OnPressedTextButton
 OnPressedTextButton = {}
 
@@ -20,6 +21,7 @@ function OnPressedTextButton:mouse_pressed(button, x, y) end
 function AchievementRecentListItem:init(parent, item, black_bg) end
 
 ---@class AchievementRecentListGui : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : AchievementRecentListGui
 AchievementRecentListGui = {}
 

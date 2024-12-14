@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ArrowBase : ProjectileBase
+---@field super ProjectileBase
 ---@field new fun(self, ...) : ArrowBase
 ArrowBase = {}
 

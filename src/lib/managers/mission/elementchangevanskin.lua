@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementChangeVanSkin : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementChangeVanSkin
 ElementChangeVanSkin = {}
 

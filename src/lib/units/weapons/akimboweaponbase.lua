@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AkimboWeaponBase : NewRaycastWeaponBase
+---@field super NewRaycastWeaponBase
 ---@field new fun(self, ...) : AkimboWeaponBase
 AkimboWeaponBase = {}
 
@@ -123,6 +124,7 @@ function AkimboWeaponBase:_sound_autofire_start(...) end
 function AkimboWeaponBase:_sound_singleshot() end
 
 ---@class NPCAkimboWeaponBase : NewNPCRaycastWeaponBase
+---@field super NewNPCRaycastWeaponBase
 ---@field new fun(self, ...) : NPCAkimboWeaponBase
 NPCAkimboWeaponBase = {}
 
@@ -235,6 +237,7 @@ function NPCAkimboWeaponBase:_sound_autofire_start(...) end
 function NPCAkimboWeaponBase:_sound_singleshot() end
 
 ---@class EnemyAkimboWeaponBase : NPCRaycastWeaponBase
+---@field super NPCRaycastWeaponBase
 ---@field new fun(self, ...) : EnemyAkimboWeaponBase
 EnemyAkimboWeaponBase = {}
 

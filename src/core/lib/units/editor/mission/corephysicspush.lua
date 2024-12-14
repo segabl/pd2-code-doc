@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CorePhysicsPushUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CorePhysicsPushUnitElement
 CorePhysicsPushUnitElement = {}
 
 ---@class PhysicsPushUnitElement : CorePhysicsPushUnitElement
+---@field super CorePhysicsPushUnitElement
 ---@field new fun(self, ...) : PhysicsPushUnitElement
 PhysicsPushUnitElement = {}
 

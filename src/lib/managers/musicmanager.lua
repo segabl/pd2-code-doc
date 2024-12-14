@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MusicManager : CoreMusicManager
+---@field super CoreMusicManager
 ---@field new fun(self, ...) : MusicManager
 MusicManager = {}
 

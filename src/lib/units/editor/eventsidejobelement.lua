@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EventSideJobAwardElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : EventSideJobAwardElement
 EventSideJobAwardElement = {}
 
@@ -18,6 +19,7 @@ function EventSideJobAwardElement:_build_panel(panel, panel_sizer) end
 function EventSideJobAwardElement:set_element_data(data) end
 
 ---@class EventSideJobFilterElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : EventSideJobFilterElement
 EventSideJobFilterElement = {}
 

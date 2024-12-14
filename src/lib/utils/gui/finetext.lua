@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FineText : GUIObjectWrapper
+---@field super GUIObjectWrapper
 ---@field new fun(self, ...) : FineText
 FineText = {}
 

@@ -61,6 +61,7 @@ function EnvironmentAreaManager:add_block() end
 function EnvironmentAreaManager:remove_block() end
 
 ---@class CoreEnvironmentAreaManager.EnvironmentArea : CoreShapeManager.ShapeBox
+---@field super CoreShapeManager.ShapeBox
 ---@field new fun(self, ...) : CoreEnvironmentAreaManager.EnvironmentArea
 EnvironmentArea = {}
 

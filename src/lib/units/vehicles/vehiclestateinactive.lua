@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class VehicleStateInactive : BaseVehicleState
+---@field super BaseVehicleState
 ---@field new fun(self, ...) : VehicleStateInactive
 VehicleStateInactive = {}
 

@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreRumbleHubElement : HubElement
+---@field super HubElement
 ---@field new fun(self, ...) : CoreRumbleHubElement
 CoreRumbleHubElement = {}
 
 ---@class RumbleHubElement : CoreRumbleHubElement
+---@field super CoreRumbleHubElement
 ---@field new fun(self, ...) : RumbleHubElement
 RumbleHubElement = {}
 

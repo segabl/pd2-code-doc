@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TeammateCommentUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : TeammateCommentUnitElement
 TeammateCommentUnitElement = {}
 

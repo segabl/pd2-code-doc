@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementHint : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementHint
 ElementHint = {}
 

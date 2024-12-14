@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class UserCodeMenuComponent : LobbyCodeMenuComponent
+---@field super LobbyCodeMenuComponent
 ---@field new fun(self, ...) : UserCodeMenuComponent
 UserCodeMenuComponent = {}
 

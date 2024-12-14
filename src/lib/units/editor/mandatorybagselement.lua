@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MandatoryBagsUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : MandatoryBagsUnitElement
 MandatoryBagsUnitElement = {}
 

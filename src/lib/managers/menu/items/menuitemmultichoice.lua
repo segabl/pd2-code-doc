@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemMultiChoice : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemMultiChoice
 MenuItemMultiChoice = {}
 
@@ -101,6 +102,7 @@ function MenuItemMultiChoice:fade_row_item(node, row_item, mouse_over) end
 function MenuItemMultiChoice:_layout(node, row_item) end
 
 ---@class MenuItemMultiChoiceWithIcon : MenuItemMultiChoice
+---@field super MenuItemMultiChoice
 ---@field new fun(self, ...) : MenuItemMultiChoiceWithIcon
 MenuItemMultiChoiceWithIcon = {}
 

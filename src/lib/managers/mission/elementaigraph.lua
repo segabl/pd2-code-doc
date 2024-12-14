@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementAIGraph : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementAIGraph
 ElementAIGraph = {}
 

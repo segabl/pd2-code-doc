@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class DisableShoutElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : DisableShoutElement
 DisableShoutElement = {}
 

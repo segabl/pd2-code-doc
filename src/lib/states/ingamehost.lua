@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameHost : GameState
+---@field super GameState
 ---@field new fun(self, ...) : IngameHost
 IngameHost = {}
 

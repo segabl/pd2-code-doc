@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CharacterSequenceElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CharacterSequenceElement
 CharacterSequenceElement = {}
 

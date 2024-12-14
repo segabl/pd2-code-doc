@@ -25,7 +25,7 @@ function SystemInfo:dx_version() end
 ---@return number
 function SystemInfo:gpu_power() end
 
----Returns wether the current system is a Laptop
+---Returns whether the current system is a Laptop
 ---@return boolean
 function SystemInfo:is_laptop(...) end
 
@@ -53,7 +53,7 @@ function SystemInfo:power_src() end
 ---@return Idstring
 function SystemInfo:renderer() end
 
----Returns wether SLI is enabled
+---Returns whether SLI is enabled
 ---@return boolean
 function SystemInfo:sli_enabled() end
 
@@ -81,11 +81,11 @@ function SystemInfo:sound_device_provider() end
 ---@return Vector3
 function SystemInfo:target_screen_resolution(...) end
 
----Returns wether the renderer is threaded
+---Returns whether the renderer is threaded
 ---@return boolean
 function SystemInfo:threaded_renderer() end
 
----Returns wether the system DirectX versioon is valid
+---Returns whether the system DirectX versioon is valid
 ---@return boolean
 function SystemInfo:valid_dx_version() end
 

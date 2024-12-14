@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementCheckDLC : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementCheckDLC
 ElementCheckDLC = {}
 

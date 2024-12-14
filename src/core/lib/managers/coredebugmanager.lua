@@ -310,6 +310,7 @@ function BaseDebug:toggle_enabled() end
 function BaseDebug:reloaded() end
 
 ---@class CoreDebugManager.FuncDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.FuncDebug
 FuncDebug = {}
 
@@ -349,6 +350,7 @@ function FuncDebug:delete(func, all) end
 function FuncDebug:remove(index) end
 
 ---@class CoreDebugManager.PosDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.PosDebug
 PosDebug = {}
 
@@ -425,6 +427,7 @@ function PosDebug:get_max_count(list_index) end
 function PosDebug:set_max_count(list_index, max_count) end
 
 ---@class CoreDebugManager.RotDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.RotDebug
 RotDebug = {}
 
@@ -480,6 +483,7 @@ function RotDebug:get_max_count(list_index) end
 function RotDebug:set_max_count(list_index, max_count) end
 
 ---@class CoreDebugManager.GUIDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.GUIDebug
 GUIDebug = {}
 
@@ -531,6 +535,7 @@ function GUIDebug:get(index) end
 function GUIDebug:set_color(index, red, green, blue, alpha) end
 
 ---@class CoreDebugManager.GraphDebug : CoreDebugManager.PosDebug
+---@field super CoreDebugManager.PosDebug
 ---@field new fun(self, ...) : CoreDebugManager.GraphDebug
 GraphDebug = {}
 
@@ -648,6 +653,7 @@ function GraphDebug:set_enabled(enabled) end
 function GraphDebug:set_visible(visible) end
 
 ---@class CoreDebugManager.HijackDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.HijackDebug
 HijackDebug = {}
 
@@ -746,6 +752,7 @@ function HijackDebug:play_machine_state(machine, state) end
 function HijackDebug:play_redirect(machine_or_unit, redirect) end
 
 ---@class CoreDebugManager.SimpleDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.SimpleDebug
 SimpleDebug = {}
 
@@ -786,6 +793,7 @@ function SimpleDebug:update(time, rel_time) end
 function SimpleDebug:clear() end
 
 ---@class CoreDebugManager.PrintDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.PrintDebug
 PrintDebug = {}
 
@@ -802,6 +810,7 @@ function PrintDebug:xml_file(file, indent, indent_string) end
 function PrintDebug:node(node, indent, indent_string) end
 
 ---@class CoreDebugManager.ProfilerDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.ProfilerDebug
 ProfilerDebug = {}
 
@@ -887,6 +896,7 @@ function ProfilerDebug:reloaded() end
 function ProfilerDebug:toggle_compare_find(slotmask, find_type, radius, length, count, bundle_count, func_name) end
 
 ---@class CoreDebugManager.MacroDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.MacroDebug
 MacroDebug = {}
 
@@ -1101,6 +1111,7 @@ function MacroDebug:toggle_endurance_damage_hook(skip_print, line_duration) end
 function MacroDebug:_hijacked_endurance_activate(option_map, endurance, env) end
 
 ---@class CoreDebugManager.MemoryDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.MemoryDebug
 MemoryDebug = {}
 
@@ -1188,6 +1199,7 @@ function MemoryDebug:add_calc_table(value, populate_map) end
 function MemoryDebug:add_calc_function(value, populate_map) end
 
 ---@class CoreDebugManager.ConsoleDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.ConsoleDebug
 ConsoleDebug = {}
 
@@ -1290,6 +1302,7 @@ function ConsoleDebug:add_scroll(scroll) end
 function ConsoleDebug:set_scroll(scroll) end
 
 ---@class CoreDebugManager.MenuDebug : CoreDebugManager.BaseDebug
+---@field super CoreDebugManager.BaseDebug
 ---@field new fun(self, ...) : CoreDebugManager.MenuDebug
 MenuDebug = {}
 

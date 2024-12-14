@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ServerStatusBoxGui : TextBoxGui
+---@field super TextBoxGui
 ---@field new fun(self, ...) : ServerStatusBoxGui
 ServerStatusBoxGui = {}
 

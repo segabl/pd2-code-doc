@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.MarketplaceDialog : SystemMenuManager.BaseDialog
+---@field super SystemMenuManager.BaseDialog
 ---@field new fun(self, ...) : SystemMenuManager.MarketplaceDialog
 MarketplaceDialog = {}
 

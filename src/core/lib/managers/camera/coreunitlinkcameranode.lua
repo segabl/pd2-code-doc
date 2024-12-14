@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreUnitLinkCameraNode.UnitLinkCameraNode : CoreTransformCameraNode.TransformCameraNode
+---@field super CoreTransformCameraNode.TransformCameraNode
 ---@field new fun(self, ...) : CoreUnitLinkCameraNode.UnitLinkCameraNode
 UnitLinkCameraNode = {}
 

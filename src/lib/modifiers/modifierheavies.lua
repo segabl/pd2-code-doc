@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierHeavies : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierHeavies
 ModifierHeavies = {}
 

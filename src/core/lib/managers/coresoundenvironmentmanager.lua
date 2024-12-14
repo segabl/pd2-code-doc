@@ -260,6 +260,7 @@ function CoreSoundEnvironmentManager:remove_environment_changed_callback(func) e
 function CoreSoundEnvironmentManager:destroy() end
 
 ---@class SoundEnvironmentArea : CoreShapeManager.ShapeBox
+---@field super CoreShapeManager.ShapeBox
 ---@field new fun(self, ...) : SoundEnvironmentArea
 SoundEnvironmentArea = {}
 
@@ -431,6 +432,7 @@ function SoundEnvironmentEmitter:draw(t, dt, r, g, b) end
 function SoundEnvironmentEmitter:destroy() end
 
 ---@class SoundEnvironmentAreaEmitter : CoreShapeManager.ShapeBoxMiddle
+---@field super CoreShapeManager.ShapeBoxMiddle
 ---@field new fun(self, ...) : SoundEnvironmentAreaEmitter
 SoundEnvironmentAreaEmitter = {}
 

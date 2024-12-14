@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreDeprecatedHubElement : HubElement
+---@field super HubElement
 ---@field new fun(self, ...) : CoreDeprecatedHubElement
 CoreDeprecatedHubElement = {}
 
 ---@class DeprecatedHubElement : CoreDeprecatedHubElement
+---@field super CoreDeprecatedHubElement
 ---@field new fun(self, ...) : DeprecatedHubElement
 DeprecatedHubElement = {}
 

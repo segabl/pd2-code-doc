@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.Xbox360FriendsDialog : SystemMenuManager.FriendsDialog
+---@field super SystemMenuManager.FriendsDialog
 ---@field new fun(self, ...) : SystemMenuManager.Xbox360FriendsDialog
 Xbox360FriendsDialog = {}
 

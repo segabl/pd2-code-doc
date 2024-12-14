@@ -82,6 +82,7 @@ function GenericPlatformManager:set_progress(progress) end
 function GenericPlatformManager:set_feedback_color(color) end
 
 ---@class PlatformManager.Xbox360PlatformManager : PlatformManager.GenericPlatformManager
+---@field super PlatformManager.GenericPlatformManager
 ---@field new fun(self, ...) : PlatformManager.Xbox360PlatformManager
 Xbox360PlatformManager = {}
 
@@ -102,6 +103,7 @@ function Xbox360PlatformManager:set_rich_presence_state(name, callback) end
 function Xbox360PlatformManager:set_presence(name, callback) end
 
 ---@class PlatformManager.XB1PlatformManager : PlatformManager.GenericPlatformManager
+---@field super PlatformManager.GenericPlatformManager
 ---@field new fun(self, ...) : PlatformManager.XB1PlatformManager
 XB1PlatformManager = {}
 
@@ -130,6 +132,7 @@ function XB1PlatformManager:set_playing(is_playing) end
 function XB1PlatformManager:set_progress(progress) end
 
 ---@class PlatformManager.PS3PlatformManager : PlatformManager.GenericPlatformManager
+---@field super PlatformManager.GenericPlatformManager
 ---@field new fun(self, ...) : PlatformManager.PS3PlatformManager
 PS3PlatformManager = {}
 
@@ -151,6 +154,7 @@ function PS3PlatformManager:update(t, dt) end
 function PS3PlatformManager:set_presence(name) end
 
 ---@class PlatformManager.PS4PlatformManager : PlatformManager.GenericPlatformManager
+---@field super PlatformManager.GenericPlatformManager
 ---@field new fun(self, ...) : PlatformManager.PS4PlatformManager
 PS4PlatformManager = {}
 
@@ -187,6 +191,7 @@ function PS4PlatformManager:set_rich_presence_state(name) end
 function PS4PlatformManager:set_feedback_color(color) end
 
 ---@class PlatformManager.WinPlatformManager : PlatformManager.GenericPlatformManager
+---@field super PlatformManager.GenericPlatformManager
 ---@field new fun(self, ...) : PlatformManager.WinPlatformManager
 WinPlatformManager = {}
 

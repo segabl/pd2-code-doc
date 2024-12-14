@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CopBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : CopBase
 CopBase = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementMusic.ElementMusic : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementMusic.ElementMusic
 ElementMusic = {}
 

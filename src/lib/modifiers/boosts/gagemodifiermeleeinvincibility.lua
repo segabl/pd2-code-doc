@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GageModifierMeleeInvincibility : GageModifier
+---@field super GageModifier
 ---@field new fun(self, ...) : GageModifierMeleeInvincibility
 GageModifierMeleeInvincibility = {}
 

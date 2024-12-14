@@ -6,19 +6,19 @@
 ---@return integer?
 function utf8.find_char(s, char) end
 
----Returns wether `s` starts with `beginning`
+---Returns whether `s` starts with `beginning`
 ---@param s string
 ---@param beginning string
 ---@return boolean
 function string.begins(s, beginning) end
 
----Returns wether `s` ends with `ending`
+---Returns whether `s` ends with `ending`
 ---@param s string
 ---@param ending string
 ---@return boolean
 function string.ends(s, ending) end
 
----Returns wether `a` should come before `b` when sorting alphabetical
+---Returns whether `a` should come before `b` when sorting alphabetical
 ---@param a string
 ---@param b string
 ---@return boolean

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.GenericDialog : SystemMenuManager.Dialog
+---@field super SystemMenuManager.Dialog
 ---@field new fun(self, ...) : SystemMenuManager.GenericDialog
 GenericDialog = {}
 

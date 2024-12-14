@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NpcVehicleDamage : VehicleDamage
+---@field super VehicleDamage
 ---@field new fun(self, ...) : NpcVehicleDamage
 NpcVehicleDamage = {}
 

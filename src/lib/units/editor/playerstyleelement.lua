@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerStyleElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : PlayerStyleElement
 PlayerStyleElement = {}
 

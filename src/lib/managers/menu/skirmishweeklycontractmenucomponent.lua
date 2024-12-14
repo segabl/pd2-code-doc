@@ -17,6 +17,7 @@ function SkirmishWeeklyContractMenuComponent:close() end
 function SkirmishWeeklyContractMenuComponent:input_focus() end
 
 ---@class SkirmishWeeklyContractDetails : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : SkirmishWeeklyContractDetails
 SkirmishWeeklyContractDetails = {}
 
@@ -107,6 +108,7 @@ function SkirmishWeeklyContractPage:update() end
 function SkirmishWeeklyContractPage:get_legend() end
 
 ---@class SkirmishWeeklyContractDescriptionPage : SkirmishWeeklyContractPage
+---@field super SkirmishWeeklyContractPage
 ---@field new fun(self, ...) : SkirmishWeeklyContractDescriptionPage
 SkirmishWeeklyContractDescriptionPage = {}
 
@@ -122,6 +124,7 @@ function SkirmishWeeklyContractDescriptionPage:init(page_id, page_panel, fullscr
 function SkirmishWeeklyContractDescriptionPage:set_active(active) end
 
 ---@class SkirmishWeeklyContractModifiersPage : SkirmishWeeklyContractPage
+---@field super SkirmishWeeklyContractPage
 ---@field new fun(self, ...) : SkirmishWeeklyContractModifiersPage
 SkirmishWeeklyContractModifiersPage = {}
 

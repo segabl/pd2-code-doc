@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class InfamyTreeItem : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : InfamyTreeItem
 InfamyTreeItem = {}
 
@@ -61,6 +62,7 @@ function InfamyTreeItem:spawn_preview() end
 function InfamyTreeItem:_selected_changed(state) end
 
 ---@class ComingSoonItem : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : ComingSoonItem
 ComingSoonItem = {}
 
@@ -75,6 +77,7 @@ function ComingSoonItem:is_previewable() end
 function ComingSoonItem:is_open() end
 
 ---@class InfamyTreeGui : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : InfamyTreeGui
 InfamyTreeGui = {}
 

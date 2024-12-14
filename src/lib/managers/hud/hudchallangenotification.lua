@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HudChallangeNotification : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : HudChallangeNotification
 HudChallangeNotification = {}
 

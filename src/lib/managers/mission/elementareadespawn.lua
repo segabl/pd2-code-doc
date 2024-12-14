@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementAreaDespawn : CoreElementShape.ElementShape
+---@field super CoreElementShape.ElementShape
 ---@field new fun(self, ...) : ElementAreaDespawn
 ElementAreaDespawn = {}
 

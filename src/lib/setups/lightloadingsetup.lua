@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class LightLoadingSetup : CoreLoadingSetup
+---@field super CoreLoadingSetup
 ---@field new fun(self, ...) : LightLoadingSetup
 LightLoadingSetup = {}
 

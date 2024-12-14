@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.PS3DeleteFileDialog : SystemMenuManager.DeleteFileDialog
+---@field super SystemMenuManager.DeleteFileDialog
 ---@field new fun(self, ...) : SystemMenuManager.PS3DeleteFileDialog
 PS3DeleteFileDialog = {}
 

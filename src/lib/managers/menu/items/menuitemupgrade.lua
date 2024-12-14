@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemUpgrade : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemUpgrade
 MenuItemUpgrade = {}
 

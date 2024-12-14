@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreActivateScriptUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreActivateScriptUnitElement
 CoreActivateScriptUnitElement = {}
 
 ---@class ActivateScriptUnitElement : CoreActivateScriptUnitElement
+---@field super CoreActivateScriptUnitElement
 ---@field new fun(self, ...) : ActivateScriptUnitElement
 ActivateScriptUnitElement = {}
 

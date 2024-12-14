@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerArrested : PlayerStandard
+---@field super PlayerStandard
 ---@field new fun(self, ...) : PlayerArrested
 PlayerArrested = {}
 

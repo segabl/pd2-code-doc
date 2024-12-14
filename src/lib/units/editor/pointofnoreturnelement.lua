@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PointOfNoReturnElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : PointOfNoReturnElement
 PointOfNoReturnElement = {}
 

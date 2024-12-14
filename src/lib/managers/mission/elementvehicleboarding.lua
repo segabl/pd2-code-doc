@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementVehicleBoarding : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementVehicleBoarding
 ElementVehicleBoarding = {}
 

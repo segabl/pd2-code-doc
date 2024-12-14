@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GameDirectionUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : GameDirectionUnitElement
 GameDirectionUnitElement = {}
 

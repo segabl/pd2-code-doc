@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierHealSpeed : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierHealSpeed
 ModifierHealSpeed = {}
 

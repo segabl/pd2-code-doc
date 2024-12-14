@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuLobbyRenderer : CoreMenuRenderer.Renderer
+---@field super CoreMenuRenderer.Renderer
 ---@field new fun(self, ...) : MenuLobbyRenderer
 MenuLobbyRenderer = {}
 

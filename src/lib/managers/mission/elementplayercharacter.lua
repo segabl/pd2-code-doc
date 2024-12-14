@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementPlayerCharacterTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementPlayerCharacterTrigger
 ElementPlayerCharacterTrigger = {}
 
@@ -27,6 +28,7 @@ function ElementPlayerCharacterTrigger:on_criminal_removed(data) end
 function ElementPlayerCharacterTrigger:on_executed(instigator) end
 
 ---@class ElementPlayerCharacterFilter : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementPlayerCharacterFilter
 ElementPlayerCharacterFilter = {}
 

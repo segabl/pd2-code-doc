@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreEnvironmentEffectHubElement : HubElement
+---@field super HubElement
 ---@field new fun(self, ...) : CoreEnvironmentEffectHubElement
 CoreEnvironmentEffectHubElement = {}
 
 ---@class EnvironmentEffectHubElement : CoreEnvironmentEffectHubElement
+---@field super CoreEnvironmentEffectHubElement
 ---@field new fun(self, ...) : EnvironmentEffectHubElement
 EnvironmentEffectHubElement = {}
 

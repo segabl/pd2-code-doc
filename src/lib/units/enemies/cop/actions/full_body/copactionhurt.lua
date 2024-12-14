@@ -5,6 +5,7 @@
 CopActionHurt = {}
 
 ---@class ShieldActionHurt : CopActionHurt
+---@field super CopActionHurt
 ---@field new fun(self, ...) : ShieldActionHurt
 ShieldActionHurt = {}
 

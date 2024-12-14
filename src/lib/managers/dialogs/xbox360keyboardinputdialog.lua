@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.Xbox360KeyboardInputDialog : SystemMenuManager.KeyboardInputDialog
+---@field super SystemMenuManager.KeyboardInputDialog
 ---@field new fun(self, ...) : SystemMenuManager.Xbox360KeyboardInputDialog
 Xbox360KeyboardInputDialog = {}
 

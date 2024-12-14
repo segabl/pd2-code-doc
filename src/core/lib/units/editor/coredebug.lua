@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreDebugUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreDebugUnitElement
 CoreDebugUnitElement = {}
 
 ---@class DebugUnitElement : CoreDebugUnitElement
+---@field super CoreDebugUnitElement
 ---@field new fun(self, ...) : DebugUnitElement
 DebugUnitElement = {}
 

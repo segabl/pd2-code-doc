@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EditorState : GameState
+---@field super GameState
 ---@field new fun(self, ...) : EditorState
 EditorState = {}
 

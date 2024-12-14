@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeSpreeResultTabItem : StatsTabItem
+---@field super StatsTabItem
 ---@field new fun(self, ...) : CrimeSpreeResultTabItem
 CrimeSpreeResultTabItem = {}
 

@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreOperatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreOperatorUnitElement
 CoreOperatorUnitElement = {}
 
 ---@class OperatorUnitElement : CoreOperatorUnitElement
+---@field super CoreOperatorUnitElement
 ---@field new fun(self, ...) : OperatorUnitElement
 OperatorUnitElement = {}
 

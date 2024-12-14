@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NetworkGameSetup : GameSetup
+---@field super GameSetup
 ---@field new fun(self, ...) : NetworkGameSetup
 NetworkGameSetup = {}
 

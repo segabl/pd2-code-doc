@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MutatorHydra : BaseMutator
+---@field super BaseMutator
 ---@field new fun(self, ...) : MutatorHydra
 MutatorHydra = {}
 

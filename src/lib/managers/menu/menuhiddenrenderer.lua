@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuHiddenRenderer : MenuRenderer
+---@field super MenuRenderer
 ---@field new fun(self, ...) : MenuHiddenRenderer
 MenuHiddenRenderer = {}
 

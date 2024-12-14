@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreToggleUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreToggleUnitElement
 CoreToggleUnitElement = {}
 
 ---@class ToggleUnitElement : CoreToggleUnitElement
+---@field super CoreToggleUnitElement
 ---@field new fun(self, ...) : ToggleUnitElement
 ToggleUnitElement = {}
 

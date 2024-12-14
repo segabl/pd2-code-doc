@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HuskPlayerBase : PlayerBase
+---@field super PlayerBase
 ---@field new fun(self, ...) : HuskPlayerBase
 HuskPlayerBase = {}
 

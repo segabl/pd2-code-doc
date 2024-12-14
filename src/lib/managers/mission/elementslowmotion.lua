@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementSlowMotion : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementSlowMotion
 ElementSlowMotion = {}
 

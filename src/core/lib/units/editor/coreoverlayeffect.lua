@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreOverlayEffectHubElement : HubElement
+---@field super HubElement
 ---@field new fun(self, ...) : CoreOverlayEffectHubElement
 CoreOverlayEffectHubElement = {}
 
 ---@class OverlayEffectHubElement : CoreOverlayEffectHubElement
+---@field super CoreOverlayEffectHubElement
 ---@field new fun(self, ...) : OverlayEffectHubElement
 OverlayEffectHubElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class UnitDamageTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : UnitDamageTriggerUnitElement
 UnitDamageTriggerUnitElement = {}
 

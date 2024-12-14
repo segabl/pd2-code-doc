@@ -12,7 +12,7 @@ function get_source(info) end
 ---@return any
 function traceback(max_level) end
 
----Returns wether the script reference of an object is valid, that is, if the object still exists
+---Returns whether the script reference of an object is valid, that is, if the object still exists
 ---@param obj ScriptReference|false|nil
 ---@return boolean
 function alive(obj) end

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementExplosion : ElementFeedback
+---@field super ElementFeedback
 ---@field new fun(self, ...) : ElementExplosion
 ElementExplosion = {}
 

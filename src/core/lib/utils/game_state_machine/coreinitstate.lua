@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreInitState._InitState : CoreInternalGameState.GameState
+---@field super CoreInternalGameState.GameState
 ---@field new fun(self, ...) : CoreInitState._InitState
 _InitState = {}
 

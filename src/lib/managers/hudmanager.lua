@@ -199,12 +199,10 @@ function HUDManager:_additional_layout() end
 function HUDManager:update(t, dt) end
 
 ---@param id any
----@param cb any
----@return any
+---@param cb fun(t: number, dt: number)
 function HUDManager:add_updator(id, cb) end
 
 ---@param id any
----@return any
 function HUDManager:remove_updator(id) end
 
 ---@param t any
@@ -441,7 +439,7 @@ function HUDManager:show_stats_screen() end
 ---@return any
 function HUDManager:hide_stats_screen() end
 
----@return any
+---@return boolean
 function HUDManager:showing_stats_screen() end
 
 ---@param current any

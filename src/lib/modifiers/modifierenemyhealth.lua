@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierEnemyHealth : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierEnemyHealth
 ModifierEnemyHealth = {}
 

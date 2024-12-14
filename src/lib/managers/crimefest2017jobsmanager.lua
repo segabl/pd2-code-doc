@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class Crimefest2017JobsManager : SideJobGenericDLCManager
+---@field super SideJobGenericDLCManager
 ---@field new fun(self, ...) : Crimefest2017JobsManager
 Crimefest2017JobsManager = {}
 

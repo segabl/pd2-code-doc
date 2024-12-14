@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemChallenge : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemChallenge
 MenuItemChallenge = {}
 

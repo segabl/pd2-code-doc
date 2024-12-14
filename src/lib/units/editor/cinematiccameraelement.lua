@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CinematicCameraUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CinematicCameraUnitElement
 CinematicCameraUnitElement = {}
 

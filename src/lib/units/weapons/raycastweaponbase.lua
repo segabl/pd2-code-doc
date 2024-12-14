@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class RaycastWeaponBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : RaycastWeaponBase
 RaycastWeaponBase = {}
 
@@ -466,7 +467,10 @@ function RaycastWeaponBase:transition_duration() end
 ---@return unknown
 function RaycastWeaponBase:melee_damage_info() end
 
----@return unknown
+---@return integer mag_max
+---@return integer mag_remaining
+---@return integer ammo_total
+---@return integer ammo_max
 function RaycastWeaponBase:ammo_info() end
 
 ---@param max_clip any
@@ -792,6 +796,7 @@ function InstantBulletBase:give_impact_damage(col_ray, weapon_unit, user_unit, d
 function InstantBulletBase._get_vector_sync_yaw_pitch(dir, yaw_resolution, pitch_resolution) end
 
 ---@class InstantExplosiveBulletBase : InstantBulletBase
+---@field super InstantBulletBase
 ---@field new fun(self, ...) : InstantExplosiveBulletBase
 InstantExplosiveBulletBase = {}
 
@@ -833,6 +838,7 @@ function InstantExplosiveBulletBase:on_collision_server(position, normal, damage
 function InstantExplosiveBulletBase:on_collision_client(position, normal, damage, user_unit) end
 
 ---@class FlameBulletBase : InstantExplosiveBulletBase
+---@field super InstantExplosiveBulletBase
 ---@field new fun(self, ...) : FlameBulletBase
 FlameBulletBase = {}
 
@@ -893,6 +899,7 @@ function FlameBulletBase:play_impact_sound_and_effects(weapon_unit, col_ray, no_
 function FlameBulletBase:on_hit_player(col_ray, weapon_unit, user_unit, damage) end
 
 ---@class DragonBreathBulletBase : InstantBulletBase
+---@field super InstantBulletBase
 ---@field new fun(self, ...) : DragonBreathBulletBase
 DragonBreathBulletBase = {}
 
@@ -909,6 +916,7 @@ DragonBreathBulletBase = {}
 function DragonBreathBulletBase:give_impact_damage(col_ray, weapon_unit, user_unit, damage, armor_piercing, shield_knock, knock_down, stagger, variant) end
 
 ---@class DOTBulletBase : InstantBulletBase
+---@field super InstantBulletBase
 ---@field new fun(self, ...) : DOTBulletBase
 DOTBulletBase = {}
 
@@ -943,10 +951,12 @@ function DOTBulletBase:start_dot_damage(col_ray, weapon_unit, dot_data, weapon_i
 function DOTBulletBase:give_damage_dot(col_ray, weapon_unit, attacker_unit, damage, hurt_animation, weapon_id, variant) end
 
 ---@class PoisonBulletBase : DOTBulletBase
+---@field super DOTBulletBase
 ---@field new fun(self, ...) : PoisonBulletBase
 PoisonBulletBase = {}
 
 ---@class ProjectilesPoisonBulletBase : PoisonBulletBase
+---@field super PoisonBulletBase
 ---@field new fun(self, ...) : ProjectilesPoisonBulletBase
 ProjectilesPoisonBulletBase = {}
 
@@ -959,6 +969,7 @@ ProjectilesPoisonBulletBase = {}
 function ProjectilesPoisonBulletBase:on_collision(col_ray, weapon_unit, user_unit, damage, blank) end
 
 ---@class ConcussiveInstantBulletBase : InstantBulletBase
+---@field super InstantBulletBase
 ---@field new fun(self, ...) : ConcussiveInstantBulletBase
 ConcussiveInstantBulletBase = {}
 
@@ -971,6 +982,7 @@ ConcussiveInstantBulletBase = {}
 function ConcussiveInstantBulletBase:give_impact_damage(col_ray, weapon_unit, user_unit, damage, ...) end
 
 ---@class InstantSnowballBase : InstantExplosiveBulletBase
+---@field super InstantExplosiveBulletBase
 ---@field new fun(self, ...) : InstantSnowballBase
 InstantSnowballBase = {}
 

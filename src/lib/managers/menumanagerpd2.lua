@@ -401,6 +401,7 @@ function FbiFilesInitiator:modify_node(node, up) end
 function FbiFilesInitiator:refresh_node(node) end
 
 ---@class PlayerListInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : PlayerListInitiator
 PlayerListInitiator = {}
 
@@ -428,6 +429,7 @@ function PlayerListInitiator:refresh_node(node) end
 function MenuCallbackHandler:on_player_list_inspect_peer(item, node) end
 
 ---@class InspectPlayerInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : InspectPlayerInitiator
 InspectPlayerInitiator = {}
 
@@ -453,6 +455,7 @@ function MenuCallbackHandler:kick_ban_player(item) end
 function MenuCallbackHandler:_kick_ban_player_confirm(item) end
 
 ---@class MenuChooseWeaponCosmeticInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuChooseWeaponCosmeticInitiator
 MenuChooseWeaponCosmeticInitiator = {}
 
@@ -466,6 +469,7 @@ function MenuChooseWeaponCosmeticInitiator:modify_node(original_node, data) end
 function MenuChooseWeaponCosmeticInitiator:add_back_button(node) end
 
 ---@class MenuOpenContainerInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuOpenContainerInitiator
 MenuOpenContainerInitiator = {}
 
@@ -537,6 +541,7 @@ MenuEconomySafeInitiator = {}
 function MenuEconomySafeInitiator:modify_node(node, safe_entry) end
 
 ---@class MenuBanListInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuBanListInitiator
 MenuBanListInitiator = {}
 
@@ -563,6 +568,7 @@ function MenuCallbackHandler:unban_player(item, force) end
 function MenuCallbackHandler:start_quickplay_game(item) end
 
 ---@class MenuQuickplaySettingsInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuQuickplaySettingsInitiator
 MenuQuickplaySettingsInitiator = {}
 
@@ -605,6 +611,7 @@ function MenuCallbackHandler:quickplay_difficulty(item) end
 function MenuCallbackHandler:set_default_quickplay_options() end
 
 ---@class MenuMutatorsInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuMutatorsInitiator
 MenuMutatorsInitiator = {}
 
@@ -634,6 +641,7 @@ function MenuCallbackHandler:_open_mutator_options(item) end
 function MenuCallbackHandler:_update_mutator_value(item) end
 
 ---@class MenuSkinEditorInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuSkinEditorInitiator
 MenuSkinEditorInitiator = {}
 
@@ -808,6 +816,7 @@ function MenuCallbackHandler:sort_weapon_colors(x_option, y_option) end
 function MenuCallbackHandler:open_dlc_store_page(dlc, context) end
 
 ---@class MenuArmorSkinEditorInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuArmorSkinEditorInitiator
 MenuArmorSkinEditorInitiator = {}
 

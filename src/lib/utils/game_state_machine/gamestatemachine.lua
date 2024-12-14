@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GameStateMachine : CoreGameStateMachine.GameStateMachine
+---@field super CoreGameStateMachine.GameStateMachine
 ---@field new fun(self, ...) : GameStateMachine
 GameStateMachine = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementAreaTrigger : CoreElementArea.ElementAreaTrigger
+---@field super CoreElementArea.ElementAreaTrigger
 ---@field new fun(self, ...) : ElementAreaTrigger
 ElementAreaTrigger = {}
 

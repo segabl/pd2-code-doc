@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementEnemyDummyTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementEnemyDummyTrigger
 ElementEnemyDummyTrigger = {}
 

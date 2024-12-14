@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FlashlightUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : FlashlightUnitElement
 FlashlightUnitElement = {}
 

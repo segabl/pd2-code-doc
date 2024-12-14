@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementLootPile : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementLootPile
 ElementLootPile = {}
 

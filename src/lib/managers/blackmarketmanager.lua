@@ -133,25 +133,25 @@ function BlackMarketManager:equipped_grenade_allows_pickups() end
 ---@return unknown
 function BlackMarketManager:has_equipped_ability() end
 
----@return unknown
+---@return string
 function BlackMarketManager:equipped_grenade() end
 
----@return unknown
+---@return string
 function BlackMarketManager:equipped_melee_weapon() end
 
 ---@param lerp_value any
 ---@return unknown
 function BlackMarketManager:equipped_melee_weapon_damage_info(lerp_value) end
 
----@return unknown
+---@return string
 function BlackMarketManager:equipped_primary() end
 
----@return unknown
+---@return string
 function BlackMarketManager:equipped_secondary() end
 
----@param category any
----@param weap_category any
----@return unknown
+---@param category string
+---@param weap_category string
+---@return string
 function BlackMarketManager:equipped_weapon(category, weap_category) end
 
 ---@param weapon_category any

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreSimpleAnimationCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreSimpleAnimationCutsceneKey
 CoreSimpleAnimationCutsceneKey = {}
 

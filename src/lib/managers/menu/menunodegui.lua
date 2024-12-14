@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuNodeGui : CoreMenuNodeGui.NodeGui
+---@field super CoreMenuNodeGui.NodeGui
 ---@field new fun(self, ...) : MenuNodeGui
 MenuNodeGui = {}
 
@@ -281,6 +282,7 @@ function MenuNodeGui:set_visible(visible) end
 function MenuNodeGui:close(...) end
 
 ---@class MenuNodeMainGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeMainGui
 MenuNodeMainGui = {}
 

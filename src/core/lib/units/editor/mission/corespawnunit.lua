@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreSpawnUnitUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreSpawnUnitUnitElement
 CoreSpawnUnitUnitElement = {}
 
 ---@class SpawnUnitUnitElement : CoreSpawnUnitUnitElement
+---@field super CoreSpawnUnitUnitElement
 ---@field new fun(self, ...) : SpawnUnitUnitElement
 SpawnUnitUnitElement = {}
 

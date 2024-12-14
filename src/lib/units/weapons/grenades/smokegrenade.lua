@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SmokeGrenade : GrenadeBase
+---@field super GrenadeBase
 ---@field new fun(self, ...) : SmokeGrenade
 SmokeGrenade = {}
 

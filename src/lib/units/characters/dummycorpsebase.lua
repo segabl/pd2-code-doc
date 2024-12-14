@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class DummyCorpseBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : DummyCorpseBase
 DummyCorpseBase = {}
 

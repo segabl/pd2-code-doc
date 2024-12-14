@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementDropInPoint : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementDropInPoint
 ElementDropInPoint = {}
 

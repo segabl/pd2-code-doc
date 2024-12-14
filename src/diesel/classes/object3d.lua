@@ -85,6 +85,6 @@ function Object3D:to_world(...) end
 ---Unlinks the object from its parent
 function Object3D:unlink() end
 
----Returns wether the object is set to be visible
+---Returns whether the object is set to be visible
 ---@return boolean
 function Object3D:visibility() end

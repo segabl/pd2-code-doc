@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameElectrifiedState : IngamePlayerBaseState
+---@field super IngamePlayerBaseState
 ---@field new fun(self, ...) : IngameElectrifiedState
 IngameElectrifiedState = {}
 

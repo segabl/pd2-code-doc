@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MutatorEnemyDamage : BaseMutator
+---@field super BaseMutator
 ---@field new fun(self, ...) : MutatorEnemyDamage
 MutatorEnemyDamage = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementVehicleTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementVehicleTrigger
 ElementVehicleTrigger = {}
 

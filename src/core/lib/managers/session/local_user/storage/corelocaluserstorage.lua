@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreLocalUserStorage.Storage : CoreSessionGenericState.State
+---@field super CoreSessionGenericState.State
 ---@field new fun(self, ...) : CoreLocalUserStorage.Storage
 Storage = {}
 

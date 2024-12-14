@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemFriend : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemFriend
 MenuItemFriend = {}
 

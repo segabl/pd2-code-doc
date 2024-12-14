@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AIAreaElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : AIAreaElement
 AIAreaElement = {}
 

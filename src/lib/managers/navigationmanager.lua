@@ -145,8 +145,8 @@ function NavigationManager:_draw_coarse_graph() end
 ---@return unknown
 function NavigationManager:get_nav_segments_in_direction(start_nav_seg_id, fwd) end
 
----@param seg_id any
----@return unknown
+---@param seg_id integer
+---@return Vector3
 function NavigationManager:find_random_position_in_segment(seg_id) end
 
 ---@return unknown

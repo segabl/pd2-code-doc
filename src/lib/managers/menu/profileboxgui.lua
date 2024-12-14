@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ProfileBoxGui : TextBoxGui
+---@field super TextBoxGui
 ---@field new fun(self, ...) : ProfileBoxGui
 ProfileBoxGui = {}
 
@@ -74,6 +75,7 @@ function ProfileBoxGui:set_visible(visible) end
 function ProfileBoxGui:close() end
 
 ---@class LobbyProfileBoxGui : ProfileBoxGui
+---@field super ProfileBoxGui
 ---@field new fun(self, ...) : LobbyProfileBoxGui
 LobbyProfileBoxGui = {}
 
@@ -105,6 +107,7 @@ function LobbyProfileBoxGui:_profile_level() end
 function LobbyProfileBoxGui:_add_statistics() end
 
 ---@class ViewCharacterProfileBoxGui : ProfileBoxGui
+---@field super ProfileBoxGui
 ---@field new fun(self, ...) : ViewCharacterProfileBoxGui
 ViewCharacterProfileBoxGui = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MotionpathMarkerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : MotionpathMarkerUnitElement
 MotionpathMarkerUnitElement = {}
 

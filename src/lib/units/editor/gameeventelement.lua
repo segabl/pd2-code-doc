@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GameEventElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : GameEventElement
 GameEventElement = {}
 

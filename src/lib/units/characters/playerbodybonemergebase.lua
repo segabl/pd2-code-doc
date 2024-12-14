@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerBodyBoneMergeBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : PlayerBodyBoneMergeBase
 PlayerBodyBoneMergeBase = {}
 

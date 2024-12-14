@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementPlayEffect.ElementPlayEffect : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementPlayEffect.ElementPlayEffect
 ElementPlayEffect = {}
 
@@ -26,6 +27,7 @@ function ElementPlayEffect:kill() end
 function ElementPlayEffect:fade_kill() end
 
 ---@class CoreElementPlayEffect.ElementStopEffect : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementPlayEffect.ElementStopEffect
 ElementStopEffect = {}
 

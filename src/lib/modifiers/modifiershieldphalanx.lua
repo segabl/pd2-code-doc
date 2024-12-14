@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierShieldPhalanx : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierShieldPhalanx
 ModifierShieldPhalanx = {}
 

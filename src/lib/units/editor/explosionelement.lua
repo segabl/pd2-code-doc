@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ExplosionUnitElement : FeedbackUnitElement
+---@field super FeedbackUnitElement
 ---@field new fun(self, ...) : ExplosionUnitElement
 ExplosionUnitElement = {}
 

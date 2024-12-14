@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeSpreeMissionEndOptions : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : CrimeSpreeMissionEndOptions
 CrimeSpreeMissionEndOptions = {}
 

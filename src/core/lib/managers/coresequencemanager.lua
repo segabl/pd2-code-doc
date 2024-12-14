@@ -754,6 +754,7 @@ function BaseElement:get_model_xml_file() end
 function BaseElement:get_xml_element_string(node) end
 
 ---@class CoreSequenceManager.UnitElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.UnitElement
 UnitElement = {}
 
@@ -883,6 +884,7 @@ function UnitElement:save(data) end
 function UnitElement:load(data) end
 
 ---@class CoreSequenceManager.TriggerDeclarationElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.TriggerDeclarationElement
 TriggerDeclarationElement = {}
 
@@ -892,6 +894,7 @@ TriggerDeclarationElement = {}
 function TriggerDeclarationElement:init(node, unit_element) end
 
 ---@class CoreSequenceManager.FilterElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.FilterElement
 FilterElement = {}
 
@@ -905,6 +908,7 @@ function FilterElement:init(node, unit_element) end
 function FilterElement:is_allowed(env) end
 
 ---@class CoreSequenceManager.CheckFilterElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.CheckFilterElement
 CheckFilterElement = {}
 
@@ -918,6 +922,7 @@ function CheckFilterElement:init(node, unit_element) end
 function CheckFilterElement:is_allowed(env) end
 
 ---@class CoreSequenceManager.SideFilterElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SideFilterElement
 SideFilterElement = {}
 
@@ -931,6 +936,7 @@ function SideFilterElement:init(node, unit_element) end
 function SideFilterElement:is_allowed(env) end
 
 ---@class CoreSequenceManager.ZoneFilterElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.ZoneFilterElement
 ZoneFilterElement = {}
 
@@ -944,6 +950,7 @@ function ZoneFilterElement:init(node, unit_element) end
 function ZoneFilterElement:is_allowed(env) end
 
 ---@class CoreSequenceManager.SequenceElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SequenceElement
 SequenceElement = {}
 
@@ -957,6 +964,7 @@ function SequenceElement:init(node, unit_element) end
 function SequenceElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.ProximityElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.ProximityElement
 ProximityElement = {}
 
@@ -969,6 +977,7 @@ function ProximityElement:init(node, unit_element) end
 function ProximityElement:get_proximity_element_map() end
 
 ---@class CoreSequenceManager.ProximityTypeElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.ProximityTypeElement
 ProximityTypeElement = {}
 
@@ -1005,6 +1014,7 @@ function ProximityTypeElement:get_within_element() end
 function ProximityTypeElement:get_outside_element() end
 
 ---@class CoreSequenceManager.ProximityRangeElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.ProximityRangeElement
 ProximityRangeElement = {}
 
@@ -1031,6 +1041,7 @@ function ProximityRangeElement:get_count() end
 function ProximityRangeElement:activate_elements(env) end
 
 ---@class CoreSequenceManager.WaterElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.WaterElement
 WaterElement = {}
 
@@ -1072,6 +1083,7 @@ function WaterElement:activate_enter(env) end
 function WaterElement:activate_exit(env) end
 
 ---@class CoreSequenceManager.SequenceContainerElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SequenceContainerElement
 SequenceContainerElement = {}
 
@@ -1088,14 +1100,17 @@ function SequenceContainerElement:sequence_count() end
 function SequenceContainerElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.EnterWaterElement : CoreSequenceManager.SequenceContainerElement
+---@field super CoreSequenceManager.SequenceContainerElement
 ---@field new fun(self, ...) : CoreSequenceManager.EnterWaterElement
 EnterWaterElement = {}
 
 ---@class CoreSequenceManager.ExitWaterElement : CoreSequenceManager.SequenceContainerElement
+---@field super CoreSequenceManager.SequenceContainerElement
 ---@field new fun(self, ...) : CoreSequenceManager.ExitWaterElement
 ExitWaterElement = {}
 
 ---@class CoreSequenceManager.RootBodyElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.RootBodyElement
 RootBodyElement = {}
 
@@ -1134,6 +1149,7 @@ function RootBodyElement:activate_inflict_exit(env) end
 function RootBodyElement:get_inflict_element_list() end
 
 ---@class CoreSequenceManager.RootInflictElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.RootInflictElement
 RootInflictElement = {}
 
@@ -1158,6 +1174,7 @@ function RootInflictElement:activate_exit(env) end
 function RootInflictElement:get_element_list() end
 
 ---@class CoreSequenceManager.InflictElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.InflictElement
 InflictElement = {}
 
@@ -1209,10 +1226,12 @@ function InflictElement:damage_sequence_count() end
 function InflictElement:exit_sequence_count() end
 
 ---@class CoreSequenceManager.InflictElectricityElement : CoreSequenceManager.InflictElement
+---@field super CoreSequenceManager.InflictElement
 ---@field new fun(self, ...) : CoreSequenceManager.InflictElectricityElement
 InflictElectricityElement = {}
 
 ---@class CoreSequenceManager.InflictFireElement : CoreSequenceManager.InflictElement
+---@field super CoreSequenceManager.InflictElement
 ---@field new fun(self, ...) : CoreSequenceManager.InflictFireElement
 InflictFireElement = {}
 
@@ -1234,18 +1253,22 @@ function InflictFireElement:get_velocity() end
 function InflictFireElement:get_falloff() end
 
 ---@class CoreSequenceManager.EnterInflictElement : CoreSequenceManager.SequenceContainerElement
+---@field super CoreSequenceManager.SequenceContainerElement
 ---@field new fun(self, ...) : CoreSequenceManager.EnterInflictElement
 EnterInflictElement = {}
 
 ---@class CoreSequenceManager.DamageInflictElement : CoreSequenceManager.SequenceContainerElement
+---@field super CoreSequenceManager.SequenceContainerElement
 ---@field new fun(self, ...) : CoreSequenceManager.DamageInflictElement
 DamageInflictElement = {}
 
 ---@class CoreSequenceManager.ExitInflictElement : CoreSequenceManager.SequenceContainerElement
+---@field super CoreSequenceManager.SequenceContainerElement
 ---@field new fun(self, ...) : CoreSequenceManager.ExitInflictElement
 ExitInflictElement = {}
 
 ---@class CoreSequenceManager.EnduranceElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.EnduranceElement
 EnduranceElement = {}
 
@@ -1270,6 +1293,7 @@ function EnduranceElement:activate(env) end
 function EnduranceElement:activate_elements(env) end
 
 ---@class CoreSequenceManager.AnimationGroupElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.AnimationGroupElement
 AnimationGroupElement = {}
 
@@ -1303,6 +1327,7 @@ function AnimationGroupElement:set_time(env, name) end
 function AnimationGroupElement.load(unit, data) end
 
 ---@class CoreSequenceManager.AnimationRedirectElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.AnimationRedirectElement
 AnimationRedirectElement = {}
 
@@ -1316,6 +1341,7 @@ function AnimationRedirectElement:init(node, unit_element) end
 function AnimationRedirectElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.AreaDamageElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.AreaDamageElement
 AreaDamageElement = {}
 
@@ -1392,6 +1418,7 @@ function AreaDamageElement:get_falloff_preset1_damage(params, unit, body, dir, h
 function AreaDamageElement:get_distance(body, hit_pos, pos) end
 
 ---@class CoreSequenceManager.AreaDamageKeyElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.AreaDamageKeyElement
 AreaDamageKeyElement = {}
 
@@ -1450,6 +1477,7 @@ function ParsedKeyElement:get_variable(name) end
 function ParsedKeyElement:set_variable(name, value) end
 
 ---@class CoreSequenceManager.BodyElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.BodyElement
 BodyElement = {}
 
@@ -1522,6 +1550,7 @@ function BodyElement:interpolate(env, value, body) end
 function BodyElement.load(unit, data) end
 
 ---@class CoreSequenceManager.ConstraintElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.ConstraintElement
 ConstraintElement = {}
 
@@ -1540,6 +1569,7 @@ function ConstraintElement:activate_callback(env) end
 function ConstraintElement.load(unit, data) end
 
 ---@class CoreSequenceManager.DebugElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.DebugElement
 DebugElement = {}
 
@@ -1553,6 +1583,7 @@ function DebugElement:init(node, unit_element) end
 function DebugElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.AlertElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.AlertElement
 AlertElement = {}
 
@@ -1566,6 +1597,7 @@ function AlertElement:init(node, unit_element) end
 function AlertElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.AttentionElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.AttentionElement
 AttentionElement = {}
 
@@ -1579,6 +1611,7 @@ function AttentionElement:init(node, unit_element) end
 function AttentionElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.DecalMeshElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.DecalMeshElement
 DecalMeshElement = {}
 
@@ -1597,6 +1630,7 @@ function DecalMeshElement:activate_callback(env) end
 function DecalMeshElement.load(unit, data) end
 
 ---@class CoreSequenceManager.EffectElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.EffectElement
 EffectElement = {}
 
@@ -1610,6 +1644,7 @@ function EffectElement:init(node, unit_element) end
 function EffectElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.EffectSpawnerElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.EffectSpawnerElement
 EffectSpawnerElement = {}
 
@@ -1635,6 +1670,7 @@ function EffectSpawnerElement:set_enabled(env, enabled, effect_spawner, name) en
 function EffectSpawnerElement.load(unit, data) end
 
 ---@class CoreSequenceManager.EnemyKilledElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.EnemyKilledElement
 EnemyKilledElement = {}
 
@@ -1643,6 +1679,7 @@ EnemyKilledElement = {}
 function EnemyKilledElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.FunctionElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.FunctionElement
 FunctionElement = {}
 
@@ -1692,6 +1729,7 @@ function FunctionElement:function4(env, target, func) end
 function FunctionElement:function5(env, target, func) end
 
 ---@class CoreSequenceManager.GraphicGroupElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.GraphicGroupElement
 GraphicGroupElement = {}
 
@@ -1710,6 +1748,7 @@ function GraphicGroupElement:activate_callback(env) end
 function GraphicGroupElement.load(unit, data) end
 
 ---@class CoreSequenceManager.LightElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.LightElement
 LightElement = {}
 
@@ -1770,6 +1809,7 @@ function LightElement:set_spot_angle_end(env, spot_angle_end, light_obj, name) e
 function LightElement.load(unit, data) end
 
 ---@class CoreSequenceManager.MaterialConfigElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.MaterialConfigElement
 MaterialConfigElement = {}
 
@@ -1788,6 +1828,7 @@ function MaterialConfigElement:activate_callback(env) end
 function MaterialConfigElement.load(unit, data) end
 
 ---@class CoreSequenceManager.MaterialElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.MaterialElement
 MaterialElement = {}
 
@@ -1832,6 +1873,7 @@ function MaterialElement:set_variable(env, value, material, key) end
 function MaterialElement:set_material_state(env, state, material) end
 
 ---@class CoreSequenceManager.MorphExpressionElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.MorphExpressionElement
 MorphExpressionElement = {}
 
@@ -1845,6 +1887,7 @@ function MorphExpressionElement:init(node, unit_element) end
 function MorphExpressionElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.MorphExpressionMovieElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.MorphExpressionMovieElement
 MorphExpressionMovieElement = {}
 
@@ -1858,6 +1901,7 @@ function MorphExpressionMovieElement:init(node, unit_element) end
 function MorphExpressionMovieElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.ObjectElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.ObjectElement
 ObjectElement = {}
 
@@ -1904,6 +1948,7 @@ function ObjectElement:set_object(dest_unit, object_list, func_name, value) end
 function ObjectElement.load(unit, data) end
 
 ---@class CoreSequenceManager.PhantomElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.PhantomElement
 PhantomElement = {}
 
@@ -1922,6 +1967,7 @@ function PhantomElement:activate_callback(env) end
 function PhantomElement.load(unit, data) end
 
 ---@class CoreSequenceManager.PhysicEffectElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.PhysicEffectElement
 PhysicEffectElement = {}
 
@@ -1935,6 +1981,7 @@ function PhysicEffectElement:init(node, unit_element) end
 function PhysicEffectElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.ProjectDecalElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.ProjectDecalElement
 ProjectDecalElement = {}
 
@@ -1948,6 +1995,7 @@ function ProjectDecalElement:init(node, unit_element) end
 function ProjectDecalElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.RemoveStartTimeElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.RemoveStartTimeElement
 RemoveStartTimeElement = {}
 
@@ -1961,6 +2009,7 @@ function RemoveStartTimeElement:init(node, unit_element) end
 function RemoveStartTimeElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.RunSequenceElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.RunSequenceElement
 RunSequenceElement = {}
 
@@ -1974,6 +2023,7 @@ function RunSequenceElement:init(node, unit_element) end
 function RunSequenceElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.RunSpawnSystemSequenceElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.RunSpawnSystemSequenceElement
 RunSpawnSystemSequenceElement = {}
 
@@ -1987,6 +2037,7 @@ function RunSpawnSystemSequenceElement:init(node, unit_element) end
 function RunSpawnSystemSequenceElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.SetDamageElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetDamageElement
 SetDamageElement = {}
 
@@ -2006,6 +2057,7 @@ function SetDamageElement:activate_callback(env) end
 function SetDamageElement:set_damage(env, damage, damage_type) end
 
 ---@class CoreSequenceManager.DisableUnitElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.DisableUnitElement
 DisableUnitElement = {}
 
@@ -2019,6 +2071,7 @@ function DisableUnitElement:init(node, unit_element) end
 function DisableUnitElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.SetExtensionVarElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetExtensionVarElement
 SetExtensionVarElement = {}
 
@@ -2032,6 +2085,7 @@ function SetExtensionVarElement:init(node, unit_element) end
 function SetExtensionVarElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.SetGlobalVariableElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetGlobalVariableElement
 SetGlobalVariableElement = {}
 
@@ -2051,6 +2105,7 @@ function SetGlobalVariableElement:activate_callback(env) end
 function SetGlobalVariableElement:set_variable(env, name, value) end
 
 ---@class CoreSequenceManager.SetGlobalVariablesElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetGlobalVariablesElement
 SetGlobalVariablesElement = {}
 
@@ -2070,6 +2125,7 @@ function SetGlobalVariablesElement:activate_callback(env) end
 function SetGlobalVariablesElement:set_variable(env, name, value) end
 
 ---@class CoreSequenceManager.SetInflictElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetInflictElement
 SetInflictElement = {}
 
@@ -2083,6 +2139,7 @@ function SetInflictElement:init(node, unit_element) end
 function SetInflictElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.SetPhysicEffectElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetPhysicEffectElement
 SetPhysicEffectElement = {}
 
@@ -2096,6 +2153,7 @@ function SetPhysicEffectElement:init(node, unit_element) end
 function SetPhysicEffectElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.SetProximityElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetProximityElement
 SetProximityElement = {}
 
@@ -2205,6 +2263,7 @@ function SetProximityElement:set_outside_range(env, range, name) end
 function SetProximityElement:set_outside_count(env, count, name) end
 
 ---@class CoreSequenceManager.SetSaveDataElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetSaveDataElement
 SetSaveDataElement = {}
 
@@ -2218,6 +2277,7 @@ function SetSaveDataElement:init(node, unit_element) end
 function SetSaveDataElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.SpawnSystemUnitEnabledElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SpawnSystemUnitEnabledElement
 SpawnSystemUnitEnabledElement = {}
 
@@ -2231,6 +2291,7 @@ function SpawnSystemUnitEnabledElement:init(node, unit_element) end
 function SpawnSystemUnitEnabledElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.SetVariableElement : CoreSequenceManager.SetGlobalVariableElement
+---@field super CoreSequenceManager.SetGlobalVariableElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetVariableElement
 SetVariableElement = {}
 
@@ -2241,6 +2302,7 @@ SetVariableElement = {}
 function SetVariableElement:set_variable(env, name, value) end
 
 ---@class CoreSequenceManager.SetVariablesElement : CoreSequenceManager.SetGlobalVariablesElement
+---@field super CoreSequenceManager.SetGlobalVariablesElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetVariablesElement
 SetVariablesElement = {}
 
@@ -2251,6 +2313,7 @@ SetVariablesElement = {}
 function SetVariablesElement:set_variable(env, name, value) end
 
 ---@class CoreSequenceManager.SetWaterElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SetWaterElement
 SetWaterElement = {}
 
@@ -2264,6 +2327,7 @@ function SetWaterElement:init(node, unit_element) end
 function SetWaterElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.ShakeCameraElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.ShakeCameraElement
 ShakeCameraElement = {}
 
@@ -2277,6 +2341,7 @@ function ShakeCameraElement:init(node, unit_element) end
 function ShakeCameraElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.SlotElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SlotElement
 SlotElement = {}
 
@@ -2312,6 +2377,7 @@ function SlotElement:check_frustum_delay(frustum_close_radius, frustum_extension
 function SlotElement:hide_objects(obj) end
 
 ---@class CoreSequenceManager.WwiseElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.WwiseElement
 WwiseElement = {}
 
@@ -2346,6 +2412,7 @@ function WwiseElement:_get_sound_source(env) end
 function WwiseElement.load(unit, data) end
 
 ---@class CoreSequenceManager.SoundElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SoundElement
 SoundElement = {}
 
@@ -2367,6 +2434,7 @@ function SoundElement:play(env) end
 function SoundElement:stop(env) end
 
 ---@class CoreSequenceManager.SpawnUnitElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.SpawnUnitElement
 SpawnUnitElement = {}
 
@@ -2384,6 +2452,7 @@ function SpawnUnitElement:activate_callback(env) end
 function SpawnUnitElement:get_params(env) end
 
 ---@class CoreSequenceManager.StopPhysicEffectElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.StopPhysicEffectElement
 StopPhysicEffectElement = {}
 
@@ -2397,6 +2466,7 @@ function StopPhysicEffectElement:init(node, unit_element) end
 function StopPhysicEffectElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.StopEffectElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.StopEffectElement
 StopEffectElement = {}
 
@@ -2410,6 +2480,7 @@ function StopEffectElement:init(node, unit_element) end
 function StopEffectElement:activate_callback(env) end
 
 ---@class CoreSequenceManager.TriggerElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : CoreSequenceManager.TriggerElement
 TriggerElement = {}
 

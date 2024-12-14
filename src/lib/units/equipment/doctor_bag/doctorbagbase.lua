@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class DoctorBagBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : DoctorBagBase
 DoctorBagBase = {}
 
@@ -90,6 +91,7 @@ function DoctorBagBase:load(data) end
 function DoctorBagBase:destroy() end
 
 ---@class CustomDoctorBagBase : DoctorBagBase
+---@field super DoctorBagBase
 ---@field new fun(self, ...) : CustomDoctorBagBase
 CustomDoctorBagBase = {}
 

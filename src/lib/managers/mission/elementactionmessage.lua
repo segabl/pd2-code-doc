@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementActionMessage : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementActionMessage
 ElementActionMessage = {}
 

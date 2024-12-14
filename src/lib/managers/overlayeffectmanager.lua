@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class OverlayEffectManager : CoreOverlayEffectManager.OverlayEffectManager
+---@field super CoreOverlayEffectManager.OverlayEffectManager
 ---@field new fun(self, ...) : OverlayEffectManager
 OverlayEffectManager = {}
 

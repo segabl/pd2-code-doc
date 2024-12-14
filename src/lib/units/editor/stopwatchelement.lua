@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class StopwatchUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : StopwatchUnitElement
 StopwatchUnitElement = {}
 
@@ -71,6 +72,7 @@ function StopwatchUnitElement:_remove_unit_filter(unit) end
 function StopwatchUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class StopwatchOperatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : StopwatchOperatorUnitElement
 StopwatchOperatorUnitElement = {}
 
@@ -109,6 +111,7 @@ function StopwatchOperatorUnitElement:set_element_data(data) end
 function StopwatchOperatorUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class StopwatchTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : StopwatchTriggerUnitElement
 StopwatchTriggerUnitElement = {}
 
@@ -143,6 +146,7 @@ function StopwatchTriggerUnitElement:add_triggers(vc) end
 function StopwatchTriggerUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class StopwatchFilterUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : StopwatchFilterUnitElement
 StopwatchFilterUnitElement = {}
 

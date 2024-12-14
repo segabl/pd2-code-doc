@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementTangoAward : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementTangoAward
 ElementTangoAward = {}
 
@@ -17,6 +18,7 @@ function ElementTangoAward:client_on_executed(...) end
 function ElementTangoAward:on_executed(instigator) end
 
 ---@class ElementTangoFilter : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementTangoFilter
 ElementTangoFilter = {}
 

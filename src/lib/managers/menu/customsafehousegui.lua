@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CustomSafehouseGui : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : CustomSafehouseGui
 CustomSafehouseGui = {}
 

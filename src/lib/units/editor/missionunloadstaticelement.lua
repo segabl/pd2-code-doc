@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MissionUnloadStaticElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : MissionUnloadStaticElement
 MissionUnloadStaticElement = {}
 

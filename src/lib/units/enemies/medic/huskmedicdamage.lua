@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HuskMedicDamage : HuskCopDamage
+---@field super HuskCopDamage
 ---@field new fun(self, ...) : HuskMedicDamage
 HuskMedicDamage = {}
 

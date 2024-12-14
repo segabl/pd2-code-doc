@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SawWeaponBase : NewRaycastWeaponBase
+---@field super NewRaycastWeaponBase
 ---@field new fun(self, ...) : SawWeaponBase
 SawWeaponBase = {}
 
@@ -65,6 +66,7 @@ function SawWeaponBase:_fire_raycast(user_unit, from_pos, direction, dmg_mul, sh
 function SawWeaponBase:can_reload() end
 
 ---@class SawHit : InstantBulletBase
+---@field super InstantBulletBase
 ---@field new fun(self, ...) : SawHit
 SawHit = {}
 

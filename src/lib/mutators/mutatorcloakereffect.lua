@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MutatorCloakerEffect : BaseMutator
+---@field super BaseMutator
 ---@field new fun(self, ...) : MutatorCloakerEffect
 MutatorCloakerEffect = {}
 

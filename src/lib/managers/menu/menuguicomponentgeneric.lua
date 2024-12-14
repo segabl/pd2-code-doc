@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuGuiComponentGeneric : MenuGuiComponent
+---@field super MenuGuiComponent
 ---@field new fun(self, ...) : MenuGuiComponentGeneric
 MenuGuiComponentGeneric = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementCounter.ElementCounter : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementCounter.ElementCounter
 ElementCounter = {}
 
@@ -61,6 +62,7 @@ function ElementCounter:_update_digital_guis_number() end
 function ElementCounter:_check_triggers(type) end
 
 ---@class CoreElementCounter.ElementCounterReset : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementCounter.ElementCounterReset
 ElementCounterReset = {}
 
@@ -73,6 +75,7 @@ function ElementCounterReset:init(...) end
 function ElementCounterReset:on_executed(instigator) end
 
 ---@class CoreElementCounter.ElementCounterOperator : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementCounter.ElementCounterOperator
 ElementCounterOperator = {}
 
@@ -89,6 +92,7 @@ function ElementCounterOperator:client_on_executed(...) end
 function ElementCounterOperator:on_executed(instigator) end
 
 ---@class CoreElementCounter.ElementCounterTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementCounter.ElementCounterTrigger
 ElementCounterTrigger = {}
 
@@ -108,6 +112,7 @@ function ElementCounterTrigger:client_on_executed(...) end
 function ElementCounterTrigger:on_executed(instigator) end
 
 ---@class CoreElementCounter.ElementCounterFilter : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementCounter.ElementCounterFilter
 ElementCounterFilter = {}
 

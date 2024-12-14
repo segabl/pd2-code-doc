@@ -22,6 +22,7 @@ function Done:_set_response(value) end
 function Done:destroy() end
 
 ---@class CoreSessionResponse.DoneOrFinished : CoreSessionResponse.Done
+---@field super CoreSessionResponse.Done
 ---@field new fun(self, ...) : CoreSessionResponse.DoneOrFinished
 DoneOrFinished = {}
 

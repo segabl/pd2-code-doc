@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ContractBrokerGui : MenuGuiComponent
+---@field super MenuGuiComponent
 ---@field new fun(self, ...) : ContractBrokerGui
 ContractBrokerGui = {}
 

@@ -45,13 +45,13 @@ function Network:handshake(...) end
 
 function Network:hostname(...) end
 
----Returns wether the local player is a client of the current session
+---Returns whether the local player is a client of the current session
 ---@return boolean
 function Network:is_client() end
 
 function Network:is_disconnected(...) end
 
----Returns wether the local player is the host of the current session
+---Returns whether the local player is the host of the current session
 ---@return boolean
 function Network:is_server() end
 

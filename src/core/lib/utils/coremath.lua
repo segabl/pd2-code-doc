@@ -199,7 +199,7 @@ function math.world_to_obj(obj, point) end
 ---@return Vector3
 function math.obj_to_world(obj, point) end
 
----Returns wether `x` is in range [min, max]
+---Returns whether `x` is in range [min, max]
 ---@param x number
 ---@param min number
 ---@param max number

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SequenceManager.SequenceManager : CoreSequenceManager.SequenceManager
+---@field super CoreSequenceManager.SequenceManager
 ---@field new fun(self, ...) : SequenceManager.SequenceManager
 SequenceManager = {}
 
@@ -8,6 +9,7 @@ SequenceManager = {}
 function SequenceManager:init() end
 
 ---@class SequenceManager.InteractionElement : CoreSequenceManager.BaseElement
+---@field super CoreSequenceManager.BaseElement
 ---@field new fun(self, ...) : SequenceManager.InteractionElement
 InteractionElement = {}
 

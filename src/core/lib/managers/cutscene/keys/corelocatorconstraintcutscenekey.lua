@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreLocatorConstraintCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreLocatorConstraintCutsceneKey
 CoreLocatorConstraintCutsceneKey = {}
 

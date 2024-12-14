@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ShotgunBase : NewRaycastWeaponBase
+---@field super NewRaycastWeaponBase
 ---@field new fun(self, ...) : ShotgunBase
 ShotgunBase = {}
 
@@ -41,6 +42,7 @@ function ShotgunBase:_fire_raycast(user_unit, from_pos, direction, dmg_mul, shoo
 function ShotgunBase:_check_one_shot_shotgun_achievements(kill_data) end
 
 ---@class SaigaShotgun : ShotgunBase
+---@field super ShotgunBase
 ---@field new fun(self, ...) : SaigaShotgun
 SaigaShotgun = {}
 
@@ -49,6 +51,7 @@ SaigaShotgun = {}
 function SaigaShotgun:init(...) end
 
 ---@class InstantElectricBulletBase : InstantBulletBase
+---@field super InstantBulletBase
 ---@field new fun(self, ...) : InstantElectricBulletBase
 InstantElectricBulletBase = {}
 

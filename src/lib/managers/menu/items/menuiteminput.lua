@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemInput : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemInput
 MenuItemInput = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuNodeEconomySafe : MenuNodeBaseGui
+---@field super MenuNodeBaseGui
 ---@field new fun(self, ...) : MenuNodeEconomySafe
 MenuNodeEconomySafe = {}
 

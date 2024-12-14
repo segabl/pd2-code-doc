@@ -13,7 +13,7 @@ function ScriptReference:set_extension(extension) end
 ---@return unknown?
 function ScriptReference:extension() end
 
----Returns wether the reference of this object is still valid
+---Returns whether the reference of this object is still valid
 ---@return boolean
 function ScriptReference:alive() end
 

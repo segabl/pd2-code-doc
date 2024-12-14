@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class VehicleTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : VehicleTriggerUnitElement
 VehicleTriggerUnitElement = {}
 

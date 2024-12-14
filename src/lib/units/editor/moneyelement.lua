@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MoneyUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : MoneyUnitElement
 MoneyUnitElement = {}
 
@@ -17,6 +18,7 @@ function MoneyUnitElement:toggle_local_only() end
 function MoneyUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class FilterMoneyUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : FilterMoneyUnitElement
 FilterMoneyUnitElement = {}
 

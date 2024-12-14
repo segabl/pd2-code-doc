@@ -229,6 +229,7 @@ function BaseInteractionExt:destroy() end
 function BaseInteractionExt:can_remove_item() end
 
 ---@class UseInteractionExt : BaseInteractionExt
+---@field super BaseInteractionExt
 ---@field new fun(self, ...) : UseInteractionExt
 UseInteractionExt = {}
 
@@ -258,6 +259,7 @@ function UseInteractionExt:_check_achievements() end
 function UseInteractionExt:destroy() end
 
 ---@class MultipleChoiceInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : MultipleChoiceInteractionExt
 MultipleChoiceInteractionExt = {}
 
@@ -275,6 +277,7 @@ function MultipleChoiceInteractionExt:interact(player) end
 function MultipleChoiceInteractionExt:sync_net_event(event_id, player) end
 
 ---@class TripMineInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : TripMineInteractionExt
 TripMineInteractionExt = {}
 
@@ -290,6 +293,7 @@ function TripMineInteractionExt:selected(player) end
 function TripMineInteractionExt:unselect() end
 
 ---@class ECMJammerInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : ECMJammerInteractionExt
 ECMJammerInteractionExt = {}
 
@@ -311,6 +315,7 @@ function ECMJammerInteractionExt:unselect() end
 function ECMJammerInteractionExt:set_active(active, sync, ...) end
 
 ---@class ReviveInteractionExt : BaseInteractionExt
+---@field super BaseInteractionExt
 ---@field new fun(self, ...) : ReviveInteractionExt
 ReviveInteractionExt = {}
 
@@ -375,6 +380,7 @@ function ReviveInteractionExt:save(data) end
 function ReviveInteractionExt:load(data) end
 
 ---@class GageAssignmentInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : GageAssignmentInteractionExt
 GageAssignmentInteractionExt = {}
 
@@ -395,6 +401,7 @@ function GageAssignmentInteractionExt:can_select(player) end
 function GageAssignmentInteractionExt:interact(player) end
 
 ---@class AmmoBagInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : AmmoBagInteractionExt
 AmmoBagInteractionExt = {}
 
@@ -407,6 +414,7 @@ function AmmoBagInteractionExt:_interact_blocked(player) end
 function AmmoBagInteractionExt:interact(player) end
 
 ---@class SentryGunInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : SentryGunInteractionExt
 SentryGunInteractionExt = {}
 
@@ -432,6 +440,7 @@ function SentryGunInteractionExt:_add_string_macros(macros) end
 function SentryGunInteractionExt:_on_weapon_fire_event() end
 
 ---@class SentryGunFireModeInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : SentryGunFireModeInteractionExt
 SentryGunFireModeInteractionExt = {}
 
@@ -454,6 +463,7 @@ function SentryGunFireModeInteractionExt:_add_string_macros(macros) end
 function SentryGunFireModeInteractionExt:_on_weapon_fire_event() end
 
 ---@class GrenadeCrateInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : GrenadeCrateInteractionExt
 GrenadeCrateInteractionExt = {}
 
@@ -466,6 +476,7 @@ function GrenadeCrateInteractionExt:_interact_blocked(player) end
 function GrenadeCrateInteractionExt:interact(player) end
 
 ---@class BodyBagsBagInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : BodyBagsBagInteractionExt
 BodyBagsBagInteractionExt = {}
 
@@ -478,6 +489,7 @@ function BodyBagsBagInteractionExt:_interact_blocked(player) end
 function BodyBagsBagInteractionExt:interact(player) end
 
 ---@class DoctorBagBaseInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : DoctorBagBaseInteractionExt
 DoctorBagBaseInteractionExt = {}
 
@@ -490,6 +502,7 @@ function DoctorBagBaseInteractionExt:_interact_blocked(player) end
 function DoctorBagBaseInteractionExt:interact(player) end
 
 ---@class C4BagInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : C4BagInteractionExt
 C4BagInteractionExt = {}
 
@@ -502,6 +515,7 @@ function C4BagInteractionExt:_interact_blocked(player) end
 function C4BagInteractionExt:interact(player) end
 
 ---@class MultipleEquipmentBagInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : MultipleEquipmentBagInteractionExt
 MultipleEquipmentBagInteractionExt = {}
 
@@ -520,6 +534,7 @@ function MultipleEquipmentBagInteractionExt:interact(player) end
 function MultipleEquipmentBagInteractionExt:sync_interacted(peer, player, amount_wanted) end
 
 ---@class VeilInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : VeilInteractionExt
 VeilInteractionExt = {}
 
@@ -532,6 +547,7 @@ function VeilInteractionExt:_interact_blocked(player) end
 function VeilInteractionExt:interact(player) end
 
 ---@class VeilTakeInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : VeilTakeInteractionExt
 VeilTakeInteractionExt = {}
 
@@ -547,6 +563,7 @@ function VeilTakeInteractionExt:interact(player) end
 function VeilTakeInteractionExt:sync_interacted() end
 
 ---@class SmallLootInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : SmallLootInteractionExt
 SmallLootInteractionExt = {}
 
@@ -555,6 +572,7 @@ SmallLootInteractionExt = {}
 function SmallLootInteractionExt:interact(player) end
 
 ---@class MoneyWrapInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : MoneyWrapInteractionExt
 MoneyWrapInteractionExt = {}
 
@@ -563,6 +581,7 @@ MoneyWrapInteractionExt = {}
 function MoneyWrapInteractionExt:interact(player) end
 
 ---@class DiamondInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : DiamondInteractionExt
 DiamondInteractionExt = {}
 
@@ -571,6 +590,7 @@ DiamondInteractionExt = {}
 function DiamondInteractionExt:interact(player) end
 
 ---@class SecurityCameraInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : SecurityCameraInteractionExt
 SecurityCameraInteractionExt = {}
 
@@ -601,6 +621,7 @@ function SecurityCameraInteractionExt:interact(player) end
 function SecurityCameraInteractionExt:sync_interacted(peer, player, status, skip_alive_check) end
 
 ---@class ZipLineInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : ZipLineInteractionExt
 ZipLineInteractionExt = {}
 
@@ -620,6 +641,7 @@ function ZipLineInteractionExt:_interact_blocked(player) end
 function ZipLineInteractionExt:interact(player) end
 
 ---@class IntimitateInteractionExt : BaseInteractionExt
+---@field super BaseInteractionExt
 ---@field new fun(self, ...) : IntimitateInteractionExt
 IntimitateInteractionExt = {}
 
@@ -670,6 +692,7 @@ function IntimitateInteractionExt:_is_in_required_state(player) end
 function IntimitateInteractionExt:on_interacting_unit_destroyed(peer, player) end
 
 ---@class CarryInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : CarryInteractionExt
 CarryInteractionExt = {}
 
@@ -721,6 +744,7 @@ function CarryInteractionExt:register_collision_callbacks() end
 function CarryInteractionExt:_collision_callback(tag, unit, body, other_unit, other_body, position, normal, velocity, ...) end
 
 ---@class LootBankInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : LootBankInteractionExt
 LootBankInteractionExt = {}
 
@@ -740,6 +764,7 @@ function LootBankInteractionExt:interact(player) end
 function LootBankInteractionExt:sync_interacted(peer, player, status, skip_alive_check) end
 
 ---@class EventIDInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : EventIDInteractionExt
 EventIDInteractionExt = {}
 
@@ -781,6 +806,7 @@ function EventIDInteractionExt:unselect() end
 function EventIDInteractionExt:sync_net_event(event_id, peer) end
 
 ---@class MissionDoorDeviceInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : MissionDoorDeviceInteractionExt
 MissionDoorDeviceInteractionExt = {}
 
@@ -812,6 +838,7 @@ function MissionDoorDeviceInteractionExt:check_for_upgrade() end
 function MissionDoorDeviceInteractionExt:sync_net_event(event_id) end
 
 ---@class SpecialEquipmentInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : SpecialEquipmentInteractionExt
 SpecialEquipmentInteractionExt = {}
 
@@ -841,6 +868,7 @@ function SpecialEquipmentInteractionExt:apply_item_pickup() end
 function SpecialEquipmentInteractionExt:can_remove_item() end
 
 ---@class SpecialEquipmentGiveAndTakeInteractionExt : SpecialEquipmentInteractionExt
+---@field super SpecialEquipmentInteractionExt
 ---@field new fun(self, ...) : SpecialEquipmentGiveAndTakeInteractionExt
 SpecialEquipmentGiveAndTakeInteractionExt = {}
 
@@ -849,6 +877,7 @@ SpecialEquipmentGiveAndTakeInteractionExt = {}
 function SpecialEquipmentGiveAndTakeInteractionExt:interact(player) end
 
 ---@class AccessCameraInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : AccessCameraInteractionExt
 AccessCameraInteractionExt = {}
 
@@ -861,6 +890,7 @@ function AccessCameraInteractionExt:_interact_blocked(player) end
 function AccessCameraInteractionExt:interact(player) end
 
 ---@class MissionElementInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : MissionElementInteractionExt
 MissionElementInteractionExt = {}
 
@@ -911,6 +941,7 @@ function MissionElementInteractionExt:save(data) end
 function MissionElementInteractionExt:load(data) end
 
 ---@class DrivingInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : DrivingInteractionExt
 DrivingInteractionExt = {}
 
@@ -964,6 +995,7 @@ function DrivingInteractionExt:interact_distance() end
 function DrivingInteractionExt:_setup_ray_objects() end
 
 ---@class CivilianHeisterInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : CivilianHeisterInteractionExt
 CivilianHeisterInteractionExt = {}
 
@@ -1040,6 +1072,7 @@ function CivilianHeisterInteractionExt:hide_waypoint() end
 function CivilianHeisterInteractionExt:play_minigame_vo(state) end
 
 ---@class SafehouseNPCInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : SafehouseNPCInteractionExt
 SafehouseNPCInteractionExt = {}
 
@@ -1059,6 +1092,7 @@ function SafehouseNPCInteractionExt:interact(player) end
 function SafehouseNPCInteractionExt:_reenable_ext() end
 
 ---@class ButlerInteractionExt : SafehouseNPCInteractionExt
+---@field super SafehouseNPCInteractionExt
 ---@field new fun(self, ...) : ButlerInteractionExt
 ButlerInteractionExt = {}
 
@@ -1067,6 +1101,7 @@ ButlerInteractionExt = {}
 function ButlerInteractionExt:init(unit) end
 
 ---@class AccessFBIFilesInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : AccessFBIFilesInteractionExt
 AccessFBIFilesInteractionExt = {}
 
@@ -1083,6 +1118,7 @@ function AccessFBIFilesInteractionExt:can_select(player) end
 function AccessFBIFilesInteractionExt:interact(player) end
 
 ---@class AccessPD2StashInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : AccessPD2StashInteractionExt
 AccessPD2StashInteractionExt = {}
 
@@ -1099,6 +1135,7 @@ function AccessPD2StashInteractionExt:can_select(player) end
 function AccessPD2StashInteractionExt:interact(player) end
 
 ---@class AccessBankInvadersInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : AccessBankInvadersInteractionExt
 AccessBankInvadersInteractionExt = {}
 
@@ -1115,6 +1152,7 @@ function AccessBankInvadersInteractionExt:can_select(player) end
 function AccessBankInvadersInteractionExt:interact(player) end
 
 ---@class AccessSideJobsInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : AccessSideJobsInteractionExt
 AccessSideJobsInteractionExt = {}
 
@@ -1127,6 +1165,7 @@ function AccessSideJobsInteractionExt:_interact_blocked(player) end
 function AccessSideJobsInteractionExt:interact(player) end
 
 ---@class AccessWeaponMenuInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : AccessWeaponMenuInteractionExt
 AccessWeaponMenuInteractionExt = {}
 
@@ -1135,6 +1174,7 @@ AccessWeaponMenuInteractionExt = {}
 function AccessWeaponMenuInteractionExt:interact(player) end
 
 ---@class AccessCrimeNetInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : AccessCrimeNetInteractionExt
 AccessCrimeNetInteractionExt = {}
 
@@ -1149,6 +1189,7 @@ function AccessCrimeNetInteractionExt:init(unit) end
 function AccessCrimeNetInteractionExt:update(unit, t, dt) end
 
 ---@class PlayerTurretInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : PlayerTurretInteractionExt
 PlayerTurretInteractionExt = {}
 
@@ -1197,6 +1238,7 @@ function PlayerTurretInteractionExt:_set_active_contour_opacity() end
 function PlayerTurretInteractionExt:interact_distance() end
 
 ---@class CustomUnitInteractionExt : UseInteractionExt
+---@field super UseInteractionExt
 ---@field new fun(self, ...) : CustomUnitInteractionExt
 CustomUnitInteractionExt = {}
 

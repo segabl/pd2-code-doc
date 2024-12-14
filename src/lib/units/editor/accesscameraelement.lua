@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AccessCameraUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : AccessCameraUnitElement
 AccessCameraUnitElement = {}
 
@@ -75,6 +76,7 @@ function AccessCameraUnitElement:_remove_camera_unit() end
 function AccessCameraUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class AccessCameraOperatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : AccessCameraOperatorUnitElement
 AccessCameraOperatorUnitElement = {}
 
@@ -105,6 +107,7 @@ function AccessCameraOperatorUnitElement:add_triggers(vc) end
 function AccessCameraOperatorUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class AccessCameraTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : AccessCameraTriggerUnitElement
 AccessCameraTriggerUnitElement = {}
 

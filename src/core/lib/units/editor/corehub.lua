@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreHub : HubElement
+---@field super HubElement
 ---@field new fun(self, ...) : CoreHub
 CoreHub = {}
 
 ---@class Hub : CoreHub
+---@field super CoreHub
 ---@field new fun(self, ...) : Hub
 Hub = {}
 

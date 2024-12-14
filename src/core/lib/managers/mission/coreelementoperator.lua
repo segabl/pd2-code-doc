@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementOperator.ElementOperator : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementOperator.ElementOperator
 ElementOperator = {}
 

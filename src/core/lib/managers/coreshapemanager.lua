@@ -165,6 +165,7 @@ function Shape:save_level_data() end
 function Shape:destroy() end
 
 ---@class CoreShapeManager.ShapeBox : CoreShapeManager.Shape
+---@field super CoreShapeManager.Shape
 ---@field new fun(self, ...) : CoreShapeManager.ShapeBox
 ShapeBox = {}
 
@@ -229,6 +230,7 @@ function ShapeBox:draw(t, dt, r, g, b) end
 function ShapeBox:draw_outline(t, dt, r, g, b) end
 
 ---@class CoreShapeManager.ShapeBoxMiddle : CoreShapeManager.ShapeBox
+---@field super CoreShapeManager.ShapeBox
 ---@field new fun(self, ...) : CoreShapeManager.ShapeBoxMiddle
 ShapeBoxMiddle = {}
 
@@ -250,6 +252,7 @@ function ShapeBoxMiddle:is_inside(pos) end
 function ShapeBoxMiddle:draw(t, dt, r, g, b, a) end
 
 ---@class CoreShapeManager.ShapeBoxMiddleBottom : CoreShapeManager.ShapeBox
+---@field super CoreShapeManager.ShapeBox
 ---@field new fun(self, ...) : CoreShapeManager.ShapeBoxMiddleBottom
 ShapeBoxMiddleBottom = {}
 
@@ -270,6 +273,7 @@ function ShapeBoxMiddleBottom:is_inside(pos) end
 function ShapeBoxMiddleBottom:draw(t, dt, r, g, b) end
 
 ---@class CoreShapeManager.ShapeSphere : CoreShapeManager.Shape
+---@field super CoreShapeManager.Shape
 ---@field new fun(self, ...) : CoreShapeManager.ShapeSphere
 ShapeSphere = {}
 
@@ -300,6 +304,7 @@ function ShapeSphere:is_inside(pos) end
 function ShapeSphere:draw(t, dt, r, g, b) end
 
 ---@class CoreShapeManager.ShapeCylinder : CoreShapeManager.Shape
+---@field super CoreShapeManager.Shape
 ---@field new fun(self, ...) : CoreShapeManager.ShapeCylinder
 ShapeCylinder = {}
 
@@ -337,6 +342,7 @@ function ShapeCylinder:draw(t, dt, r, g, b) end
 function ShapeCylinder:is_inside(pos) end
 
 ---@class CoreShapeManager.ShapeCylinderMiddle : CoreShapeManager.ShapeCylinder
+---@field super CoreShapeManager.ShapeCylinder
 ---@field new fun(self, ...) : CoreShapeManager.ShapeCylinderMiddle
 ShapeCylinderMiddle = {}
 

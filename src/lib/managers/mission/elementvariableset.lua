@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementVariableSet : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementVariableSet
 ElementVariableSet = {}
 

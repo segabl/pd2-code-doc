@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.Xbox360MarketplaceDialog : SystemMenuManager.MarketplaceDialog
+---@field super SystemMenuManager.MarketplaceDialog
 ---@field new fun(self, ...) : SystemMenuManager.Xbox360MarketplaceDialog
 Xbox360MarketplaceDialog = {}
 

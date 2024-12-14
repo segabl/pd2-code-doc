@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SetupSlaveSetup : CoreSetup.CoreSetup
+---@field super CoreSetup.CoreSetup
 ---@field new fun(self, ...) : SetupSlaveSetup
 SetupSlaveSetup = {}
 

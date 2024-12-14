@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class RandomInstanceElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : RandomInstanceElement
 RandomInstanceElement = {}
 
@@ -100,10 +101,12 @@ function RandomInstanceElement:_on_set_instance_event(data) end
 function RandomInstanceElement:_remove_instance_item(idx) end
 
 ---@class RandomInstanceElementInputEvent : RandomInstanceElement
+---@field super RandomInstanceElement
 ---@field new fun(self, ...) : RandomInstanceElementInputEvent
 RandomInstanceElementInputEvent = {}
 
 ---@class RandomInstanceElementOutputEvent : RandomInstanceElement
+---@field super RandomInstanceElement
 ---@field new fun(self, ...) : RandomInstanceElementOutputEvent
 RandomInstanceElementOutputEvent = {}
 

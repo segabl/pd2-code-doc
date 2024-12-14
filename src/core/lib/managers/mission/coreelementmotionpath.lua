@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementMotionPath.ElementMotionPathOperator : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementMotionPath.ElementMotionPathOperator
 ElementMotionPathOperator = {}
 
@@ -17,6 +18,7 @@ function ElementMotionPathOperator:client_on_executed(...) end
 function ElementMotionPathOperator:on_executed(instigator) end
 
 ---@class CoreElementMotionPath.ElementMotionPathTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementMotionPath.ElementMotionPathTrigger
 ElementMotionPathTrigger = {}
 

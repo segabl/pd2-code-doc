@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementPressure : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementPressure
 ElementPressure = {}
 

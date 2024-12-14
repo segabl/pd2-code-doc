@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GageModifierFastCrouching : GageModifier
+---@field super GageModifier
 ---@field new fun(self, ...) : GageModifierFastCrouching
 GageModifierFastCrouching = {}
 

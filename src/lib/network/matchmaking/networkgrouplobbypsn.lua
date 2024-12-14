@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NetworkGroupLobbyPSN : NetworkGroupLobby
+---@field super NetworkGroupLobby
 ---@field new fun(self, ...) : NetworkGroupLobbyPSN
 NetworkGroupLobbyPSN = {}
 

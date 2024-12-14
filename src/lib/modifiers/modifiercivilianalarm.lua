@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierCivilianAlarm : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierCivilianAlarm
 ModifierCivilianAlarm = {}
 

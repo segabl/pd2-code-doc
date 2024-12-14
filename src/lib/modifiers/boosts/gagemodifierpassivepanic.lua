@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GageModifierPassivePanic : GageModifier
+---@field super GageModifier
 ---@field new fun(self, ...) : GageModifierPassivePanic
 GageModifierPassivePanic = {}
 

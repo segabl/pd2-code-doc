@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierNoHurtAnims : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierNoHurtAnims
 ModifierNoHurtAnims = {}
 

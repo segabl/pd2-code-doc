@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementBainState : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementBainState
 ElementBainState = {}
 

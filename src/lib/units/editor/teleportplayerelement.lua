@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TeleportPlayerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : TeleportPlayerUnitElement
 TeleportPlayerUnitElement = {}
 

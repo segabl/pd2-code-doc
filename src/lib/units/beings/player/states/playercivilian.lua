@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerCivilian : PlayerStandard
+---@field super PlayerStandard
 ---@field new fun(self, ...) : PlayerCivilian
 PlayerCivilian = {}
 

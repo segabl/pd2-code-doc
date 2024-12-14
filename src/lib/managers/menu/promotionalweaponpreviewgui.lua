@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PromotionalWeaponPreviewGui : MenuGuiComponent
+---@field super MenuGuiComponent
 ---@field new fun(self, ...) : PromotionalWeaponPreviewGui
 PromotionalWeaponPreviewGui = {}
 

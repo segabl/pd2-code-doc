@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PrePlanningUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : PrePlanningUnitElement
 PrePlanningUnitElement = {}
 
@@ -22,6 +23,7 @@ function PrePlanningUnitElement:_data_updated(value_type, value) end
 function PrePlanningUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class PrePlanningExecuteGroupUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : PrePlanningExecuteGroupUnitElement
 PrePlanningExecuteGroupUnitElement = {}
 

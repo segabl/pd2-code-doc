@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.KeyboardInputDialog : SystemMenuManager.BaseDialog
+---@field super SystemMenuManager.BaseDialog
 ---@field new fun(self, ...) : SystemMenuManager.KeyboardInputDialog
 KeyboardInputDialog = {}
 

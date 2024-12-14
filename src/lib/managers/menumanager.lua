@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class MenuManager : CoreMenuManager.Manager
+---@field super CoreMenuManager.Manager
 ---@field new fun(self, ...) : MenuManager
 MenuManager = {}
 
 ---@class MenuCallbackHandler : CoreMenuCallbackHandler.CallbackHandler
+---@field super CoreMenuCallbackHandler.CallbackHandler
 ---@field new fun(self, ...) : MenuCallbackHandler
 MenuCallbackHandler = {}
 
@@ -1896,6 +1898,7 @@ function MenuSTEAMHostBrowser:add_filter(node) end
 function MenuSTEAMHostBrowser:refresh_node(node, info, friends_only) end
 
 ---@class MenuEPICHostBrowser : MenuSTEAMHostBrowser
+---@field super MenuSTEAMHostBrowser
 ---@field new fun(self, ...) : MenuEPICHostBrowser
 MenuEPICHostBrowser = {}
 
@@ -2244,6 +2247,7 @@ function MenuCallbackHandler:jukebox_option_ghost_playlist(item) end
 function MenuCallbackHandler:jukebox_option_ghost_tracks(item) end
 
 ---@class MenuPrePlanningInitiator : MenuCrimeNetContactInfoInitiator
+---@field super MenuCrimeNetContactInfoInitiator
 ---@field new fun(self, ...) : MenuPrePlanningInitiator
 MenuPrePlanningInitiator = {}
 
@@ -2488,6 +2492,7 @@ function MenuCallbackHandler:jukebox_options_enter(item) end
 function MenuCallbackHandler:jukebox_option_back(item) end
 
 ---@class MenuCrimeNetGageAssignmentInitiator : MenuCrimeNetContactInfoInitiator
+---@field super MenuCrimeNetContactInfoInitiator
 ---@field new fun(self, ...) : MenuCrimeNetGageAssignmentInitiator
 MenuCrimeNetGageAssignmentInitiator = {}
 
@@ -2527,6 +2532,7 @@ function MenuCrimeNetSpecialInitiator:create_divider(node, id, text_id, size, co
 function MenuCrimeNetSpecialInitiator:create_job(node, contract) end
 
 ---@class MenuReticleSwitchInitiator : MenuCrimeNetSpecialInitiator
+---@field super MenuCrimeNetSpecialInitiator
 ---@field new fun(self, ...) : MenuReticleSwitchInitiator
 MenuReticleSwitchInitiator = {}
 
@@ -2637,6 +2643,7 @@ function MenuCrimeNetFiltersInitiator:add_filters(node) end
 function MenuCallbackHandler:_reset_filters(item) end
 
 ---@class MenuMutatorOptionsInitiator : MenuCrimeNetSpecialInitiator
+---@field super MenuCrimeNetSpecialInitiator
 ---@field new fun(self, ...) : MenuMutatorOptionsInitiator
 MenuMutatorOptionsInitiator = {}
 
@@ -2667,6 +2674,7 @@ function MenuCallbackHandler:save_mutator_options(item) end
 function MenuCallbackHandler:_update_mutators_info() end
 
 ---@class MenuLobbyCountdownInitiator : MenuCrimeNetSpecialInitiator
+---@field super MenuCrimeNetSpecialInitiator
 ---@field new fun(self, ...) : MenuLobbyCountdownInitiator
 MenuLobbyCountdownInitiator = {}
 
@@ -2707,6 +2715,7 @@ function MenuCallbackHandler:start_smart_matchmaking(item) end
 function MenuCallbackHandler:open_contract_smart_matchmaking_node(item) end
 
 ---@class MenuCrimeNetSmartMatchmakingInitiator : MenuCrimeNetSpecialInitiator
+---@field super MenuCrimeNetSpecialInitiator
 ---@field new fun(self, ...) : MenuCrimeNetSmartMatchmakingInitiator
 MenuCrimeNetSmartMatchmakingInitiator = {}
 
@@ -2864,6 +2873,7 @@ function MenuCallbackHandler:save_mod_changes(node) end
 function MenuCallbackHandler:mod_option_toggle_enabled(item) end
 
 ---@class MenuCrimeNetChallengeInitiator : MenuCrimeNetGageAssignmentInitiator
+---@field super MenuCrimeNetGageAssignmentInitiator
 ---@field new fun(self, ...) : MenuCrimeNetChallengeInitiator
 MenuCrimeNetChallengeInitiator = {}
 
@@ -2939,6 +2949,7 @@ function MenuCallbackHandler:choice_challenge_get_weapon_mod_reward(item) end
 function MenuCallbackHandler:roll_challenge_give_weapon_mod(weapon_id, global_value) end
 
 ---@class MenuCustomizeGadgetInitiator : MenuCrimeNetSpecialInitiator
+---@field super MenuCrimeNetSpecialInitiator
 ---@field new fun(self, ...) : MenuCustomizeGadgetInitiator
 MenuCustomizeGadgetInitiator = {}
 

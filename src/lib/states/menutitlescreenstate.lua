@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuTitlescreenState : GameState
+---@field super GameState
 ---@field new fun(self, ...) : MenuTitlescreenState
 MenuTitlescreenState = {}
 

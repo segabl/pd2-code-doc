@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ServerSyncedCivilianDamage : CivilianDamage
+---@field super CivilianDamage
 ---@field new fun(self, ...) : ServerSyncedCivilianDamage
 ServerSyncedCivilianDamage = {}
 

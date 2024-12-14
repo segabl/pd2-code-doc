@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MutatorEnemyReplacer : BaseMutator
+---@field super BaseMutator
 ---@field new fun(self, ...) : MutatorEnemyReplacer
 MutatorEnemyReplacer = {}
 
@@ -58,6 +59,7 @@ function MutatorEnemyReplacer:_get_unit_group_spooc(difficulty_index) end
 function MutatorEnemyReplacer:_get_unit_group_medic(difficulty_index) end
 
 ---@class MutatorMediDozer : BaseMutator
+---@field super BaseMutator
 ---@field new fun(self, ...) : MutatorMediDozer
 MutatorMediDozer = {}
 
@@ -70,6 +72,7 @@ function MutatorMediDozer:setup() end
 function MutatorMediDozer:modify_unit_categories(group_ai_tweak, difficulty_index) end
 
 ---@class MutatorTitandozers : BaseMutator
+---@field super BaseMutator
 ---@field new fun(self, ...) : MutatorTitandozers
 MutatorTitandozers = {}
 

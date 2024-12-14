@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class VehicleBoardingElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : VehicleBoardingElement
 VehicleBoardingElement = {}
 

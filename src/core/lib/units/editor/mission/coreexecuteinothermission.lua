@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreExecuteInOtherMissionUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreExecuteInOtherMissionUnitElement
 CoreExecuteInOtherMissionUnitElement = {}
 
 ---@class ExecuteInOtherMissionUnitElement : CoreExecuteInOtherMissionUnitElement
+---@field super CoreExecuteInOtherMissionUnitElement
 ---@field new fun(self, ...) : ExecuteInOtherMissionUnitElement
 ExecuteInOtherMissionUnitElement = {}
 

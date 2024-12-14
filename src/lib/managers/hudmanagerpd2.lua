@@ -505,7 +505,7 @@ function HUDManager:update_stat_screen() end
 ---@return unknown
 function HUDManager:hide_stats_screen() end
 
----@return unknown
+---@return boolean
 function HUDManager:showing_stats_screen() end
 
 ---@return unknown

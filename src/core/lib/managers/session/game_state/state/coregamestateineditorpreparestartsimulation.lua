@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreGameStateInEditorPrepareStartSimulation.PrepareStartSimulation : CoreGameStatePrepareLoadingGame.PrepareLoadingGame
+---@field super CoreGameStatePrepareLoadingGame.PrepareLoadingGame
 ---@field new fun(self, ...) : CoreGameStateInEditorPrepareStartSimulation.PrepareStartSimulation
 PrepareStartSimulation = {}
 

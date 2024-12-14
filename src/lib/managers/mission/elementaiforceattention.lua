@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementAIForceAttention : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementAIForceAttention
 ElementAIForceAttention = {}
 

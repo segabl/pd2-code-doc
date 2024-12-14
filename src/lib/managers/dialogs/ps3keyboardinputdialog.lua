@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.PS3KeyboardInputDialog : SystemMenuManager.KeyboardInputDialog
+---@field super SystemMenuManager.KeyboardInputDialog
 ---@field new fun(self, ...) : SystemMenuManager.PS3KeyboardInputDialog
 PS3KeyboardInputDialog = {}
 

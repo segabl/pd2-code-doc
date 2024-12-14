@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ServerLeftState : MissionEndState
+---@field super MissionEndState
 ---@field new fun(self, ...) : ServerLeftState
 ServerLeftState = {}
 

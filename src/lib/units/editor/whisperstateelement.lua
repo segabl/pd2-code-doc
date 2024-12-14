@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class WhisperStateUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : WhisperStateUnitElement
 WhisperStateUnitElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HeatUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : HeatUnitElement
 HeatUnitElement = {}
 
@@ -14,6 +15,7 @@ function HeatUnitElement:init(unit) end
 function HeatUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class HeatTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : HeatTriggerUnitElement
 HeatTriggerUnitElement = {}
 

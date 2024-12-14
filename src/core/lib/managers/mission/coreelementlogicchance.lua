@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementLogicChance.ElementLogicChance : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementLogicChance.ElementLogicChance
 ElementLogicChance = {}
 
@@ -46,6 +47,7 @@ function ElementLogicChance:remove_trigger(id) end
 function ElementLogicChance:_trigger_outcome(outcome) end
 
 ---@class CoreElementLogicChance.ElementLogicChanceOperator : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementLogicChance.ElementLogicChanceOperator
 ElementLogicChanceOperator = {}
 
@@ -62,6 +64,7 @@ function ElementLogicChanceOperator:client_on_executed(...) end
 function ElementLogicChanceOperator:on_executed(instigator) end
 
 ---@class CoreElementLogicChance.ElementLogicChanceTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementLogicChance.ElementLogicChanceTrigger
 ElementLogicChanceTrigger = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FriendsBoxGui : TextBoxGui
+---@field super TextBoxGui
 ---@field new fun(self, ...) : FriendsBoxGui
 FriendsBoxGui = {}
 

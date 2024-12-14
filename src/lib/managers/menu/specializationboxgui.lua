@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SpecializationBoxGui : TextBoxGui
+---@field super TextBoxGui
 ---@field new fun(self, ...) : SpecializationBoxGui
 SpecializationBoxGui = {}
 

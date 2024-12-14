@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MutatorsCategoryPage : MenuGuiTabPage
+---@field super MenuGuiTabPage
 ---@field new fun(self, ...) : MutatorsCategoryPage
 MutatorsCategoryPage = {}
 
@@ -90,6 +91,7 @@ function MutatorsCategoryPage:move_down() end
 function MutatorsCategoryPage:_scroll(target) end
 
 ---@class MutatorItem : MenuGuiItem
+---@field super MenuGuiItem
 ---@field new fun(self, ...) : MutatorItem
 MutatorItem = {}
 

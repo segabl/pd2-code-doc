@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HuskTeamAIMovement : TeamAIMovement
+---@field super TeamAIMovement
 ---@field new fun(self, ...) : HuskTeamAIMovement
 HuskTeamAIMovement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GageModifierMaxThrowables : GageModifier
+---@field super GageModifier
 ---@field new fun(self, ...) : GageModifierMaxThrowables
 GageModifierMaxThrowables = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BlackBorders : GUIObjectWrapper
+---@field super GUIObjectWrapper
 ---@field new fun(self, ...) : BlackBorders
 BlackBorders = {}
 

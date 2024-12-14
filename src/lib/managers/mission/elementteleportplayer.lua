@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementTeleportPlayer : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementTeleportPlayer
 ElementTeleportPlayer = {}
 

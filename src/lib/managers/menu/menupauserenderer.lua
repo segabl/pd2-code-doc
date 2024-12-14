@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuPauseRenderer : MenuRenderer
+---@field super MenuRenderer
 ---@field new fun(self, ...) : MenuPauseRenderer
 MenuPauseRenderer = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GageModifierDamageAbsorption : GageModifier
+---@field super GageModifier
 ---@field new fun(self, ...) : GageModifierDamageAbsorption
 GageModifierDamageAbsorption = {}
 

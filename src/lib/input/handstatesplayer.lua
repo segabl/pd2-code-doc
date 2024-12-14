@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EmptyHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : EmptyHandState
 EmptyHandState = {}
 
@@ -8,6 +9,7 @@ EmptyHandState = {}
 function EmptyHandState:init() end
 
 ---@class PointHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : PointHandState
 PointHandState = {}
 
@@ -15,6 +17,7 @@ PointHandState = {}
 function PointHandState:init() end
 
 ---@class WeaponHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : WeaponHandState
 WeaponHandState = {}
 
@@ -22,6 +25,7 @@ WeaponHandState = {}
 function WeaponHandState:init() end
 
 ---@class AkimboHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : AkimboHandState
 AkimboHandState = {}
 
@@ -29,6 +33,7 @@ AkimboHandState = {}
 function AkimboHandState:init() end
 
 ---@class MaskHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : MaskHandState
 MaskHandState = {}
 
@@ -36,6 +41,7 @@ MaskHandState = {}
 function MaskHandState:init() end
 
 ---@class ItemHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : ItemHandState
 ItemHandState = {}
 
@@ -43,6 +49,7 @@ ItemHandState = {}
 function ItemHandState:init() end
 
 ---@class AbilityHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : AbilityHandState
 AbilityHandState = {}
 
@@ -50,6 +57,7 @@ AbilityHandState = {}
 function AbilityHandState:init() end
 
 ---@class EquipmentHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : EquipmentHandState
 EquipmentHandState = {}
 
@@ -57,6 +65,7 @@ EquipmentHandState = {}
 function EquipmentHandState:init() end
 
 ---@class TabletHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : TabletHandState
 TabletHandState = {}
 
@@ -64,6 +73,7 @@ TabletHandState = {}
 function TabletHandState:init() end
 
 ---@class BeltHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : BeltHandState
 BeltHandState = {}
 
@@ -71,6 +81,7 @@ BeltHandState = {}
 function BeltHandState:init() end
 
 ---@class RepeaterHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : RepeaterHandState
 RepeaterHandState = {}
 
@@ -78,6 +89,7 @@ RepeaterHandState = {}
 function RepeaterHandState:init() end
 
 ---@class DrivingHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : DrivingHandState
 DrivingHandState = {}
 
@@ -85,6 +97,7 @@ DrivingHandState = {}
 function DrivingHandState:init() end
 
 ---@class ArrowHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : ArrowHandState
 ArrowHandState = {}
 

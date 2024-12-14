@@ -254,6 +254,7 @@ function PortalUnitGroup:unit_in_group(unit) end
 function PortalUnitGroup:draw(t, dt, mul, skip_shapes, skip_units) end
 
 ---@class CorePortalManager.PortalUnitGroupShape : CoreShapeManager.ShapeBox
+---@field super CoreShapeManager.ShapeBox
 ---@field new fun(self, ...) : CorePortalManager.PortalUnitGroupShape
 PortalUnitGroupShape = {}
 

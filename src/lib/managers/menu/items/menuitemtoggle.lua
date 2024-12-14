@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemToggleWithIcon : CoreMenuItemToggle.ItemToggle
+---@field super CoreMenuItemToggle.ItemToggle
 ---@field new fun(self, ...) : MenuItemToggleWithIcon
 MenuItemToggleWithIcon = {}
 

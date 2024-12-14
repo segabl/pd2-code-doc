@@ -410,6 +410,7 @@ function GenericDLCManager:has_stat(data) end
 function GenericDLCManager:has_dlc_or_soundtrack_or_cce(dlc) end
 
 ---@class PS3DLCManager : GenericDLCManager
+---@field super GenericDLCManager
 ---@field new fun(self, ...) : PS3DLCManager
 PS3DLCManager = {}
 
@@ -445,6 +446,7 @@ function PS3DLCManager:cb_confirm_purchase_yes(sku_data) end
 function PS3DLCManager:cb_confirm_purchase_no() end
 
 ---@class X360DLCManager : GenericDLCManager
+---@field super GenericDLCManager
 ---@field new fun(self, ...) : X360DLCManager
 X360DLCManager = {}
 
@@ -458,6 +460,7 @@ function X360DLCManager:_verify_dlcs() end
 function X360DLCManager:on_signin_complete() end
 
 ---@class PS4DLCManager : GenericDLCManager
+---@field super GenericDLCManager
 ---@field new fun(self, ...) : PS4DLCManager
 PS4DLCManager = {}
 
@@ -493,6 +496,7 @@ function PS4DLCManager:cb_confirm_purchase_yes(sku_data) end
 function PS4DLCManager:cb_confirm_purchase_no() end
 
 ---@class XB1DLCManager : GenericDLCManager
+---@field super GenericDLCManager
 ---@field new fun(self, ...) : XB1DLCManager
 XB1DLCManager = {}
 
@@ -509,6 +513,7 @@ function XB1DLCManager:chk_content_updated() end
 function XB1DLCManager:on_signin_complete() end
 
 ---@class WINDLCManager : GenericDLCManager
+---@field super GenericDLCManager
 ---@field new fun(self, ...) : WINDLCManager
 WINDLCManager = {}
 
@@ -554,6 +559,7 @@ function WINDLCManager:load(data) end
 function WINDLCManager:init_finalize() end
 
 ---@class WinSteamDLCManager : WINDLCManager
+---@field super WINDLCManager
 ---@field new fun(self, ...) : WinSteamDLCManager
 WinSteamDLCManager = {}
 
@@ -582,6 +588,7 @@ function WinSteamDLCManager:check_pdth(clbk) end
 function WinSteamDLCManager:chk_vr_dlc() end
 
 ---@class WinEpicDLCManager : WINDLCManager
+---@field super WINDLCManager
 ---@field new fun(self, ...) : WinEpicDLCManager
 WinEpicDLCManager = {}
 

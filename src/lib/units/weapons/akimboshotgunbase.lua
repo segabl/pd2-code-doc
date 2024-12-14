@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AkimboShotgunBase : AkimboWeaponBase
+---@field super AkimboWeaponBase
 ---@field new fun(self, ...) : AkimboShotgunBase
 AkimboShotgunBase = {}
 
@@ -33,6 +34,7 @@ function AkimboShotgunBase:_update_stats_values(...) end
 function AkimboShotgunBase:_check_one_shot_shotgun_achievements(...) end
 
 ---@class NPCAkimboShotgunBase : NPCAkimboWeaponBase
+---@field super NPCAkimboWeaponBase
 ---@field new fun(self, ...) : NPCAkimboShotgunBase
 NPCAkimboShotgunBase = {}
 

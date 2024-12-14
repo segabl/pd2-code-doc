@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SpawnEnemyUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : SpawnEnemyUnitElement
 SpawnEnemyUnitElement = {}
 

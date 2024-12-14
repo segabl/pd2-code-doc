@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementCharacterOutline : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementCharacterOutline
 ElementCharacterOutline = {}
 

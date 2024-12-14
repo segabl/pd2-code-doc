@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MainMenuGui : PlayerInventoryGui
+---@field super PlayerInventoryGui
 ---@field new fun(self, ...) : MainMenuGui
 MainMenuGui = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementPickupCriminalDeployables : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementPickupCriminalDeployables
 ElementPickupCriminalDeployables = {}
 

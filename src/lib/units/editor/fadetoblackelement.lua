@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FadeToBlackElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : FadeToBlackElement
 FadeToBlackElement = {}
 

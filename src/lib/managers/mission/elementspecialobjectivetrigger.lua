@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementSpecialObjectiveTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementSpecialObjectiveTrigger
 ElementSpecialObjectiveTrigger = {}
 

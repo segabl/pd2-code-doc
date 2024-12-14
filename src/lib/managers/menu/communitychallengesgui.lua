@@ -31,6 +31,7 @@ function Tween.ease_linear(from, to, t) end
 function Tween.ease_out(from, to, t) end
 
 ---@class CommunityChallengeProgressBar : GUIObjectWrapper
+---@field super GUIObjectWrapper
 ---@field new fun(self, ...) : CommunityChallengeProgressBar
 CommunityChallengeProgressBar = {}
 
@@ -58,6 +59,7 @@ function CommunityChallengeProgressBar:_make_progress_text() end
 function CommunityChallengeProgressBar:get_statistic_id() end
 
 ---@class CommunityChallengeProgressTotal : GUIObjectWrapper
+---@field super GUIObjectWrapper
 ---@field new fun(self, ...) : CommunityChallengeProgressTotal
 CommunityChallengeProgressTotal = {}
 
@@ -85,6 +87,7 @@ function CommunityChallengeProgressTotal:_make_progress_text() end
 function CommunityChallengeProgressTotal:get_statistic_id() end
 
 ---@class CommunityChallengesGui : GUIObjectWrapper
+---@field super GUIObjectWrapper
 ---@field new fun(self, ...) : CommunityChallengesGui
 CommunityChallengesGui = {}
 

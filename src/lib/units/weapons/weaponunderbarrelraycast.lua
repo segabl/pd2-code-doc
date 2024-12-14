@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class WeaponUnderbarrelRaycast : WeaponUnderbarrel
+---@field super WeaponUnderbarrel
 ---@field new fun(self, ...) : WeaponUnderbarrelRaycast
 WeaponUnderbarrelRaycast = {}
 
@@ -74,6 +75,7 @@ function WeaponUnderbarrelRaycast:_check_alert(weapon, rays, fire_pos, direction
 function WeaponUnderbarrelRaycast:_build_suppression(weapon, enemies_in_cone, suppr_mul) end
 
 ---@class WeaponUnderbarrelShotgunRaycast : WeaponUnderbarrelRaycast
+---@field super WeaponUnderbarrelRaycast
 ---@field new fun(self, ...) : WeaponUnderbarrelShotgunRaycast
 WeaponUnderbarrelShotgunRaycast = {}
 
@@ -128,6 +130,7 @@ function WeaponUnderbarrelShotgunRaycast:_check_alert(weapon, rays, fire_pos, di
 function WeaponUnderbarrelShotgunRaycast:_build_suppression(weapon, enemies_in_cone, suppr_mul) end
 
 ---@class WeaponUnderbarrelFlamethrower : WeaponUnderbarrelRaycast
+---@field super WeaponUnderbarrelRaycast
 ---@field new fun(self, ...) : WeaponUnderbarrelFlamethrower
 WeaponUnderbarrelFlamethrower = {}
 

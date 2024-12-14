@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SlowMotionElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : SlowMotionElement
 SlowMotionElement = {}
 

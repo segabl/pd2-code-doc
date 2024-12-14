@@ -84,6 +84,7 @@ function PromotionalMenuButton:trigger() end
 function PromotionalMenuButton:animate_image_size(img, target_w, target_h, duration) end
 
 ---@class RaidPromotionalMenuButton : PromotionalMenuButton
+---@field super PromotionalMenuButton
 ---@field new fun(self, ...) : RaidPromotionalMenuButton
 RaidPromotionalMenuButton = {}
 
@@ -95,6 +96,7 @@ RaidPromotionalMenuButton = {}
 function RaidPromotionalMenuButton:_setup_selection(parent_gui, panel, params, theme) end
 
 ---@class RaidPromotionalMenuFloatingButton : PromotionalMenuButton
+---@field super PromotionalMenuButton
 ---@field new fun(self, ...) : RaidPromotionalMenuFloatingButton
 RaidPromotionalMenuFloatingButton = {}
 
@@ -111,6 +113,7 @@ function RaidPromotionalMenuFloatingButton:_setup_panel(panel, params) end
 function RaidPromotionalMenuFloatingButton:_setup_selection(parent_gui, panel, params, theme) end
 
 ---@class PromotionalMenuUnselectableButton : PromotionalMenuButton
+---@field super PromotionalMenuButton
 ---@field new fun(self, ...) : PromotionalMenuUnselectableButton
 PromotionalMenuUnselectableButton = {}
 
@@ -134,6 +137,7 @@ function PromotionalMenuUnselectableButton:set_selected() end
 function PromotionalMenuUnselectableButton:trigger() end
 
 ---@class PromotionalMenuSeperatorRaid : PromotionalMenuButton
+---@field super PromotionalMenuButton
 ---@field new fun(self, ...) : PromotionalMenuSeperatorRaid
 PromotionalMenuSeperatorRaid = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class WeaponUnderbarrel : WeaponGadgetBase
+---@field super WeaponGadgetBase
 ---@field new fun(self, ...) : WeaponUnderbarrel
 WeaponUnderbarrel = {}
 

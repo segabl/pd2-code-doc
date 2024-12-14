@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class InventoryDummyUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : InventoryDummyUnitElement
 InventoryDummyUnitElement = {}
 

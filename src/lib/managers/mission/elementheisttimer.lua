@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementHeistTimer : CoreElementTimer.ElementTimer
+---@field super CoreElementTimer.ElementTimer
 ---@field new fun(self, ...) : ElementHeistTimer
 ElementHeistTimer = {}
 

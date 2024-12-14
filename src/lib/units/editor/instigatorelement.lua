@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class InstigatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : InstigatorUnitElement
 InstigatorUnitElement = {}
 
@@ -14,6 +15,7 @@ function InstigatorUnitElement:init(unit) end
 function InstigatorUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class InstigatorOperatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : InstigatorOperatorUnitElement
 InstigatorOperatorUnitElement = {}
 
@@ -48,6 +50,7 @@ function InstigatorOperatorUnitElement:add_triggers(vc) end
 function InstigatorOperatorUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class InstigatorTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : InstigatorTriggerUnitElement
 InstigatorTriggerUnitElement = {}
 

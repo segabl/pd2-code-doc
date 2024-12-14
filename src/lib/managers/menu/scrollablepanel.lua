@@ -139,6 +139,7 @@ function ScrollablePanel:mouse_pressed(button, x, y) end
 function ScrollablePanel:mouse_released(button, x, y) end
 
 ---@class HorizontalScrollablePanel : ScrollablePanel
+---@field super ScrollablePanel
 ---@field new fun(self, ...) : HorizontalScrollablePanel
 HorizontalScrollablePanel = {}
 

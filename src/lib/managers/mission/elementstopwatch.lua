@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementStopwatch : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementStopwatch
 ElementStopwatch = {}
 
@@ -87,6 +88,7 @@ function ElementStopwatch:remove_trigger(id) end
 function ElementStopwatch:enable_trigger(id) end
 
 ---@class ElementStopwatchOperator : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementStopwatchOperator
 ElementStopwatchOperator = {}
 
@@ -108,6 +110,7 @@ function ElementStopwatchOperator:on_executed(instigator) end
 function ElementStopwatchOperator:_save_value_ok(new_time, saved_time) end
 
 ---@class ElementStopwatchTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementStopwatchTrigger
 ElementStopwatchTrigger = {}
 
@@ -137,6 +140,7 @@ function ElementStopwatchTrigger:operation_add() end
 function ElementStopwatchTrigger:set_enabled(enabled) end
 
 ---@class ElementStopwatchFilter : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementStopwatchFilter
 ElementStopwatchFilter = {}
 

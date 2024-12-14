@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ItemColumn : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : ItemColumn
 ItemColumn = {}
 
@@ -10,6 +11,7 @@ ItemColumn = {}
 function ItemColumn:init(data_node, parameters) end
 
 ---@class ItemServerColumn : ItemColumn
+---@field super ItemColumn
 ---@field new fun(self, ...) : ItemServerColumn
 ItemServerColumn = {}
 

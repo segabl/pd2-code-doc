@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FilterUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : FilterUnitElement
 FilterUnitElement = {}
 

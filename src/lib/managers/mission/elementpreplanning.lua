@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementPrePlanning : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementPrePlanning
 ElementPrePlanning = {}
 
@@ -29,6 +30,7 @@ function ElementPrePlanning:save(data) end
 function ElementPrePlanning:load(data) end
 
 ---@class ElementPrePlanningExecuteGroup : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementPrePlanningExecuteGroup
 ElementPrePlanningExecuteGroup = {}
 

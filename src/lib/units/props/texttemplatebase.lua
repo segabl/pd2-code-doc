@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TextTemplateBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : TextTemplateBase
 TextTemplateBase = {}
 

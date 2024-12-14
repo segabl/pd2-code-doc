@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NavObstacleElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : NavObstacleElement
 NavObstacleElement = {}
 

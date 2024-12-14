@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HostNetworkSession : BaseNetworkSession
+---@field super BaseNetworkSession
 ---@field new fun(self, ...) : HostNetworkSession
 HostNetworkSession = {}
 

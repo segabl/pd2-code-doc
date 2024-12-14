@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class Drill : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : Drill
 Drill = {}
 

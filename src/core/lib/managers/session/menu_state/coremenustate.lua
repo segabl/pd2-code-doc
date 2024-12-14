@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreMenuState.MenuState : CoreSessionGenericState.State
+---@field super CoreSessionGenericState.State
 ---@field new fun(self, ...) : CoreMenuState.MenuState
 MenuState = {}
 

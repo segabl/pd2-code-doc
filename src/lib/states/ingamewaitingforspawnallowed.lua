@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameWaitingForSpawnAllowed : IngameWaitingForRespawnState
+---@field super IngameWaitingForRespawnState
 ---@field new fun(self, ...) : IngameWaitingForSpawnAllowed
 IngameWaitingForSpawnAllowed = {}
 

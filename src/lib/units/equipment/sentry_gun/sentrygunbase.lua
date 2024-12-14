@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SentryGunBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : SentryGunBase
 SentryGunBase = {}
 

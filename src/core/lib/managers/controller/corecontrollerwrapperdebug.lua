@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreControllerWrapperDebug.ControllerWrapperDebug : CoreControllerWrapper.ControllerWrapper
+---@field super CoreControllerWrapper.ControllerWrapper
 ---@field new fun(self, ...) : CoreControllerWrapperDebug.ControllerWrapperDebug
 ControllerWrapperDebug = {}
 

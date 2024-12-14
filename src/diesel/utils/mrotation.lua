@@ -13,7 +13,7 @@ function mrotation.add(r1, r2) end
 ---@return Rotation
 function mrotation.copy(r) end
 
----Returns wether `r1` and `r2` are equal
+---Returns whether `r1` and `r2` are equal
 ---@param r1 Rotation
 ---@param r2 Rotation
 ---@return boolean

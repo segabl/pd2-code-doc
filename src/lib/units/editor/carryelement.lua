@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CarryUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CarryUnitElement
 CarryUnitElement = {}
 

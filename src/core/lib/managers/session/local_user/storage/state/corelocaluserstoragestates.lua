@@ -15,6 +15,7 @@ DetectSignOut = {}
 function DetectSignOut:init() end
 
 ---@class CoreLocalUserStorageStates.Loading : CoreLocalUserStorageStates.DetectSignOut
+---@field super CoreLocalUserStorageStates.DetectSignOut
 ---@field new fun(self, ...) : CoreLocalUserStorageStates.Loading
 Loading = {}
 

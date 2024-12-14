@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NewNPCRaycastWeaponBase : NewRaycastWeaponBase
+---@field super NewRaycastWeaponBase
 ---@field new fun(self, ...) : NewNPCRaycastWeaponBase
 NewNPCRaycastWeaponBase = {}
 

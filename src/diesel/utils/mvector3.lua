@@ -63,7 +63,7 @@ function mvector3.divide(v, div) end
 ---@return number
 function mvector3.dot(v1, v2) end
 
----Returns wether `v1` and `v2` are equal
+---Returns whether `v1` and `v2` are equal
 ---@param v1 Vector3
 ---@param v2 Vector3
 ---@return boolean
@@ -71,7 +71,7 @@ function mvector3.equal(v1, v2) end
 
 function mvector3.get_index(...) end
 
----Returns wether `v` is a zero vector
+---Returns whether `v` is a zero vector
 ---@param v Vector3
 ---@return boolean
 function mvector3.is_zero(v) end
@@ -113,7 +113,7 @@ function mvector3.negate(v) end
 ---@return number
 function mvector3.normalize(v) end
 
----Returns wether `v1` and `v2` are not equal
+---Returns whether `v1` and `v2` are not equal
 ---@param v1 Vector3
 ---@param v2 Vector3
 ---@return boolean

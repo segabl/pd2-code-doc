@@ -624,6 +624,7 @@ function CopMovement:get_location_id() end
 function CopMovement:in_smoke() end
 
 ---@class IgnoreAlertsMovement : CopMovement
+---@field super CopMovement
 ---@field new fun(self, ...) : IgnoreAlertsMovement
 IgnoreAlertsMovement = {}
 

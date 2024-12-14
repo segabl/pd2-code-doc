@@ -1,13 +1,5 @@
 ---@meta
 
----@param obj any
----@return unknown
-function alive(obj) end
-
----@param str any
----@return unknown
-function Idstring(str) end
-
 ---@class LevelLoadingScreenGuiScript
 ---@field new fun(self, ...) : LevelLoadingScreenGuiScript
 LevelLoadingScreenGuiScript = {}

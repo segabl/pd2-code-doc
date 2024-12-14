@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeNetSidebarGui : MenuGuiComponent
+---@field super MenuGuiComponent
 ---@field new fun(self, ...) : CrimeNetSidebarGui
 CrimeNetSidebarGui = {}
 
@@ -237,6 +238,7 @@ function CrimeNetSidebarItem:create_glow(panel, color, scale) end
 function CrimeNetSidebarItem:update(t, dt) end
 
 ---@class CrimeNetSidebarAttentionItem : CrimeNetSidebarItem
+---@field super CrimeNetSidebarItem
 ---@field new fun(self, ...) : CrimeNetSidebarAttentionItem
 CrimeNetSidebarAttentionItem = {}
 
@@ -252,6 +254,7 @@ function CrimeNetSidebarAttentionItem:init(sidebar, panel, parameters) end
 function CrimeNetSidebarAttentionItem:update(t, dt) end
 
 ---@class CrimeNetSidebarTutorialHeistsItem : CrimeNetSidebarAttentionItem
+---@field super CrimeNetSidebarAttentionItem
 ---@field new fun(self, ...) : CrimeNetSidebarTutorialHeistsItem
 CrimeNetSidebarTutorialHeistsItem = {}
 
@@ -262,6 +265,7 @@ CrimeNetSidebarTutorialHeistsItem = {}
 function CrimeNetSidebarTutorialHeistsItem:init(sidebar, panel, parameters) end
 
 ---@class CrimeNetSidebarSkirmishItem : CrimeNetSidebarAttentionItem
+---@field super CrimeNetSidebarAttentionItem
 ---@field new fun(self, ...) : CrimeNetSidebarSkirmishItem
 CrimeNetSidebarSkirmishItem = {}
 
@@ -272,6 +276,7 @@ CrimeNetSidebarSkirmishItem = {}
 function CrimeNetSidebarSkirmishItem:init(sidebar, panel, parameters) end
 
 ---@class CrimeNetSidebarStoryMissionItem : CrimeNetSidebarAttentionItem
+---@field super CrimeNetSidebarAttentionItem
 ---@field new fun(self, ...) : CrimeNetSidebarStoryMissionItem
 CrimeNetSidebarStoryMissionItem = {}
 
@@ -282,6 +287,7 @@ CrimeNetSidebarStoryMissionItem = {}
 function CrimeNetSidebarStoryMissionItem:init(sidebar, panel, parameters) end
 
 ---@class CrimeNetSidebarSafehouseItem : CrimeNetSidebarItem
+---@field super CrimeNetSidebarItem
 ---@field new fun(self, ...) : CrimeNetSidebarSafehouseItem
 CrimeNetSidebarSafehouseItem = {}
 
@@ -303,6 +309,7 @@ function CrimeNetSidebarSafehouseItem:update(t, dt) end
 function CrimeNetSidebarSafehouseItem:set_highlight(enabled, no_sound, force_update) end
 
 ---@class CrimeNetSidebarMutatorsItem : CrimeNetSidebarItem
+---@field super CrimeNetSidebarItem
 ---@field new fun(self, ...) : CrimeNetSidebarMutatorsItem
 CrimeNetSidebarMutatorsItem = {}
 
@@ -318,6 +325,7 @@ function CrimeNetSidebarMutatorsItem:init(sidebar, panel, parameters) end
 function CrimeNetSidebarMutatorsItem:update(t, dt) end
 
 ---@class CrimeNetSidebarLeakedRecordingItem : CrimeNetSidebarItem
+---@field super CrimeNetSidebarItem
 ---@field new fun(self, ...) : CrimeNetSidebarLeakedRecordingItem
 CrimeNetSidebarLeakedRecordingItem = {}
 
@@ -333,6 +341,7 @@ function CrimeNetSidebarLeakedRecordingItem:init(sidebar, panel, parameters) end
 function CrimeNetSidebarLeakedRecordingItem:update(t, dt) end
 
 ---@class CrimeNetSidebarCrimeSpreeItem : CrimeNetSidebarItem
+---@field super CrimeNetSidebarItem
 ---@field new fun(self, ...) : CrimeNetSidebarCrimeSpreeItem
 CrimeNetSidebarCrimeSpreeItem = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierCloakerKick : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierCloakerKick
 ModifierCloakerKick = {}
 

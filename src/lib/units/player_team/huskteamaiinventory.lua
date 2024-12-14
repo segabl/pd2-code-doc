@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HuskTeamAIInventory : HuskCopInventory
+---@field super HuskCopInventory
 ---@field new fun(self, ...) : HuskTeamAIInventory
 HuskTeamAIInventory = {}
 

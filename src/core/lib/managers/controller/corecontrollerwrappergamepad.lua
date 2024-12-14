@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreControllerWrapperGamepad.ControllerWrapperGamepad : CoreControllerWrapper.ControllerWrapper
+---@field super CoreControllerWrapper.ControllerWrapper
 ---@field new fun(self, ...) : CoreControllerWrapperGamepad.ControllerWrapperGamepad
 ControllerWrapperGamepad = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GameOverState : MissionEndState
+---@field super MissionEndState
 ---@field new fun(self, ...) : GameOverState
 GameOverState = {}
 

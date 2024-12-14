@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreShapeUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreShapeUnitElement
 CoreShapeUnitElement = {}
 
 ---@class ShapeUnitElement : CoreShapeUnitElement
+---@field super CoreShapeUnitElement
 ---@field new fun(self, ...) : ShapeUnitElement
 ShapeUnitElement = {}
 

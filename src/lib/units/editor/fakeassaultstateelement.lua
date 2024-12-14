@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FakeAssaultStateUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : FakeAssaultStateUnitElement
 FakeAssaultStateUnitElement = {}
 

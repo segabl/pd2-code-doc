@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ButlerSound : SafehouseNPCSound
+---@field super SafehouseNPCSound
 ---@field new fun(self, ...) : ButlerSound
 ButlerSound = {}
 

@@ -70,6 +70,7 @@ function TrailerCameraAction:init() end
 function TrailerCameraAction:execute() end
 
 ---@class TrailerCameraElementAction : TrailerCameraAction
+---@field super TrailerCameraAction
 ---@field new fun(self, ...) : TrailerCameraElementAction
 TrailerCameraElementAction = {}
 

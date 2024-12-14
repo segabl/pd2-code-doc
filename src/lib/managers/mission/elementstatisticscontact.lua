@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementStatisticsContact : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementStatisticsContact
 ElementStatisticsContact = {}
 

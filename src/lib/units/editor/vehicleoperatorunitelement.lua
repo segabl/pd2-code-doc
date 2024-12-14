@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class VehicleOperatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : VehicleOperatorUnitElement
 VehicleOperatorUnitElement = {}
 

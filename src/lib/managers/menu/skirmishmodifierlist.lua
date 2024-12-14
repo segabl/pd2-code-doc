@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SkirmishModifierList : GUIObjectWrapper
+---@field super GUIObjectWrapper
 ---@field new fun(self, ...) : SkirmishModifierList
 SkirmishModifierList = {}
 

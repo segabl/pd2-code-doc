@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreSubtitlePresenter.OverlayPresenterVR : CoreSubtitlePresenter.OverlayPresenter
+---@field super CoreSubtitlePresenter.OverlayPresenter
 ---@field new fun(self, ...) : CoreSubtitlePresenter.OverlayPresenterVR
 OverlayPresenterVR = {}
 
@@ -11,6 +12,7 @@ function OverlayPresenterVR:_clear_workspace() end
 function OverlayPresenterVR:_on_resolution_changed() end
 
 ---@class CoreSubtitlePresenter.IngamePresenterVR : CoreSubtitlePresenter.OverlayPresenter
+---@field super CoreSubtitlePresenter.OverlayPresenter
 ---@field new fun(self, ...) : CoreSubtitlePresenter.IngamePresenterVR
 IngamePresenterVR = {}
 

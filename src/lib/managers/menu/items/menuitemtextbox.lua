@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemTextBox : MenuItemInput
+---@field super MenuItemInput
 ---@field new fun(self, ...) : MenuItemTextBox
 MenuItemTextBox = {}
 

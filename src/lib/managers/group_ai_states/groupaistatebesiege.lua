@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GroupAIStateBesiege : GroupAIStateBase
+---@field super GroupAIStateBase
 ---@field new fun(self, ...) : GroupAIStateBesiege
 GroupAIStateBesiege = {}
 

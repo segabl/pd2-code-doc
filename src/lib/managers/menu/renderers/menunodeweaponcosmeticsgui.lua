@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuNodeSkinEditorGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeSkinEditorGui
 MenuNodeSkinEditorGui = {}
 
@@ -17,6 +18,7 @@ function MenuNodeSkinEditorGui:init(node, layer, parameters) end
 function MenuNodeSkinEditorGui:mouse_pressed(button, x, y) end
 
 ---@class MenuNodeArmorSkinEditorGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeArmorSkinEditorGui
 MenuNodeArmorSkinEditorGui = {}
 

@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreMotionPathOperatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreMotionPathOperatorUnitElement
 CoreMotionPathOperatorUnitElement = {}
 
 ---@class MotionPathOperatorUnitElement : CoreMotionPathOperatorUnitElement
+---@field super CoreMotionPathOperatorUnitElement
 ---@field new fun(self, ...) : MotionPathOperatorUnitElement
 MotionPathOperatorUnitElement = {}
 
@@ -52,10 +54,12 @@ function CoreMotionPathOperatorUnitElement:_build_panel(panel, panel_sizer) end
 function CoreMotionPathOperatorUnitElement:on_executed_marker_selected() end
 
 ---@class CoreMotionPathTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreMotionPathTriggerUnitElement
 CoreMotionPathTriggerUnitElement = {}
 
 ---@class MotionPathTriggerUnitElement : CoreMotionPathTriggerUnitElement
+---@field super CoreMotionPathTriggerUnitElement
 ---@field new fun(self, ...) : MotionPathTriggerUnitElement
 MotionPathTriggerUnitElement = {}
 

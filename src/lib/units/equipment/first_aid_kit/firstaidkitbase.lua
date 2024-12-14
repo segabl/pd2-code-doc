@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FirstAidKitBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : FirstAidKitBase
 FirstAidKitBase = {}
 

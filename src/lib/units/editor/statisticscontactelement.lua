@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class StatisticsContactElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : StatisticsContactElement
 StatisticsContactElement = {}
 

@@ -423,7 +423,7 @@ function Object:script() end
 ---@param script table<string, fun(o: O?, ...)>
 function Object:set_script(script) end
 
----Returns wether there is a script table attached to this element
+---Returns whether there is a script table attached to this element
 ---@return boolean
 function Object:has_script() end
 

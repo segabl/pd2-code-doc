@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemLevel : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemLevel
 MenuItemLevel = {}
 

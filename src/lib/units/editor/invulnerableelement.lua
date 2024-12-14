@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class InvulnerableUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : InvulnerableUnitElement
 InvulnerableUnitElement = {}
 

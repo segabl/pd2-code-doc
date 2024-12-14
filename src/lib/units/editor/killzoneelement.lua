@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class KillzoneUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : KillzoneUnitElement
 KillzoneUnitElement = {}
 

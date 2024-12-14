@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HuskTeamAIBase : HuskCopBase
+---@field super HuskCopBase
 ---@field new fun(self, ...) : HuskTeamAIBase
 HuskTeamAIBase = {}
 

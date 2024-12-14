@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementAccessCamera : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementAccessCamera
 ElementAccessCamera = {}
 
@@ -82,6 +83,7 @@ function ElementAccessCamera:save(data) end
 function ElementAccessCamera:load(data) end
 
 ---@class ElementAccessCameraOperator : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementAccessCameraOperator
 ElementAccessCameraOperator = {}
 
@@ -98,6 +100,7 @@ function ElementAccessCameraOperator:client_on_executed(...) end
 function ElementAccessCameraOperator:on_executed(instigator) end
 
 ---@class ElementAccessCameraTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementAccessCameraTrigger
 ElementAccessCameraTrigger = {}
 

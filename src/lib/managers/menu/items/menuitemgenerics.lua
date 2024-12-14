@@ -36,6 +36,7 @@ function MenuGuiItem:trigger() end
 function MenuGuiItem:flash() end
 
 ---@class MenuGuiTabItem : MenuGuiItem
+---@field super MenuGuiItem
 ---@field new fun(self, ...) : MenuGuiTabItem
 MenuGuiTabItem = {}
 
@@ -76,10 +77,12 @@ function MenuGuiTabItem:inside(x, y) end
 function MenuGuiTabItem:refresh() end
 
 ---@class MenuGuiSmallTabItem : MenuGuiTabItem
+---@field super MenuGuiTabItem
 ---@field new fun(self, ...) : MenuGuiSmallTabItem
 MenuGuiSmallTabItem = {}
 
 ---@class MenuGuiTabPage : MenuGuiItem
+---@field super MenuGuiItem
 ---@field new fun(self, ...) : MenuGuiTabPage
 MenuGuiTabPage = {}
 
@@ -182,6 +185,7 @@ function MenuGuiTabPage:special_btn_pressed(button) end
 function MenuGuiTabPage:get_legend() end
 
 ---@class MenuGuiButtonItem : MenuGuiItem
+---@field super MenuGuiItem
 ---@field new fun(self, ...) : MenuGuiButtonItem
 MenuGuiButtonItem = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PickupUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : PickupUnitElement
 PickupUnitElement = {}
 

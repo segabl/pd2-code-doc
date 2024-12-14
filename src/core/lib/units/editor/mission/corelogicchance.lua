@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreLogicChanceUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreLogicChanceUnitElement
 CoreLogicChanceUnitElement = {}
 
 ---@class LogicChanceUnitElement : CoreLogicChanceUnitElement
+---@field super CoreLogicChanceUnitElement
 ---@field new fun(self, ...) : LogicChanceUnitElement
 LogicChanceUnitElement = {}
 
@@ -22,10 +24,12 @@ function CoreLogicChanceUnitElement:init(unit) end
 function CoreLogicChanceUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreLogicChanceOperatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreLogicChanceOperatorUnitElement
 CoreLogicChanceOperatorUnitElement = {}
 
 ---@class LogicChanceOperatorUnitElement : CoreLogicChanceOperatorUnitElement
+---@field super CoreLogicChanceOperatorUnitElement
 ---@field new fun(self, ...) : LogicChanceOperatorUnitElement
 LogicChanceOperatorUnitElement = {}
 
@@ -64,10 +68,12 @@ function CoreLogicChanceOperatorUnitElement:add_triggers(vc) end
 function CoreLogicChanceOperatorUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreLogicChanceTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreLogicChanceTriggerUnitElement
 CoreLogicChanceTriggerUnitElement = {}
 
 ---@class LogicChanceTriggerUnitElement : CoreLogicChanceTriggerUnitElement
+---@field super CoreLogicChanceTriggerUnitElement
 ---@field new fun(self, ...) : LogicChanceTriggerUnitElement
 LogicChanceTriggerUnitElement = {}
 

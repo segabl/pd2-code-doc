@@ -1,16 +1,5 @@
 ---@meta
 
----@param ... any
----@return unknown
-function class(...) end
-
----@param o any
----@param base_callback_class any
----@param base_callback_func_name any
----@param base_callback_param any
----@return unknown
-function callback(o, base_callback_class, base_callback_func_name, base_callback_param) end
-
 ---@class CoreLoadingSetup
 ---@field new fun(self, ...) : CoreLoadingSetup
 CoreLoadingSetup = {}

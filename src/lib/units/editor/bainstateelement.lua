@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BainStateElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : BainStateElement
 BainStateElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ClockUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : ClockUnitElement
 ClockUnitElement = {}
 

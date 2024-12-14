@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementWorldCamera.ElementWorldCamera : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementWorldCamera.ElementWorldCamera
 ElementWorldCamera = {}
 
@@ -17,6 +18,7 @@ function ElementWorldCamera:client_on_executed(...) end
 function ElementWorldCamera:on_executed(instigator) end
 
 ---@class CoreElementWorldCamera.ElementWorldCameraTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementWorldCamera.ElementWorldCameraTrigger
 ElementWorldCameraTrigger = {}
 

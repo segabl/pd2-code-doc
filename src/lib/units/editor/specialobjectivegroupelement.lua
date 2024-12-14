@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SpecialObjectiveGroupElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : SpecialObjectiveGroupElement
 SpecialObjectiveGroupElement = {}
 

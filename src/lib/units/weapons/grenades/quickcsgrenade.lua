@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class QuickCsGrenade : GrenadeBase
+---@field super GrenadeBase
 ---@field new fun(self, ...) : QuickCsGrenade
 QuickCsGrenade = {}
 

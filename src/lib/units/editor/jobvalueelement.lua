@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class JobValueUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : JobValueUnitElement
 JobValueUnitElement = {}
 
@@ -14,6 +15,7 @@ function JobValueUnitElement:init(unit) end
 function JobValueUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class JobValueFilterUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : JobValueFilterUnitElement
 JobValueFilterUnitElement = {}
 
@@ -27,6 +29,7 @@ function JobValueFilterUnitElement:init(unit) end
 function JobValueFilterUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class ApplyJobValueUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : ApplyJobValueUnitElement
 ApplyJobValueUnitElement = {}
 

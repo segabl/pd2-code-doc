@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EnemyDummyTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : EnemyDummyTriggerUnitElement
 EnemyDummyTriggerUnitElement = {}
 

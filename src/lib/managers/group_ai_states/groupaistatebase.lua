@@ -18,6 +18,7 @@
 ---@field important_enemies table?
 ---@field important_dis table?
 ---@field is_deployable boolean
+---@field status string?
 
 ---@class GroupAIStateBase
 ---@field new fun(self, ...) : GroupAIStateBase
@@ -641,28 +642,28 @@ function GroupAIStateBase:on_AI_criminal_death(criminal_name, unit) end
 ---@return any
 function GroupAIStateBase:on_player_criminal_death(peer_id) end
 
----@return any
+---@return table<userdata, criminaldata>
 function GroupAIStateBase:all_AI_criminals() end
 
----@return any
+---@return table<userdata, criminaldata>
 function GroupAIStateBase:all_player_criminals() end
 
----@return any
+---@return table<userdata, criminaldata>
 function GroupAIStateBase:all_criminals() end
 
----@return any
+---@return table<userdata, criminaldata>
 function GroupAIStateBase:all_char_criminals() end
 
----@return any
+---@return integer
 function GroupAIStateBase:amount_of_ai_criminals() end
 
----@return any
+---@return integer
 function GroupAIStateBase:num_alive_criminals() end
 
----@return any
+---@return integer
 function GroupAIStateBase:num_alive_players() end
 
----@return any
+---@return integer
 function GroupAIStateBase:amount_of_winning_ai_criminals() end
 
 ---@return any

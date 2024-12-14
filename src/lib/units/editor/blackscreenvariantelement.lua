@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BlackscreenVariantElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : BlackscreenVariantElement
 BlackscreenVariantElement = {}
 
@@ -19,6 +20,7 @@ function BlackscreenVariantElement:_build_panel(panel, panel_sizer) end
 function BlackscreenVariantElement:_get_params(panel, panel_sizer) end
 
 ---@class EndscreenVariantElement : BlackscreenVariantElement
+---@field super BlackscreenVariantElement
 ---@field new fun(self, ...) : EndscreenVariantElement
 EndscreenVariantElement = {}
 
@@ -32,6 +34,7 @@ function EndscreenVariantElement:init(unit) end
 function EndscreenVariantElement:_get_params(panel, panel_sizer) end
 
 ---@class FailureVariantElement : BlackscreenVariantElement
+---@field super BlackscreenVariantElement
 ---@field new fun(self, ...) : FailureVariantElement
 FailureVariantElement = {}
 

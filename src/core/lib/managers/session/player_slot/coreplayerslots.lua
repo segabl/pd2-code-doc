@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CorePlayerSlots.PlayerSlots : CoreSessionGenericState.State
+---@field super CoreSessionGenericState.State
 ---@field new fun(self, ...) : CorePlayerSlots.PlayerSlots
 PlayerSlots = {}
 

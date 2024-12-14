@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreControllerWrapperPS3.ControllerWrapperPS3 : CoreControllerWrapper.ControllerWrapper
+---@field super CoreControllerWrapper.ControllerWrapper
 ---@field new fun(self, ...) : CoreControllerWrapperPS3.ControllerWrapperPS3
 ControllerWrapperPS3 = {}
 

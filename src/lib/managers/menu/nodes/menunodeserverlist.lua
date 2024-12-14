@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuNodeServerList : MenuNodeTable
+---@field super MenuNodeTable
 ---@field new fun(self, ...) : MenuNodeServerList
 MenuNodeServerList = {}
 

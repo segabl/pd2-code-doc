@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementInstigator : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementInstigator
 ElementInstigator = {}
 
@@ -67,6 +68,7 @@ function ElementInstigator:add_trigger(id, type, callback) end
 function ElementInstigator:_check_triggers(type) end
 
 ---@class ElementInstigatorOperator : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementInstigatorOperator
 ElementInstigatorOperator = {}
 
@@ -87,6 +89,7 @@ function ElementInstigatorOperator:on_executed(instigator) end
 function ElementInstigatorOperator:_check_and_execute(use_instigator) end
 
 ---@class ElementInstigatorTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementInstigatorTrigger
 ElementInstigatorTrigger = {}
 

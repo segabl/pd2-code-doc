@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameAccessCamera : IngamePlayerBaseState
+---@field super IngamePlayerBaseState
 ---@field new fun(self, ...) : IngameAccessCamera
 IngameAccessCamera = {}
 

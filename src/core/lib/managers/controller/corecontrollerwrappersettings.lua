@@ -173,6 +173,7 @@ function ControllerWrapperConnection:get_unique() end
 function ControllerWrapperConnection:__tostring(additional_info) end
 
 ---@class CoreControllerWrapperSettings.ControllerWrapperButton : CoreControllerWrapperSettings.ControllerWrapperConnection
+---@field super CoreControllerWrapperSettings.ControllerWrapperConnection
 ---@field new fun(self, ...) : CoreControllerWrapperSettings.ControllerWrapperButton
 ControllerWrapperButton = {}
 
@@ -185,6 +186,7 @@ function ControllerWrapperButton:init(node) end
 function ControllerWrapperButton:__tostring(additional_info) end
 
 ---@class CoreControllerWrapperSettings.ControllerWrapperAxis : CoreControllerWrapperSettings.ControllerWrapperConnection
+---@field super CoreControllerWrapperSettings.ControllerWrapperConnection
 ---@field new fun(self, ...) : CoreControllerWrapperSettings.ControllerWrapperAxis
 ControllerWrapperAxis = {}
 

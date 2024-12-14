@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuNodeDoubleColumnGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeDoubleColumnGui
 MenuNodeDoubleColumnGui = {}
 

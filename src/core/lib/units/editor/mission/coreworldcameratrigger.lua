@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreWorldCameraTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreWorldCameraTriggerUnitElement
 CoreWorldCameraTriggerUnitElement = {}
 
 ---@class WorldCameraTriggerUnitElement : CoreWorldCameraTriggerUnitElement
+---@field super CoreWorldCameraTriggerUnitElement
 ---@field new fun(self, ...) : WorldCameraTriggerUnitElement
 WorldCameraTriggerUnitElement = {}
 

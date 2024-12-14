@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AreaDespawnElement : ShapeUnitElement
+---@field super ShapeUnitElement
 ---@field new fun(self, ...) : AreaDespawnElement
 AreaDespawnElement = {}
 

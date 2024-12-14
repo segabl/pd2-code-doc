@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class DebugStringsBoxGui : TextBoxGui
+---@field super TextBoxGui
 ---@field new fun(self, ...) : DebugStringsBoxGui
 DebugStringsBoxGui = {}
 

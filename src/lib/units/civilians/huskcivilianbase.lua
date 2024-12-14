@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HuskCivilianBase : HuskCopBase
+---@field super HuskCopBase
 ---@field new fun(self, ...) : HuskCivilianBase
 HuskCivilianBase = {}
 
@@ -15,6 +16,7 @@ function HuskCivilianBase:default_weapon_name() end
 function HuskCivilianBase:sync_net_event(event_id) end
 
 ---@class HuskCivilianBaseResetSpawnPos : HuskCivilianBase
+---@field super HuskCivilianBase
 ---@field new fun(self, ...) : HuskCivilianBaseResetSpawnPos
 HuskCivilianBaseResetSpawnPos = {}
 

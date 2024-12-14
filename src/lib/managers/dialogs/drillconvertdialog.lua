@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.DrillConvertDialog : SystemMenuManager.GenericDialog
+---@field super SystemMenuManager.GenericDialog
 ---@field new fun(self, ...) : SystemMenuManager.DrillConvertDialog
 DrillConvertDialog = {}
 
@@ -31,6 +32,7 @@ function DrillConvertDialog:button_pressed_callback() end
 function DrillConvertDialog:dialog_cancel_callback() end
 
 ---@class SystemMenuManager.DrillConvertBoxGui : TextBoxGui
+---@field super TextBoxGui
 ---@field new fun(self, ...) : SystemMenuManager.DrillConvertBoxGui
 DrillConvertBoxGui = {}
 

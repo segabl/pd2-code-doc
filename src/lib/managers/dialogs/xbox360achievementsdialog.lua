@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.Xbox360AchievementsDialog : SystemMenuManager.AchievementsDialog
+---@field super SystemMenuManager.AchievementsDialog
 ---@field new fun(self, ...) : SystemMenuManager.Xbox360AchievementsDialog
 Xbox360AchievementsDialog = {}
 

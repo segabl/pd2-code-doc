@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemCrimeNetSkirmishServer : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemCrimeNetSkirmishServer
 MenuItemCrimeNetSkirmishServer = {}
 

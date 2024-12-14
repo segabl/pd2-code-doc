@@ -9,6 +9,7 @@ SubtitleSequence = {}
 Subtitle = {}
 
 ---@class CoreSubtitleSequence.StringIDSubtitle : CoreSubtitleSequence.Subtitle
+---@field super CoreSubtitleSequence.Subtitle
 ---@field new fun(self, ...) : CoreSubtitleSequence.StringIDSubtitle
 StringIDSubtitle = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HuskCopMovement : CopMovement
+---@field super CopMovement
 ---@field new fun(self, ...) : HuskCopMovement
 HuskCopMovement = {}
 

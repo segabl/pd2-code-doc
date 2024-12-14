@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementToggle.ElementToggle : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementToggle.ElementToggle
 ElementToggle = {}
 

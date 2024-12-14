@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementGlobalEventTrigger.ElementGlobalEventTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementGlobalEventTrigger.ElementGlobalEventTrigger
 ElementGlobalEventTrigger = {}
 

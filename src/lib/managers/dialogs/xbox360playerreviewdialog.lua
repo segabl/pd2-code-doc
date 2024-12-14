@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.Xbox360PlayerReviewDialog : SystemMenuManager.PlayerReviewDialog
+---@field super SystemMenuManager.PlayerReviewDialog
 ---@field new fun(self, ...) : SystemMenuManager.Xbox360PlayerReviewDialog
 Xbox360PlayerReviewDialog = {}
 

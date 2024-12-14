@@ -5,6 +5,7 @@
 CopActionTurn = {}
 
 ---@class ShieldActionTurn : CopActionTurn
+---@field super CopActionTurn
 ---@field new fun(self, ...) : ShieldActionTurn
 ShieldActionTurn = {}
 

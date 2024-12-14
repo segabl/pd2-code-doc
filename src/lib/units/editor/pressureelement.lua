@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PressureUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : PressureUnitElement
 PressureUnitElement = {}
 

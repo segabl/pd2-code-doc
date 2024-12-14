@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreScriptViewport._ScriptViewport : CoreAccessObjectBase.AccessObjectBase
+---@field super CoreAccessObjectBase.AccessObjectBase
 ---@field new fun(self, ...) : CoreScriptViewport._ScriptViewport
 _ScriptViewport = {}
 

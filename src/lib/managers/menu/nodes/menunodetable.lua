@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuNodeTable : CoreMenuNode.MenuNode
+---@field super CoreMenuNode.MenuNode
 ---@field new fun(self, ...) : MenuNodeTable
 MenuNodeTable = {}
 

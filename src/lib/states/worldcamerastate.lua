@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class WorldCameraState : GameState
+---@field super GameState
 ---@field new fun(self, ...) : WorldCameraState
 WorldCameraState = {}
 

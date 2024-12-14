@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GrenadeCrateBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : GrenadeCrateBase
 GrenadeCrateBase = {}
 
@@ -73,6 +74,7 @@ function GrenadeCrateBase:load(data) end
 function GrenadeCrateBase:destroy() end
 
 ---@class CustomGrenadeCrateBase : GrenadeCrateBase
+---@field super GrenadeCrateBase
 ---@field new fun(self, ...) : CustomGrenadeCrateBase
 CustomGrenadeCrateBase = {}
 
@@ -106,6 +108,7 @@ function GrenadeCrateSync:destroy() end
 function GrenadeCrateSync:_clbk_validate() end
 
 ---@class GrenadeCrateDeployableBase : GrenadeCrateBase
+---@field super GrenadeCrateBase
 ---@field new fun(self, ...) : GrenadeCrateDeployableBase
 GrenadeCrateDeployableBase = {}
 

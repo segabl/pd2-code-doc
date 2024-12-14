@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeSpreeContractMenuComponent : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : CrimeSpreeContractMenuComponent
 CrimeSpreeContractMenuComponent = {}
 
@@ -93,6 +94,7 @@ function CrimeSpreeContractMenuComponent:_axis_move(o, axis_name, axis_vector, c
 function CrimeSpreeContractMenuComponent:update(t, dt) end
 
 ---@class CrimeSpreeStartingLevelItem : MenuGuiItem
+---@field super MenuGuiItem
 ---@field new fun(self, ...) : CrimeSpreeStartingLevelItem
 CrimeSpreeStartingLevelItem = {}
 

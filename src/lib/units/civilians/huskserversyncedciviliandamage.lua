@@ -2,6 +2,7 @@
 ---@meta
 
 ---@class HuskServerSyncedCivilianDamage : HuskCivilianDamage
+---@field super HuskCivilianDamage
 ---@field new fun(self, ...) : HuskServerSyncedCivilianDamage
 HuskServerSyncedCivilianDamage = {}
 

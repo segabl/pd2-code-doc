@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerMaskOff : PlayerStandard
+---@field super PlayerStandard
 ---@field new fun(self, ...) : PlayerMaskOff
 PlayerMaskOff = {}
 

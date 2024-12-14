@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuInput : CoreMenuInput.MenuInput
+---@field super CoreMenuInput.MenuInput
 ---@field new fun(self, ...) : MenuInput
 MenuInput = {}
 

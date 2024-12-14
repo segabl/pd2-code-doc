@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class UnitDamage : CoreUnitDamage
+---@field super CoreUnitDamage
 ---@field new fun(self, ...) : UnitDamage
 UnitDamage = {}
 

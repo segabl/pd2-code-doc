@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuSocialHubInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuSocialHubInitiator
 MenuSocialHubInitiator = {}
 
@@ -14,6 +15,7 @@ function MenuSocialHubInitiator:modify_node(original_node, node_data) end
 function MenuSocialHubInitiator:refresh_node(original_node) end
 
 ---@class MenuNodeSocialHubGui : MenuNodeBaseGui
+---@field super MenuNodeBaseGui
 ---@field new fun(self, ...) : MenuNodeSocialHubGui
 MenuNodeSocialHubGui = {}
 
@@ -24,6 +26,7 @@ MenuNodeSocialHubGui = {}
 function MenuNodeSocialHubGui:init(node, layer, parameters) end
 
 ---@class SocialHubGui : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : SocialHubGui
 SocialHubGui = {}
 

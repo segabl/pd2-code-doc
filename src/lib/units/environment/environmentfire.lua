@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EnvironmentFire : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : EnvironmentFire
 EnvironmentFire = {}
 

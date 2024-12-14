@@ -175,7 +175,7 @@ function PlayerMovement:on_tase_ended() end
 ---@return unknown
 function PlayerMovement:tased() end
 
----@return unknown
+---@return string
 function PlayerMovement:current_state_name() end
 
 ---@return unknown

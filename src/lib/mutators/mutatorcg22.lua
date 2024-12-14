@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MutatorCG22 : BaseMutator
+---@field super BaseMutator
 ---@field new fun(self, ...) : MutatorCG22
 MutatorCG22 = {}
 

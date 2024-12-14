@@ -2,6 +2,7 @@
 ---@meta
 
 ---@class CoreCutsceneOptimizer : CoreCutsceneExporter
+---@field super CoreCutsceneExporter
 ---@field new fun(self, ...) : CoreCutsceneOptimizer
 CoreCutsceneOptimizer = {}
 

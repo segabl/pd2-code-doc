@@ -1063,6 +1063,7 @@ function CoreBodyDamage:save(data) end
 function CoreBodyDamage:load(data) end
 
 ---@class CoreAfroBodyDamage : CoreBodyDamage
+---@field super CoreBodyDamage
 ---@field new fun(self, ...) : CoreAfroBodyDamage
 CoreAfroBodyDamage = {}
 
@@ -1283,6 +1284,7 @@ function CoreInflictUpdator:set_attribute(attribute, attribute_value) end
 function CoreInflictUpdator:get_attribute(attribute) end
 
 ---@class CoreInflictFireUpdator : CoreInflictUpdator
+---@field super CoreInflictUpdator
 ---@field new fun(self, ...) : CoreInflictFireUpdator
 CoreInflictFireUpdator = {}
 

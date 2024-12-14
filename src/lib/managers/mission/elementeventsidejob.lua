@@ -2,6 +2,7 @@
 ---@meta
 
 ---@class ElementEventSideJobAward : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementEventSideJobAward
 ElementEventSideJobAward = {}
 
@@ -18,6 +19,7 @@ function ElementEventSideJobAward:client_on_executed(...) end
 function ElementEventSideJobAward:on_executed(instigator) end
 
 ---@class ElementSideJobFilter : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementSideJobFilter
 ElementSideJobFilter = {}
 

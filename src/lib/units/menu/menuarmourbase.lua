@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuArmourBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : MenuArmourBase
 MenuArmourBase = {}
 

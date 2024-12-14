@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.DeleteFileDialog : SystemMenuManager.BaseDialog
+---@field super SystemMenuManager.BaseDialog
 ---@field new fun(self, ...) : SystemMenuManager.DeleteFileDialog
 DeleteFileDialog = {}
 

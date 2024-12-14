@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CopInventory : PlayerInventory
+---@field super PlayerInventory
 ---@field new fun(self, ...) : CopInventory
 CopInventory = {}
 

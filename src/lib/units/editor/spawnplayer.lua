@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SpawnPlayerHubElement : HubElement
+---@field super HubElement
 ---@field new fun(self, ...) : SpawnPlayerHubElement
 SpawnPlayerHubElement = {}
 

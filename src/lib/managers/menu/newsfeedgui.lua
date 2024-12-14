@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NewsFeedGui : TextBoxGui
+---@field super TextBoxGui
 ---@field new fun(self, ...) : NewsFeedGui
 NewsFeedGui = {}
 

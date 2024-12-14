@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HudTrackedAchievement : GrowPanel
+---@field super GrowPanel
 ---@field new fun(self, ...) : HudTrackedAchievement
 HudTrackedAchievement = {}
 
@@ -14,6 +15,7 @@ function HudTrackedAchievement:init(parent, id, black_bg) end
 function HudTrackedAchievement:update_progress() end
 
 ---@class HUDStatsScreen : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : HUDStatsScreen
 HUDStatsScreen = {}
 

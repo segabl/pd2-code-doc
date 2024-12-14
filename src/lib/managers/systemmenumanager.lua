@@ -228,10 +228,12 @@ function GenericSystemMenuManager:event_dialog_closed(dialog) end
 function GenericSystemMenuManager:event_active_changed(active) end
 
 ---@class SystemMenuManager.WinSystemMenuManager : SystemMenuManager.GenericSystemMenuManager
+---@field super SystemMenuManager.GenericSystemMenuManager
 ---@field new fun(self, ...) : SystemMenuManager.WinSystemMenuManager
 WinSystemMenuManager = {}
 
 ---@class SystemMenuManager.Xbox360SystemMenuManager : SystemMenuManager.GenericSystemMenuManager
+---@field super SystemMenuManager.GenericSystemMenuManager
 ---@field new fun(self, ...) : SystemMenuManager.Xbox360SystemMenuManager
 Xbox360SystemMenuManager = {}
 
@@ -240,6 +242,7 @@ Xbox360SystemMenuManager = {}
 function Xbox360SystemMenuManager:is_active(skip_block_exec) end
 
 ---@class SystemMenuManager.XB1SystemMenuManager : SystemMenuManager.GenericSystemMenuManager
+---@field super SystemMenuManager.GenericSystemMenuManager
 ---@field new fun(self, ...) : SystemMenuManager.XB1SystemMenuManager
 XB1SystemMenuManager = {}
 
@@ -248,6 +251,7 @@ XB1SystemMenuManager = {}
 function XB1SystemMenuManager:is_active(skip_block_exec) end
 
 ---@class SystemMenuManager.PS3SystemMenuManager : SystemMenuManager.GenericSystemMenuManager
+---@field super SystemMenuManager.GenericSystemMenuManager
 ---@field new fun(self, ...) : SystemMenuManager.PS3SystemMenuManager
 PS3SystemMenuManager = {}
 
@@ -265,6 +269,7 @@ function PS3SystemMenuManager:block_exec() end
 function PS3SystemMenuManager:is_active() end
 
 ---@class SystemMenuManager.PS4SystemMenuManager : SystemMenuManager.GenericSystemMenuManager
+---@field super SystemMenuManager.GenericSystemMenuManager
 ---@field new fun(self, ...) : SystemMenuManager.PS4SystemMenuManager
 PS4SystemMenuManager = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SpawnGageAssignmentElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : SpawnGageAssignmentElement
 SpawnGageAssignmentElement = {}
 

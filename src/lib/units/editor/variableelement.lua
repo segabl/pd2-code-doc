@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class VariableElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : VariableElement
 VariableElement = {}
 

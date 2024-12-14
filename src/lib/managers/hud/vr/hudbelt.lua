@@ -174,6 +174,7 @@ function HUDBeltInteraction:inside(x, y) end
 function HUDBeltInteraction:ws() end
 
 ---@class HUDBeltInteractionReload : HUDBeltInteraction
+---@field super HUDBeltInteraction
 ---@field new fun(self, ...) : HUDBeltInteractionReload
 HUDBeltInteractionReload = {}
 

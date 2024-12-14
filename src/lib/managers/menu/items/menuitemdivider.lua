@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemDivider : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemDivider
 MenuItemDivider = {}
 

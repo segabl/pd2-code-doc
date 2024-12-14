@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CorePointOrientationUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CorePointOrientationUnitElement
 CorePointOrientationUnitElement = {}
 
 ---@class PointOrientationUnitElement : CorePointOrientationUnitElement
+---@field super CorePointOrientationUnitElement
 ---@field new fun(self, ...) : PointOrientationUnitElement
 PointOrientationUnitElement = {}
 

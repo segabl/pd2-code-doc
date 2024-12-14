@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementUnitDamage : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementUnitDamage
 ElementUnitDamage = {}
 

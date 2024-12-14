@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerIncapacitated : PlayerStandard
+---@field super PlayerStandard
 ---@field new fun(self, ...) : PlayerIncapacitated
 PlayerIncapacitated = {}
 

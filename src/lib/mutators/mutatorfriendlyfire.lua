@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MutatorFriendlyFire : BaseMutator
+---@field super BaseMutator
 ---@field new fun(self, ...) : MutatorFriendlyFire
 MutatorFriendlyFire = {}
 

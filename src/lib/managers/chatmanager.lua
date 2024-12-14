@@ -86,6 +86,7 @@ function ChatBase:init() end
 function ChatBase:receive_message(name, message, color, icon) end
 
 ---@class ChatGui : ChatBase
+---@field super ChatBase
 ---@field new fun(self, ...) : ChatGui
 ChatGui = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreDiscontinuityCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreDiscontinuityCutsceneKey
 CoreDiscontinuityCutsceneKey = {}
 

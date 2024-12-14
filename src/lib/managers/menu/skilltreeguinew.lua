@@ -282,6 +282,7 @@ function NewSkillTreeItem:trigger() end
 function NewSkillTreeItem:flash() end
 
 ---@class NewSkillTreeTabItem : NewSkillTreeItem
+---@field super NewSkillTreeItem
 ---@field new fun(self, ...) : NewSkillTreeTabItem
 NewSkillTreeTabItem = {}
 
@@ -325,6 +326,7 @@ function NewSkillTreeTabItem:inside(x, y) end
 function NewSkillTreeTabItem:refresh() end
 
 ---@class NewSkillTreePage : NewSkillTreeItem
+---@field super NewSkillTreeItem
 ---@field new fun(self, ...) : NewSkillTreePage
 NewSkillTreePage = {}
 
@@ -402,6 +404,7 @@ function NewSkillTreePage:reload_connections() end
 function NewSkillTreePage:name() end
 
 ---@class NewSkillTreeTreeItem : NewSkillTreeItem
+---@field super NewSkillTreeItem
 ---@field new fun(self, ...) : NewSkillTreeTreeItem
 NewSkillTreeTreeItem = {}
 
@@ -473,6 +476,7 @@ function NewSkillTreeTreeItem:link(left_tree, right_tree) end
 function NewSkillTreeTreeItem:on_notify(tree, msg) end
 
 ---@class NewSkillTreeTierItem : NewSkillTreeItem
+---@field super NewSkillTreeItem
 ---@field new fun(self, ...) : NewSkillTreeTierItem
 NewSkillTreeTierItem = {}
 
@@ -552,6 +556,7 @@ function NewSkillTreeTierItem:inside_skill(x, y, skill) end
 function NewSkillTreeTierItem:on_notify(tree, tier, msg) end
 
 ---@class NewSkillTreeSkillItem : NewSkillTreeItem
+---@field super NewSkillTreeItem
 ---@field new fun(self, ...) : NewSkillTreeSkillItem
 NewSkillTreeSkillItem = {}
 

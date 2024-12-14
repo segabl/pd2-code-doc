@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementMoney : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementMoney
 ElementMoney = {}
 
@@ -17,6 +18,7 @@ function ElementMoney:client_on_executed(...) end
 function ElementMoney:on_executed(instigator) end
 
 ---@class ElementMoneyFilter : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementMoneyFilter
 ElementMoneyFilter = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CustomSafehouseGuiPageTrophies : CustomSafehouseGuiPage
+---@field super CustomSafehouseGuiPage
 ---@field new fun(self, ...) : CustomSafehouseGuiPageTrophies
 CustomSafehouseGuiPageTrophies = {}
 
@@ -96,6 +97,7 @@ function CustomSafehouseGuiPageTrophies:move_down() end
 function CustomSafehouseGuiPageTrophies:get_legend() end
 
 ---@class CustomSafehouseGuiTrophyItem : CustomSafehouseGuiItem
+---@field super CustomSafehouseGuiItem
 ---@field new fun(self, ...) : CustomSafehouseGuiTrophyItem
 CustomSafehouseGuiTrophyItem = {}
 
@@ -170,6 +172,7 @@ function CustomSafehouseGuiTrophyItem:get_linked(link) end
 function CustomSafehouseGuiTrophyItem:trigger(parent) end
 
 ---@class CustomSafehouseGuiProgressItem : CustomSafehouseGuiItem
+---@field super CustomSafehouseGuiItem
 ---@field new fun(self, ...) : CustomSafehouseGuiProgressItem
 CustomSafehouseGuiProgressItem = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EnvironmentOperatorElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : EnvironmentOperatorElement
 EnvironmentOperatorElement = {}
 

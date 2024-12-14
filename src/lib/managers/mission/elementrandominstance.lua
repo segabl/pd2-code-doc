@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementRandomInstance : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementRandomInstance
 ElementRandomInstance = {}
 
@@ -23,10 +24,12 @@ function ElementRandomInstance:_calc_amount() end
 function ElementRandomInstance:_get_random_elements() end
 
 ---@class ElementRandomInstanceInputEvent : ElementRandomInstance
+---@field super ElementRandomInstance
 ---@field new fun(self, ...) : ElementRandomInstanceInputEvent
 ElementRandomInstanceInputEvent = {}
 
 ---@class ElementRandomInstanceOutputEvent : ElementRandomInstance
+---@field super ElementRandomInstance
 ---@field new fun(self, ...) : ElementRandomInstanceOutputEvent
 ElementRandomInstanceOutputEvent = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BossSound : CopSound
+---@field super CopSound
 ---@field new fun(self, ...) : BossSound
 BossSound = {}
 

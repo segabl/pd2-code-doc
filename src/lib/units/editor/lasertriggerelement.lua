@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class LaserTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : LaserTriggerUnitElement
 LaserTriggerUnitElement = {}
 

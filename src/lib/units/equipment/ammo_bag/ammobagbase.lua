@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AmmoBagBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : AmmoBagBase
 AmmoBagBase = {}
 
@@ -93,6 +94,7 @@ function AmmoBagBase:round_value(val) end
 function AmmoBagBase:destroy() end
 
 ---@class CustomAmmoBagBase : AmmoBagBase
+---@field super AmmoBagBase
 ---@field new fun(self, ...) : CustomAmmoBagBase
 CustomAmmoBagBase = {}
 

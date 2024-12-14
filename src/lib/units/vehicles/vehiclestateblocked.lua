@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class VehicleStateBlocked : BaseVehicleState
+---@field super BaseVehicleState
 ---@field new fun(self, ...) : VehicleStateBlocked
 VehicleStateBlocked = {}
 

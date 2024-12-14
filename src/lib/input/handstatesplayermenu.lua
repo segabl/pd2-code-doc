@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class M.DefaultHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : M.DefaultHandState
 M.DefaultHandState = {}
 
@@ -8,6 +9,7 @@ M.DefaultHandState = {}
 function M.DefaultHandState:init() end
 
 ---@class M.EmptyHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : M.EmptyHandState
 M.EmptyHandState = {}
 
@@ -15,6 +17,7 @@ M.EmptyHandState = {}
 function M.EmptyHandState:init() end
 
 ---@class M.LaserHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : M.LaserHandState
 M.LaserHandState = {}
 
@@ -22,6 +25,7 @@ M.LaserHandState = {}
 function M.LaserHandState:init() end
 
 ---@class M.CustomizationLaserHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : M.CustomizationLaserHandState
 M.CustomizationLaserHandState = {}
 
@@ -29,6 +33,7 @@ M.CustomizationLaserHandState = {}
 function M.CustomizationLaserHandState:init() end
 
 ---@class M.CustomizationEmptyHandState : HandState
+---@field super HandState
 ---@field new fun(self, ...) : M.CustomizationEmptyHandState
 M.CustomizationEmptyHandState = {}
 

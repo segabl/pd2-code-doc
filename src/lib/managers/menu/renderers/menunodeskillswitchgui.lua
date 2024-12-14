@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuNodeSkillSwitchGui : MenuNodeBaseGui
+---@field super MenuNodeBaseGui
 ---@field new fun(self, ...) : MenuNodeSkillSwitchGui
 MenuNodeSkillSwitchGui = {}
 

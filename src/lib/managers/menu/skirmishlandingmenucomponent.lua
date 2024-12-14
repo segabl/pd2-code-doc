@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SkirmishMenuComponentBase : MenuGuiComponent
+---@field super MenuGuiComponent
 ---@field new fun(self, ...) : SkirmishMenuComponentBase
 SkirmishMenuComponentBase = {}
 
@@ -52,6 +53,7 @@ function SkirmishMenuComponentBase:_select_button(button) end
 function SkirmishMenuComponentBase:_move_in_direction(direction) end
 
 ---@class SkirmishLandingMenuComponent : SkirmishMenuComponentBase
+---@field super SkirmishMenuComponentBase
 ---@field new fun(self, ...) : SkirmishLandingMenuComponent
 SkirmishLandingMenuComponent = {}
 
@@ -76,6 +78,7 @@ function SkirmishLandingMenuComponent:update(t, dt) end
 function SkirmishLandingMenuComponent:input_focus() end
 
 ---@class ClickButton : GUIObjectWrapper
+---@field super GUIObjectWrapper
 ---@field new fun(self, ...) : ClickButton
 ClickButton = {}
 
@@ -113,6 +116,7 @@ function ClickButton:mouse_moved(x, y) end
 function ClickButton:mouse_clicked(button, x, y) end
 
 ---@class BackButton : ClickButton
+---@field super ClickButton
 ---@field new fun(self, ...) : BackButton
 BackButton = {}
 
@@ -126,6 +130,7 @@ function BackButton:init(parent, config) end
 function BackButton:set_button_state(state) end
 
 ---@class SkirmishVariantButton : ClickButton
+---@field super ClickButton
 ---@field new fun(self, ...) : SkirmishVariantButton
 SkirmishVariantButton = {}
 
@@ -139,6 +144,7 @@ function SkirmishVariantButton:init(parent, config) end
 function SkirmishVariantButton:set_button_state(state) end
 
 ---@class WeeklySkirmishVariantButton : SkirmishVariantButton
+---@field super SkirmishVariantButton
 ---@field new fun(self, ...) : WeeklySkirmishVariantButton
 WeeklySkirmishVariantButton = {}
 
@@ -148,6 +154,7 @@ WeeklySkirmishVariantButton = {}
 function WeeklySkirmishVariantButton:init(parent, config) end
 
 ---@class SkirmishWeeklyRewardsMenuComponent : SkirmishMenuComponentBase
+---@field super SkirmishMenuComponentBase
 ---@field new fun(self, ...) : SkirmishWeeklyRewardsMenuComponent
 SkirmishWeeklyRewardsMenuComponent = {}
 
@@ -172,6 +179,7 @@ function SkirmishWeeklyRewardsMenuComponent:remove_button(button) end
 function SkirmishWeeklyRewardsMenuComponent:input_focus() end
 
 ---@class RewardButton : ClickButton
+---@field super ClickButton
 ---@field new fun(self, ...) : RewardButton
 RewardButton = {}
 
@@ -196,6 +204,7 @@ function RewardButton:set_scale(scale) end
 function RewardButton:set_button_state(state) end
 
 ---@class ContinueButton : ClickButton
+---@field super ClickButton
 ---@field new fun(self, ...) : ContinueButton
 ContinueButton = {}
 

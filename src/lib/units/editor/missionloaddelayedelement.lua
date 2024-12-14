@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MissionLoadDelayedElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : MissionLoadDelayedElement
 MissionLoadDelayedElement = {}
 

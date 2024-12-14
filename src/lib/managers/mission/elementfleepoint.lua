@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementFleePoint : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementFleePoint
 ElementFleePoint = {}
 

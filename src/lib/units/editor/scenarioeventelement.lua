@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ScenarioEventUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : ScenarioEventUnitElement
 ScenarioEventUnitElement = {}
 

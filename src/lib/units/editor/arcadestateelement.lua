@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ArcadeStateUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : ArcadeStateUnitElement
 ArcadeStateUnitElement = {}
 

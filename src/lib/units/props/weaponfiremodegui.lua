@@ -53,6 +53,7 @@ function WeaponFiremodeGui:lock_gui() end
 function WeaponFiremodeGui:destroy() end
 
 ---@class WeaponFiremodeGuiUpper : WeaponFiremodeGui
+---@field super WeaponFiremodeGui
 ---@field new fun(self, ...) : WeaponFiremodeGuiUpper
 WeaponFiremodeGuiUpper = {}
 

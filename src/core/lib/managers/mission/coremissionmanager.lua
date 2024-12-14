@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreMissionManager.MissionManager : CoreEvent.CallbackHandler
+---@field super CoreEvent.CallbackHandler
 ---@field new fun(self, ...) : CoreMissionManager.MissionManager
 MissionManager = {}
 
@@ -159,6 +160,7 @@ function MissionManager:pre_destroy() end
 function MissionManager:destroy() end
 
 ---@class CoreMissionManager.MissionScript : CoreEvent.CallbackHandler
+---@field super CoreEvent.CallbackHandler
 ---@field new fun(self, ...) : CoreMissionManager.MissionScript
 MissionScript = {}
 

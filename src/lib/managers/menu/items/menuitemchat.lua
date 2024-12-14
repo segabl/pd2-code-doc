@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemChat : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemChat
 MenuItemChat = {}
 

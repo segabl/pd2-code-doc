@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreControllerWrapperXbox360.ControllerWrapperXbox360 : CoreControllerWrapper.ControllerWrapper
+---@field super CoreControllerWrapper.ControllerWrapper
 ---@field new fun(self, ...) : CoreControllerWrapperXbox360.ControllerWrapperXbox360
 ControllerWrapperXbox360 = {}
 

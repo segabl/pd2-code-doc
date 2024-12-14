@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FlashGrenadeUnitDamage : UnitDamage
+---@field super UnitDamage
 ---@field new fun(self, ...) : FlashGrenadeUnitDamage
 FlashGrenadeUnitDamage = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerCharacterTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : PlayerCharacterTriggerUnitElement
 PlayerCharacterTriggerUnitElement = {}
 
@@ -14,6 +15,7 @@ function PlayerCharacterTriggerUnitElement:init(unit) end
 function PlayerCharacterTriggerUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class PlayerCharacterFilterUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : PlayerCharacterFilterUnitElement
 PlayerCharacterFilterUnitElement = {}
 

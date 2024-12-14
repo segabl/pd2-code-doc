@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class LeftRightText : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : LeftRightText
 LeftRightText = {}
 
@@ -35,6 +36,7 @@ function LeftRightText:right_item() end
 function LeftRightText:set_texts(left, right) end
 
 ---@class AchievementButton : BaseButton
+---@field super BaseButton
 ---@field new fun(self, ...) : AchievementButton
 AchievementButton = {}
 
@@ -65,6 +67,7 @@ function AchievementButton:allow_input() end
 function AchievementButton:_hover_changed(hover) end
 
 ---@class AchievementForceButton : AchievementButton
+---@field super AchievementButton
 ---@field new fun(self, ...) : AchievementForceButton
 AchievementForceButton = {}
 
@@ -83,6 +86,7 @@ function AchievementForceButton:_selected_changed(state) end
 function AchievementForceButton:_post_trigger() end
 
 ---@class AchievementTrackButton : AchievementButton
+---@field super AchievementButton
 ---@field new fun(self, ...) : AchievementTrackButton
 AchievementTrackButton = {}
 
@@ -101,6 +105,7 @@ function AchievementTrackButton:_selected_changed(state) end
 function AchievementTrackButton:_post_trigger() end
 
 ---@class AchievementListItem : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : AchievementListItem
 AchievementListItem = {}
 
@@ -143,6 +148,7 @@ function AchievementListItem:mouse_clicked(o, button, x, y) end
 function AchievementListItem:mouse_moved(o, x, y) end
 
 ---@class ToggleInputPanel : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : ToggleInputPanel
 ToggleInputPanel = {}
 
@@ -162,6 +168,7 @@ function ToggleInputPanel:allow_input() end
 function add_achievement_detail_text(scroll, placer, visual, info, font_color) end
 
 ---@class AchievementSortPicker : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : AchievementSortPicker
 AchievementSortPicker = {}
 
@@ -189,6 +196,7 @@ function AchievementSortPicker:_prev() end
 function AchievementSortPicker:refresh() end
 
 ---@class AchievementListGui : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : AchievementListGui
 AchievementListGui = {}
 

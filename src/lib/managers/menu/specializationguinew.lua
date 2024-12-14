@@ -136,6 +136,7 @@ function SpecializationGuiNew:set_layer(layer) end
 function SpecializationGuiNew:make_fine_text(text) end
 
 ---@class SpecializationListItem : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : SpecializationListItem
 SpecializationListItem = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class DisableUnitUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : DisableUnitUnitElement
 DisableUnitUnitElement = {}
 

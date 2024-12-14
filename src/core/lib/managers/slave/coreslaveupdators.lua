@@ -21,6 +21,7 @@ function Updator:update() end
 function Updator:set_batch_count() end
 
 ---@class CoreSlaveUpdators.SlaveUpdator : CoreSlaveUpdators.Updator
+---@field super CoreSlaveUpdators.Updator
 ---@field new fun(self, ...) : CoreSlaveUpdators.SlaveUpdator
 SlaveUpdator = {}
 
@@ -48,6 +49,7 @@ function SlaveUpdator:slaveupdators_reset(rpc) end
 function SlaveUpdator:slaveupdators_init() end
 
 ---@class CoreSlaveUpdators.MasterUpdator : CoreSlaveUpdators.Updator
+---@field super CoreSlaveUpdators.Updator
 ---@field new fun(self, ...) : CoreSlaveUpdators.MasterUpdator
 MasterUpdator = {}
 

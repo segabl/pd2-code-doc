@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class LeakedRecordingGui : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : LeakedRecordingGui
 LeakedRecordingGui = {}
 
@@ -72,6 +73,7 @@ LeakedRecordingMissionGuiInitiator = {}
 function LeakedRecordingMissionGuiInitiator:modify_node(original_node, data) end
 
 ---@class LeakedRecordingMissionGui : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : LeakedRecordingMissionGui
 LeakedRecordingMissionGui = {}
 

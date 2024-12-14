@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ChristmasPresentBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : ChristmasPresentBase
 ChristmasPresentBase = {}
 

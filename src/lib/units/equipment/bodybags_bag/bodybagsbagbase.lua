@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BodyBagsBagBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : BodyBagsBagBase
 BodyBagsBagBase = {}
 
@@ -85,6 +86,7 @@ function BodyBagsBagBase:load(data) end
 function BodyBagsBagBase:destroy() end
 
 ---@class CustomBodyBagsBagBase : BodyBagsBagBase
+---@field super BodyBagsBagBase
 ---@field new fun(self, ...) : CustomBodyBagsBagBase
 CustomBodyBagsBagBase = {}
 

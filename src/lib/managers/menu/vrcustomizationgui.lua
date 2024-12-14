@@ -46,6 +46,7 @@ function VRGuiObject:released(x, y) end
 function VRGuiObject:desc_data() end
 
 ---@class VRButton : VRGuiObject
+---@field super VRGuiObject
 ---@field new fun(self, ...) : VRButton
 VRButton = {}
 
@@ -65,6 +66,7 @@ function VRButton:set_selected(selected) end
 function VRButton:set_text(text_id, skip_localization) end
 
 ---@class VRSlider : VRGuiObject
+---@field super VRGuiObject
 ---@field new fun(self, ...) : VRSlider
 VRSlider = {}
 
@@ -115,6 +117,7 @@ function VRSlider:released(x, y) end
 function VRSlider:moved(x, y) end
 
 ---@class VRSettingButton : VRGuiObject
+---@field super VRGuiObject
 ---@field new fun(self, ...) : VRSettingButton
 VRSettingButton = {}
 
@@ -139,6 +142,7 @@ function VRSettingButton:set_selected(selected) end
 function VRSettingButton:desc_data() end
 
 ---@class VRSettingSlider : VRSlider
+---@field super VRSlider
 ---@field new fun(self, ...) : VRSettingSlider
 VRSettingSlider = {}
 
@@ -152,6 +156,7 @@ function VRSettingSlider:init(panel, id, params) end
 function VRSettingSlider:setting_changed() end
 
 ---@class VRSettingTrigger : VRButton
+---@field super VRButton
 ---@field new fun(self, ...) : VRSettingTrigger
 VRSettingTrigger = {}
 
@@ -234,6 +239,7 @@ function VRMenu:set_enabled(enabled) end
 function VRMenu:enabled() end
 
 ---@class VRSubMenu : VRMenu
+---@field super VRMenu
 ---@field new fun(self, ...) : VRSubMenu
 VRSubMenu = {}
 
@@ -313,6 +319,7 @@ function VRSubMenu:set_selected(index) end
 function VRSubMenu:update_desc() end
 
 ---@class VRCustomizationGui : VRMenu
+---@field super VRMenu
 ---@field new fun(self, ...) : VRCustomizationGui
 VRCustomizationGui = {}
 

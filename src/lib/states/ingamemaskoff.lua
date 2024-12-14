@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameMaskOffState : IngamePlayerBaseState
+---@field super IngamePlayerBaseState
 ---@field new fun(self, ...) : IngameMaskOffState
 IngameMaskOffState = {}
 

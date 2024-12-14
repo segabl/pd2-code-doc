@@ -279,6 +279,7 @@ function GenericUserManager:load(data, cache_version) end
 function GenericUserManager:sanitize_settings() end
 
 ---@class UserManager.Xbox360UserManager : UserManager.GenericUserManager
+---@field super UserManager.GenericUserManager
 ---@field new fun(self, ...) : UserManager.Xbox360UserManager
 Xbox360UserManager = {}
 
@@ -382,6 +383,7 @@ function Xbox360UserManager:get_xuid(user_index) end
 function Xbox360UserManager:invite_accepted_by_inactive_user() end
 
 ---@class UserManager.PS3UserManager : UserManager.GenericUserManager
+---@field super UserManager.GenericUserManager
 ---@field new fun(self, ...) : UserManager.PS3UserManager
 PS3UserManager = {}
 
@@ -396,6 +398,7 @@ function PS3UserManager:init_finalize() end
 function PS3UserManager:set_index(user_index) end
 
 ---@class UserManager.PS4UserManager : UserManager.GenericUserManager
+---@field super UserManager.GenericUserManager
 ---@field new fun(self, ...) : UserManager.PS4UserManager
 PS4UserManager = {}
 
@@ -413,6 +416,7 @@ function PS4UserManager:init_finalize() end
 function PS4UserManager:set_index(user_index) end
 
 ---@class UserManager.WinUserManager : UserManager.GenericUserManager
+---@field super UserManager.GenericUserManager
 ---@field new fun(self, ...) : UserManager.WinUserManager
 WinUserManager = {}
 
@@ -437,6 +441,7 @@ function WinUserManager:check_user(callback_func, show_select_user_question_dial
 function WinUserManager:update(t, dt) end
 
 ---@class UserManager.XB1UserManager : UserManager.GenericUserManager
+---@field super UserManager.GenericUserManager
 ---@field new fun(self, ...) : UserManager.XB1UserManager
 XB1UserManager = {}
 

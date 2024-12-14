@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SmokeScreenGrenade : FragGrenade
+---@field super FragGrenade
 ---@field new fun(self, ...) : SmokeScreenGrenade
 SmokeScreenGrenade = {}
 

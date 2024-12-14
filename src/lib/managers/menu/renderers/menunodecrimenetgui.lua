@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuNodeCrimenetGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeCrimenetGui
 MenuNodeCrimenetGui = {}
 
@@ -42,6 +43,7 @@ function MenuNodeCrimenetGui:_world_left_align() end
 function MenuNodeCrimenetGui:_align_marker(row_item) end
 
 ---@class MenuNodeCrimenetFiltersGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeCrimenetFiltersGui
 MenuNodeCrimenetFiltersGui = {}
 
@@ -83,6 +85,7 @@ function MenuNodeCrimenetFiltersGui:_align_marker(row_item) end
 function MenuNodeCrimenetFiltersGui:_highlight_row_item(row_item, mouse_over) end
 
 ---@class MenuNodeCrimenetSpecialGui : MenuNodeCrimenetFiltersGui
+---@field super MenuNodeCrimenetFiltersGui
 ---@field new fun(self, ...) : MenuNodeCrimenetSpecialGui
 MenuNodeCrimenetSpecialGui = {}
 
@@ -104,10 +107,12 @@ function MenuNodeCrimenetSpecialGui:input_focus() end
 function MenuNodeCrimenetSpecialGui:close() end
 
 ---@class MenuNodeCrimenetSmartMatchmakingGui : MenuNodeCrimenetSpecialGui
+---@field super MenuNodeCrimenetSpecialGui
 ---@field new fun(self, ...) : MenuNodeCrimenetSmartMatchmakingGui
 MenuNodeCrimenetSmartMatchmakingGui = {}
 
 ---@class MenuNodeCrimenetCasinoGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeCrimenetCasinoGui
 MenuNodeCrimenetCasinoGui = {}
 
@@ -155,6 +160,7 @@ function MenuNodeCrimenetCasinoGui:set_update_values(preferred_card, secured_car
 function MenuNodeCrimenetCasinoGui:set_offshore_text() end
 
 ---@class MenuNodeCrimenetContactInfoGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeCrimenetContactInfoGui
 MenuNodeCrimenetContactInfoGui = {}
 
@@ -261,6 +267,7 @@ function MenuNodeCrimenetContactInfoGui:_align_marker(row_item) end
 function MenuNodeCrimenetContactInfoGui:close() end
 
 ---@class MenuNodeCrimenetContactShortGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeCrimenetContactShortGui
 MenuNodeCrimenetContactShortGui = {}
 
@@ -346,6 +353,7 @@ function MenuNodeCrimenetContactShortGui:_align_marker(row_item) end
 function MenuNodeCrimenetContactShortGui:close() end
 
 ---@class MenuNodeCrimenetContactChillGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeCrimenetContactChillGui
 MenuNodeCrimenetContactChillGui = {}
 
@@ -440,6 +448,7 @@ function MenuNodeCrimenetContactChillGui:remove_blur() end
 function MenuNodeCrimenetContactChillGui:close() end
 
 ---@class MenuNodeCrimenetGageAssignmentGui : MenuNodeCrimenetContactInfoGui
+---@field super MenuNodeCrimenetContactInfoGui
 ---@field new fun(self, ...) : MenuNodeCrimenetGageAssignmentGui
 MenuNodeCrimenetGageAssignmentGui = {}
 
@@ -486,6 +495,7 @@ function MenuNodeCrimenetGageAssignmentGui:set_file(index) end
 function MenuNodeCrimenetGageAssignmentGui:close() end
 
 ---@class MenuNodeCrimenetChallengeGui : MenuNodeCrimenetGageAssignmentGui
+---@field super MenuNodeCrimenetGageAssignmentGui
 ---@field new fun(self, ...) : MenuNodeCrimenetChallengeGui
 MenuNodeCrimenetChallengeGui = {}
 
@@ -581,6 +591,7 @@ function MenuNodeCrimenetChallengeGui:_setup_item_panel_parent(safe_rect, shape)
 function MenuNodeCrimenetChallengeGui:_setup_menu() end
 
 ---@class MenuNodeChooseWeaponRewardGui : MenuNodeCrimenetFiltersGui
+---@field super MenuNodeCrimenetFiltersGui
 ---@field new fun(self, ...) : MenuNodeChooseWeaponRewardGui
 MenuNodeChooseWeaponRewardGui = {}
 
@@ -600,6 +611,7 @@ function MenuNodeChooseWeaponRewardGui:_setup_item_panel(safe_rect, res) end
 function MenuNodeChooseWeaponRewardGui:_reposition_items(highlighted_row_item) end
 
 ---@class MenuNodeChooseWeaponCosmeticGui : MenuNodeCrimenetFiltersGui
+---@field super MenuNodeCrimenetFiltersGui
 ---@field new fun(self, ...) : MenuNodeChooseWeaponCosmeticGui
 MenuNodeChooseWeaponCosmeticGui = {}
 
@@ -623,6 +635,7 @@ function MenuNodeChooseWeaponCosmeticGui:_reposition_items(highlighted_row_item)
 function MenuNodeChooseWeaponCosmeticGui:close(...) end
 
 ---@class MenuNodeQuickplayGui : MenuNodeCrimenetFiltersGui
+---@field super MenuNodeCrimenetFiltersGui
 ---@field new fun(self, ...) : MenuNodeQuickplayGui
 MenuNodeQuickplayGui = {}
 
@@ -637,6 +650,7 @@ function MenuNodeQuickplayGui:init(node, layer, parameters) end
 function MenuNodeQuickplayGui:close(...) end
 
 ---@class MenuNodeDOFGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeDOFGui
 MenuNodeDOFGui = {}
 
@@ -649,6 +663,7 @@ function MenuNodeDOFGui:init(...) end
 function MenuNodeDOFGui:close(...) end
 
 ---@class MenuNodeOpenContainerGui : MenuNodeBaseGui
+---@field super MenuNodeBaseGui
 ---@field new fun(self, ...) : MenuNodeOpenContainerGui
 MenuNodeOpenContainerGui = {}
 
@@ -712,6 +727,7 @@ function MenuNodeOpenContainerGui:_setup_item_panel(...) end
 function MenuNodeOpenContainerGui:close() end
 
 ---@class MenuNodeContainerPreviewGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeContainerPreviewGui
 MenuNodeContainerPreviewGui = {}
 

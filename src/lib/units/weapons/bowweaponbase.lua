@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BowWeaponBase : ProjectileWeaponBase
+---@field super ProjectileWeaponBase
 ---@field new fun(self, ...) : BowWeaponBase
 BowWeaponBase = {}
 
@@ -98,6 +99,7 @@ function BowWeaponBase:replenish() end
 function BowWeaponBase:charge_max_t() end
 
 ---@class CrossbowWeaponBase : ProjectileWeaponBase
+---@field super ProjectileWeaponBase
 ---@field new fun(self, ...) : CrossbowWeaponBase
 CrossbowWeaponBase = {}
 

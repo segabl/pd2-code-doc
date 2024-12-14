@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreSessionState.SessionState : CoreSessionGenericState.State
+---@field super CoreSessionGenericState.State
 ---@field new fun(self, ...) : CoreSessionState.SessionState
 SessionState = {}
 

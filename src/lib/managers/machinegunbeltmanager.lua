@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MachineGunBeltManager : CharmManager
+---@field super CharmManager
 ---@field new fun(self, ...) : MachineGunBeltManager
 MachineGunBeltManager = {}
 

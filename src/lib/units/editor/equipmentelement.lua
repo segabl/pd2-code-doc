@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EquipmentUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : EquipmentUnitElement
 EquipmentUnitElement = {}
 

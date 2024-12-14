@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementTeamAICommands : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementTeamAICommands
 ElementTeamAICommands = {}
 

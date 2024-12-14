@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CivilianHeisterSound : PlayerSound
+---@field super PlayerSound
 ---@field new fun(self, ...) : CivilianHeisterSound
 CivilianHeisterSound = {}
 

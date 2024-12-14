@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuHintArchiveInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuHintArchiveInitiator
 MenuHintArchiveInitiator = {}
 
@@ -14,6 +15,7 @@ function MenuHintArchiveInitiator:modify_node(original_node, node_data) end
 function MenuHintArchiveInitiator:refresh_node(original_node) end
 
 ---@class HintListItem : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : HintListItem
 HintListItem = {}
 
@@ -43,6 +45,7 @@ function HintListItem:mouse_moved(o, x, y) end
 function HintListItem:_texture_done_clbk(params, texture_ids) end
 
 ---@class MenuNodeHintArchiveGui : MenuNodeBaseGui
+---@field super MenuNodeBaseGui
 ---@field new fun(self, ...) : MenuNodeHintArchiveGui
 MenuNodeHintArchiveGui = {}
 

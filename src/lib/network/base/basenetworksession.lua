@@ -23,37 +23,39 @@ function BaseNetworkSession:load(data) end
 ---@return unknown
 function BaseNetworkSession:save(data) end
 
----@return unknown
+---@return NetworkPeer
 function BaseNetworkSession:server_peer() end
 
----@param peer_id any
----@return unknown
+---@param peer_id integer
+---@return NetworkPeer?
 function BaseNetworkSession:peer(peer_id) end
 
----@return unknown
+---Returns a table containing all peers, excluding the local peer
+---@return table<integer, NetworkPeer>
 function BaseNetworkSession:peers() end
 
----@return unknown
+---Returns a table containing all peers
+---@return table<integer, NetworkPeer>
 function BaseNetworkSession:all_peers() end
 
 ---@param ip any
----@return unknown
+---@return NetworkPeer?
 function BaseNetworkSession:peer_by_ip(ip) end
 
 ---@param name any
----@return unknown
+---@return NetworkPeer?
 function BaseNetworkSession:peer_by_name(name) end
 
 ---@param user_id any
----@return unknown
+---@return NetworkPeer?
 function BaseNetworkSession:peer_by_user_id(user_id) end
 
----@param unit any
----@return unknown
+---@param unit Unit
+---@return NetworkPeer?
 function BaseNetworkSession:peer_by_unit(unit) end
 
----@param wanted_key any
----@return unknown
+---@param wanted_key userdata
+---@return NetworkPeer?
 function BaseNetworkSession:peer_by_unit_key(wanted_key) end
 
 ---@return unknown

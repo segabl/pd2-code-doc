@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerParachuting : PlayerStandard
+---@field super PlayerStandard
 ---@field new fun(self, ...) : PlayerParachuting
 PlayerParachuting = {}
 

@@ -117,6 +117,7 @@ function LootDropScreenGui:close() end
 function LootDropScreenGui:reload() end
 
 ---@class CasinoLootDropScreenGui : LootDropScreenGui
+---@field super LootDropScreenGui
 ---@field new fun(self, ...) : CasinoLootDropScreenGui
 CasinoLootDropScreenGui = {}
 

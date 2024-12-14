@@ -119,10 +119,12 @@ function DigitalGui:save(data) end
 function DigitalGui:load(data) end
 
 ---@class DigitalGuiUpper : DigitalGui
+---@field super DigitalGui
 ---@field new fun(self, ...) : DigitalGuiUpper
 DigitalGuiUpper = {}
 
 ---@class WeaponTargetHealthDisplayGui : DigitalGui
+---@field super DigitalGui
 ---@field new fun(self, ...) : WeaponTargetHealthDisplayGui
 WeaponTargetHealthDisplayGui = {}
 

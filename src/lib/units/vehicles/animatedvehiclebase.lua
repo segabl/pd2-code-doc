@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AnimatedVehicleBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : AnimatedVehicleBase
 AnimatedVehicleBase = {}
 

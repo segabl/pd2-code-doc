@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementGameDirection : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementGameDirection
 ElementGameDirection = {}
 

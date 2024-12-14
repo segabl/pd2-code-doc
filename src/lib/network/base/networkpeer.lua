@@ -249,24 +249,21 @@ function NetworkPeer:statistics() end
 ---@return unknown
 function NetworkPeer:has_statistics() end
 
----@param func_name any
+---@param func_name string
 ---@param ... any
----@return unknown
 function NetworkPeer:send(func_name, ...) end
 
----@param queue_name any
----@param func_name any
+---@param queue_name string
+---@param func_name string
 ---@param ... any
----@return unknown
 function NetworkPeer:_send_queued(queue_name, func_name, ...) end
 
 ---@param ... any
----@return unknown
 function NetworkPeer:send_after_load(...) end
 
+---@param func_name string
 ---@param ... any
----@return unknown
-function NetworkPeer:send_queued_sync(...) end
+function NetworkPeer:send_queued_sync(func_name, ...) end
 
 ---@return unknown
 function NetworkPeer:_chk_flush_msg_queues() end

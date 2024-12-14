@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementShape.ElementShape : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementShape.ElementShape
 ElementShape = {}
 

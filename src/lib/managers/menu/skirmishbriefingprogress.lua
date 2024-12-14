@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SkirmishBriefingProgress : GUIObjectWrapper
+---@field super GUIObjectWrapper
 ---@field new fun(self, ...) : SkirmishBriefingProgress
 SkirmishBriefingProgress = {}
 
@@ -16,6 +17,7 @@ function SkirmishBriefingProgress:_sniff_for_wave_change() end
 function SkirmishBriefingProgress:redraw() end
 
 ---@class SkirmishProgressWaveNumber : GUIObjectWrapper
+---@field super GUIObjectWrapper
 ---@field new fun(self, ...) : SkirmishProgressWaveNumber
 SkirmishProgressWaveNumber = {}
 

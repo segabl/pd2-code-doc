@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ChangeVanSkinUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : ChangeVanSkinUnitElement
 ChangeVanSkinUnitElement = {}
 

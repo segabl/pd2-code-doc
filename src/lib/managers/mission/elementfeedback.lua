@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementFeedback : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementFeedback
 ElementFeedback = {}
 

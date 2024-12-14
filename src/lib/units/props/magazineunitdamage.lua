@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MagazineUnitDamage : UnitDamage
+---@field super UnitDamage
 ---@field new fun(self, ...) : MagazineUnitDamage
 MagazineUnitDamage = {}
 

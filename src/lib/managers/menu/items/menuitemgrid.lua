@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemGrid : MenuItemMultiChoice
+---@field super MenuItemMultiChoice
 ---@field new fun(self, ...) : MenuItemGrid
 MenuItemGrid = {}
 

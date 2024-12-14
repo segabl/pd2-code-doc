@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierHeavySniper : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierHeavySniper
 ModifierHeavySniper = {}
 

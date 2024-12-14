@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ConsoleCommandUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : ConsoleCommandUnitElement
 ConsoleCommandUnitElement = {}
 

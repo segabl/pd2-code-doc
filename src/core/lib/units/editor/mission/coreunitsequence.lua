@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreUnitSequenceUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreUnitSequenceUnitElement
 CoreUnitSequenceUnitElement = {}
 
 ---@class UnitSequenceUnitElement : CoreUnitSequenceUnitElement
+---@field super CoreUnitSequenceUnitElement
 ---@field new fun(self, ...) : UnitSequenceUnitElement
 UnitSequenceUnitElement = {}
 

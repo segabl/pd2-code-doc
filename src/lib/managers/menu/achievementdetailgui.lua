@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HalfCircleProgressBar : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : HalfCircleProgressBar
 HalfCircleProgressBar = {}
 
@@ -15,6 +16,7 @@ function HalfCircleProgressBar:init(parent, config, progress) end
 function HalfCircleProgressBar:set_progress(value) end
 
 ---@class AchievementDetailGui : GrowPanel
+---@field super GrowPanel
 ---@field new fun(self, ...) : AchievementDetailGui
 AchievementDetailGui = {}
 

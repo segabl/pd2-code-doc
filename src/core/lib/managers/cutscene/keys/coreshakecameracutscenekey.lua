@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreShakeCameraCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreShakeCameraCutsceneKey
 CoreShakeCameraCutsceneKey = {}
 

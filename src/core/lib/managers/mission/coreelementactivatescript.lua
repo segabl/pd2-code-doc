@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementActivateScript.ElementActivateScript : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementActivateScript.ElementActivateScript
 ElementActivateScript = {}
 

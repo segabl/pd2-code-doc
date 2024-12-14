@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreSpawnUnitCutsceneKey : CoreSetupCutsceneKeyBase
+---@field super CoreSetupCutsceneKeyBase
 ---@field new fun(self, ...) : CoreSpawnUnitCutsceneKey
 CoreSpawnUnitCutsceneKey = {}
 

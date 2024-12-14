@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SpotterUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : SpotterUnitElement
 SpotterUnitElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeSpreeMenuComponent : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : CrimeSpreeMenuComponent
 CrimeSpreeMenuComponent = {}
 
@@ -46,6 +47,7 @@ function CrimeSpreeMenuComponent:_open_crime_spree_contract() end
 function CrimeSpreeMenuComponent:_continue_crime_spree() end
 
 ---@class CrimeSpreeStartButton : MenuGuiItem
+---@field super MenuGuiItem
 ---@field new fun(self, ...) : CrimeSpreeStartButton
 CrimeSpreeStartButton = {}
 

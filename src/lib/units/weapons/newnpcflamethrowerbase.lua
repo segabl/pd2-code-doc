@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NewNPCFlamethrowerBase : NewNPCRaycastWeaponBase
+---@field super NewNPCRaycastWeaponBase
 ---@field new fun(self, ...) : NewNPCFlamethrowerBase
 NewNPCFlamethrowerBase = {}
 
@@ -61,6 +62,7 @@ function NewNPCFlamethrowerBase:_sound_autofire_end() end
 function NewNPCFlamethrowerBase:third_person_important() end
 
 ---@class NPCFlamethrowerBase : NPCRaycastWeaponBase
+---@field super NPCRaycastWeaponBase
 ---@field new fun(self, ...) : NPCFlamethrowerBase
 NPCFlamethrowerBase = {}
 
@@ -76,6 +78,7 @@ function NPCFlamethrowerBase:destroy(...) end
 function NPCFlamethrowerBase:third_person_important() end
 
 ---@class NPCBossFlamethrowerBase : NPCFlamethrowerBase
+---@field super NPCFlamethrowerBase
 ---@field new fun(self, ...) : NPCBossFlamethrowerBase
 NPCBossFlamethrowerBase = {}
 

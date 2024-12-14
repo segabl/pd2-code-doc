@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MutatorsListGui : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : MutatorsListGui
 MutatorsListGui = {}
 

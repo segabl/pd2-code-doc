@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreControllerWrapperSteam.ControllerWrapperSteam : CoreControllerWrapper.ControllerWrapper
+---@field super CoreControllerWrapper.ControllerWrapper
 ---@field new fun(self, ...) : CoreControllerWrapperSteam.ControllerWrapperSteam
 ControllerWrapperSteam = {}
 

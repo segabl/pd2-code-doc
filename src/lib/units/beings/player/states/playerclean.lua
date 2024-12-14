@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerClean : PlayerStandard
+---@field super PlayerStandard
 ---@field new fun(self, ...) : PlayerClean
 PlayerClean = {}
 

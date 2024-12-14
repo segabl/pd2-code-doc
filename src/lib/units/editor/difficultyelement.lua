@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class DifficultyUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : DifficultyUnitElement
 DifficultyUnitElement = {}
 

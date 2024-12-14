@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EnvironmentEffectsManager : CoreEnvironmentEffectsManager.EnvironmentEffectsManager
+---@field super CoreEnvironmentEffectsManager.EnvironmentEffectsManager
 ---@field new fun(self, ...) : EnvironmentEffectsManager
 EnvironmentEffectsManager = {}
 
@@ -48,6 +49,7 @@ function EnvironmentEffect:stop() end
 function EnvironmentEffect:default() end
 
 ---@class RainEffect : EnvironmentEffect
+---@field super EnvironmentEffect
 ---@field new fun(self, ...) : RainEffect
 RainEffect = {}
 
@@ -70,6 +72,7 @@ function RainEffect:start() end
 function RainEffect:stop() end
 
 ---@class LightningEffect : EnvironmentEffect
+---@field super EnvironmentEffect
 ---@field new fun(self, ...) : LightningEffect
 LightningEffect = {}
 
@@ -122,6 +125,7 @@ function LightningEffect:_set_lightning_values() end
 function LightningEffect:_set_next_timer() end
 
 ---@class RainDropEffect : EnvironmentEffect
+---@field super EnvironmentEffect
 ---@field new fun(self, ...) : RainDropEffect
 RainDropEffect = {}
 
@@ -143,6 +147,7 @@ function RainDropEffect:start() end
 function RainDropEffect:stop() end
 
 ---@class RainDropScreenEffect : RainDropEffect
+---@field super RainDropEffect
 ---@field new fun(self, ...) : RainDropScreenEffect
 RainDropScreenEffect = {}
 

@@ -100,6 +100,7 @@ function MissionBriefingTabItem.animate_select(o, center_helper, instant) end
 function MissionBriefingTabItem.animate_deselect(o, center_helper) end
 
 ---@class DescriptionItem : MissionBriefingTabItem
+---@field super MissionBriefingTabItem
 ---@field new fun(self, ...) : DescriptionItem
 DescriptionItem = {}
 
@@ -162,6 +163,7 @@ function DescriptionItem:mouse_moved(x, y) end
 function DescriptionItem:mouse_pressed(button, x, y) end
 
 ---@class AssetsItem : MissionBriefingTabItem
+---@field super MissionBriefingTabItem
 ---@field new fun(self, ...) : AssetsItem
 AssetsItem = {}
 
@@ -283,6 +285,7 @@ function AssetsItem:something_selected() end
 function AssetsItem:_return_asset_info(i) end
 
 ---@class LoadoutItem : AssetsItem
+---@field super AssetsItem
 ---@field new fun(self, ...) : LoadoutItem
 LoadoutItem = {}
 
@@ -378,6 +381,7 @@ function LoadoutItem.animate_select(o, center_helper, instant) end
 function LoadoutItem.animate_deselect(o, center_helper, instant) end
 
 ---@class TeamLoadoutItem : MissionBriefingTabItem
+---@field super MissionBriefingTabItem
 ---@field new fun(self, ...) : TeamLoadoutItem
 TeamLoadoutItem = {}
 
@@ -432,6 +436,7 @@ function NewLoadoutItem:select_item() end
 function NewLoadoutItem:deselect_item() end
 
 ---@class NewLoadoutTab : MissionBriefingTabItem
+---@field super MissionBriefingTabItem
 ---@field new fun(self, ...) : NewLoadoutTab
 NewLoadoutTab = {}
 
@@ -527,6 +532,7 @@ function NewLoadoutTab:create_armor_loadout() end
 function NewLoadoutTab:open_node(node) end
 
 ---@class MutatorsItem : MissionBriefingTabItem
+---@field super MissionBriefingTabItem
 ---@field new fun(self, ...) : MutatorsItem
 MutatorsItem = {}
 
@@ -714,6 +720,7 @@ function MissionBriefingGui:reload_loadout() end
 function MissionBriefingGui:reload() end
 
 ---@class JukeboxItem : MissionBriefingTabItem
+---@field super MissionBriefingTabItem
 ---@field new fun(self, ...) : JukeboxItem
 JukeboxItem = {}
 
@@ -741,6 +748,7 @@ function JukeboxItem:deselect() end
 function JukeboxItem:set_enabled(state) end
 
 ---@class JukeboxGhostItem : MissionBriefingTabItem
+---@field super MissionBriefingTabItem
 ---@field new fun(self, ...) : JukeboxGhostItem
 JukeboxGhostItem = {}
 

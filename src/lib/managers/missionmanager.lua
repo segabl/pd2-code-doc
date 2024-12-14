@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MissionManager : CoreMissionManager.MissionManager
+---@field super CoreMissionManager.MissionManager
 ---@field new fun(self, ...) : MissionManager
 MissionManager = {}
 
@@ -109,6 +110,7 @@ function MissionManager:stop_simulation(...) end
 function MissionManager:get_mission_element_by_name(name) end
 
 ---@class MissionScript : CoreMissionManager.MissionScript
+---@field super CoreMissionManager.MissionScript
 ---@field new fun(self, ...) : MissionScript
 MissionScript = {}
 

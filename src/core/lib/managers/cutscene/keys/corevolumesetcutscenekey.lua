@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreVolumeSetCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreVolumeSetCutsceneKey
 CoreVolumeSetCutsceneKey = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.DocumentDialog : SystemMenuManager.Dialog
+---@field super SystemMenuManager.Dialog
 ---@field new fun(self, ...) : SystemMenuManager.DocumentDialog
 DocumentDialog = {}
 
@@ -95,6 +96,7 @@ function DocumentDialog:button_pressed_callback() end
 function DocumentDialog:dialog_cancel_callback() end
 
 ---@class SystemMenuManager.DocumentBoxGui : GrowPanel
+---@field super GrowPanel
 ---@field new fun(self, ...) : SystemMenuManager.DocumentBoxGui
 DocumentBoxGui = {}
 

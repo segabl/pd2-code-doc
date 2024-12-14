@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierDozerRage : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierDozerRage
 ModifierDozerRage = {}
 

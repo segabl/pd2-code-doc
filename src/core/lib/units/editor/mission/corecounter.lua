@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreCounterUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreCounterUnitElement
 CoreCounterUnitElement = {}
 
 ---@class CounterUnitElement : CoreCounterUnitElement
+---@field super CoreCounterUnitElement
 ---@field new fun(self, ...) : CounterUnitElement
 CounterUnitElement = {}
 
@@ -69,10 +71,12 @@ function CoreCounterUnitElement:_remove_unit_filter(unit) end
 function CoreCounterUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreCounterOperatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreCounterOperatorUnitElement
 CoreCounterOperatorUnitElement = {}
 
 ---@class CounterOperatorUnitElement : CoreCounterOperatorUnitElement
+---@field super CoreCounterOperatorUnitElement
 ---@field new fun(self, ...) : CounterOperatorUnitElement
 CounterOperatorUnitElement = {}
 
@@ -111,10 +115,12 @@ function CoreCounterOperatorUnitElement:add_triggers(vc) end
 function CoreCounterOperatorUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreCounterTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreCounterTriggerUnitElement
 CoreCounterTriggerUnitElement = {}
 
 ---@class CounterTriggerUnitElement : CoreCounterTriggerUnitElement
+---@field super CoreCounterTriggerUnitElement
 ---@field new fun(self, ...) : CounterTriggerUnitElement
 CounterTriggerUnitElement = {}
 
@@ -153,10 +159,12 @@ function CoreCounterTriggerUnitElement:add_triggers(vc) end
 function CoreCounterTriggerUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreCounterFilterUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreCounterFilterUnitElement
 CoreCounterFilterUnitElement = {}
 
 ---@class CounterFilterUnitElement : CoreCounterFilterUnitElement
+---@field super CoreCounterFilterUnitElement
 ---@field new fun(self, ...) : CounterFilterUnitElement
 CounterFilterUnitElement = {}
 

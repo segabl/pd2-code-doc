@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementWaypoint : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementWaypoint
 ElementWaypoint = {}
 

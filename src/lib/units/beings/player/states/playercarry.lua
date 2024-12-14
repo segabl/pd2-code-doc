@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerCarry : PlayerStandard
+---@field super PlayerStandard
 ---@field new fun(self, ...) : PlayerCarry
 PlayerCarry = {}
 

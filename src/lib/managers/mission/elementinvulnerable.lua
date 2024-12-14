@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementInvulnerable : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementInvulnerable
 ElementInvulnerable = {}
 

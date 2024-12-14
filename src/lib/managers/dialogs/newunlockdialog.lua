@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.NewUnlockDialog : SystemMenuManager.GenericDialog
+---@field super SystemMenuManager.GenericDialog
 ---@field new fun(self, ...) : SystemMenuManager.NewUnlockDialog
 NewUnlockDialog = {}
 

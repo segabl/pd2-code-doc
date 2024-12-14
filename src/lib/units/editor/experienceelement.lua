@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ExperienceUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : ExperienceUnitElement
 ExperienceUnitElement = {}
 

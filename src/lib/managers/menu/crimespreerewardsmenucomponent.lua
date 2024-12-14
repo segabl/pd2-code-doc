@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeSpreeRewardsMenuComponent : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : CrimeSpreeRewardsMenuComponent
 CrimeSpreeRewardsMenuComponent = {}
 

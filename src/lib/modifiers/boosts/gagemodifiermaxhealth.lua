@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GageModifierMaxHealth : GageModifier
+---@field super GageModifier
 ---@field new fun(self, ...) : GageModifierMaxHealth
 GageModifierMaxHealth = {}
 

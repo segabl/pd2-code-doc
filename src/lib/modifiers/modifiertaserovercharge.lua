@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierTaserOvercharge : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierTaserOvercharge
 ModifierTaserOvercharge = {}
 

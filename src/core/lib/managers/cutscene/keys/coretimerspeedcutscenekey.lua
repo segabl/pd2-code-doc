@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreTimerSpeedCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreTimerSpeedCutsceneKey
 CoreTimerSpeedCutsceneKey = {}
 

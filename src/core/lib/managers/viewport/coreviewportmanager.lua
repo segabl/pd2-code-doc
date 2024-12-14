@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreViewportManager.ViewportManager : CoreManagerBase.ManagerBase
+---@field super CoreManagerBase.ManagerBase
 ---@field new fun(self, ...) : CoreViewportManager.ViewportManager
 ViewportManager = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TeamAIMovement : CopMovement
+---@field super CopMovement
 ---@field new fun(self, ...) : TeamAIMovement
 TeamAIMovement = {}
 
@@ -76,7 +77,7 @@ function TeamAIMovement:_switch_to_not_cool_clbk_func() end
 ---@return unknown
 function TeamAIMovement:zipline_unit() end
 
----@return unknown
+---@return string
 function TeamAIMovement:current_state_name() end
 
 ---@param ... any

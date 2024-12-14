@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class RaidMenuGui : PromotionalMenuGui
+---@field super PromotionalMenuGui
 ---@field new fun(self, ...) : RaidMenuGui
 RaidMenuGui = {}
 

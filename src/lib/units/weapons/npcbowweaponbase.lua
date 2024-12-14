@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NPCBowWeaponBase : NewNPCRaycastWeaponBase
+---@field super NewNPCRaycastWeaponBase
 ---@field new fun(self, ...) : NPCBowWeaponBase
 NPCBowWeaponBase = {}
 
@@ -14,6 +15,7 @@ function NPCBowWeaponBase:init(...) end
 function NPCBowWeaponBase:fire_blank(direction, impact) end
 
 ---@class NPCCrossBowWeaponBase : NPCBowWeaponBase
+---@field super NPCBowWeaponBase
 ---@field new fun(self, ...) : NPCCrossBowWeaponBase
 NPCCrossBowWeaponBase = {}
 

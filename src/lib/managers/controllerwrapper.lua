@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ControllerWrapper : CoreControllerWrapper.ControllerWrapper
+---@field super CoreControllerWrapper.ControllerWrapper
 ---@field new fun(self, ...) : ControllerWrapper
 ControllerWrapper = {}
 

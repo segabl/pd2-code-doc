@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HeistTimerOperatorUnitElement : TimerOperatorUnitElement
+---@field super TimerOperatorUnitElement
 ---@field new fun(self, ...) : HeistTimerOperatorUnitElement
 HeistTimerOperatorUnitElement = {}
 
@@ -8,6 +9,7 @@ HeistTimerOperatorUnitElement = {}
 function HeistTimerOperatorUnitElement:add_element() end
 
 ---@class HeistTimerTriggerUnitElement : TimerTriggerUnitElement
+---@field super TimerTriggerUnitElement
 ---@field new fun(self, ...) : HeistTimerTriggerUnitElement
 HeistTimerTriggerUnitElement = {}
 

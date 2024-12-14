@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreChangeEnvCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreChangeEnvCutsceneKey
 CoreChangeEnvCutsceneKey = {}
 

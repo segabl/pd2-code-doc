@@ -51,7 +51,7 @@ function GroupAIManager:on_simulation_started() end
 ---@return any
 function GroupAIManager:on_simulation_ended() end
 
----Returns wether debug drawing is enabled in the current state
+---Returns whether debug drawing is enabled in the current state
 ---@return boolean
 function GroupAIManager:visualization_enabled() end
 

@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreRandomUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreRandomUnitElement
 CoreRandomUnitElement = {}
 
 ---@class RandomUnitElement : CoreRandomUnitElement
+---@field super CoreRandomUnitElement
 ---@field new fun(self, ...) : RandomUnitElement
 RandomUnitElement = {}
 

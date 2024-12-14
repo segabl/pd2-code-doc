@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierMoreSpecials : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierMoreSpecials
 ModifierMoreSpecials = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AreaMinPoliceForceUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : AreaMinPoliceForceUnitElement
 AreaMinPoliceForceUnitElement = {}
 

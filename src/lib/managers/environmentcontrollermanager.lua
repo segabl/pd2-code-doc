@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EnvironmentControllerManager : CoreEnvironmentControllerManager
+---@field super CoreEnvironmentControllerManager
 ---@field new fun(self, ...) : EnvironmentControllerManager
 EnvironmentControllerManager = {}
 

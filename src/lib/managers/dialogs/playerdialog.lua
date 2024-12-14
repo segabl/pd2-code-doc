@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.PlayerDialog : SystemMenuManager.BaseDialog
+---@field super SystemMenuManager.BaseDialog
 ---@field new fun(self, ...) : SystemMenuManager.PlayerDialog
 PlayerDialog = {}
 

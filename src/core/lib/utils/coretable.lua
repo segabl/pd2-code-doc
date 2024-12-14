@@ -64,7 +64,7 @@ function table.delete(list, value) end
 ---@return V[]
 function table.exclude(list, value) end
 
----Returns wether `a` and `b` contain the same values
+---Returns whether `a` and `b` contain the same values
 ---@generic K, V
 ---@param a table<K, V>
 ---@param b table<K, V>
@@ -72,28 +72,28 @@ function table.exclude(list, value) end
 ---@return boolean
 function table.equals(a, b, value_compare_func) end
 
----Returns wether `t` contains `value`
+---Returns whether `t` contains `value`
 ---@generic V
 ---@param t table<any, V>
 ---@param value V
 ---@return boolean
 function table.contains(t, value) end
 
----Returns wether `t` contains any values from `values`
+---Returns whether `t` contains any values from `values`
 ---@generic V
 ---@param t table<any, V>
 ---@param values V[]
 ---@return boolean
 function table.contains_any(t, values) end
 
----Returns wether `t` contains all values from `values`
+---Returns whether `t` contains all values from `values`
 ---@generic V
 ---@param t table<any, V>
 ---@param values V[]
 ---@return boolean
 function table.contains_all(t, values) end
 
----Returns wether `t` contains only values from `values`
+---Returns whether `t` contains only values from `values`
 ---@generic V
 ---@param t V[]
 ---@param values table<any, V>
@@ -114,7 +114,7 @@ function table.index_of(list, value) end
 ---@return K
 function table.get_key(t, value) end
 
----Returns wether the key `k` exists in `t`  
+---Returns whether the key `k` exists in `t`  
 ---This is just a very stupid version of `t[k] ~= nil`
 ---@generic K
 ---@param t table<K, any>
@@ -140,7 +140,7 @@ function table.count(t, func)end
 ---@param size integer
 function table.crop(list, size) end
 
----Returns wether a table has no entries
+---Returns whether a table has no entries
 ---@param t table
 ---@return boolean
 function table.empty(t) end
@@ -201,7 +201,7 @@ function table.find_value(list, func) end
 ---@return V[]
 function table.find_all_values(list, func) end
 
----Returns wether `predicate` holds true for all key-value pairs in `t`
+---Returns whether `predicate` holds true for all key-value pairs in `t`
 ---@generic K, V
 ---@param t table<K, V>
 ---@param predicate fun(value: V, key: K):boolean
@@ -331,7 +331,7 @@ function table.list_add(...) end
 ---@return any[]
 function table.list_union(...) end
 
----Returns wether `list1` contains any value from `list2`
+---Returns whether `list1` contains any value from `list2`
 ---@param list1 any[]
 ---@param list2 any[]
 ---@return boolean

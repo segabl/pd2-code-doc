@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SkirmishContractBoxGui : ContractBoxGui
+---@field super ContractBoxGui
 ---@field new fun(self, ...) : SkirmishContractBoxGui
 SkirmishContractBoxGui = {}
 

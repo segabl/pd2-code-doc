@@ -167,6 +167,7 @@ function UiPlacer:most_rightbottom() end
 function UiPlacer:most_leftbottom() end
 
 ---@class BranchPlacer : UiPlacer
+---@field super UiPlacer
 ---@field new fun(self, ...) : BranchPlacer
 BranchPlacer = {}
 
@@ -183,6 +184,7 @@ function BranchPlacer:init(placer) end
 function BranchPlacer:_update_most(a, b, c, d, branch) end
 
 ---@class ResizingPlacer : UiPlacer
+---@field super UiPlacer
 ---@field new fun(self, ...) : ResizingPlacer
 ResizingPlacer = {}
 

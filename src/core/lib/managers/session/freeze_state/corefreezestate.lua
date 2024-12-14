@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreFreezeState.FreezeState : CoreSessionGenericState.State
+---@field super CoreSessionGenericState.State
 ---@field new fun(self, ...) : CoreFreezeState.FreezeState
 FreezeState = {}
 

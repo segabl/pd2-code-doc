@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AIForceAttentionOperatorElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : AIForceAttentionOperatorElement
 AIForceAttentionOperatorElement = {}
 

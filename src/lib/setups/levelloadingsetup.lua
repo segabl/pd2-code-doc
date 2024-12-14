@@ -5,6 +5,7 @@
 function fake_inspect(val) end
 
 ---@class LevelLoadingSetup : CoreLoadingSetup
+---@field super CoreLoadingSetup
 ---@field new fun(self, ...) : LevelLoadingSetup
 LevelLoadingSetup = {}
 

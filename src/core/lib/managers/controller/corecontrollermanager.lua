@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreControllerManager.ControllerManager : CoreManagerBase.ManagerBase
+---@field super CoreManagerBase.ManagerBase
 ---@field new fun(self, ...) : CoreControllerManager.ControllerManager
 ControllerManager = {}
 

@@ -5,6 +5,7 @@
 CoreMissionElement = {}
 
 ---@class MissionElement : CoreMissionElement
+---@field super CoreMissionElement
 ---@field new fun(self, ...) : MissionElement
 MissionElement = {}
 

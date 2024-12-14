@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameCivilianState : IngamePlayerBaseState
+---@field super IngamePlayerBaseState
 ---@field new fun(self, ...) : IngameCivilianState
 IngameCivilianState = {}
 

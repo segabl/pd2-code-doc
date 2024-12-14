@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementJobStageAlternative : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementJobStageAlternative
 ElementJobStageAlternative = {}
 

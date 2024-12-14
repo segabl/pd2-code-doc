@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreChangeCameraAttributeCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreChangeCameraAttributeCutsceneKey
 CoreChangeCameraAttributeCutsceneKey = {}
 

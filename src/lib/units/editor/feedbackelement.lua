@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class FeedbackUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : FeedbackUnitElement
 FeedbackUnitElement = {}
 

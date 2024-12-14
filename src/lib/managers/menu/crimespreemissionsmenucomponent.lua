@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeSpreeMissionsMenuComponent : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : CrimeSpreeMissionsMenuComponent
 CrimeSpreeMissionsMenuComponent = {}
 
@@ -89,6 +90,7 @@ function CrimeSpreeMissionsMenuComponent:move_right() end
 function CrimeSpreeMissionsMenuComponent:input_focus() end
 
 ---@class CrimeSpreeMissionButton : MenuGuiItem
+---@field super MenuGuiItem
 ---@field new fun(self, ...) : CrimeSpreeMissionButton
 CrimeSpreeMissionButton = {}
 

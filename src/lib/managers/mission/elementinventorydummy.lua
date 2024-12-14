@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementInventoryDummy : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementInventoryDummy
 ElementInventoryDummy = {}
 

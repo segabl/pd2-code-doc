@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AlertTriggerElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : AlertTriggerElement
 AlertTriggerElement = {}
 

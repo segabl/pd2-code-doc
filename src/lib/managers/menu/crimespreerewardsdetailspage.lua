@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeSpreeRewardsDetailsPage : CrimeSpreeDetailsPage
+---@field super CrimeSpreeDetailsPage
 ---@field new fun(self, ...) : CrimeSpreeRewardsDetailsPage
 CrimeSpreeRewardsDetailsPage = {}
 

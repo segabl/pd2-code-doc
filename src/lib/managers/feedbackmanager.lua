@@ -131,6 +131,7 @@ function FeedBackEffect:stop() end
 function FeedBackEffect:is_playing() end
 
 ---@class FeedBackrumble : FeedBackEffect
+---@field super FeedBackEffect
 ---@field new fun(self, ...) : FeedBackrumble
 FeedBackrumble = {}
 
@@ -158,6 +159,7 @@ function FeedBackrumble:stop() end
 function FeedBackrumble:is_playing() end
 
 ---@class FeedBackCameraShake : FeedBackEffect
+---@field super FeedBackEffect
 ---@field new fun(self, ...) : FeedBackCameraShake
 FeedBackCameraShake = {}
 
@@ -189,6 +191,7 @@ function FeedBackCameraShake:stop() end
 function FeedBackCameraShake:is_playing() end
 
 ---@class FeedBackAboveCameraEffect : FeedBackEffect
+---@field super FeedBackEffect
 ---@field new fun(self, ...) : FeedBackAboveCameraEffect
 FeedBackAboveCameraEffect = {}
 

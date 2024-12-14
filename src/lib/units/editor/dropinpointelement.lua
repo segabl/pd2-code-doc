@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class DropInPointUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : DropInPointUnitElement
 DropInPointUnitElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.Xbox360SelectUserDialog : SystemMenuManager.SelectUserDialog
+---@field super SystemMenuManager.SelectUserDialog
 ---@field new fun(self, ...) : SystemMenuManager.Xbox360SelectUserDialog
 Xbox360SelectUserDialog = {}
 

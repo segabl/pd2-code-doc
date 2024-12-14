@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CharacterAttentionObject : AIAttentionObject
+---@field super AIAttentionObject
 ---@field new fun(self, ...) : CharacterAttentionObject
 CharacterAttentionObject = {}
 

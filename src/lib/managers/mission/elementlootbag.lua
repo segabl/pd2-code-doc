@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementLootBag : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementLootBag
 ElementLootBag = {}
 
@@ -33,6 +34,7 @@ function ElementLootBag:_check_triggers(type, instigator) end
 function ElementLootBag:trigger(type, instigator) end
 
 ---@class ElementLootBagTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementLootBagTrigger
 ElementLootBagTrigger = {}
 

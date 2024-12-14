@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EnemyPreferedAddUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : EnemyPreferedAddUnitElement
 EnemyPreferedAddUnitElement = {}
 
@@ -53,6 +54,7 @@ function EnemyPreferedAddUnitElement:remove_unit_list_btn() end
 function EnemyPreferedAddUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class EnemyPreferedRemoveUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : EnemyPreferedRemoveUnitElement
 EnemyPreferedRemoveUnitElement = {}
 

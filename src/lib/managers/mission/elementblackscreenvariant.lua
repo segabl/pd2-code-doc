@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementBlackscreenVariant : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementBlackscreenVariant
 ElementBlackscreenVariant = {}
 
@@ -17,6 +18,7 @@ function ElementBlackscreenVariant:client_on_executed(...) end
 function ElementBlackscreenVariant:on_executed(instigator) end
 
 ---@class ElementEndscreenVariant : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementEndscreenVariant
 ElementEndscreenVariant = {}
 
@@ -33,6 +35,7 @@ function ElementEndscreenVariant:client_on_executed(...) end
 function ElementEndscreenVariant:on_executed(instigator) end
 
 ---@class ElementFailureVariant : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementFailureVariant
 ElementFailureVariant = {}
 

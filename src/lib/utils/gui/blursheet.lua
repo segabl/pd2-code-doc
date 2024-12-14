@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BlurSheet : GUIObjectWrapper
+---@field super GUIObjectWrapper
 ---@field new fun(self, ...) : BlurSheet
 BlurSheet = {}
 

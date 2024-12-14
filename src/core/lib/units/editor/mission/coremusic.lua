@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreMusicUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreMusicUnitElement
 CoreMusicUnitElement = {}
 
 ---@class MusicUnitElement : CoreMusicUnitElement
+---@field super CoreMusicUnitElement
 ---@field new fun(self, ...) : MusicUnitElement
 MusicUnitElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameDriving : IngamePlayerBaseState
+---@field super IngamePlayerBaseState
 ---@field new fun(self, ...) : IngameDriving
 IngameDriving = {}
 

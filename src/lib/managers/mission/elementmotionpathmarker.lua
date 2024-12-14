@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementMotionpathMarker : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementMotionpathMarker
 ElementMotionpathMarker = {}
 

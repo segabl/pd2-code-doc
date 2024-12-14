@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreDialogState.DialogState : CoreSessionGenericState.State
+---@field super CoreSessionGenericState.State
 ---@field new fun(self, ...) : CoreDialogState.DialogState
 DialogState = {}
 

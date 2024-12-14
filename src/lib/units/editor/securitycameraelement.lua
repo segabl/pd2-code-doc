@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SecurityCameraUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : SecurityCameraUnitElement
 SecurityCameraUnitElement = {}
 

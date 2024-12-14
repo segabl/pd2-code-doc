@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementAlertTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementAlertTrigger
 ElementAlertTrigger = {}
 

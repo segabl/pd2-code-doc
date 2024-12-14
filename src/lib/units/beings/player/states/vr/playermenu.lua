@@ -280,6 +280,7 @@ function PlayerMenuHandBase:laser_position() end
 function PlayerMenuHandBase:set_orientation(position, rotation) end
 
 ---@class PlayerMenuHandUnit : PlayerMenuHandBase
+---@field super PlayerMenuHandBase
 ---@field new fun(self, ...) : PlayerMenuHandUnit
 PlayerMenuHandUnit = {}
 
@@ -304,6 +305,7 @@ function PlayerMenuHandUnit:set_state(state) end
 function PlayerMenuHandUnit:unit() end
 
 ---@class PlayerMenuHandObject : PlayerMenuHandBase
+---@field super PlayerMenuHandBase
 ---@field new fun(self, ...) : PlayerMenuHandObject
 PlayerMenuHandObject = {}
 

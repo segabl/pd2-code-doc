@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuCustomizeWeaponColorInitiator : MenuInitiatorBase
+---@field super MenuInitiatorBase
 ---@field new fun(self, ...) : MenuCustomizeWeaponColorInitiator
 MenuCustomizeWeaponColorInitiator = {}
 
@@ -19,6 +20,7 @@ function MenuCustomizeWeaponColorInitiator:setup_node(node, node_data) end
 function MenuCustomizeWeaponColorInitiator:refresh_node(node) end
 
 ---@class MenuNodeCustomizeWeaponColorGui : MenuNodeBaseGui
+---@field super MenuNodeBaseGui
 ---@field new fun(self, ...) : MenuNodeCustomizeWeaponColorGui
 MenuNodeCustomizeWeaponColorGui = {}
 

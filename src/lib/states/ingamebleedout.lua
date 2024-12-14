@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameBleedOutState : IngamePlayerBaseState
+---@field super IngamePlayerBaseState
 ---@field new fun(self, ...) : IngameBleedOutState
 IngameBleedOutState = {}
 

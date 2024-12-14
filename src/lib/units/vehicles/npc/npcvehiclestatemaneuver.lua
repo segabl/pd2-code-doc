@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NpcVehicleStateManeuver : NpcBaseVehicleState
+---@field super NpcBaseVehicleState
 ---@field new fun(self, ...) : NpcVehicleStateManeuver
 NpcVehicleStateManeuver = {}
 

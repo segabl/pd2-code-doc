@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SafehouseMoneyStack : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : SafehouseMoneyStack
 SafehouseMoneyStack = {}
 

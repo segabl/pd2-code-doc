@@ -5,10 +5,12 @@
 SubtitlePresenter = {}
 
 ---@class CoreSubtitlePresenter.DebugPresenter : CoreSubtitlePresenter.SubtitlePresenter
+---@field super CoreSubtitlePresenter.SubtitlePresenter
 ---@field new fun(self, ...) : CoreSubtitlePresenter.DebugPresenter
 DebugPresenter = {}
 
 ---@class CoreSubtitlePresenter.OverlayPresenter : CoreSubtitlePresenter.SubtitlePresenter
+---@field super CoreSubtitlePresenter.SubtitlePresenter
 ---@field new fun(self, ...) : CoreSubtitlePresenter.OverlayPresenter
 OverlayPresenter = {}
 

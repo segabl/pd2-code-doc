@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerHandStateMelee : PlayerHandState
+---@field super PlayerHandState
 ---@field new fun(self, ...) : PlayerHandStateMelee
 PlayerHandStateMelee = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameWaitingForPlayersState : GameState
+---@field super GameState
 ---@field new fun(self, ...) : IngameWaitingForPlayersState
 IngameWaitingForPlayersState = {}
 

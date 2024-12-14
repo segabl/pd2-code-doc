@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SpawnTeamAIUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : SpawnTeamAIUnitElement
 SpawnTeamAIUnitElement = {}
 

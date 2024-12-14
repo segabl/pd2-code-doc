@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class NpcVehicleStateInactive : NpcBaseVehicleState
+---@field super NpcBaseVehicleState
 ---@field new fun(self, ...) : NpcVehicleStateInactive
 NpcVehicleStateInactive = {}
 

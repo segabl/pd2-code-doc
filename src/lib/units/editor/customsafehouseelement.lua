@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CustomSafehouseFilterUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CustomSafehouseFilterUnitElement
 CustomSafehouseFilterUnitElement = {}
 
@@ -18,6 +19,7 @@ function CustomSafehouseFilterUnitElement:_build_panel(panel, panel_sizer) end
 function CustomSafehouseFilterUnitElement:set_element_data(data) end
 
 ---@class CustomSafehouseTrophyFilterUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CustomSafehouseTrophyFilterUnitElement
 CustomSafehouseTrophyFilterUnitElement = {}
 
@@ -31,6 +33,7 @@ function CustomSafehouseTrophyFilterUnitElement:init(unit) end
 function CustomSafehouseTrophyFilterUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CustomSafehouseAwardTrophyUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CustomSafehouseAwardTrophyUnitElement
 CustomSafehouseAwardTrophyUnitElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementSpawnCivilian : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementSpawnCivilian
 ElementSpawnCivilian = {}
 

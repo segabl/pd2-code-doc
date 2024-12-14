@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementExecuteInOtherMission.ElementExecuteInOtherMission : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementExecuteInOtherMission.ElementExecuteInOtherMission
 ElementExecuteInOtherMission = {}
 

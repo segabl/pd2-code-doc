@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GameState : CoreInternalGameState.GameState
+---@field super CoreInternalGameState.GameState
 ---@field new fun(self, ...) : GameState
 GameState = {}
 

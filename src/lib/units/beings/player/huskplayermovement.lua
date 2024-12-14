@@ -872,7 +872,7 @@ function HuskPlayerMovement:clbk_inventory_event(unit, event) end
 ---@return unknown
 function HuskPlayerMovement:get_hold_type_weight(hold) end
 
----@return unknown
+---@return string
 function HuskPlayerMovement:current_state_name() end
 
 ---@return unknown

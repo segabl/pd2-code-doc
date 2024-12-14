@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ShieldBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : ShieldBase
 ShieldBase = {}
 
@@ -24,6 +25,7 @@ function ShieldBase:_setup_priority_bodies() end
 function ShieldBase:chk_body_hit_priority(old_body_hit, new_body_hit) end
 
 ---@class SyncedShieldBase : ShieldBase
+---@field super ShieldBase
 ---@field new fun(self, ...) : SyncedShieldBase
 SyncedShieldBase = {}
 
@@ -40,6 +42,7 @@ function SyncedShieldBase:save(data) end
 function SyncedShieldBase:load(data) end
 
 ---@class ShieldFlashBase : SyncedShieldBase
+---@field super SyncedShieldBase
 ---@field new fun(self, ...) : ShieldFlashBase
 ShieldFlashBase = {}
 

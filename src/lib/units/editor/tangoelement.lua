@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TangoAwardElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : TangoAwardElement
 TangoAwardElement = {}
 
@@ -18,6 +19,7 @@ function TangoAwardElement:_build_panel(panel, panel_sizer) end
 function TangoAwardElement:set_element_data(data) end
 
 ---@class TangoFilterElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : TangoFilterElement
 TangoFilterElement = {}
 

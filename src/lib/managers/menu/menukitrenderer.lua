@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuKitRenderer : MenuLobbyRenderer
+---@field super MenuLobbyRenderer
 ---@field new fun(self, ...) : MenuKitRenderer
 MenuKitRenderer = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerBleedOut : PlayerStandard
+---@field super PlayerStandard
 ---@field new fun(self, ...) : PlayerBleedOut
 PlayerBleedOut = {}
 

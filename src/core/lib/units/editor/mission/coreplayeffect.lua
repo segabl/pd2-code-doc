@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CorePlayEffectUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CorePlayEffectUnitElement
 CorePlayEffectUnitElement = {}
 
 ---@class PlayEffectUnitElement : CorePlayEffectUnitElement
+---@field super CorePlayEffectUnitElement
 ---@field new fun(self, ...) : PlayEffectUnitElement
 PlayEffectUnitElement = {}
 
@@ -34,10 +36,12 @@ function CorePlayEffectUnitElement:_build_panel(panel, panel_sizer) end
 function CorePlayEffectUnitElement:add_to_mission_package() end
 
 ---@class CoreStopEffectUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreStopEffectUnitElement
 CoreStopEffectUnitElement = {}
 
 ---@class StopEffectUnitElement : CoreStopEffectUnitElement
+---@field super CoreStopEffectUnitElement
 ---@field new fun(self, ...) : StopEffectUnitElement
 StopEffectUnitElement = {}
 

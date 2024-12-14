@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GageAssetsItem : MissionBriefingTabItem
+---@field super MissionBriefingTabItem
 ---@field new fun(self, ...) : GageAssetsItem
 GageAssetsItem = {}
 

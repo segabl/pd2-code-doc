@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreElementPhysicsPush.ElementPhysicsPush : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : CoreElementPhysicsPush.ElementPhysicsPush
 ElementPhysicsPush = {}
 

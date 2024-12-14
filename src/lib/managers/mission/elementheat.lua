@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementHeat : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementHeat
 ElementHeat = {}
 
@@ -17,6 +18,7 @@ function ElementHeat:client_on_executed(...) end
 function ElementHeat:on_executed(instigator) end
 
 ---@class ElementHeatTrigger : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementHeatTrigger
 ElementHeatTrigger = {}
 

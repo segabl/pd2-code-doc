@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifyPlayerElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : ModifyPlayerElement
 ModifyPlayerElement = {}
 

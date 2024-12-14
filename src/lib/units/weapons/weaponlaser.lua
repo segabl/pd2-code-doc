@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class WeaponLaser : WeaponGadgetBase
+---@field super WeaponGadgetBase
 ---@field new fun(self, ...) : WeaponLaser
 WeaponLaser = {}
 
@@ -56,6 +57,7 @@ function WeaponLaser:set_max_distace(dis) end
 function WeaponLaser:add_ray_ignore_unit(unit) end
 
 ---@class WeaponMultiLaser : WeaponLaser
+---@field super WeaponLaser
 ---@field new fun(self, ...) : WeaponMultiLaser
 WeaponMultiLaser = {}
 

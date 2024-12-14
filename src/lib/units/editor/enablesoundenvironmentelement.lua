@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class EnableSoundEnvironmentElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : EnableSoundEnvironmentElement
 EnableSoundEnvironmentElement = {}
 

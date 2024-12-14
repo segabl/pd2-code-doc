@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GageModifierQuickReload : GageModifier
+---@field super GageModifier
 ---@field new fun(self, ...) : GageModifierQuickReload
 GageModifierQuickReload = {}
 

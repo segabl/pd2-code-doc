@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameParachuting : IngamePlayerBaseState
+---@field super IngamePlayerBaseState
 ---@field new fun(self, ...) : IngameParachuting
 IngameParachuting = {}
 

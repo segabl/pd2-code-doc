@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BikeDrivingExt : VehicleDrivingExt
+---@field super VehicleDrivingExt
 ---@field new fun(self, ...) : BikeDrivingExt
 BikeDrivingExt = {}
 

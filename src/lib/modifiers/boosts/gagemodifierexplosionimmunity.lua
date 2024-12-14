@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GageModifierExplosionImmunity : GageModifier
+---@field super GageModifier
 ---@field new fun(self, ...) : GageModifierExplosionImmunity
 GageModifierExplosionImmunity = {}
 

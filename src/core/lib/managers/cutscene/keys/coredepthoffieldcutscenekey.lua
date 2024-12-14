@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreDepthOfFieldCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreDepthOfFieldCutsceneKey
 CoreDepthOfFieldCutsceneKey = {}
 

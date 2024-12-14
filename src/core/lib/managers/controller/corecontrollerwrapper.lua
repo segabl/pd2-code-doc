@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreControllerWrapper.ControllerWrapper : CoreAccessObjectBase.AccessObjectBase
+---@field super CoreAccessObjectBase.AccessObjectBase
 ---@field new fun(self, ...) : CoreControllerWrapper.ControllerWrapper
 ControllerWrapper = {}
 

@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreOverlayEffectUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreOverlayEffectUnitElement
 CoreOverlayEffectUnitElement = {}
 
 ---@class OverlayEffectUnitElement : CoreOverlayEffectUnitElement
+---@field super CoreOverlayEffectUnitElement
 ---@field new fun(self, ...) : OverlayEffectUnitElement
 OverlayEffectUnitElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuMainState : GameState
+---@field super GameState
 ---@field new fun(self, ...) : MenuMainState
 MenuMainState = {}
 

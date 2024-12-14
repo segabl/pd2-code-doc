@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MoneyWrapBase : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : MoneyWrapBase
 MoneyWrapBase = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreSubtitleCutsceneKey : CoreCutsceneKeyBase
+---@field super CoreCutsceneKeyBase
 ---@field new fun(self, ...) : CoreSubtitleCutsceneKey
 CoreSubtitleCutsceneKey = {}
 

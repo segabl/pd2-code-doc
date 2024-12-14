@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementDropinState : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementDropinState
 ElementDropinState = {}
 

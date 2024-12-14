@@ -31,6 +31,7 @@ function SkillTreeItem:trigger() end
 function SkillTreeItem:flash() end
 
 ---@class SkillTreeTabItem : SkillTreeItem
+---@field super SkillTreeItem
 ---@field new fun(self, ...) : SkillTreeTabItem
 SkillTreeTabItem = {}
 
@@ -58,6 +59,7 @@ function SkillTreeTabItem:inside(x, y) end
 function SkillTreeTabItem:refresh() end
 
 ---@class SkillTreeSkillItem : SkillTreeItem
+---@field super SkillTreeItem
 ---@field new fun(self, ...) : SkillTreeSkillItem
 SkillTreeSkillItem = {}
 
@@ -103,6 +105,7 @@ function SkillTreeSkillItem:refresh(locked) end
 function SkillTreeSkillItem:trigger() end
 
 ---@class SkillTreeUnlockItem : SkillTreeSkillItem
+---@field super SkillTreeSkillItem
 ---@field new fun(self, ...) : SkillTreeUnlockItem
 SkillTreeUnlockItem = {}
 
@@ -492,6 +495,7 @@ function SpecializationItem:trigger() end
 function SpecializationItem:flash() end
 
 ---@class SpecializationTabItem : SpecializationItem
+---@field super SpecializationItem
 ---@field new fun(self, ...) : SpecializationTabItem
 SpecializationTabItem = {}
 
@@ -593,6 +597,7 @@ function SpecializationTreeItem:deselect() end
 function SpecializationTreeItem:refresh() end
 
 ---@class SpecializationTierItem : SpecializationItem
+---@field super SpecializationItem
 ---@field new fun(self, ...) : SpecializationTierItem
 SpecializationTierItem = {}
 
@@ -734,6 +739,7 @@ function SpecializationGuiItem:destroy() end
 function SpecializationGuiItem:is_inside_scrollbar(x, y) end
 
 ---@class SpecializationGuiButtonItem : SpecializationGuiItem
+---@field super SpecializationGuiItem
 ---@field new fun(self, ...) : SpecializationGuiButtonItem
 SpecializationGuiButtonItem = {}
 

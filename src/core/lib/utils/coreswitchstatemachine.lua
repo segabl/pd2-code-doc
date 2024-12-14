@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreSwitchStateMachine.SwitchStateMachine : CoreFiniteStateMachine.FiniteStateMachine
+---@field super CoreFiniteStateMachine.FiniteStateMachine
 ---@field new fun(self, ...) : CoreSwitchStateMachine.SwitchStateMachine
 SwitchStateMachine = {}
 

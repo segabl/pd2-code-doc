@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GageAssignmentBase : Pickup
+---@field super Pickup
 ---@field new fun(self, ...) : GageAssignmentBase
 GageAssignmentBase = {}
 

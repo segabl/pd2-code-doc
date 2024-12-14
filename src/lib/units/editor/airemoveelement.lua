@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AIRemoveUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : AIRemoveUnitElement
 AIRemoveUnitElement = {}
 

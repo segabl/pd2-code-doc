@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class StoryMissionsGui : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : StoryMissionsGui
 StoryMissionsGui = {}
 
@@ -83,6 +84,7 @@ function StoryMissionsGui:_skip_mission_dialog() end
 function StoryMissionsGui:input_focus() end
 
 ---@class StoryMissionsGuiSidebarItem : BaseButton
+---@field super BaseButton
 ---@field new fun(self, ...) : StoryMissionsGuiSidebarItem
 StoryMissionsGuiSidebarItem = {}
 
@@ -108,6 +110,7 @@ function StoryMissionsGuiSidebarItem:set_color(color) end
 function StoryMissionsGuiSidebarItem:_hover_changed(hover) end
 
 ---@class StoryActGuiSidebarItem : BaseButton
+---@field super BaseButton
 ---@field new fun(self, ...) : StoryActGuiSidebarItem
 StoryActGuiSidebarItem = {}
 
@@ -117,6 +120,7 @@ StoryActGuiSidebarItem = {}
 function StoryActGuiSidebarItem:init(panel, parameters) end
 
 ---@class StoryMissionGuiRewardItem : ExtendedPanel
+---@field super ExtendedPanel
 ---@field new fun(self, ...) : StoryMissionGuiRewardItem
 StoryMissionGuiRewardItem = {}
 

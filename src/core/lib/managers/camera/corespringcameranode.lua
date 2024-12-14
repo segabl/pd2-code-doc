@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreSpringCameraNode.SpringCameraNode : CoreTransformCameraNode.TransformCameraNode
+---@field super CoreTransformCameraNode.TransformCameraNode
 ---@field new fun(self, ...) : CoreSpringCameraNode.SpringCameraNode
 SpringCameraNode = {}
 
@@ -68,6 +69,7 @@ function SpringCameraForce:force(t, dt, force, parent_position, parent_rotation)
 function SpringCameraForce:reset() end
 
 ---@class CoreSpringCameraNode.SpringCameraPosition : CoreSpringCameraNode.SpringCameraForce
+---@field super CoreSpringCameraNode.SpringCameraForce
 ---@field new fun(self, ...) : CoreSpringCameraNode.SpringCameraPosition
 SpringCameraPosition = {}
 
@@ -86,6 +88,7 @@ function SpringCameraPosition:force(t, dt, force, parent_position, parent_rotati
 function SpringCameraPosition:reset() end
 
 ---@class CoreSpringCameraNode.SpringCameraVelocity : CoreSpringCameraNode.SpringCameraForce
+---@field super CoreSpringCameraNode.SpringCameraForce
 ---@field new fun(self, ...) : CoreSpringCameraNode.SpringCameraVelocity
 SpringCameraVelocity = {}
 
@@ -104,6 +107,7 @@ function SpringCameraVelocity:force(t, dt, force, parent_position, parent_rotati
 function SpringCameraVelocity:reset() end
 
 ---@class CoreSpringCameraNode.SpringCameraAcceleration : CoreSpringCameraNode.SpringCameraForce
+---@field super CoreSpringCameraNode.SpringCameraForce
 ---@field new fun(self, ...) : CoreSpringCameraNode.SpringCameraAcceleration
 SpringCameraAcceleration = {}
 

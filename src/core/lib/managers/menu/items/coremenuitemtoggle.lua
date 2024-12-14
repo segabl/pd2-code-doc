@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreMenuItemToggle.ItemToggle : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : CoreMenuItemToggle.ItemToggle
 ItemToggle = {}
 

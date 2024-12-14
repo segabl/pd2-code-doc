@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class BlurZoneUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : BlurZoneUnitElement
 BlurZoneUnitElement = {}
 

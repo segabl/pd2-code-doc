@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class DisconnectedState : MissionEndState
+---@field super MissionEndState
 ---@field new fun(self, ...) : DisconnectedState
 DisconnectedState = {}
 

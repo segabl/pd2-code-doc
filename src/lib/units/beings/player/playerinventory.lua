@@ -31,11 +31,11 @@ function PlayerInventory:remove_ignore_unit(unit, is_callback) end
 ---@return unknown
 function PlayerInventory:equipped_selection() end
 
----@return unknown
+---@return Unit?
 function PlayerInventory:equipped_unit() end
 
----@param selection any
----@return unknown
+---@param selection integer
+---@return Unit?
 function PlayerInventory:unit_by_selection(selection) end
 
 ---@param selection_index any

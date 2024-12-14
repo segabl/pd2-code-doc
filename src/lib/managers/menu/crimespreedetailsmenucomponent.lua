@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeSpreeDetailsMenuComponent : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : CrimeSpreeDetailsMenuComponent
 CrimeSpreeDetailsMenuComponent = {}
 
@@ -79,6 +80,7 @@ function CrimeSpreeDetailsMenuComponent:fade_in_modifier(o) end
 function CrimeSpreeDetailsMenuComponent:fade_out_modifier(o) end
 
 ---@class CrimeSpreeDetailsPage : CustomSafehouseGuiPage
+---@field super CustomSafehouseGuiPage
 ---@field new fun(self, ...) : CrimeSpreeDetailsPage
 CrimeSpreeDetailsPage = {}
 

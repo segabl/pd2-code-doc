@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierShieldReflect : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierShieldReflect
 ModifierShieldReflect = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class WeaponFlashLight : WeaponGadgetBase
+---@field super WeaponGadgetBase
 ---@field new fun(self, ...) : WeaponFlashLight
 WeaponFlashLight = {}
 

@@ -61,6 +61,7 @@ function BlackMarketGuiItem:destroy() end
 function BlackMarketGuiItem:is_inside_scrollbar(x, y) end
 
 ---@class BlackMarketGuiTabItem : BlackMarketGuiItem
+---@field super BlackMarketGuiItem
 ---@field new fun(self, ...) : BlackMarketGuiTabItem
 BlackMarketGuiTabItem = {}
 
@@ -177,6 +178,7 @@ function BlackMarketGuiTabItem:select_slot(slot, instant) end
 function BlackMarketGuiTabItem:slots() end
 
 ---@class BlackMarketGuiSlotItem : BlackMarketGuiItem
+---@field super BlackMarketGuiItem
 ---@field new fun(self, ...) : BlackMarketGuiSlotItem
 BlackMarketGuiSlotItem = {}
 
@@ -238,6 +240,7 @@ function BlackMarketGuiSlotItem:refresh() end
 function BlackMarketGuiSlotItem:set_visible(visible) end
 
 ---@class BlackMarketGuiMaskSlotItem : BlackMarketGuiSlotItem
+---@field super BlackMarketGuiSlotItem
 ---@field new fun(self, ...) : BlackMarketGuiMaskSlotItem
 BlackMarketGuiMaskSlotItem = {}
 
@@ -256,6 +259,7 @@ function BlackMarketGuiMaskSlotItem:init(main_panel, data, x, y, w, h) end
 function BlackMarketGuiMaskSlotItem:set_highlight(highlight, instant) end
 
 ---@class BlackMarketGuiButtonItem : BlackMarketGuiItem
+---@field super BlackMarketGuiItem
 ---@field new fun(self, ...) : BlackMarketGuiButtonItem
 BlackMarketGuiButtonItem = {}
 

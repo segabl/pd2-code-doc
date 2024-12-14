@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class HostStateInLobby : HostStateBase
+---@field super HostStateBase
 ---@field new fun(self, ...) : HostStateInLobby
 HostStateInLobby = {}
 

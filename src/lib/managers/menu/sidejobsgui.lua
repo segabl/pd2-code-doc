@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SideJobsGui : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : SideJobsGui
 SideJobsGui = {}
 

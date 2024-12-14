@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerStandard : PlayerMovementState
+---@field super PlayerMovementState
 ---@field new fun(self, ...) : PlayerStandard
 PlayerStandard = {}
 

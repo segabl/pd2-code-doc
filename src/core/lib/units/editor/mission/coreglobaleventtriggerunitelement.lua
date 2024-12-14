@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreGlobalEventTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreGlobalEventTriggerUnitElement
 CoreGlobalEventTriggerUnitElement = {}
 
 ---@class GlobalEventTriggerUnitElement : CoreGlobalEventTriggerUnitElement
+---@field super CoreGlobalEventTriggerUnitElement
 ---@field new fun(self, ...) : GlobalEventTriggerUnitElement
 GlobalEventTriggerUnitElement = {}
 

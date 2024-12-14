@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CustomSafehouseGuiPageDaily : CustomSafehouseGuiPage
+---@field super CustomSafehouseGuiPage
 ---@field new fun(self, ...) : CustomSafehouseGuiPageDaily
 CustomSafehouseGuiPageDaily = {}
 
@@ -166,6 +167,7 @@ function CustomSafehouseGuiPageDaily:mouse_wheel_down(x, y) end
 function CustomSafehouseGuiPageDaily:get_legend() end
 
 ---@class CustomSafehouseGuiRewardItem : CustomSafehouseGuiItem
+---@field super CustomSafehouseGuiItem
 ---@field new fun(self, ...) : CustomSafehouseGuiRewardItem
 CustomSafehouseGuiRewardItem = {}
 

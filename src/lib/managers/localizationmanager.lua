@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class LocalizationManager : CoreLocalizationManager.LocalizationManager
+---@field super CoreLocalizationManager.LocalizationManager
 ---@field new fun(self, ...) : LocalizationManager
 LocalizationManager = {}
 

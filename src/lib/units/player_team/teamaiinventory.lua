@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class TeamAIInventory : CopInventory
+---@field super CopInventory
 ---@field new fun(self, ...) : TeamAIInventory
 TeamAIInventory = {}
 

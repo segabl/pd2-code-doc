@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class DebugManager.DebugManager : CoreDebugManager.DebugManager
+---@field super CoreDebugManager.DebugManager
 ---@field new fun(self, ...) : DebugManager.DebugManager
 DebugManager = {}
 

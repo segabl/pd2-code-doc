@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerEmpty : PlayerMovementState
+---@field super PlayerMovementState
 ---@field new fun(self, ...) : PlayerEmpty
 PlayerEmpty = {}
 

@@ -57,6 +57,7 @@ function Feeder:update_current(handler, scale) end
 function Feeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.Vector3Feeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.Vector3Feeder
 Vector3Feeder = {}
 
@@ -78,6 +79,7 @@ function Vector3Feeder:equals(value) end
 function Vector3Feeder:update_current(handler, scale) end
 
 ---@class CoreEnvironmentFeeder.StringFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.StringFeeder
 StringFeeder = {}
 
@@ -87,6 +89,7 @@ StringFeeder = {}
 function StringFeeder:update_current(handler, scale) end
 
 ---@class CoreEnvironmentFeeder.UnderlayPathFeeder : CoreEnvironmentFeeder.StringFeeder
+---@field super CoreEnvironmentFeeder.StringFeeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.UnderlayPathFeeder
 UnderlayPathFeeder = {}
 
@@ -97,6 +100,7 @@ UnderlayPathFeeder = {}
 function UnderlayPathFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.GlobalLightColorFeeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.GlobalLightColorFeeder
 GlobalLightColorFeeder = {}
 
@@ -107,10 +111,12 @@ GlobalLightColorFeeder = {}
 function GlobalLightColorFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.GlobalLightColorScaleFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.GlobalLightColorScaleFeeder
 GlobalLightColorScaleFeeder = {}
 
 ---@class CoreEnvironmentFeeder.CubeMapTextureFeeder : CoreEnvironmentFeeder.StringFeeder
+---@field super CoreEnvironmentFeeder.StringFeeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.CubeMapTextureFeeder
 CubeMapTextureFeeder = {}
 
@@ -121,6 +127,7 @@ CubeMapTextureFeeder = {}
 function CubeMapTextureFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.WorldOverlayTextureFeeder : CoreEnvironmentFeeder.StringFeeder
+---@field super CoreEnvironmentFeeder.StringFeeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.WorldOverlayTextureFeeder
 WorldOverlayTextureFeeder = {}
 
@@ -131,6 +138,7 @@ WorldOverlayTextureFeeder = {}
 function WorldOverlayTextureFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.WorldOverlayMaskTextureFeeder : CoreEnvironmentFeeder.StringFeeder
+---@field super CoreEnvironmentFeeder.StringFeeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.WorldOverlayMaskTextureFeeder
 WorldOverlayMaskTextureFeeder = {}
 
@@ -141,6 +149,7 @@ WorldOverlayMaskTextureFeeder = {}
 function WorldOverlayMaskTextureFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.SkyRotationFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.SkyRotationFeeder
 SkyRotationFeeder = {}
 
@@ -151,6 +160,7 @@ SkyRotationFeeder = {}
 function SkyRotationFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.UnderlaySkyTopColorFeeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.UnderlaySkyTopColorFeeder
 UnderlaySkyTopColorFeeder = {}
 
@@ -161,10 +171,12 @@ UnderlaySkyTopColorFeeder = {}
 function UnderlaySkyTopColorFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.UnderlaySkyTopColorScaleFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.UnderlaySkyTopColorScaleFeeder
 UnderlaySkyTopColorScaleFeeder = {}
 
 ---@class CoreEnvironmentFeeder.UnderlaySkyBottomColorFeeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.UnderlaySkyBottomColorFeeder
 UnderlaySkyBottomColorFeeder = {}
 
@@ -175,10 +187,12 @@ UnderlaySkyBottomColorFeeder = {}
 function UnderlaySkyBottomColorFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.UnderlaySkyBottomColorScaleFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.UnderlaySkyBottomColorScaleFeeder
 UnderlaySkyBottomColorScaleFeeder = {}
 
 ---@class CoreEnvironmentFeeder.PostAmbientFalloffScaleFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostAmbientFalloffScaleFeeder
 PostAmbientFalloffScaleFeeder = {}
 
@@ -189,6 +203,7 @@ PostAmbientFalloffScaleFeeder = {}
 function PostAmbientFalloffScaleFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostAmbientColorFeeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostAmbientColorFeeder
 PostAmbientColorFeeder = {}
 
@@ -199,10 +214,12 @@ PostAmbientColorFeeder = {}
 function PostAmbientColorFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostAmbientColorScaleFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostAmbientColorScaleFeeder
 PostAmbientColorScaleFeeder = {}
 
 ---@class CoreEnvironmentFeeder.PostSkyTopColorFeeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostSkyTopColorFeeder
 PostSkyTopColorFeeder = {}
 
@@ -213,10 +230,12 @@ PostSkyTopColorFeeder = {}
 function PostSkyTopColorFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostSkyTopColorScaleFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostSkyTopColorScaleFeeder
 PostSkyTopColorScaleFeeder = {}
 
 ---@class CoreEnvironmentFeeder.PostSkyBottomColorFeeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostSkyBottomColorFeeder
 PostSkyBottomColorFeeder = {}
 
@@ -227,10 +246,12 @@ PostSkyBottomColorFeeder = {}
 function PostSkyBottomColorFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostSkyBottomColorScaleFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostSkyBottomColorScaleFeeder
 PostSkyBottomColorScaleFeeder = {}
 
 ---@class CoreEnvironmentFeeder.PostFogStartColorFeeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostFogStartColorFeeder
 PostFogStartColorFeeder = {}
 
@@ -241,6 +262,7 @@ PostFogStartColorFeeder = {}
 function PostFogStartColorFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostFogFarLowColorFeeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostFogFarLowColorFeeder
 PostFogFarLowColorFeeder = {}
 
@@ -251,6 +273,7 @@ PostFogFarLowColorFeeder = {}
 function PostFogFarLowColorFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostFogMinRangeFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostFogMinRangeFeeder
 PostFogMinRangeFeeder = {}
 
@@ -261,6 +284,7 @@ PostFogMinRangeFeeder = {}
 function PostFogMinRangeFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostFogMaxRangeFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostFogMaxRangeFeeder
 PostFogMaxRangeFeeder = {}
 
@@ -271,6 +295,7 @@ PostFogMaxRangeFeeder = {}
 function PostFogMaxRangeFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostFogMaxDensityFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostFogMaxDensityFeeder
 PostFogMaxDensityFeeder = {}
 
@@ -281,6 +306,7 @@ PostFogMaxDensityFeeder = {}
 function PostFogMaxDensityFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostAmbientScaleFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostAmbientScaleFeeder
 PostAmbientScaleFeeder = {}
 
@@ -291,6 +317,7 @@ PostAmbientScaleFeeder = {}
 function PostAmbientScaleFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostEffectLightScaleFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostEffectLightScaleFeeder
 PostEffectLightScaleFeeder = {}
 
@@ -301,6 +328,7 @@ PostEffectLightScaleFeeder = {}
 function PostEffectLightScaleFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostShadowSlice0Feeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostShadowSlice0Feeder
 PostShadowSlice0Feeder = {}
 
@@ -311,6 +339,7 @@ PostShadowSlice0Feeder = {}
 function PostShadowSlice0Feeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostShadowSlice1Feeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostShadowSlice1Feeder
 PostShadowSlice1Feeder = {}
 
@@ -321,6 +350,7 @@ PostShadowSlice1Feeder = {}
 function PostShadowSlice1Feeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostShadowSlice2Feeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostShadowSlice2Feeder
 PostShadowSlice2Feeder = {}
 
@@ -331,6 +361,7 @@ PostShadowSlice2Feeder = {}
 function PostShadowSlice2Feeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostShadowSlice3Feeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostShadowSlice3Feeder
 PostShadowSlice3Feeder = {}
 
@@ -341,6 +372,7 @@ PostShadowSlice3Feeder = {}
 function PostShadowSlice3Feeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostShadowSliceDepthsFeeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostShadowSliceDepthsFeeder
 PostShadowSliceDepthsFeeder = {}
 
@@ -351,6 +383,7 @@ PostShadowSliceDepthsFeeder = {}
 function PostShadowSliceDepthsFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostShadowSliceOverlapFeeder : CoreEnvironmentFeeder.Vector3Feeder
+---@field super CoreEnvironmentFeeder.Vector3Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostShadowSliceOverlapFeeder
 PostShadowSliceOverlapFeeder = {}
 
@@ -361,6 +394,7 @@ PostShadowSliceOverlapFeeder = {}
 function PostShadowSliceOverlapFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostEffectBloomThresholdFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostEffectBloomThresholdFeeder
 PostEffectBloomThresholdFeeder = {}
 
@@ -371,6 +405,7 @@ PostEffectBloomThresholdFeeder = {}
 function PostEffectBloomThresholdFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostEffectBloomIntensityFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostEffectBloomIntensityFeeder
 PostEffectBloomIntensityFeeder = {}
 
@@ -381,6 +416,7 @@ PostEffectBloomIntensityFeeder = {}
 function PostEffectBloomIntensityFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostEffectBloomBlurSizeFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostEffectBloomBlurSizeFeeder
 PostEffectBloomBlurSizeFeeder = {}
 
@@ -391,6 +427,7 @@ PostEffectBloomBlurSizeFeeder = {}
 function PostEffectBloomBlurSizeFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.PostEffectLenseIntensityFeeder : CoreEnvironmentFeeder.Feeder
+---@field super CoreEnvironmentFeeder.Feeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.PostEffectLenseIntensityFeeder
 PostEffectLenseIntensityFeeder = {}
 
@@ -401,6 +438,7 @@ PostEffectLenseIntensityFeeder = {}
 function PostEffectLenseIntensityFeeder:apply(handler, viewport, scene) end
 
 ---@class CoreEnvironmentFeeder.EnvironmentEffectFeeder : CoreEnvironmentFeeder.StringFeeder
+---@field super CoreEnvironmentFeeder.StringFeeder
 ---@field new fun(self, ...) : CoreEnvironmentFeeder.EnvironmentEffectFeeder
 EnvironmentEffectFeeder = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierLessConcealment : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierLessConcealment
 ModifierLessConcealment = {}
 

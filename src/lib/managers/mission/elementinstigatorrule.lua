@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementInstigatorRule : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementInstigatorRule
 ElementInstigatorRule = {}
 

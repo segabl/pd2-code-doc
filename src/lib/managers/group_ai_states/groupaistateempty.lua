@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class GroupAIStateEmpty : GroupAIStateBase
+---@field super GroupAIStateBase
 ---@field new fun(self, ...) : GroupAIStateEmpty
 GroupAIStateEmpty = {}
 

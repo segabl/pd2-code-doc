@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class IngameCleanState : IngamePlayerBaseState
+---@field super IngamePlayerBaseState
 ---@field new fun(self, ...) : IngameCleanState
 IngameCleanState = {}
 

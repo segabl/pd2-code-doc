@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.PlayerReviewDialog : SystemMenuManager.BaseDialog
+---@field super SystemMenuManager.BaseDialog
 ---@field new fun(self, ...) : SystemMenuManager.PlayerReviewDialog
 PlayerReviewDialog = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreLocalUser.User : CoreSessionGenericState.State
+---@field super CoreSessionGenericState.State
 ---@field new fun(self, ...) : CoreLocalUser.User
 User = {}
 

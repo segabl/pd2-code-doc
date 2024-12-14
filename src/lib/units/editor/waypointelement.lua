@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class WaypointUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : WaypointUnitElement
 WaypointUnitElement = {}
 

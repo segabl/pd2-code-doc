@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MissionDoor : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : MissionDoor
 MissionDoor = {}
 

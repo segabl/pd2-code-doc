@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class DifficultyLevelCheckElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : DifficultyLevelCheckElement
 DifficultyLevelCheckElement = {}
 

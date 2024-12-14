@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PlayerTurretBase : RaycastWeaponBase
+---@field super RaycastWeaponBase
 ---@field new fun(self, ...) : PlayerTurretBase
 PlayerTurretBase = {}
 

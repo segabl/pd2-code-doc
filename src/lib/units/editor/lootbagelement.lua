@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class LootBagUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : LootBagUnitElement
 LootBagUnitElement = {}
 
@@ -34,6 +35,7 @@ function LootBagUnitElement:update_editing(time, rel_time) end
 function LootBagUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class LootBagTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : LootBagTriggerUnitElement
 LootBagTriggerUnitElement = {}
 

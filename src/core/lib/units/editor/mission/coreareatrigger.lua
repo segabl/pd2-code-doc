@@ -1,10 +1,12 @@
 ---@meta
 
 ---@class CoreAreaTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreAreaTriggerUnitElement
 CoreAreaTriggerUnitElement = {}
 
 ---@class AreaTriggerUnitElement : CoreAreaTriggerUnitElement
+---@field super CoreAreaTriggerUnitElement
 ---@field new fun(self, ...) : AreaTriggerUnitElement
 AreaTriggerUnitElement = {}
 
@@ -106,10 +108,12 @@ function CoreAreaTriggerUnitElement:size_release(params) end
 function CoreAreaTriggerUnitElement:clone_data(...) end
 
 ---@class CoreAreaOperatorUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CoreAreaOperatorUnitElement
 CoreAreaOperatorUnitElement = {}
 
 ---@class AreaOperatorUnitElement : CoreAreaOperatorUnitElement
+---@field super CoreAreaOperatorUnitElement
 ---@field new fun(self, ...) : AreaOperatorUnitElement
 AreaOperatorUnitElement = {}
 
@@ -144,10 +148,12 @@ function CoreAreaOperatorUnitElement:add_triggers(vc) end
 function CoreAreaOperatorUnitElement:_build_panel(panel, panel_sizer) end
 
 ---@class CoreAreaReportTriggerUnitElement : CoreAreaTriggerUnitElement
+---@field super CoreAreaTriggerUnitElement
 ---@field new fun(self, ...) : CoreAreaReportTriggerUnitElement
 CoreAreaReportTriggerUnitElement = {}
 
 ---@class AreaReportTriggerUnitElement : CoreAreaReportTriggerUnitElement
+---@field super CoreAreaReportTriggerUnitElement
 ---@field new fun(self, ...) : AreaReportTriggerUnitElement
 AreaReportTriggerUnitElement = {}
 

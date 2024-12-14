@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class AnniversaryPiggyBank : UnitBase
+---@field super UnitBase
 ---@field new fun(self, ...) : AnniversaryPiggyBank
 AnniversaryPiggyBank = {}
 

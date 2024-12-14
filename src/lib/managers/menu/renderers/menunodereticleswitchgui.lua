@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuNodeReticleSwitchGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : MenuNodeReticleSwitchGui
 MenuNodeReticleSwitchGui = {}
 

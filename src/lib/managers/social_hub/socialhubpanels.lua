@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SocialHubUserItem : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : SocialHubUserItem
 SocialHubUserItem = {}
 
@@ -52,6 +53,7 @@ function SocialHubUserItem:get_status_prio() end
 function SocialHubUserItem:get_name() end
 
 ---@class SocialHubLobbyItem : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : SocialHubLobbyItem
 SocialHubLobbyItem = {}
 
@@ -97,6 +99,7 @@ function SocialHubLobbyItem:confirm_pressed() end
 function SocialHubLobbyItem:move_button_selection(move) end
 
 ---@class SocialHubUserCategoryHeader : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : SocialHubUserCategoryHeader
 SocialHubUserCategoryHeader = {}
 
@@ -125,6 +128,7 @@ function SocialHubUserCategoryHeader:mouse_pressed(button, x, y) end
 function SocialHubUserCategoryHeader:confirm_pressed() end
 
 ---@class SocialHubUserSeparator : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : SocialHubUserSeparator
 SocialHubUserSeparator = {}
 
@@ -140,6 +144,7 @@ function SocialHubUserSeparator:skip_selection() end
 function SocialHubUserSeparator:get_status_prio() end
 
 ---@class SocialHubTextHeader : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : SocialHubTextHeader
 SocialHubTextHeader = {}
 
@@ -152,6 +157,7 @@ function SocialHubTextHeader:init(parent, data) end
 function SocialHubTextHeader:skip_selection() end
 
 ---@class SocialHubUserSearchBox : ListItem
+---@field super ListItem
 ---@field new fun(self, ...) : SocialHubUserSearchBox
 SocialHubUserSearchBox = {}
 

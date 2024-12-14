@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class PacketNetworkHandler : BaseNetworkHandler
+---@field super BaseNetworkHandler
 ---@field new fun(self, ...) : PacketNetworkHandler
 PacketNetworkHandler = {}
 

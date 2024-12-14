@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SpecialObjectiveTriggerUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : SpecialObjectiveTriggerUnitElement
 SpecialObjectiveTriggerUnitElement = {}
 

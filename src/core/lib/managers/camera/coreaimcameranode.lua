@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreAimCameraNode.AimCameraNode : CoreTransformCameraNode.TransformCameraNode
+---@field super CoreTransformCameraNode.TransformCameraNode
 ---@field new fun(self, ...) : CoreAimCameraNode.AimCameraNode
 AimCameraNode = {}
 

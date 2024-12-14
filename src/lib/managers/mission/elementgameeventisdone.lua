@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementGameEventIsDone : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementGameEventIsDone
 ElementGameEventIsDone = {}
 

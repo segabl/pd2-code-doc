@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ActionMessageUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : ActionMessageUnitElement
 ActionMessageUnitElement = {}
 

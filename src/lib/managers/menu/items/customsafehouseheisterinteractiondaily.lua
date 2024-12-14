@@ -14,6 +14,7 @@ function InGameHeisterInteractionInitiator:modify_node(original_node, data) end
 function InGameHeisterInteractionInitiator:refresh_node(node) end
 
 ---@class InGameHeisterInteractionGui : MenuNodeGui
+---@field super MenuNodeGui
 ---@field new fun(self, ...) : InGameHeisterInteractionGui
 InGameHeisterInteractionGui = {}
 

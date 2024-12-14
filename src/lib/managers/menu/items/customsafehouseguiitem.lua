@@ -36,6 +36,7 @@ function CustomSafehouseGuiItem:trigger() end
 function CustomSafehouseGuiItem:flash() end
 
 ---@class CustomSafehouseGuiTabItem : CustomSafehouseGuiItem
+---@field super CustomSafehouseGuiItem
 ---@field new fun(self, ...) : CustomSafehouseGuiTabItem
 CustomSafehouseGuiTabItem = {}
 
@@ -76,6 +77,7 @@ function CustomSafehouseGuiTabItem:inside(x, y) end
 function CustomSafehouseGuiTabItem:refresh() end
 
 ---@class CustomSafehouseGuiPage : CustomSafehouseGuiItem
+---@field super CustomSafehouseGuiItem
 ---@field new fun(self, ...) : CustomSafehouseGuiPage
 CustomSafehouseGuiPage = {}
 
@@ -178,6 +180,7 @@ function CustomSafehouseGuiPage:special_btn_pressed(button) end
 function CustomSafehouseGuiPage:get_legend() end
 
 ---@class CustomSafehouseGuiButtonItem : CustomSafehouseGuiItem
+---@field super CustomSafehouseGuiItem
 ---@field new fun(self, ...) : CustomSafehouseGuiButtonItem
 CustomSafehouseGuiButtonItem = {}
 
@@ -243,6 +246,7 @@ function CustomSafehouseGuiButtonItem:hidden() end
 function CustomSafehouseGuiButtonItem:set_hidden(hidden) end
 
 ---@class CustomSafehouseGuiButtonItemWithIcon : CustomSafehouseGuiButtonItem
+---@field super CustomSafehouseGuiButtonItem
 ---@field new fun(self, ...) : CustomSafehouseGuiButtonItemWithIcon
 CustomSafehouseGuiButtonItemWithIcon = {}
 

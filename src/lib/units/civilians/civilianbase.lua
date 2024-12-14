@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CivilianBase : CopBase
+---@field super CopBase
 ---@field new fun(self, ...) : CivilianBase
 CivilianBase = {}
 

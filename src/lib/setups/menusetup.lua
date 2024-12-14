@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuSetup : Setup
+---@field super Setup
 ---@field new fun(self, ...) : MenuSetup
 MenuSetup = {}
 

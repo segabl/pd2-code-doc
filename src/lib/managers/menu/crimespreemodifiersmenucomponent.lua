@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CrimeSpreeModifiersMenuComponent : MenuGuiComponentGeneric
+---@field super MenuGuiComponentGeneric
 ---@field new fun(self, ...) : CrimeSpreeModifiersMenuComponent
 CrimeSpreeModifiersMenuComponent = {}
 
@@ -70,6 +71,7 @@ function CrimeSpreeModifiersMenuComponent:move_left() end
 function CrimeSpreeModifiersMenuComponent:move_right() end
 
 ---@class CrimeSpreeModifierButton : MenuGuiItem
+---@field super MenuGuiItem
 ---@field new fun(self, ...) : CrimeSpreeModifierButton
 CrimeSpreeModifierButton = {}
 
@@ -130,6 +132,7 @@ function CrimeSpreeModifierButton:update(t, dt) end
 function CrimeSpreeModifierButton:smoothstep(a, b, step, n) end
 
 ---@class CrimeSpreeButton : MenuGuiItem
+---@field super MenuGuiItem
 ---@field new fun(self, ...) : CrimeSpreeButton
 CrimeSpreeButton = {}
 

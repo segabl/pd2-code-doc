@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ScriptUnitData : CoreScriptUnitData
+---@field super CoreScriptUnitData
 ---@field new fun(self, ...) : ScriptUnitData
 ScriptUnitData = {}
 

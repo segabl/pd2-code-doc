@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemCustomizeController : CoreMenuItem.Item
+---@field super CoreMenuItem.Item
 ---@field new fun(self, ...) : MenuItemCustomizeController
 MenuItemCustomizeController = {}
 

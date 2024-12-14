@@ -129,6 +129,7 @@ function CrewManagementGuiButton:set_enabled(state) end
 function CrewManagementGuiButton:_selected_changed(state) end
 
 ---@class CrewManagementGuiLoadoutItem : CrewManagementGuiButton
+---@field super CrewManagementGuiButton
 ---@field new fun(self, ...) : CrewManagementGuiLoadoutItem
 CrewManagementGuiLoadoutItem = {}
 
@@ -157,6 +158,7 @@ function CrewManagementGuiLoadoutItem:previous_page(...) end
 function CrewManagementGuiLoadoutItem:next_page(...) end
 
 ---@class CrewManagementGuiTextButton : CrewManagementGuiButton
+---@field super CrewManagementGuiButton
 ---@field new fun(self, ...) : CrewManagementGuiTextButton
 CrewManagementGuiTextButton = {}
 

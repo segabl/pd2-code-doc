@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class MenuItemColoredDivider : MenuItemDivider
+---@field super MenuItemDivider
 ---@field new fun(self, ...) : MenuItemColoredDivider
 MenuItemColoredDivider = {}
 

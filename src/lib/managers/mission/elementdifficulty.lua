@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementDifficulty : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementDifficulty
 ElementDifficulty = {}
 

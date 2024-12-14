@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CheckDLCUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : CheckDLCUnitElement
 CheckDLCUnitElement = {}
 

@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class CoreFakeLocalUserStorage.Storage : CoreLocalUserStorage.Storage
+---@field super CoreLocalUserStorage.Storage
 ---@field new fun(self, ...) : CoreFakeLocalUserStorage.Storage
 Storage = {}
 

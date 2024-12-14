@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class InstigatorRuleUnitElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : InstigatorRuleUnitElement
 InstigatorRuleUnitElement = {}
 

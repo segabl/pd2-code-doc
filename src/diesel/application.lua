@@ -64,11 +64,16 @@ function Application:debug_enabled(...) end
 
 function Application:destroy_viewport(...) end
 
----Encrypts or decrypts a value  
----Encrypts numbers to strings and decrypts strings to numbers
----@param value number|string
----@param encrypt boolean?
----@return string|number
+---Encrypts a value
+---@param value number
+---@param encrypt true
+---@return string
+function Application:digest_value(value, encrypt) end
+
+---Decrypts a value
+---@param value string
+---@param encrypt false
+---@return number
 function Application:digest_value(value, encrypt) end
 
 function Application:disc_id(...) end
@@ -139,7 +144,7 @@ function Application:global_material(...) end
 ---@return string
 function Application:host_name() end
 
----Returns wether the game window has focus
+---Returns whether the game window has focus
 ---@return boolean
 function Application:in_focus() end
 

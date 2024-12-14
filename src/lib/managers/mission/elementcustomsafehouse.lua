@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ElementCustomSafehouseFilter : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementCustomSafehouseFilter
 ElementCustomSafehouseFilter = {}
 
@@ -20,6 +21,7 @@ function ElementCustomSafehouseFilter:on_executed(instigator) end
 function ElementCustomSafehouseFilter:_check_value(value) end
 
 ---@class ElementCustomSafehouseTrophyFilter : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementCustomSafehouseTrophyFilter
 ElementCustomSafehouseTrophyFilter = {}
 
@@ -31,6 +33,7 @@ function ElementCustomSafehouseTrophyFilter:on_script_activated() end
 function ElementCustomSafehouseTrophyFilter:on_executed(instigator) end
 
 ---@class ElementCustomSafehouseAwardTrophy : CoreMissionScriptElement.MissionScriptElement
+---@field super CoreMissionScriptElement.MissionScriptElement
 ---@field new fun(self, ...) : ElementCustomSafehouseAwardTrophy
 ElementCustomSafehouseAwardTrophy = {}
 

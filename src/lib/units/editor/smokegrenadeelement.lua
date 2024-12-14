@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SmokeGrenadeElement : MissionElement
+---@field super MissionElement
 ---@field new fun(self, ...) : SmokeGrenadeElement
 SmokeGrenadeElement = {}
 

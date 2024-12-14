@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class SystemMenuManager.SelectStorageDialog : SystemMenuManager.BaseDialog
+---@field super SystemMenuManager.BaseDialog
 ---@field new fun(self, ...) : SystemMenuManager.SelectStorageDialog
 SelectStorageDialog = {}
 

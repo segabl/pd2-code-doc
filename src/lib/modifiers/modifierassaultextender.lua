@@ -1,6 +1,7 @@
 ---@meta
 
 ---@class ModifierAssaultExtender : BaseModifier
+---@field super BaseModifier
 ---@field new fun(self, ...) : ModifierAssaultExtender
 ModifierAssaultExtender = {}
 
