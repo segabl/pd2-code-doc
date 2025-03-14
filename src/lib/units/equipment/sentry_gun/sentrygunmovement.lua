@@ -4,14 +4,14 @@
 ---@field new fun(self, ...) : SentryGunMovement
 SentryGunMovement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunMovement:init(unit) end
 
 ---@return unknown
 function SentryGunMovement:post_init() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -87,7 +87,7 @@ function SentryGunMovement:chk_play_alert(attention, old_attention) end
 ---@return unknown
 function SentryGunMovement:attention() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunMovement:attention_unit_destroy_clbk(unit) end
 
@@ -195,11 +195,10 @@ function SentryGunMovement:load(save_data) end
 ---@return unknown
 function SentryGunMovement:clbk_team_def() end
 
----@param team_data any
----@return unknown
+---@param team_data teamdata
 function SentryGunMovement:set_team(team_data) end
 
----@return unknown
+---@return teamdata
 function SentryGunMovement:team() end
 
 ---@return unknown

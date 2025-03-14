@@ -4,14 +4,14 @@
 ---@field new fun(self, ...) : CopBrain
 CopBrain = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopBrain:init(unit) end
 
 ---@return unknown
 function CopBrain:post_init() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -243,11 +243,11 @@ function CopBrain:_clbk_tweak_data_changed(old_tweak_data, new_tweak_data) end
 ---@return unknown
 function CopBrain:on_rescue_allowed_state(state) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopBrain:on_objective_unit_destroyed(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param damage_info any
 ---@return unknown
 function CopBrain:on_objective_unit_damaged(unit, damage_info) end
@@ -255,16 +255,16 @@ function CopBrain:on_objective_unit_damaged(unit, damage_info) end
 ---@return unknown
 function CopBrain:is_advancing() end
 
----@param unit any
+---@param unit Unit
 ---@param ... any
 ---@return unknown
 function CopBrain:anim_clbk(unit, ...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopBrain:anim_clbk_dodge_cover_grenade(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopBrain:_chk_use_cover_grenade(unit) end
 
@@ -389,11 +389,11 @@ function CopBrain:clbk_alarm_pager(ignore_this, data) end
 ---@return unknown
 function CopBrain:_chk_enable_bodybag_interaction() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopBrain:on_police_call_success(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopBrain:pre_destroy(unit) end
 

@@ -13,7 +13,7 @@ function ElementNavObstacle:init(...) end
 function ElementNavObstacle:on_script_activated() end
 
 ---@param obj_name any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementNavObstacle:_load_unit(obj_name, unit) end
 

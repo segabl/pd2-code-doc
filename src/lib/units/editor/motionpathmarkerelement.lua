@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : MotionpathMarkerUnitElement
 MotionpathMarkerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MotionpathMarkerUnitElement:init(unit) end
 

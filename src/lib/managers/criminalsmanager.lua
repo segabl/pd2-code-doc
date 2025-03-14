@@ -57,12 +57,12 @@ function CriminalsManager:get_any_unit() end
 ---@return unknown
 function CriminalsManager:get_valid_player_spawn_pos_rot(peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@param check_zipline any
 ---@return unknown
 function CriminalsManager:_get_unit_pos_rot(unit, check_zipline) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CriminalsManager:on_last_valid_player_spawn_point_updated(unit) end
 
@@ -71,7 +71,7 @@ function CriminalsManager:on_last_valid_player_spawn_point_updated(unit) end
 function CriminalsManager:_remove(id) end
 
 ---@param name any
----@param unit any
+---@param unit Unit
 ---@param peer_id any
 ---@param ai any
 ---@param ai_loadout any
@@ -89,7 +89,7 @@ function CriminalsManager:safe_load_asset(character, asset_name, type) end
 ---@return unknown
 function CriminalsManager:update_character_visual_state(character_name, visual_state) end
 
----@param unit any
+---@param unit Unit
 ---@param character_name any
 ---@param visual_state any
 ---@return unknown
@@ -127,7 +127,7 @@ function CriminalsManager:set_active_player_style_locked(locked, sync) end
 function CriminalsManager:is_active_player_style_locked() end
 
 ---@param name any
----@param unit any
+---@param unit Unit
 ---@param ai_loadout any
 ---@return unknown
 function CriminalsManager:set_unit(name, unit, ai_loadout) end
@@ -148,7 +148,7 @@ function CriminalsManager:character_name_by_peer_id(peer_id) end
 ---@return unknown
 function CriminalsManager:character_color_id_by_peer_id(peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CriminalsManager:character_color_id_by_unit(unit) end
 
@@ -164,7 +164,7 @@ function CriminalsManager:character_by_name(name) end
 ---@return unknown
 function CriminalsManager:character_by_peer_id(peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CriminalsManager:character_by_unit(unit) end
 
@@ -176,7 +176,7 @@ function CriminalsManager:has_character_by_name(name) end
 ---@return unknown
 function CriminalsManager:has_character_by_peer_id(peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CriminalsManager:has_character_by_unit(unit) end
 
@@ -188,7 +188,7 @@ function CriminalsManager:character_data_by_name(name) end
 ---@return unknown
 function CriminalsManager:character_data_by_peer_id(peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CriminalsManager:character_data_by_unit(unit) end
 
@@ -212,7 +212,7 @@ function CriminalsManager:character_taken_by_name(name) end
 ---@return unknown
 function CriminalsManager:character_peer_id_by_name(name) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CriminalsManager:character_peer_id_by_unit(unit) end
 
@@ -226,7 +226,7 @@ function CriminalsManager:get_num_player_criminals() end
 ---@return unknown
 function CriminalsManager:on_peer_left(peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CriminalsManager:remove_character_by_unit(unit) end
 
@@ -238,7 +238,7 @@ function CriminalsManager:remove_character_by_peer_id(peer_id) end
 ---@return unknown
 function CriminalsManager:remove_character_by_name(name) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CriminalsManager:character_name_by_unit(unit) end
 
@@ -246,7 +246,7 @@ function CriminalsManager:character_name_by_unit(unit) end
 ---@return unknown
 function CriminalsManager:character_name_by_panel_id(panel_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CriminalsManager:character_static_data_by_unit(unit) end
 

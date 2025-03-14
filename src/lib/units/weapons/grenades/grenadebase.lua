@@ -5,21 +5,21 @@
 ---@field new fun(self, ...) : GrenadeBase
 GrenadeBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GrenadeBase:init(unit) end
 
 ---@return unknown
 function GrenadeBase:_setup_server_data() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
 function GrenadeBase:update(unit, t, dt) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -49,13 +49,13 @@ function GrenadeBase:_detonate_on_client() end
 ---@return unknown
 function GrenadeBase:sync_net_event(event_id) end
 
----@param unit any
+---@param unit Unit
 ---@param is_dead any
 ---@param damage_percent any
 ---@return unknown
 function GrenadeBase:add_damage_result(unit, is_dead, damage_percent) end
 
----@param unit any
+---@param unit Unit
 ---@param is_dead any
 ---@param damage_percent any
 ---@param hit_count any

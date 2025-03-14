@@ -64,7 +64,7 @@ function GageAssignmentManager:debug_test_dialog_params(show_items) end
 ---@return unknown
 function GageAssignmentManager:dialog_show_completed_assignments(show_items) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GageAssignmentManager:is_unit_an_assignment(unit) end
 
@@ -79,7 +79,7 @@ function GageAssignmentManager:on_simulation_started() end
 ---@return unknown
 function GageAssignmentManager:queue_spawn(position, rotation) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GageAssignmentManager:on_unit_spawned(unit) end
 
@@ -88,7 +88,7 @@ function GageAssignmentManager:on_unit_spawned(unit) end
 ---@return unknown
 function GageAssignmentManager:do_spawn(position, rotation) end
 
----@param unit any
+---@param unit Unit
 ---@param assignment any
 ---@return unknown
 function GageAssignmentManager:on_unit_interact(unit, assignment) end

@@ -14,7 +14,7 @@ SpawnUnitUnitElement = {}
 ---@return unknown
 function SpawnUnitUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreSpawnUnitUnitElement:init(unit) end
 

@@ -28,12 +28,12 @@ function TeamAILogicDisabled._upd_enemy_detection(data) end
 function TeamAILogicDisabled.on_intimidated(data, amount, aggressor_unit) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function TeamAILogicDisabled._consider_surrender(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function TeamAILogicDisabled._upd_aim(data, my_data) end
 
@@ -43,12 +43,12 @@ function TeamAILogicDisabled._upd_aim(data, my_data) end
 function TeamAILogicDisabled.on_recovered(data, reviving_unit) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param rescue_type any
 ---@return unknown
 function TeamAILogicDisabled._register_revive_SO(data, my_data, rescue_type) end
 
----@param my_data any
+---@param my_data table
 ---@return unknown
 function TeamAILogicDisabled._unregister_revive_SO(my_data) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerStyleElement
 PlayerStyleElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerStyleElement:init(unit) end
 

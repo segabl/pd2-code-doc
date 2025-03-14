@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : DigitalGui
 DigitalGui = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DigitalGui:init(unit) end
 
@@ -27,7 +27,7 @@ function DigitalGui:is_precision_timer() end
 ---@return unknown
 function DigitalGui:timer_precision() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

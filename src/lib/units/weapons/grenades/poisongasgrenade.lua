@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PoisonGasGrenade
 PoisonGasGrenade = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PoisonGasGrenade:init(unit) end
 
@@ -23,7 +23,7 @@ function PoisonGasGrenade:set_projectile_entry(projectile_entry) end
 function PoisonGasGrenade:projectile_entry() end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -45,7 +45,7 @@ function PoisonGasGrenade:bullet_hit() end
 ---@return unknown
 function PoisonGasGrenade:_detonate_on_client() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : WeaponSecondSight
 WeaponSecondSight = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponSecondSight:init(unit) end
 
@@ -19,7 +19,7 @@ function WeaponSecondSight:toggle_requires_stance_update() end
 ---@return unknown
 function WeaponSecondSight:play_anim() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponSecondSight:destroy(unit) end
 

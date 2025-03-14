@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : ContourExt
 ContourExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ContourExt:init(unit) end
 
@@ -75,7 +75,7 @@ function ContourExt:clear_all() end
 ---@return unknown
 function ContourExt:_remove(index, sync, is_element) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -120,7 +120,7 @@ function ContourExt:save(data) end
 ---@return unknown
 function ContourExt:load(load_data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ContourExt:destroy(unit) end
 

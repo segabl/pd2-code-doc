@@ -19,7 +19,7 @@ function TripMineBase:set_server_information(peer_id) end
 ---@return unknown
 function TripMineBase:server_information() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TripMineBase:init(unit) end
 
@@ -77,7 +77,7 @@ function TripMineBase:contour_unselected() end
 ---@return unknown
 function TripMineBase:_update_draw_laser() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -157,7 +157,7 @@ function TripMineBase._dispose_of_sound(...) end
 function TripMineBase:sync_net_event(event_id) end
 
 ---@param col_ray any
----@param unit any
+---@param unit Unit
 ---@param damage any
 ---@return unknown
 function TripMineBase:_give_explosion_damage(col_ray, unit, damage) end

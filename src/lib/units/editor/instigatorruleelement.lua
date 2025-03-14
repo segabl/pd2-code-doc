@@ -5,11 +5,11 @@
 ---@field new fun(self, ...) : InstigatorRuleUnitElement
 InstigatorRuleUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function InstigatorRuleUnitElement:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function InstigatorRuleUnitElement:destroy(unit) end
 

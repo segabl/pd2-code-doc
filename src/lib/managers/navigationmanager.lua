@@ -84,7 +84,7 @@ function NavigationManager:set_debug_draw_state(options) end
 ---@return unknown
 function NavigationManager:_verify_blockers() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NavigationManager:set_selected_segment(unit) end
 
@@ -155,7 +155,7 @@ function NavigationManager:register_cover_units() end
 ---@return unknown
 function NavigationManager:_unregister_cover_units() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NavigationManager:_safe_remove_unit(unit) end
 

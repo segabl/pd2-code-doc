@@ -16,7 +16,7 @@ EnvironmentFire = {}
 ---@return unknown
 function EnvironmentFire.spawn(position, rotation, data, normal, user_unit, weapon_unit, added_time, range_multiplier) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnvironmentFire:init(unit) end
 
@@ -35,7 +35,7 @@ function EnvironmentFire:get_duration_until_destruction() end
 ---@return unknown
 function EnvironmentFire:on_spawn(data, normal, user_unit, weapon_unit, added_time, range_multiplier) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -44,7 +44,7 @@ function EnvironmentFire:update(unit, t, dt) end
 ---@return unknown
 function EnvironmentFire:_do_damage() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnvironmentFire:destroy(unit) end
 

@@ -729,7 +729,7 @@ function BlackMarketManager:sell_item(item_data) end
 ---@return unknown
 function BlackMarketManager:_sell_item(item_data) end
 
----@param unit any
+---@param unit Unit
 ---@param blueprint any
 ---@return unknown
 function BlackMarketManager:apply_mask_craft_on_unit(unit, blueprint) end

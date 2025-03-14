@@ -86,7 +86,7 @@ function WarpIdleState:init() end
 ---@return unknown
 function WarpIdleState:transition() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerStandardVR:init(unit) end
 

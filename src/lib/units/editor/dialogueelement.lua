@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : DialogueUnitElement
 DialogueUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DialogueUnitElement:init(unit) end
 

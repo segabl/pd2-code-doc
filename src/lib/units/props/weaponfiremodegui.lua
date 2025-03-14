@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : WeaponFiremodeGui
 WeaponFiremodeGui = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponFiremodeGui:init(unit) end
 
@@ -15,7 +15,7 @@ function WeaponFiremodeGui:add_workspace(gui_object) end
 ---@return unknown
 function WeaponFiremodeGui:setup() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

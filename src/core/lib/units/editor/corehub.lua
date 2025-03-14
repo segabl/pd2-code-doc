@@ -14,7 +14,7 @@ Hub = {}
 ---@return unknown
 function Hub:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreHub:init(unit) end
 
@@ -54,14 +54,14 @@ function CoreHub:set_action_delay(action_delay) end
 ---@return unknown
 function CoreHub:ews_select_action() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreHub:select_action_with_unit(unit) end
 
 ---@return unknown
 function CoreHub:ews_select_trigger() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreHub:select_trigger_with_unit(unit) end
 
@@ -104,7 +104,7 @@ function CoreHub:update_unselected() end
 ---@return unknown
 function CoreHub:draw_connections_unselected() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreHub:combobox_name(unit) end
 
@@ -112,7 +112,7 @@ function CoreHub:combobox_name(unit) end
 ---@return unknown
 function CoreHub:combobox_id(name) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreHub:id_string(unit) end
 
@@ -162,11 +162,11 @@ function CoreHub:remove_trigger(t) end
 ---@return unknown
 function CoreHub:delete_trigger(t) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreHub:get_hub_action(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreHub:get_hub_trigger(unit) end
 

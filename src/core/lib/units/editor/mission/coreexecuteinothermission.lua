@@ -14,7 +14,7 @@ ExecuteInOtherMissionUnitElement = {}
 ---@return unknown
 function ExecuteInOtherMissionUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreExecuteInOtherMissionUnitElement:init(unit) end
 

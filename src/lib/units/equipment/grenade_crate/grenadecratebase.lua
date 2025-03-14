@@ -17,14 +17,14 @@ function GrenadeCrateBase:set_server_information(peer_id) end
 ---@return unknown
 function GrenadeCrateBase:server_information() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GrenadeCrateBase:init(unit) end
 
 ---@return unknown
 function GrenadeCrateBase:setup() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -44,7 +44,7 @@ function GrenadeCrateBase:sync_net_event(event_id, peer) end
 ---@return unknown
 function GrenadeCrateBase:_set_dynamic() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GrenadeCrateBase:take_grenade(unit) end
 
@@ -55,7 +55,7 @@ function GrenadeCrateBase:_set_visual_stage() end
 ---@return unknown
 function GrenadeCrateBase:sync_grenade_taken(amount) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GrenadeCrateBase:_can_take_grenade(unit) end
 
@@ -78,7 +78,7 @@ function GrenadeCrateBase:destroy() end
 ---@field new fun(self, ...) : CustomGrenadeCrateBase
 CustomGrenadeCrateBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CustomGrenadeCrateBase:init(unit) end
 
@@ -89,7 +89,7 @@ function CustomGrenadeCrateBase:_set_empty() end
 ---@field new fun(self, ...) : GrenadeCrateSync
 GrenadeCrateSync = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GrenadeCrateSync:init(unit) end
 
@@ -117,7 +117,7 @@ GrenadeCrateDeployableBase = {}
 ---@return unknown
 function GrenadeCrateDeployableBase.spawn(pos, rot) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GrenadeCrateDeployableBase:init(unit) end
 
@@ -132,7 +132,7 @@ function GrenadeCrateDeployableBase:sync_net_event(event_id, peer) end
 ---@return unknown
 function GrenadeCrateDeployableBase:server_set_dynamic() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GrenadeCrateDeployableBase:take_grenade(unit) end
 

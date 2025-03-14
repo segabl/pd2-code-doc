@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : NewRaycastWeaponBase
 NewRaycastWeaponBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NewRaycastWeaponBase:init(unit) end
 
@@ -117,7 +117,7 @@ function NewRaycastWeaponBase:has_unit_health_display() end
 ---@return unknown
 function NewRaycastWeaponBase:_chk_has_unit_health_display() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NewRaycastWeaponBase:set_unit_health_display(unit) end
 
@@ -126,7 +126,7 @@ function NewRaycastWeaponBase:set_unit_health_display(unit) end
 ---@return unknown
 function NewRaycastWeaponBase:call_on_digital_gui(func_name, ...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NewRaycastWeaponBase:check_highlight_unit(unit) end
 
@@ -651,7 +651,7 @@ function NewRaycastWeaponBase:on_reload(...) end
 ---@return unknown
 function NewRaycastWeaponBase:set_timer(timer, ...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NewRaycastWeaponBase:destroy(unit) end
 

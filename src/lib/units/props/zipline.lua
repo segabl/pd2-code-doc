@@ -8,11 +8,11 @@ ZipLine = {}
 ---@return unknown
 function ZipLine.set_debug(state) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ZipLine:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -40,7 +40,7 @@ function ZipLine:_check_interaction_active_state() end
 ---@return unknown
 function ZipLine:is_interact_blocked() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ZipLine:on_interacted(unit) end
 
@@ -52,15 +52,15 @@ function ZipLine:_client_request_attach_bag(player) end
 ---@return unknown
 function ZipLine:_attach_bag_response(granted) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ZipLine:_client_request_access(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ZipLine:set_user(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ZipLine:sync_set_user(unit) end
 
@@ -198,7 +198,7 @@ function ZipLine:release_bag() end
 ---@return unknown
 function ZipLine:run_sequence(sequence_name, user_unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ZipLine:destroy(unit) end
 

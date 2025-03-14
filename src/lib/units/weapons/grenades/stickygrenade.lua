@@ -28,7 +28,7 @@ function StickyGrenade:create_sweep_data() end
 function StickyGrenade:set_owner_peer_id(peer_id) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -81,7 +81,7 @@ function StickyGrenade:sync_attach_to_unit(instant_dynamic_pickup, parent_unit, 
 ---@return unknown
 function StickyGrenade:sync_throw_projectile(dir, projectile_type) end
 
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@return unknown
 function StickyGrenade:clbk_attached_body_disabled(unit, body) end
@@ -96,7 +96,7 @@ function StickyGrenade:_detonate(...) end
 ---@return unknown
 function StickyGrenade:_detach() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -117,11 +117,11 @@ function StickyGrenade:load(data) end
 ---@return unknown
 function StickyGrenade:_delay_sync_attach(peer) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StickyGrenade:pre_destroy(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StickyGrenade:destroy(unit) end
 

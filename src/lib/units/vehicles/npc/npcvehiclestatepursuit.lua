@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : NpcVehicleStatePursuit
 NpcVehicleStatePursuit = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NpcVehicleStatePursuit:init(unit) end
 

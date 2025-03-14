@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : HuskPlayerMovement
 HuskPlayerMovement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerMovement:init(unit) end
 
@@ -56,7 +56,7 @@ function HuskPlayerMovement:_has_finished_loading() end
 ---@return unknown
 function HuskPlayerMovement:_use_weapon_fire_dir() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -222,38 +222,38 @@ function HuskPlayerMovement:sync_melee_stop() end
 ---@return unknown
 function HuskPlayerMovement:sync_melee_discharge() end
 
----@param unit any
+---@param unit Unit
 ---@param name any
 ---@param segment_name any
 ---@return unknown
 function HuskPlayerMovement:anim_cbk_set_melee_start_state_vars(unit, name, segment_name) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerMovement:anim_cbk_set_melee_start_ext_state_vars(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerMovement:anim_cbk_set_melee_charge_ext_state_vars(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerMovement:anim_cbk_set_melee_charge_state_vars(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerMovement:anim_cbk_set_melee_discharge_state_vars(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerMovement:anim_cbk_set_melee_item_state_vars(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param graphic_object any
 ---@return unknown
 function HuskPlayerMovement:anim_cbk_spawn_melee_item(unit, graphic_object) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerMovement:anim_cbk_unspawn_melee_item(unit) end
 
@@ -567,7 +567,7 @@ function HuskPlayerMovement:_is_start_move_velocity_max() end
 ---@return unknown
 function HuskPlayerMovement:_upd_move_zipline(t, dt) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerMovement:anim_clbk_exit_vehicle(unit) end
 
@@ -716,13 +716,13 @@ function HuskPlayerMovement:allow_dropped_magazines() end
 ---@return unknown
 function HuskPlayerMovement:_spawn_magazine_unit(part_id, unit_name, pos, rot) end
 
----@param unit any
+---@param unit Unit
 ---@param bullet_objects any
 ---@param visible any
 ---@return unknown
 function HuskPlayerMovement:_set_unit_bullet_objects_visible(unit, bullet_objects, visible) end
 
----@param unit any
+---@param unit Unit
 ---@param name any
 ---@return unknown
 function HuskPlayerMovement:anim_clbk_show_magazine_in_hand(unit, name) end
@@ -730,7 +730,7 @@ function HuskPlayerMovement:anim_clbk_show_magazine_in_hand(unit, name) end
 ---@return unknown
 function HuskPlayerMovement:anim_clbk_spawn_dropped_magazine() end
 
----@param unit any
+---@param unit Unit
 ---@param name any
 ---@return unknown
 function HuskPlayerMovement:anim_clbk_show_new_magazine_in_hand(unit, name) end
@@ -741,7 +741,7 @@ function HuskPlayerMovement:anim_clbk_hide_magazine_in_hand() end
 ---@return unknown
 function HuskPlayerMovement:destroy_magazine_in_hand() end
 
----@param unit any
+---@param unit Unit
 ---@param event any
 ---@return unknown
 function HuskPlayerMovement:_play_weapon_reload_animation_sfx(unit, event) end
@@ -853,7 +853,7 @@ function HuskPlayerMovement:on_cuffed() end
 ---@return unknown
 function HuskPlayerMovement:on_uncovered(enemy_unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerMovement:anim_clbk_footstep(unit) end
 
@@ -863,7 +863,7 @@ function HuskPlayerMovement:get_footstep_event() end
 ---@return unknown
 function HuskPlayerMovement:ground_ray() end
 
----@param unit any
+---@param unit Unit
 ---@param event any
 ---@return unknown
 function HuskPlayerMovement:clbk_inventory_event(unit, event) end
@@ -885,7 +885,7 @@ function HuskPlayerMovement:on_death_exit() end
 ---@return unknown
 function HuskPlayerMovement:load(data) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -895,7 +895,7 @@ function HuskPlayerMovement:_post_load(unit, t, dt) end
 ---@return unknown
 function HuskPlayerMovement:save(data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerMovement:pre_destroy(unit) end
 
@@ -1040,7 +1040,7 @@ function HuskPlayerMovement:_equip_item(item_type, align_place, droppable) end
 ---@return unknown
 function HuskPlayerMovement:_destroy_items() end
 
----@param unit any
+---@param unit Unit
 ---@param item_type any
 ---@param align_place any
 ---@param droppable any

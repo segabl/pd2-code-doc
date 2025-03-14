@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : NpcVehicleStatePlayerProximity
 NpcVehicleStatePlayerProximity = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NpcVehicleStatePlayerProximity:init(unit) end
 

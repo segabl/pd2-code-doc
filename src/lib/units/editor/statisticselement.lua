@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : StatisticsElement
 StatisticsElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StatisticsElement:init(unit) end
 

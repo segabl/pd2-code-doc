@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerStandard
 PlayerStandard = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerStandard:init(unit) end
 
@@ -529,7 +529,7 @@ function PlayerStandard:_update_equip_weapon_timers(t, input) end
 function PlayerStandard:is_equipping() end
 
 ---@param char_table any
----@param unit any
+---@param unit Unit
 ---@param unit_type any
 ---@param interaction_dist any
 ---@param interaction_through_walls any
@@ -869,7 +869,7 @@ function PlayerStandard:set_animation_weapon_hold(name_override) end
 ---@return unknown
 function PlayerStandard:get_weapon_hold_str() end
 
----@param unit any
+---@param unit Unit
 ---@param event any
 ---@return unknown
 function PlayerStandard:inventory_clbk_listener(unit, event) end

@@ -29,7 +29,7 @@ function PlayerHandStateWeapon:_unlink_weapon() end
 ---@return unknown
 function PlayerHandStateWeapon:at_enter(prev_state) end
 
----@param unit any
+---@param unit Unit
 ---@param event any
 ---@return unknown
 function PlayerHandStateWeapon:inventory_changed(unit, event) end

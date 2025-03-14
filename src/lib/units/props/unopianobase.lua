@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : UnoPianoBase
 UnoPianoBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnoPianoBase:init(unit) end
 

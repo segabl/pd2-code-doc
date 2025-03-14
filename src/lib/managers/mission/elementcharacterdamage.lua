@@ -18,11 +18,11 @@ function ElementCharacterDamage:on_created() end
 ---@return unknown
 function ElementCharacterDamage:on_script_activated() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementCharacterDamage:unit_spawned(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param damage_info any
 ---@return unknown
 function ElementCharacterDamage:clbk_linked_unit_took_damage(unit, damage_info) end

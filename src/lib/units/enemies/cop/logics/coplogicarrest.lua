@@ -22,7 +22,7 @@ function CopLogicArrest.exit(data, new_logic_name, enter_params) end
 function CopLogicArrest.queued_update(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param attention_obj any
 ---@param arrest_data any
 ---@return unknown
@@ -43,7 +43,7 @@ function CopLogicArrest._upd_enemy_detection(data) end
 function CopLogicArrest._chk_reaction_to_attention_object(data, attention_data, stationary) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicArrest._verify_arrest_targets(data, my_data) end
 
@@ -73,29 +73,29 @@ function CopLogicArrest.is_available_for_assignment(data, objective) end
 function CopLogicArrest.on_criminal_neutralized(data, criminal_key) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param paniced any
 ---@return unknown
 function CopLogicArrest._call_the_police(data, my_data, paniced) end
 
 ---@param data logicdata
----@param attention_objects any
+---@param attention_objects table<userdata, attentiondata>
 ---@param reaction_func any
 ---@return unknown
 function CopLogicArrest._get_priority_attention(data, attention_objects, reaction_func) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicArrest._process_pathing_results(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicArrest._cancel_advance(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicArrest._get_att_obj_close_pos(data, my_data) end
 
@@ -109,19 +109,19 @@ function CopLogicArrest._say_scary_stuff_discovered(data) end
 function CopLogicArrest.death_clbk(data, damage_info) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param attention_obj any
 ---@return unknown
 function CopLogicArrest._mark_call_in_event(data, my_data, attention_obj) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param attention_obj any
 ---@return unknown
 function CopLogicArrest._chk_say_discovery(data, my_data, attention_obj) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param attention_obj any
 ---@return unknown
 function CopLogicArrest._chk_say_approach(data, my_data, attention_obj) end
@@ -131,7 +131,7 @@ function CopLogicArrest._chk_say_approach(data, my_data, attention_obj) end
 function CopLogicArrest.on_police_call_success(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicArrest._say_call_the_police(data, my_data) end
 

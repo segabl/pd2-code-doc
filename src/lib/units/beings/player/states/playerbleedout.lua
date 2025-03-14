@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerBleedOut
 PlayerBleedOut = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerBleedOut:init(unit) end
 
@@ -124,7 +124,7 @@ function PlayerBleedOut:on_rescue_SO_started(revive_SO_data, rescuer) end
 
 ---@param ignore_this any
 ---@param my_unit any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerBleedOut.rescue_SO_verification(ignore_this, my_unit, unit) end
 
@@ -147,7 +147,7 @@ function PlayerBleedOut:on_civ_revive_failed(revive_SO_data, sympathy_civ) end
 ---@return unknown
 function PlayerBleedOut:verif_clbk_is_unit_deathguard(enemy_unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerBleedOut:clbk_deathguard_administered(unit) end
 

@@ -4,11 +4,11 @@
 ---@field new fun(self, ...) : WeaponLionGadget1
 WeaponLionGadget1 = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponLionGadget1:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -57,7 +57,7 @@ function WeaponLionGadget1:_shoot_bipod_rays(debug_draw) end
 ---@return unknown
 function WeaponLionGadget1:check_state() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponLionGadget1:destroy(unit) end
 

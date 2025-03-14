@@ -17,7 +17,7 @@ function HuskTeamAIBase:nick_name() end
 ---@return unknown
 function HuskTeamAIBase:on_death_exit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskTeamAIBase:pre_destroy(unit) end
 

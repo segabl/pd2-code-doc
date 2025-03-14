@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : MissionUnloadStaticElement
 MissionUnloadStaticElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionUnloadStaticElement:init(unit) end
 
 ---@return unknown
 function MissionUnloadStaticElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionUnloadStaticElement:save_unit_data(unit) end
 
@@ -36,11 +36,11 @@ function MissionUnloadStaticElement:update_editing() end
 ---@return unknown
 function MissionUnloadStaticElement:select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionUnloadStaticElement:_remove_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionUnloadStaticElement:_add_unit(unit) end
 

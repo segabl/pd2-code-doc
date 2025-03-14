@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CopInventory
 CopInventory = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopInventory:init(unit) end
 
@@ -37,7 +37,7 @@ function CopInventory:drop_weapon() end
 ---@return unknown
 function CopInventory:on_shield_break(attacker_unit) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function CopInventory:anim_clbk_weapon_attached(unit, state) end

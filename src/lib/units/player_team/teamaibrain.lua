@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : TeamAIBrain
 TeamAIBrain = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TeamAIBrain:init(unit) end
 
@@ -46,7 +46,7 @@ function TeamAIBrain:on_recovered(reviving_unit) end
 ---@return unknown
 function TeamAIBrain:clbk_heat() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TeamAIBrain:pre_destroy(unit) end
 

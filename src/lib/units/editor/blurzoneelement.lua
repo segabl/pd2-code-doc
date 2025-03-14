@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : BlurZoneUnitElement
 BlurZoneUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BlurZoneUnitElement:init(unit) end
 

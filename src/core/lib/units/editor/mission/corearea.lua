@@ -14,7 +14,7 @@ AreaUnitElement = {}
 ---@return unknown
 function AreaUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreAreaUnitElement:init(unit) end
 

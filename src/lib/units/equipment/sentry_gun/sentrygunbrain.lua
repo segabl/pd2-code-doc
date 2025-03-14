@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : SentryGunBrain
 SentryGunBrain = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunBrain:init(unit) end
 
@@ -15,7 +15,7 @@ function SentryGunBrain:_on_switch_fire_mode_event(ap_bullets) end
 ---@return unknown
 function SentryGunBrain:post_init() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

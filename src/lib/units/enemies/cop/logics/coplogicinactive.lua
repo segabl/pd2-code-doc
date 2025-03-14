@@ -26,12 +26,12 @@ function CopLogicInactive.is_available_for_assignment(data) end
 function CopLogicInactive.on_enemy_weapons_hot(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicInactive._register_attention(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicInactive._set_interaction(data, my_data) end
 

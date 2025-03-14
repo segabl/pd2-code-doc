@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : SentryGunDamage
 SentryGunDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunDamage:init(unit) end
 
@@ -135,14 +135,14 @@ function SentryGunDamage:load(save_data) end
 ---@return unknown
 function SentryGunDamage:melee_hit_sfx() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunDamage:destroy(unit) end
 
 ---@return unknown
 function SentryGunDamage:shield_smoke_level() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunDamage:set_parent_unit(unit) end
 

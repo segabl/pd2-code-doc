@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerCivilian
 PlayerCivilian = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerCivilian:init(unit) end
 

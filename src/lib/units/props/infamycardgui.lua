@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : InfamyCardGui
 InfamyCardGui = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function InfamyCardGui:init(unit) end
 

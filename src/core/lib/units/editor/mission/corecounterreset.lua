@@ -14,7 +14,7 @@ CounterResetUnitElement = {}
 ---@return unknown
 function CounterResetUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCounterResetUnitElement:init(unit) end
 

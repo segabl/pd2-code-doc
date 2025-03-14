@@ -40,7 +40,7 @@ function CoreLightGroupCutsceneKey:on_attribute_changed(attribute_name, value, p
 ---@return unknown
 function CoreLightGroupCutsceneKey:_light_groups() end
 
----@param unit any
+---@param unit Unit
 ---@param enabled any
 ---@return unknown
 function CoreLightGroupCutsceneKey:_enable_lights(unit, enabled) end

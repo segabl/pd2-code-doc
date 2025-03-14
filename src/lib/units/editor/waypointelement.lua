@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : WaypointUnitElement
 WaypointUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WaypointUnitElement:init(unit) end
 

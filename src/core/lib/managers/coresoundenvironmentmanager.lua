@@ -329,7 +329,7 @@ function SoundEnvironmentArea:set_use_environment(use_environment) end
 ---@return unknown
 function SoundEnvironmentArea:use_environment() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SoundEnvironmentArea:set_unit(unit) end
 
@@ -396,7 +396,7 @@ function SoundEnvironmentEmitter:set_emitter_path(emitter_path) end
 ---@return unknown
 function SoundEnvironmentEmitter:set_emitter_event(emitter_event) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SoundEnvironmentEmitter:set_unit(unit) end
 
@@ -474,7 +474,7 @@ function SoundEnvironmentAreaEmitter:extent() end
 ---@return unknown
 function SoundEnvironmentAreaEmitter:set_property(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SoundEnvironmentAreaEmitter:set_unit(unit) end
 

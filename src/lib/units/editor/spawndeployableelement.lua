@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpawnDeployableUnitElement
 SpawnDeployableUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpawnDeployableUnitElement:init(unit) end
 

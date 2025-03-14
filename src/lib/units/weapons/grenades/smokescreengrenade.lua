@@ -9,13 +9,13 @@ SmokeScreenGrenade = {}
 ---@return unknown
 function SmokeScreenGrenade:_setup_server_data(...) end
 
----@param unit any
+---@param unit Unit
 ---@param ... any
 ---@return unknown
 function SmokeScreenGrenade:set_thrower_unit(unit, ...) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -37,7 +37,7 @@ function SmokeScreenGrenade:bullet_hit() end
 ---@return unknown
 function SmokeScreenGrenade:_detonate_on_client() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

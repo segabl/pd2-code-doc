@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PrePlanningUnitElement
 PrePlanningUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PrePlanningUnitElement:init(unit) end
 
@@ -27,7 +27,7 @@ function PrePlanningUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : PrePlanningExecuteGroupUnitElement
 PrePlanningExecuteGroupUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PrePlanningExecuteGroupUnitElement:init(unit) end
 

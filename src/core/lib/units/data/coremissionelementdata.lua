@@ -13,7 +13,7 @@ MissionElementData = {}
 ---@return unknown
 function MissionElementData:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreMissionElementData:init(unit) end
 

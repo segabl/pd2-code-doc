@@ -6,7 +6,7 @@
 CivilianLogicBase = {}
 
 ---@param data logicdata
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CivilianLogicBase.on_objective_unit_destroyed(data, unit) end
 

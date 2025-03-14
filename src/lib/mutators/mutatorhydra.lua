@@ -43,11 +43,11 @@ function MutatorHydra:split_enemy(parent_unit, attack_data) end
 ---@return unknown
 function MutatorHydra:_spawn_unit(name, parent_unit, depth) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MutatorHydra:get_hydra_depth(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param depth any
 ---@return unknown
 function MutatorHydra:set_hydra_depth(unit, depth) end

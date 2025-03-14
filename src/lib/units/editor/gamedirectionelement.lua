@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : GameDirectionUnitElement
 GameDirectionUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GameDirectionUnitElement:init(unit) end
 

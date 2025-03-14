@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : DummyCorpseBase
 DummyCorpseBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DummyCorpseBase:init(unit) end
 

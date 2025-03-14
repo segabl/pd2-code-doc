@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : QuickCsGrenade
 QuickCsGrenade = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function QuickCsGrenade:init(unit) end
 
 ---@return unknown
 function QuickCsGrenade:_setup_from_tweak_data() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

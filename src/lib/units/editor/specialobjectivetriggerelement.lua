@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpecialObjectiveTriggerUnitElement
 SpecialObjectiveTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpecialObjectiveTriggerUnitElement:init(unit) end
 

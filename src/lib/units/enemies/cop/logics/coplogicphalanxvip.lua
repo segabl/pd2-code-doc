@@ -27,11 +27,11 @@ function CopLogicPhalanxVip.queued_update(data) end
 function CopLogicPhalanxVip.damage_clbk(data, damage_info) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicPhalanxVip.chk_should_turn(data, my_data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopLogicPhalanxVip.register_in_group_ai(unit) end
 

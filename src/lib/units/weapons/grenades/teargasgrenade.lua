@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : TearGasGrenade
 TearGasGrenade = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TearGasGrenade:init(unit) end
 
@@ -12,7 +12,7 @@ function TearGasGrenade:init(unit) end
 ---@return unknown
 function TearGasGrenade:set_properties(props) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CarryUnitElement
 CarryUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CarryUnitElement:init(unit) end
 

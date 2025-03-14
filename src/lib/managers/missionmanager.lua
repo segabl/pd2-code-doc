@@ -63,27 +63,27 @@ function MissionManager:default_instigator() end
 function MissionManager:activate_script(...) end
 
 ---@param id any
----@param unit any
+---@param unit Unit
 ---@param orientation_element_index any
 ---@param id_from any
 ---@return unknown
 function MissionManager:client_run_mission_element(id, unit, orientation_element_index, id_from) end
 
 ---@param id any
----@param unit any
+---@param unit Unit
 ---@param orientation_element_index any
 ---@param id_from any
 ---@return unknown
 function MissionManager:client_run_mission_element_end_screen(id, unit, orientation_element_index, id_from) end
 
 ---@param id any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionManager:server_run_mission_element_trigger(id, unit) end
 
 ---@param event_id any
 ---@param id any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionManager:to_server_area_event(event_id, id, unit) end
 

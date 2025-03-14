@@ -13,7 +13,7 @@ function ElementDisableShout:init(...) end
 ---@return unknown
 function ElementDisableShout:client_on_executed(...) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function ElementDisableShout.sync_function(unit, state) end

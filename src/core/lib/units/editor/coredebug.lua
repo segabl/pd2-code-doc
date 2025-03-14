@@ -14,7 +14,7 @@ DebugUnitElement = {}
 ---@return unknown
 function DebugUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreDebugUnitElement:init(unit) end
 

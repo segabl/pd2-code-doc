@@ -12,12 +12,12 @@ function FireManager:init() end
 ---@return unknown
 function FireManager:_on_dot_removed(dot_info, var_info) end
 
----@param unit any
+---@param unit Unit
 ---@param var_info any
 ---@return unknown
 function FireManager:check_achievements(unit, var_info) end
 
----@param unit any
+---@param unit Unit
 ---@param variant any
 ---@return unknown
 function FireManager:is_set_on_fire(unit, variant) end
@@ -65,7 +65,7 @@ function FireManager:_clbk_on_dot_var_removed(dot_info, var_info, destroyed) end
 ---@return unknown
 function FireManager:stop_enemy_fire_effects(entry, destroyed) end
 
----@param unit any
+---@param unit Unit
 ---@param entry any
 ---@param delay any
 ---@return unknown
@@ -79,7 +79,7 @@ function FireManager:stop_burn_body_sound(data) end
 ---@return unknown
 function FireManager:_release_sound_source(...) end
 
----@param unit any
+---@param unit Unit
 ---@param entry any
 ---@return unknown
 function FireManager:_start_enemy_fire_effect(unit, entry) end

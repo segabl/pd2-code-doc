@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PointOfNoReturnElement
 PointOfNoReturnElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PointOfNoReturnElement:init(unit) end
 

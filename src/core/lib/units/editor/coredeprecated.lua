@@ -14,7 +14,7 @@ DeprecatedHubElement = {}
 ---@return unknown
 function DeprecatedHubElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreDeprecatedHubElement:init(unit) end
 

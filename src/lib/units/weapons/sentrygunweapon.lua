@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : SentryGunWeapon
 SentryGunWeapon = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunWeapon:init(unit) end
 
@@ -32,7 +32,7 @@ function SentryGunWeapon:_init() end
 ---@return unknown
 function SentryGunWeapon:setup(setup_data) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -157,7 +157,7 @@ function SentryGunWeapon:save(save_data) end
 ---@return unknown
 function SentryGunWeapon:load(save_data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunWeapon:destroy(unit) end
 

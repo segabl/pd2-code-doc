@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerDriving
 PlayerDriving = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerDriving:init(unit) end
 
@@ -166,7 +166,7 @@ function PlayerDriving:_get_drive_axis() end
 ---@return unknown
 function PlayerDriving:_update_input(dt) end
 
----@param unit any
+---@param unit Unit
 ---@param event any
 ---@return unknown
 function PlayerDriving:on_inventory_event(unit, event) end

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : HintUnitElement
 HintUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HintUnitElement:init(unit) end
 

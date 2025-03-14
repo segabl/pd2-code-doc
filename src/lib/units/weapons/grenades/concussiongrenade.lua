@@ -9,7 +9,7 @@ ConcussionGrenade = {}
 function ConcussionGrenade:_setup_from_tweak_data() end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -30,7 +30,7 @@ function ConcussionGrenade:clbk_impact(tag, unit, body, other_unit, other_body, 
 function ConcussionGrenade:_on_collision(col_ray) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -46,7 +46,7 @@ function ConcussionGrenade:_on_collision(col_ray) end
 ---@return unknown
 function ConcussionGrenade:_detonate(tag, unit, body, other_unit, other_body, position, normal, collision_velocity, velocity, other_velocity, new_velocity, direction, damage, ...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ConcussionGrenade:_can_stun_unit(unit) end
 

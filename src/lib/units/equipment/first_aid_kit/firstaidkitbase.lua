@@ -33,7 +33,7 @@ function FirstAidKitBase:set_server_information(peer_id) end
 ---@return unknown
 function FirstAidKitBase:server_information() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FirstAidKitBase:init(unit) end
 
@@ -57,7 +57,7 @@ function FirstAidKitBase:sync_setup(bits, peer_id) end
 ---@return unknown
 function FirstAidKitBase:setup(bits) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -76,7 +76,7 @@ function FirstAidKitBase:sync_net_event(event_id) end
 ---@return unknown
 function FirstAidKitBase:_set_dynamic() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FirstAidKitBase:take(unit) end
 

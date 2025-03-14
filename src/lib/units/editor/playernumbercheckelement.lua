@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerNumberCheckElement
 PlayerNumberCheckElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerNumberCheckElement:init(unit) end
 

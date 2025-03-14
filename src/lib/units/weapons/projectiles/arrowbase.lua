@@ -28,7 +28,7 @@ function ArrowBase:add_trail_effect() end
 function ArrowBase:_on_collision(col_ray) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -49,7 +49,7 @@ function ArrowBase:clbk_impact(tag, unit, body, other_unit, other_body, position
 function ArrowBase:throw(...) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param activated any
 ---@return unknown
@@ -60,7 +60,7 @@ function ArrowBase:clbk_body_activation(tag, unit, body, activated) end
 ---@return unknown
 function ArrowBase:sync_throw_projectile(dir, projectile_type) end
 
----@param unit any
+---@param unit Unit
 ---@param is_dead any
 ---@param damage_percent any
 ---@return unknown
@@ -70,7 +70,7 @@ function ArrowBase:add_damage_result(unit, is_dead, damage_percent) end
 ---@return unknown
 function ArrowBase:_check_achievements(...) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -110,7 +110,7 @@ function ArrowBase:_attach_to_hit_unit(is_remote, dynamic_pickup_wanted) end
 ---@return unknown
 function ArrowBase:sync_attach_to_unit(instant_dynamic_pickup, parent_unit, parent_body, parent_obj, local_pos, dir, drop_in) end
 
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@return unknown
 function ArrowBase:_cbk_attached_body_disabled(unit, body) end
@@ -150,7 +150,7 @@ function ArrowBase:_remove_switch_to_pickup_clbk() end
 ---@return unknown
 function ArrowBase:_kill_trail() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ArrowBase:destroy(unit) end
 

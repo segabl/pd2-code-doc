@@ -14,7 +14,7 @@ OverlayEffectUnitElement = {}
 ---@return unknown
 function OverlayEffectUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreOverlayEffectUnitElement:init(unit) end
 

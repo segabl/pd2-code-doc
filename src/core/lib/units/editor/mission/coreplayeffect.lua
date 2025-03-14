@@ -14,7 +14,7 @@ PlayEffectUnitElement = {}
 ---@return unknown
 function PlayEffectUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CorePlayEffectUnitElement:init(unit) end
 
@@ -49,7 +49,7 @@ StopEffectUnitElement = {}
 ---@return unknown
 function StopEffectUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreStopEffectUnitElement:init(unit) end
 

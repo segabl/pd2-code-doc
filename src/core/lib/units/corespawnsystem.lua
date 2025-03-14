@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : CoreAiArea
 CoreAiArea = {}
 
----@param unit any
+---@param unit Unit
 ---@param surface_name any
 ---@param obj_name any
 ---@param xml any
@@ -24,7 +24,7 @@ function CoreAiArea:find_spawnpoints(xml) end
 ---@field new fun(self, ...) : CoreSpawnSystem
 CoreSpawnSystem = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreSpawnSystem:init(unit) end
 
@@ -34,7 +34,7 @@ function CoreSpawnSystem:get_linked_unit_list() end
 ---@return unknown
 function CoreSpawnSystem:destroy() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

@@ -10,15 +10,15 @@ function _OcclusionManager:init() end
 ---@return unknown
 function _OcclusionManager:skip_units() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function _OcclusionManager:is_occluded(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function _OcclusionManager:remove_occlusion(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function _OcclusionManager:add_occlusion(unit) end
 

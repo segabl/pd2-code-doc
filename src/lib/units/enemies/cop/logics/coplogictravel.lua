@@ -30,7 +30,7 @@ function CopLogicTravel.upd_advance(data) end
 function CopLogicTravel._upd_enemy_detection(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTravel._upd_pathing(data, my_data) end
 
@@ -40,7 +40,7 @@ function CopLogicTravel._upd_pathing(data, my_data) end
 function CopLogicTravel._update_cover(ignore_this, data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTravel._chk_request_action_turn_to_cover(data, my_data) end
 
@@ -92,7 +92,7 @@ function CopLogicTravel._investigate_coarse_path_verify_clbk(shait, nav_seg) end
 function CopLogicTravel.on_intimidated(data, amount, aggressor_unit) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param speed any
 ---@param end_rot any
 ---@param no_strafe any
@@ -114,13 +114,13 @@ function CopLogicTravel._determine_destination_occupation(data, objective) end
 function CopLogicTravel._get_pos_on_wall(from_pos, max_dist, step_offset, is_recurse) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param delay any
 ---@return unknown
 function CopLogicTravel.queue_update(data, my_data, delay) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTravel._try_anounce(data, my_data) end
 
@@ -134,28 +134,28 @@ function CopLogicTravel._get_all_paths(data) end
 function CopLogicTravel._set_verified_paths(data, verified_paths) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTravel.chk_should_turn(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param coarse_path any
 ---@return unknown
 function CopLogicTravel.complete_coarse_path(data, my_data, coarse_path) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTravel._chk_close_to_criminal(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTravel.chk_group_ready_to_move(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param cover any
 ---@param wall_fwd_offset any
 ---@return unknown
@@ -168,7 +168,7 @@ function CopLogicTravel.apply_wall_offset_to_cover(data, my_data, cover, wall_fw
 function CopLogicTravel._find_cover(data, search_nav_seg, near_pos) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param to_pos any
 ---@return unknown
 function CopLogicTravel._get_allowed_travel_nav_segs(data, my_data, to_pos) end
@@ -191,22 +191,22 @@ function CopLogicTravel._get_exact_move_pos(data, nav_index) end
 function CopLogicTravel._on_destination_reached(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTravel._chk_start_pathing_to_next_nav_point(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTravel._begin_coarse_pathing(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTravel._chk_begin_advance(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTravel._chk_stop_for_follow_unit(data, my_data) end
 

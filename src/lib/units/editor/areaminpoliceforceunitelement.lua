@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : AreaMinPoliceForceUnitElement
 AreaMinPoliceForceUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AreaMinPoliceForceUnitElement:init(unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : NPCRaycastWeaponBase
 NPCRaycastWeaponBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NPCRaycastWeaponBase:init(unit) end
 
@@ -43,7 +43,7 @@ function NPCRaycastWeaponBase:add_damage_multiplier(damage_multiplier) end
 ---@return unknown
 function NPCRaycastWeaponBase:fire_blank(direction, impact) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NPCRaycastWeaponBase:destroy(unit) end
 

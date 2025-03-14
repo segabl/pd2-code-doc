@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : PlayerDamage
 PlayerDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerDamage:init(unit) end
 
@@ -79,7 +79,7 @@ function PlayerDamage:force_into_bleedout(can_activate_berserker, ignore_reduce_
 ---@return unknown
 function PlayerDamage:stop_vr_heartbeat() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -265,7 +265,7 @@ function PlayerDamage:erase_tase_data() end
 ---@return unknown
 function PlayerDamage:damage_melee(attack_data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerDamage:is_friendly_fire(unit) end
 
@@ -670,7 +670,7 @@ function PlayerDamage:_update_slowdowns(dt) end
 ---@field new fun(self, ...) : PlayerBodyDamage
 PlayerBodyDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@param unit_extension any
 ---@param body any
 ---@return unknown

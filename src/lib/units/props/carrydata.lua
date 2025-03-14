@@ -4,12 +4,12 @@
 ---@field new fun(self, ...) : CarryData
 CarryData = {}
 
----@param unit any
+---@param unit Unit
 ---@param carry_id any
 ---@return unknown
 function CarryData._register_remove_on_weapons_hot(unit, carry_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CarryData._unregister_remove_on_weapons_hot(unit) end
 
@@ -19,7 +19,7 @@ function CarryData._clbk_weapons_hot() end
 ---@return unknown
 function CarryData._clbk_do_disposal() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CarryData:init(unit) end
 
@@ -34,7 +34,7 @@ function CarryData:trigger_load(instigator) end
 ---@return unknown
 function CarryData:enable_update() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -44,7 +44,7 @@ function CarryData:update(unit, t, dt) end
 ---@return unknown
 function CarryData:_set_expire_enabled(enabled) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -54,13 +54,13 @@ function CarryData:_update_expire_t(unit, t, dt) end
 ---@return unknown
 function CarryData:set_expire_paused(paused) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
 function CarryData:_update_throw_link(unit, t, dt) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -236,7 +236,7 @@ function CarryData:link_to(parent_unit) end
 function CarryData:unlink() end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param activated any
 ---@return unknown

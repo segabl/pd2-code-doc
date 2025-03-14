@@ -33,7 +33,7 @@ function CivilianLogicEscort.on_intimidated(data, amount, aggressor_unit) end
 function CivilianLogicEscort.action_complete_clbk(data, action) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicEscort._upd_pathing(data, my_data) end
 
@@ -48,7 +48,7 @@ function CivilianLogicEscort.on_new_objective(data, old_objective) end
 function CivilianLogicEscort.damage_clbk(data, damage_info) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicEscort._get_objective_path_data(data, my_data) end
 
@@ -57,12 +57,12 @@ function CivilianLogicEscort._get_objective_path_data(data, my_data) end
 function CivilianLogicEscort.too_scared_to_move(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicEscort._begin_advance_action(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicEscort._begin_stand_hesitant_action(data, my_data) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : HeatUnitElement
 HeatUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HeatUnitElement:init(unit) end
 
@@ -19,7 +19,7 @@ function HeatUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : HeatTriggerUnitElement
 HeatTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HeatTriggerUnitElement:init(unit) end
 

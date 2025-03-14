@@ -78,7 +78,7 @@ function ClientNetworkSession:load_level(...) end
 function ClientNetworkSession:load_lobby(...) end
 
 ---@param name any
----@param peer_id any
+---@param peer_id integer
 ---@param peer_user_id any
 ---@param peer_account_type_str any
 ---@param peer_account_id any
@@ -97,7 +97,7 @@ function ClientNetworkSession:peer_handshake(name, peer_id, peer_user_id, peer_a
 ---@return unknown
 function ClientNetworkSession:on_PSN_connection_established(name, ip) end
 
----@param peer_id any
+---@param peer_id integer
 ---@return unknown
 function ClientNetworkSession:on_peer_synched(peer_id) end
 
@@ -113,14 +113,14 @@ function ClientNetworkSession:ok_to_load_lobby(load_counter) end
 ---@return unknown
 function ClientNetworkSession:on_mutual_connection(other_peer_id) end
 
----@param peer_id any
+---@param peer_id integer
 ---@return unknown
 function ClientNetworkSession:on_peer_requested_info(peer_id) end
 
 ---@return unknown
 function ClientNetworkSession:update() end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function ClientNetworkSession:_soft_remove_peer(peer) end
 
@@ -155,14 +155,14 @@ function ClientNetworkSession:chk_send_outfit_loading_status() end
 ---@return unknown
 function ClientNetworkSession:notify_host_when_outfits_loaded(request_id, outfit_versions_str) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function ClientNetworkSession:on_peer_outfit_loaded(peer) end
 
 ---@return unknown
 function ClientNetworkSession:_chk_send_proactive_outfit_loaded() end
 
----@param peer_id any
+---@param peer_id integer
 ---@param ready any
 ---@param state_changed any
 ---@param from_network any
@@ -173,7 +173,7 @@ function ClientNetworkSession:on_set_member_ready(peer_id, ready, state_changed,
 ---@return unknown
 function ClientNetworkSession:remove_peer(...) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@param state any
 ---@param load_counter any
 ---@return unknown

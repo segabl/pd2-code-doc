@@ -21,11 +21,11 @@ function ElementInvulnerable:client_on_executed(instigator) end
 ---@return unknown
 function ElementInvulnerable:perform_invulnerable(instigator) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementInvulnerable:_check_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementInvulnerable:make_unit_invulnerable(unit) end
 

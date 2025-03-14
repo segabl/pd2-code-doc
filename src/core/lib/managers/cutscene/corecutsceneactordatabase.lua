@@ -12,7 +12,7 @@ CoreCutsceneActorDatabaseUnitTypeInfo = {}
 ---@return unknown
 function CoreCutsceneActorDatabase:unit_type_info(unit_type) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCutsceneActorDatabase:append_unit_info(unit) end
 
@@ -36,7 +36,7 @@ function CoreCutsceneActorDatabaseUnitTypeInfo:extensions() end
 ---@return unknown
 function CoreCutsceneActorDatabaseUnitTypeInfo:animation_groups() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCutsceneActorDatabaseUnitTypeInfo:_append_unit_info(unit) end
 

@@ -12,7 +12,7 @@ function ElementTimer:init(...) end
 ---@return unknown
 function ElementTimer:on_script_activated() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementTimer:_load_unit(unit) end
 

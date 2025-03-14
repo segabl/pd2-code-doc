@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : CopMovement
 CopMovement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopMovement:init(unit) end
 
@@ -32,7 +32,7 @@ function CopMovement:nav_tracker() end
 ---@return unknown
 function CopMovement:warp_to(pos, rot) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -229,12 +229,12 @@ function CopMovement:_remove_attention_destroy_listener(attention) end
 ---@return unknown
 function CopMovement:attention() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopMovement:attention_unit_destroy_clbk(unit) end
 
 ---@param state any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopMovement:set_allow_fire_on_client(state, unit) end
 
@@ -276,13 +276,13 @@ function CopMovement:damage_clbk(my_unit, damage_info) end
 ---@return unknown
 function CopMovement:request_healed_action() end
 
----@param unit any
+---@param unit Unit
 ---@param effect_name any
 ---@param object_name any
 ---@return unknown
 function CopMovement:anim_clbk_spawn_effect(unit, effect_name, object_name) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopMovement:anim_clbk_footstep(unit) end
 
@@ -305,7 +305,7 @@ function CopMovement:anim_clbk_reload_exit() end
 ---@return unknown
 function CopMovement:anim_clbk_force_ragdoll() end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function CopMovement:anim_clbk_rope(unit, state) end
@@ -319,41 +319,41 @@ function CopMovement:died_on_rope() end
 ---@return unknown
 function CopMovement:pos_rsrv_id() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopMovement:anim_clbk_melee_strike(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function CopMovement:anim_clbk_set_visibility(unit, state) end
 
----@param unit any
+---@param unit Unit
 ---@param item_type any
 ---@param align_place any
 ---@param droppable any
 ---@return unknown
 function CopMovement:anim_clbk_wanted_item(unit, item_type, align_place, droppable) end
 
----@param unit any
+---@param unit Unit
 ---@param preset_name any
 ---@param block_state any
 ---@return unknown
 function CopMovement:anim_clbk_block_info(unit, preset_name, block_state) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopMovement:anim_clbk_ik_change(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopMovement:anim_clbk_enter_vehicle(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopMovement:anim_clbk_police_called(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param stance_name any
 ---@param instant any
 ---@return unknown
@@ -386,7 +386,7 @@ function CopMovement:anim_clbk_enemy_spawn_melee_item() end
 ---@return unknown
 function CopMovement:anim_clbk_enemy_unspawn_melee_item() end
 
----@param unit any
+---@param unit Unit
 ---@param event any
 ---@return unknown
 function CopMovement:clbk_inventory(unit, event) end
@@ -424,7 +424,7 @@ function CopMovement:set_should_stay(should_stay) end
 ---@return unknown
 function CopMovement:carrying_bag() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopMovement:set_carrying_bag(unit) end
 
@@ -610,11 +610,10 @@ function CopMovement:on_anim_act_clbk(anim_act) end
 ---@return unknown
 function CopMovement:clbk_sync_attention(attention) end
 
----@param team_data any
----@return unknown
+---@param team_data teamdata
 function CopMovement:set_team(team_data) end
 
----@return unknown
+---@return teamdata
 function CopMovement:team() end
 
 ---@return unknown
@@ -658,13 +657,13 @@ function CopMovement:allow_dropped_magazines() end
 ---@return unknown
 function CopMovement:_spawn_magazine_unit(part_id, unit_name, pos, rot) end
 
----@param unit any
+---@param unit Unit
 ---@param bullet_objects any
 ---@param visible any
 ---@return unknown
 function CopMovement:_set_unit_bullet_objects_visible(unit, bullet_objects, visible) end
 
----@param unit any
+---@param unit Unit
 ---@param name any
 ---@return unknown
 function CopMovement:anim_clbk_show_magazine_in_hand(unit, name) end
@@ -672,7 +671,7 @@ function CopMovement:anim_clbk_show_magazine_in_hand(unit, name) end
 ---@return unknown
 function CopMovement:anim_clbk_spawn_dropped_magazine() end
 
----@param unit any
+---@param unit Unit
 ---@param name any
 ---@return unknown
 function CopMovement:anim_clbk_show_new_magazine_in_hand(unit, name) end
@@ -683,7 +682,7 @@ function CopMovement:anim_clbk_hide_magazine_in_hand() end
 ---@return unknown
 function CopMovement:destroy_magazine_in_hand() end
 
----@param unit any
+---@param unit Unit
 ---@param event any
 ---@return unknown
 function CopMovement:_play_weapon_reload_animation_sfx(unit, event) end

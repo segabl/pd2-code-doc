@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ProjectileBase
 ProjectileBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ProjectileBase:init(unit) end
 
@@ -18,25 +18,25 @@ function ProjectileBase:_setup_warning_fx_vfx(tweak_entry, blackmarket_tweak_ent
 ---@return unknown
 function ProjectileBase:set_thrower_unit_by_peer_id(peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@param proj_ignore_thrower any
 ---@param thrower_ignore_proj any
 ---@return unknown
 function ProjectileBase:set_thrower_unit(unit, proj_ignore_thrower, thrower_ignore_proj) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ProjectileBase:_clbk_thrower_unit_destroyed(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ProjectileBase:add_ignore_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ProjectileBase:_clbk_ignore_unit_destroyed(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param no_listener_chk any
 ---@return unknown
 function ProjectileBase:remove_ignore_unit(unit, no_listener_chk) end
@@ -84,20 +84,20 @@ function ProjectileBase:throw(params) end
 ---@return unknown
 function ProjectileBase:sync_throw_projectile(dir, projectile_type) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
 function ProjectileBase:update(unit, t, dt) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@param warning_data any
 ---@return unknown
 function ProjectileBase:_warning_fx_vfx_upd(unit, t, dt, warning_data) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@param warning_data any
@@ -116,7 +116,7 @@ function ProjectileBase:_warning_fx_vfx_disable(warning_data) end
 function ProjectileBase:_warning_fx_vfx_remove() end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any

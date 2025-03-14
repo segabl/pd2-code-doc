@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpawnEnemyGroupUnitElement
 SpawnEnemyGroupUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpawnEnemyGroupUnitElement:init(unit) end
 

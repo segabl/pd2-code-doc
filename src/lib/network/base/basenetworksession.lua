@@ -58,13 +58,13 @@ function BaseNetworkSession:peer_by_unit(unit) end
 ---@return NetworkPeer?
 function BaseNetworkSession:peer_by_unit_key(wanted_key) end
 
----@return unknown
+---@return number
 function BaseNetworkSession:amount_of_players() end
 
----@return unknown
+---@return number
 function BaseNetworkSession:amount_of_alive_players() end
 
----@return unknown
+---@return NetworkPeer
 function BaseNetworkSession:local_peer() end
 
 ---@param peer_name any
@@ -86,38 +86,38 @@ function BaseNetworkSession:is_kicked(peer_name) end
 ---@return unknown
 function BaseNetworkSession:add_peer(name, rpc, in_lobby, loading, synched, id, character, user_id, account_type_str, account_id, xuid, xnaddr) end
 
----@param peer any
----@param peer_id any
+---@param peer NetworkPeer
+---@param peer_id integer
 ---@param reason any
 ---@return unknown
 function BaseNetworkSession:remove_peer(peer, peer_id, reason) end
 
----@param peer any
----@param peer_id any
+---@param peer NetworkPeer
+---@param peer_id integer
 ---@param reason any
 ---@return unknown
 function BaseNetworkSession:_on_peer_removed(peer, peer_id, reason) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function BaseNetworkSession:_soft_remove_peer(peer) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function BaseNetworkSession:on_peer_left_lobby(peer) end
 
----@param peer any
----@param peer_id any
+---@param peer NetworkPeer
+---@param peer_id integer
 ---@return unknown
 function BaseNetworkSession:on_peer_left(peer, peer_id) end
 
----@param peer any
----@param peer_id any
+---@param peer NetworkPeer
+---@param peer_id integer
 ---@return unknown
 function BaseNetworkSession:on_peer_lost(peer, peer_id) end
 
----@param peer any
----@param peer_id any
+---@param peer NetworkPeer
+---@param peer_id integer
 ---@param message_id any
 ---@return unknown
 function BaseNetworkSession:on_peer_kicked(peer, peer_id, message_id) end
@@ -134,46 +134,46 @@ function BaseNetworkSession:update() end
 ---@return unknown
 function BaseNetworkSession:end_update() end
 
+---@param func string
 ---@param ... any
----@return unknown
-function BaseNetworkSession:send_to_peers(...) end
+function BaseNetworkSession:send_to_peers(func, ...) end
 
+---@param func string
 ---@param ... any
----@return unknown
-function BaseNetworkSession:send_to_peers_ip_verified(...) end
-
----@param id any
----@param ... any
----@return unknown
-function BaseNetworkSession:send_to_peers_except(id, ...) end
-
----@param ... any
----@return unknown
-function BaseNetworkSession:send_to_peers_synched(...) end
+function BaseNetworkSession:send_to_peers_ip_verified(func, ...) end
 
 ---@param id any
+---@param func string
 ---@param ... any
----@return unknown
-function BaseNetworkSession:send_to_peers_synched_except(id, ...) end
+function BaseNetworkSession:send_to_peers_except(id, func, ...) end
 
+---@param func string
 ---@param ... any
----@return unknown
-function BaseNetworkSession:send_to_peers_loaded(...) end
+function BaseNetworkSession:send_to_peers_synched(func, ...) end
 
 ---@param id any
+---@param func string
 ---@param ... any
----@return unknown
-function BaseNetworkSession:send_to_peers_loaded_except(id, ...) end
+function BaseNetworkSession:send_to_peers_synched_except(id, func, ...) end
 
----@param peer any
+---@param func string
 ---@param ... any
----@return unknown
-function BaseNetworkSession:send_to_peer(peer, ...) end
+function BaseNetworkSession:send_to_peers_loaded(func, ...) end
 
----@param peer any
+---@param id any
+---@param func string
 ---@param ... any
----@return unknown
-function BaseNetworkSession:send_to_peer_synched(peer, ...) end
+function BaseNetworkSession:send_to_peers_loaded_except(id, func, ...) end
+
+---@param peer NetworkPeer
+---@param func string
+---@param ... any
+function BaseNetworkSession:send_to_peer(peer, func, ...) end
+
+---@param peer NetworkPeer
+---@param func string
+---@param ... any
+function BaseNetworkSession:send_to_peer_synched(peer, func, ...) end
 
 ---@return unknown
 function BaseNetworkSession:has_recieved_ok_to_load_level() end
@@ -204,7 +204,7 @@ function BaseNetworkSession:closing() end
 ---@return unknown
 function BaseNetworkSession:prepare_to_close(skip_destroy_matchmaking) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@param state any
 ---@param load_counter any
 ---@return unknown
@@ -262,7 +262,7 @@ function BaseNetworkSession:on_windistrib_p2p_ping(sender_rpc) end
 
 ---@param name any
 ---@param user_id any
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function BaseNetworkSession:chk_send_connection_established(name, user_id, peer) end
 
@@ -287,7 +287,7 @@ function BaseNetworkSession:are_all_peer_assets_loaded() end
 ---@return unknown
 function BaseNetworkSession:_get_peer_outfit_versions_str() end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function BaseNetworkSession:on_peer_outfit_loaded(peer) end
 
@@ -298,14 +298,14 @@ function BaseNetworkSession:set_packet_throttling_enabled(state) end
 ---@return unknown
 function BaseNetworkSession:load_counter() end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function BaseNetworkSession:check_send_outfit(peer) end
 
 ---@return unknown
 function BaseNetworkSession:on_network_stopped() end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function BaseNetworkSession:on_peer_entered_lobby(peer) end
 
@@ -316,16 +316,16 @@ function BaseNetworkSession:on_entered_lobby() end
 ---@return unknown
 function BaseNetworkSession:check_peer_preferred_character(preferred_character) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function BaseNetworkSession:_has_client(peer) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@param state any
 ---@return unknown
 function BaseNetworkSession:on_peer_loading(peer, state) end
 
----@param peer_id any
+---@param peer_id integer
 ---@param spawn_point_id any
 ---@param is_drop_in any
 ---@return unknown
@@ -344,12 +344,12 @@ function BaseNetworkSession:_create_spawn_point_beanbag() end
 ---@return unknown
 function BaseNetworkSession:get_next_spawn_point() end
 
----@param peer any
----@param peer_id any
+---@param peer NetworkPeer
+---@param peer_id integer
 ---@return unknown
 function BaseNetworkSession:on_peer_sync_complete(peer, peer_id) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@param progress any
 ---@return unknown
 function BaseNetworkSession:on_streaming_progress_received(peer, progress) end
@@ -359,7 +359,7 @@ function BaseNetworkSession:on_streaming_progress_received(peer, progress) end
 ---@return unknown
 function BaseNetworkSession:on_dropin_progress_received(dropin_peer_id, progress_percentage) end
 
----@param peer_id any
+---@param peer_id integer
 ---@param ready any
 ---@param state_changed any
 ---@param from_network any
@@ -370,17 +370,17 @@ function BaseNetworkSession:on_set_member_ready(peer_id, ready, state_changed, f
 ---@return unknown
 function BaseNetworkSession:check_start_game_intro(skip_streamer_check) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function BaseNetworkSession:_update_peer_ready_gui(peer) end
 
----@param peer_id any
+---@param peer_id integer
 ---@param nickname any
 ---@param state any
 ---@return unknown
 function BaseNetworkSession:on_drop_in_pause_request_received(peer_id, nickname, state) end
 
----@param peer_id any
+---@param peer_id integer
 ---@param peer_kills any
 ---@param peer_specials_kills any
 ---@param peer_head_shots any

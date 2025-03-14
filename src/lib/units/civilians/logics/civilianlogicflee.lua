@@ -26,7 +26,7 @@ function CivilianLogicFlee.update(data) end
 function CivilianLogicFlee._upd_detection(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicFlee._update_pathing(data, my_data) end
 
@@ -67,7 +67,7 @@ function CivilianLogicFlee.on_intimidated(data, amount, aggressor_unit) end
 function CivilianLogicFlee._delayed_intimidate_clbk(ignore_this, params) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicFlee._cancel_pathing(data, my_data) end
 
@@ -76,12 +76,12 @@ function CivilianLogicFlee._cancel_pathing(data, my_data) end
 function CivilianLogicFlee._find_hide_cover(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicFlee._start_moving_to_cover(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicFlee._add_delayed_rescue_SO(data, my_data) end
 
@@ -91,7 +91,7 @@ function CivilianLogicFlee._add_delayed_rescue_SO(data, my_data) end
 function CivilianLogicFlee.register_rescue_SO(ignore_this, data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicFlee._unregister_rescue_SO(data, my_data) end
 
@@ -103,7 +103,7 @@ function CivilianLogicFlee.on_rescue_SO_administered(ignore_this, data, receiver
 
 ---@param ignore_this any
 ---@param params any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CivilianLogicFlee.rescue_SO_verification(ignore_this, params, unit) end
 
@@ -150,7 +150,7 @@ function CivilianLogicFlee._set_verified_paths(data, verified_paths) end
 function CivilianLogicFlee.reset_actions(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicFlee._chk_add_delayed_rescue_SO(data, my_data) end
 
@@ -169,7 +169,7 @@ function CivilianLogicFlee.schedule_run_away_clbk(data) end
 function CivilianLogicFlee.clbk_chk_call_the_police(ignore_this, data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicFlee._say_call_the_police(data, my_data) end
 

@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : SentryGunContour
 SentryGunContour = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunContour:init(unit) end
 

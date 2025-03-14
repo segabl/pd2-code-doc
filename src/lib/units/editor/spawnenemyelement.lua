@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpawnEnemyUnitElement
 SpawnEnemyUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpawnEnemyUnitElement:init(unit) end
 
@@ -41,7 +41,7 @@ function SpawnEnemyUnitElement:_load_pickup() end
 ---@return unknown
 function SpawnEnemyUnitElement:add_to_mission_package() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpawnEnemyUnitElement:_resolve_team(unit) end
 

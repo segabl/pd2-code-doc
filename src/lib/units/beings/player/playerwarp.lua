@@ -81,7 +81,7 @@ function PlayerWarp:clear_snap_points() end
 ---@return unknown
 function PlayerWarp:add_snap_point(position, type, tolerance, data) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

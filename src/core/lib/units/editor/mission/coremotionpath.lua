@@ -14,7 +14,7 @@ MotionPathOperatorUnitElement = {}
 ---@return unknown
 function MotionPathOperatorUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreMotionPathOperatorUnitElement:init(unit) end
 
@@ -67,7 +67,7 @@ MotionPathTriggerUnitElement = {}
 ---@return unknown
 function MotionPathTriggerUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreMotionPathTriggerUnitElement:init(unit) end
 

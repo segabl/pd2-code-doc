@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : NavObstacleElement
 NavObstacleElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NavObstacleElement:init(unit) end
 
 ---@return unknown
 function NavObstacleElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NavObstacleElement:load_unit(unit) end
 
@@ -49,7 +49,7 @@ function NavObstacleElement:update_editing() end
 ---@return unknown
 function NavObstacleElement:select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NavObstacleElement:_check_add_unit(unit) end
 
@@ -65,7 +65,7 @@ function NavObstacleElement:remove_entry(id) end
 ---@return unknown
 function NavObstacleElement:_remove_from_obstacle_list(unit_id) end
 
----@param unit any
+---@param unit Unit
 ---@param all_object_names any
 ---@param obstacle_list_data any
 ---@return unknown
@@ -87,7 +87,7 @@ function NavObstacleElement:select_unit_list_btn() end
 ---@return unknown
 function NavObstacleElement:_build_panel(panel, panel_sizer) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NavObstacleElement:_get_objects_by_unit(unit) end
 

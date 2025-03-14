@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerCharacterTriggerUnitElement
 PlayerCharacterTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerCharacterTriggerUnitElement:init(unit) end
 
@@ -19,7 +19,7 @@ function PlayerCharacterTriggerUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : PlayerCharacterFilterUnitElement
 PlayerCharacterFilterUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerCharacterFilterUnitElement:init(unit) end
 

@@ -12,7 +12,7 @@ function ElementStopwatch:init(...) end
 ---@return unknown
 function ElementStopwatch:on_script_activated() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementStopwatch:_load_unit(unit) end
 

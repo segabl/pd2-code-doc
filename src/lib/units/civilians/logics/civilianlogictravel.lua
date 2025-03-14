@@ -41,12 +41,12 @@ function CivilianLogicTravel.on_intimidated(data, amount, aggressor_unit) end
 function CivilianLogicTravel._determine_exact_destination(data, objective) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicTravel._chk_has_old_action(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param objective any
 ---@return unknown
 function CivilianLogicTravel._upd_stop_old_action(data, my_data, objective) end

@@ -72,7 +72,7 @@ function Application:digest_value(value, encrypt) end
 
 ---Decrypts a value
 ---@param value string
----@param encrypt false
+---@param encrypt false?
 ---@return number
 function Application:digest_value(value, encrypt) end
 

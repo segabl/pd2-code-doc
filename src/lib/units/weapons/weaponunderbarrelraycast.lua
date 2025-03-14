@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : WeaponUnderbarrelRaycast
 WeaponUnderbarrelRaycast = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponUnderbarrelRaycast:init(unit) end
 
@@ -79,7 +79,7 @@ function WeaponUnderbarrelRaycast:_build_suppression(weapon, enemies_in_cone, su
 ---@field new fun(self, ...) : WeaponUnderbarrelShotgunRaycast
 WeaponUnderbarrelShotgunRaycast = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponUnderbarrelShotgunRaycast:init(unit) end
 
@@ -134,7 +134,7 @@ function WeaponUnderbarrelShotgunRaycast:_build_suppression(weapon, enemies_in_c
 ---@field new fun(self, ...) : WeaponUnderbarrelFlamethrower
 WeaponUnderbarrelFlamethrower = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponUnderbarrelFlamethrower:init(unit) end
 

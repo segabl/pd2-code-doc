@@ -137,7 +137,7 @@ function CopActionHurt:on_attention(attention) end
 ---@return unknown
 function CopActionHurt:on_death_exit() end
 
----@param unit any
+---@param unit Unit
 ---@param stage any
 ---@return unknown
 function CopActionHurt:on_death_drop(unit, stage) end
@@ -168,7 +168,7 @@ function CopActionHurt:_start_ragdoll(reset_momentum) end
 function CopActionHurt:force_ragdoll(reset_momentum) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param activated any
 ---@return unknown

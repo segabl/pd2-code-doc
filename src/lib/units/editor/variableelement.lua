@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : VariableElement
 VariableElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VariableElement:init(unit) end
 

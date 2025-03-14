@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ScenarioEventUnitElement
 ScenarioEventUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ScenarioEventUnitElement:init(unit) end
 

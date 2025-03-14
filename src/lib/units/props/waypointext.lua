@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : WaypointExt
 WaypointExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WaypointExt:init(unit) end
 

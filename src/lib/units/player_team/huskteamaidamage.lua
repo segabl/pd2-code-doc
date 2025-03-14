@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : HuskTeamAIDamage
 HuskTeamAIDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

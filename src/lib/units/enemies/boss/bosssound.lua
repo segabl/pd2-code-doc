@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : BossSound
 BossSound = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BossSound:init(unit) end
 

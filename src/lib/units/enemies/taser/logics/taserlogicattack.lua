@@ -26,7 +26,7 @@ function TaserLogicAttack.queued_update(data) end
 function TaserLogicAttack._upd_enemy_detection(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param reaction any
 ---@return unknown
 function TaserLogicAttack._upd_aim(data, my_data, reaction) end
@@ -37,7 +37,7 @@ function TaserLogicAttack._upd_aim(data, my_data, reaction) end
 function TaserLogicAttack.action_complete_clbk(data, action) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function TaserLogicAttack._cancel_tase_attempt(data, my_data) end
 
@@ -63,7 +63,7 @@ function TaserLogicAttack.damage_clbk(data, damage_info) end
 function TaserLogicAttack._chk_reaction_to_attention_object(data, attention_data, stationary) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param focus_enemy any
 ---@return unknown
 function TaserLogicAttack._chk_play_charge_weapon_sound(data, my_data, focus_enemy) end

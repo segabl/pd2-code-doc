@@ -3,6 +3,7 @@
 ---@class attentiondata
 ---@field verified boolean
 ---@field verified_t number?
+---@field nearly_visible boolean
 ---@field notice_progess number
 ---@field settings table
 ---@field unit Unit
@@ -34,8 +35,9 @@
 ---@field forced boolean
 
 ---@class logicdata
+---@field name string
 ---@field unit Unit
----@field brain CopBrain
+---@field brain CopBrain|HuskCopBrain|CivilianBrain|TeamAIBrain
 ---@field active_searches table
 ---@field m_pos Vector3
 ---@field char_tweak table
@@ -51,10 +53,17 @@
 ---@field cool boolean
 ---@field objective_complete_clbk fun(unit: Unit, objective: table)
 ---@field objective_failed_clbk fun(unit: Unit, objective: table)
+---@field objective table?
 ---@field internal_data table?
 ---@field important boolean?
 ---@field is_suppressed boolean?
 ---@field attention_obj attentiondata?
+---@field is_converted boolean?
+---@field team teamdata?
+---@field tactics table<string, boolean>?
+---@field rank number?
+---@field group table?
+---@field surrender_window table?
 
 ---@class CopLogicBase
 ---@field new fun(self, ...) : CopLogicBase
@@ -155,7 +164,7 @@ function CopLogicBase.draw_reserved_positions(data) end
 ---@return unknown
 function CopLogicBase.draw_reserved_covers(data) end
 
----@param unit any
+---@param unit Unit
 ---@param state_name any
 ---@param params any
 ---@return unknown
@@ -234,13 +243,13 @@ function CopLogicBase.chk_cancel_delayed_clbk(internal_data, id) end
 function CopLogicBase.on_delayed_clbk(internal_data, id) end
 
 ---@param data logicdata
----@param unit any
+---@param unit Unit
 ---@param attacker_unit any
 ---@return unknown
 function CopLogicBase.on_objective_unit_damaged(data, unit, attacker_unit) end
 
 ---@param data logicdata
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopLogicBase.on_objective_unit_destroyed(data, unit) end
 
@@ -323,7 +332,7 @@ function CopLogicBase._chk_nearly_visible_chk_needed(data, attention_info, u_key
 function CopLogicBase.is_obstructed(data, objective, strictness, attention) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param attention_obj any
 ---@return unknown
 function CopLogicBase._upd_suspicion(data, my_data, attention_obj) end
@@ -355,7 +364,7 @@ function CopLogicBase.is_alert_aggressive(alert_type) end
 function CopLogicBase.is_alert_dangerous(alert_type) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param aggressor_unit any
 ---@return unknown
 function CopLogicBase._evaluate_reason_to_surrender(data, my_data, aggressor_unit) end

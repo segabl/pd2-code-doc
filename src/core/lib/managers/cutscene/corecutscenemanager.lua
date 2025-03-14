@@ -29,11 +29,11 @@ function CoreCutsceneManager:timer() end
 ---@return unknown
 function CoreCutsceneManager:set_timer(timer) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCutsceneManager:register_unit_with_cutscene_data_extension(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCutsceneManager:unregister_unit_with_cutscene_data_extension(unit) end
 
@@ -43,11 +43,11 @@ function CoreCutsceneManager:_prime_cutscenes_in_world() end
 ---@return unknown
 function CoreCutsceneManager:_destroy_units_with_cutscene_data_extension() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCutsceneManager:register_cutscene_actor(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCutsceneManager:unregister_cutscene_actor(unit) end
 

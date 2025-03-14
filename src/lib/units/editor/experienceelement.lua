@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ExperienceUnitElement
 ExperienceUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ExperienceUnitElement:init(unit) end
 

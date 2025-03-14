@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : EventSideJobAwardElement
 EventSideJobAwardElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EventSideJobAwardElement:init(unit) end
 
@@ -23,7 +23,7 @@ function EventSideJobAwardElement:set_element_data(data) end
 ---@field new fun(self, ...) : EventSideJobFilterElement
 EventSideJobFilterElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EventSideJobFilterElement:init(unit) end
 

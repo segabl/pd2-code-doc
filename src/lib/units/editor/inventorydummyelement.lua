@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : InventoryDummyUnitElement
 InventoryDummyUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function InventoryDummyUnitElement:init(unit) end
 

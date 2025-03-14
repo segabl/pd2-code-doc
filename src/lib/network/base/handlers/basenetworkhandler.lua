@@ -17,12 +17,12 @@ function BaseNetworkHandler._verify_in_client_session() end
 ---@return unknown
 function BaseNetworkHandler._verify_sender(rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param rpc any
 ---@return unknown
 function BaseNetworkHandler._verify_character_and_sender(unit, rpc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BaseNetworkHandler._verify_character(unit) end
 
@@ -30,11 +30,11 @@ function BaseNetworkHandler._verify_character(unit) end
 ---@return unknown
 function BaseNetworkHandler._verify_gamestate(acceptable_gamestates) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BaseNetworkHandler:_chk_flush_unit_too_early_packets(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param unit_id_str any
 ---@param fun_name any
 ---@param unit_param_index any

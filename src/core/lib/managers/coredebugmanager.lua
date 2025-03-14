@@ -716,7 +716,7 @@ function HijackDebug:default_hijacked_ray_func(obj, old_func, ...) end
 ---@return unknown
 function HijackDebug:reloaded() end
 
----@param unit any
+---@param unit Unit
 ---@param unit_state_func any
 ---@param machine_state_func any
 ---@param redirect_func any
@@ -736,7 +736,7 @@ function HijackDebug:hijack_func(obj, func_name, func, is_metatable) end
 ---@return unknown
 function HijackDebug:unhijack_func(obj, func_name, is_metatable) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function HijackDebug:play_unit_state(unit, state) end
@@ -855,7 +855,7 @@ function ProfilerDebug:remove_counter(counter, print_counter, skip_color_update)
 ---@return unknown
 function ProfilerDebug:update_colors() end
 
----@param unit any
+---@param unit Unit
 ---@param enabled any
 ---@param function_name_list any
 ---@param ignore_map any
@@ -914,7 +914,7 @@ function MacroDebug:set_last_ray(ray) end
 ---@return unknown
 function MacroDebug:get_last_ray() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MacroDebug:set_last_unit(unit) end
 
@@ -924,11 +924,11 @@ function MacroDebug:get_last_unit() end
 ---@return unknown
 function MacroDebug:ray() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MacroDebug:print_unit_info(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MacroDebug:get_unit_files(unit) end
 
@@ -942,7 +942,7 @@ function MacroDebug:get_cleaned_path(path) end
 ---@return unknown
 function MacroDebug:ray_push(velocity_dir, velocity_length, mass) end
 
----@param unit any
+---@param unit Unit
 ---@param velocity_dir any
 ---@param velocity_length any
 ---@param mass any
@@ -953,7 +953,7 @@ function MacroDebug:push(unit, velocity_dir, velocity_length, mass) end
 ---@return unknown
 function MacroDebug:ray_gravitate(multiplier) end
 
----@param unit any
+---@param unit Unit
 ---@param multiplier any
 ---@return unknown
 function MacroDebug:gravitate(unit, multiplier) end
@@ -965,7 +965,7 @@ function MacroDebug:stop_gravitate() end
 ---@return unknown
 function MacroDebug:ray_hover(multiplier) end
 
----@param unit any
+---@param unit Unit
 ---@param multiplier any
 ---@return unknown
 function MacroDebug:hover(unit, multiplier) end
@@ -993,11 +993,11 @@ function MacroDebug:ray_run_sequence(sequence, damage_type, source_unit, dest_bo
 ---@return unknown
 function MacroDebug:ray_select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MacroDebug:select_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MacroDebug:anim_verbose(unit) end
 
@@ -1030,7 +1030,7 @@ function MacroDebug:multi_spawn(unit_name, unit_offset, count_x, count_y, count_
 ---@return unknown
 function MacroDebug:ray_profile_unit(function_name_list, ignore_map, include_only_map, min_range, max_range, disabled, graph_disabled, gui_disabled, print_counters, instance_override) end
 
----@param unit any
+---@param unit Unit
 ---@param function_name_list any
 ---@param ignore_map any
 ---@param include_only_map any
@@ -1045,7 +1045,7 @@ function MacroDebug:ray_profile_unit(function_name_list, ignore_map, include_onl
 function MacroDebug:profile_unit(unit, function_name_list, ignore_map, include_only_map, min_range, max_range, disabled, graph_disabled, gui_disabled, print_counters, instance_override) end
 
 ---@param add_to_path any
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@return unknown
 function MacroDebug:unit_goto(add_to_path, unit, pos) end

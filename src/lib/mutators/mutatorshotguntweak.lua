@@ -25,7 +25,7 @@ function MutatorShotgunTweak:get_to_the_mothership() end
 ---@return unknown
 function MutatorShotgunTweak:to_the_mothership_strength() end
 
----@param unit any
+---@param unit Unit
 ---@param hit_pos any
 ---@param dir any
 ---@param distance any
@@ -38,7 +38,7 @@ function MutatorShotgunTweak:_on_shotgun_push(unit, hit_pos, dir, distance, atta
 ---@return unknown
 function MutatorShotgunTweak:modify_value(id, value) end
 
----@param unit any
+---@param unit Unit
 ---@param was_shotgun any
 ---@return unknown
 function MutatorShotgunTweak:OnEnemyKilledByExplosion(unit, was_shotgun) end

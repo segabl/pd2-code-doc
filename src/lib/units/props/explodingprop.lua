@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : ExplodingProp
 ExplodingProp = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ExplodingProp:init(unit) end
 

@@ -85,7 +85,7 @@ function CoreCutsceneCast:_state_machine_is_playing_raw_animation(machine, anima
 ---@return unknown
 function CoreCutsceneCast:_reparent_to_locator_unit(parent, child) end
 
----@param unit any
+---@param unit Unit
 ---@param visible any
 ---@param excluded_units any
 ---@return unknown

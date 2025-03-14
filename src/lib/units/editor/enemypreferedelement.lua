@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : EnemyPreferedAddUnitElement
 EnemyPreferedAddUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnemyPreferedAddUnitElement:init(unit) end
 
@@ -58,7 +58,7 @@ function EnemyPreferedAddUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : EnemyPreferedRemoveUnitElement
 EnemyPreferedRemoveUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnemyPreferedRemoveUnitElement:init(unit) end
 

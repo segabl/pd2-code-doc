@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ExplosionUnitElement
 ExplosionUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ExplosionUnitElement:init(unit) end
 

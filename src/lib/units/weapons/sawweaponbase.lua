@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SawWeaponBase
 SawWeaponBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SawWeaponBase:init(unit) end
 

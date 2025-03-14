@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SafehouseMoneyStack
 SafehouseMoneyStack = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SafehouseMoneyStack:init(unit) end
 

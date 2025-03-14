@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CharacterDamageTriggerUnitElement
 CharacterDamageTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CharacterDamageTriggerUnitElement:init(unit) end
 

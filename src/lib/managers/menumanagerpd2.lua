@@ -900,7 +900,7 @@ function MenuCallbackHandler:armor_screenshots_hide_weapons(item) end
 ---@return unknown
 function MenuCallbackHandler:armor_screenshots_show_weapons(item) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function MenuCallbackHandler:_armor_screenshots_set_weapon_visibility(unit, state) end

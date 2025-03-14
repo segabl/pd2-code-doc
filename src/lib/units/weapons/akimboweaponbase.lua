@@ -9,7 +9,7 @@ AkimboWeaponBase = {}
 ---@return unknown
 function AkimboWeaponBase:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -132,7 +132,7 @@ NPCAkimboWeaponBase = {}
 ---@return unknown
 function NPCAkimboWeaponBase:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

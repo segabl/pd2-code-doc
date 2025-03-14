@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : UnitNetworkHandler
 UnitNetworkHandler = {}
 
----@param unit any
+---@param unit Unit
 ---@param character_name any
 ---@param outfit_string any
 ---@param outfit_version any
@@ -15,14 +15,14 @@ UnitNetworkHandler = {}
 ---@return unknown
 function UnitNetworkHandler:set_unit(unit, character_name, outfit_string, outfit_version, peer_id, team_id, visual_seed) end
 
----@param unit any
+---@param unit Unit
 ---@param unequip_multiplier any
 ---@param equip_multiplier any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:switch_weapon(unit, unequip_multiplier, equip_multiplier, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param item_index any
 ---@param blueprint_string any
 ---@param cosmetics_string any
@@ -30,13 +30,13 @@ function UnitNetworkHandler:switch_weapon(unit, unequip_multiplier, equip_multip
 ---@return unknown
 function UnitNetworkHandler:set_equipped_weapon(unit, item_index, blueprint_string, cosmetics_string, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param gadget_state any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:set_weapon_gadget_state(unit, gadget_state, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param red any
 ---@param green any
 ---@param blue any
@@ -44,19 +44,19 @@ function UnitNetworkHandler:set_weapon_gadget_state(unit, gadget_state, sender) 
 ---@return unknown
 function UnitNetworkHandler:set_weapon_gadget_color(unit, red, green, blue, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param min_distance any
 ---@return unknown
 function UnitNetworkHandler:first_aid_kit_sync(unit, min_distance) end
 
----@param unit any
+---@param unit Unit
 ---@param yaw_in any
 ---@param pitch_in any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:set_look_dir(unit, yaw_in, pitch_in, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param frame_index any
 ---@param rs any
 ---@param ra any
@@ -70,25 +70,25 @@ function UnitNetworkHandler:set_look_dir(unit, yaw_in, pitch_in, sender) end
 ---@return unknown
 function UnitNetworkHandler:set_arm_pose(unit, frame_index, rs, ra, rf, rh, ls, la, lf, lh, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param hand any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:set_primary_hand(unit, hand, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param setting_id any
 ---@param setting_param any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:set_arm_setting(unit, setting_id, setting_param, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param rot_yaw any
 ---@return unknown
 function UnitNetworkHandler:action_turn(unit, rot_yaw) end
 
----@param unit any
+---@param unit Unit
 ---@param first_nav_point any
 ---@param nav_link_yaw any
 ---@param nav_link_act_index any
@@ -102,36 +102,36 @@ function UnitNetworkHandler:action_turn(unit, rot_yaw) end
 ---@return unknown
 function UnitNetworkHandler:action_walk_start(unit, first_nav_point, nav_link_yaw, nav_link_act_index, from_idle, haste_code, end_yaw, no_walk, no_strafe, pose_code, end_pose_code) end
 
----@param unit any
+---@param unit Unit
 ---@param nav_point any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:action_walk_nav_point(unit, nav_point, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param nav_point any
 ---@param speed any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:player_action_walk_nav_point(unit, nav_point, speed, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param is_running any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:action_change_run(unit, is_running, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param speed any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:action_change_speed(unit, speed, sender) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:action_walk_stop(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@param yaw any
 ---@param anim_index any
@@ -139,20 +139,20 @@ function UnitNetworkHandler:action_walk_stop(unit) end
 ---@return unknown
 function UnitNetworkHandler:action_walk_nav_link(unit, pos, yaw, anim_index, from_idle) end
 
----@param unit any
+---@param unit Unit
 ---@param pose_code any
 ---@param pos any
 ---@return unknown
 function UnitNetworkHandler:action_change_pose(unit, pose_code, pos) end
 
----@param unit any
+---@param unit Unit
 ---@param target_u_pos any
 ---@param flying_strike any
 ---@param action_id any
 ---@return unknown
 function UnitNetworkHandler:action_spooc_start(unit, target_u_pos, flying_strike, action_id) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@param nav_index any
 ---@param action_id any
@@ -160,21 +160,21 @@ function UnitNetworkHandler:action_spooc_start(unit, target_u_pos, flying_strike
 ---@return unknown
 function UnitNetworkHandler:action_spooc_stop(unit, pos, nav_index, action_id, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@param action_id any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:action_spooc_nav_point(unit, pos, action_id, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@param action_id any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:action_spooc_strike(unit, pos, action_id, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param has_pos any
 ---@param pos any
 ---@param has_rot any
@@ -339,25 +339,25 @@ function UnitNetworkHandler:sync_stop_auto_fire_sound(shooting_unit, sub_id, sen
 ---@return unknown
 function UnitNetworkHandler:shot_blank_reliable(shooting_unit, impact, sub_id, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param empty_reload any
 ---@param reload_speed_multiplier any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:reload_weapon(unit, empty_reload, reload_speed_multiplier, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:reload_weapon_cop(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:reload_weapon_interupt(unit, sender) end
 
 ---@param id any
----@param unit any
+---@param unit Unit
 ---@param orientation_element_index any
 ---@param id_from any
 ---@return unknown
@@ -370,13 +370,13 @@ function UnitNetworkHandler:run_mission_element(id, unit, orientation_element_in
 function UnitNetworkHandler:run_mission_element_no_instigator(id, orientation_element_index, id_from) end
 
 ---@param id any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:to_server_mission_element_trigger(id, unit) end
 
 ---@param event_id any
 ---@param id any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:to_server_area_event(event_id, id, unit) end
 
@@ -452,7 +452,7 @@ function UnitNetworkHandler:sync_body_damage_fire_no_attacker(body, normal, posi
 ---@return unknown
 function UnitNetworkHandler:sync_body_damage_melee(body, attacker, normal, position, direction, damage, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param unit_id any
 ---@param tweak_setting any
 ---@param status any
@@ -460,7 +460,7 @@ function UnitNetworkHandler:sync_body_damage_melee(body, attacker, normal, posit
 ---@return unknown
 function UnitNetworkHandler:sync_interacted(unit, unit_id, tweak_setting, status, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param amount_wanted any
 ---@param sender any
 ---@return unknown
@@ -476,7 +476,7 @@ function UnitNetworkHandler:sync_interacted_by_id(unit_id, tweak_setting, sender
 ---@return unknown
 function UnitNetworkHandler:sync_interaction_reply(status) end
 
----@param unit any
+---@param unit Unit
 ---@param u_id any
 ---@param active any
 ---@param tweak_data any
@@ -494,19 +494,19 @@ function UnitNetworkHandler:interaction_set_active(unit, u_id, active, tweak_dat
 ---@return unknown
 function UnitNetworkHandler:sync_teammate_progress(type_index, enabled, tweak_data_id, timer, success, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@param sender_rpc any
 ---@return unknown
 function UnitNetworkHandler:action_aim_state(unit, state, sender_rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param body_part any
 ---@param sender_rpc any
 ---@return unknown
 function UnitNetworkHandler:action_melee_attack(unit, body_part, sender_rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param hurt_type any
 ---@param body_part any
 ---@param death_type any
@@ -517,34 +517,34 @@ function UnitNetworkHandler:action_melee_attack(unit, body_part, sender_rpc) end
 ---@return unknown
 function UnitNetworkHandler:action_hurt_start(unit, hurt_type, body_part, death_type, type, variant, direction_vec, hit_pos) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:action_hurt_end(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param target_unit any
 ---@param reaction any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:set_attention(unit, target_unit, reaction, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@return unknown
 function UnitNetworkHandler:cop_set_attention_pos(unit, pos) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function UnitNetworkHandler:set_allow_fire(unit, state) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:set_cool_state(unit, state, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param stance_code any
 ---@param instant any
 ---@param execute_queued any
@@ -552,7 +552,7 @@ function UnitNetworkHandler:set_cool_state(unit, state, sender) end
 ---@return unknown
 function UnitNetworkHandler:set_stance(unit, stance_code, instant, execute_queued, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param pose_code any
 ---@param sender any
 ---@return unknown
@@ -579,26 +579,26 @@ function UnitNetworkHandler:alarm_pager_interaction(u_id, tweak_table, status, s
 ---@return unknown
 function UnitNetworkHandler:remove_corpse_by_id(u_id, carry_bodybag, peer_id, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param aggressor any
 ---@param can_flee any
 ---@return unknown
 function UnitNetworkHandler:unit_tied(unit, aggressor, can_flee) end
 
----@param unit any
+---@param unit Unit
 ---@param position any
 ---@param rotation any
 ---@return unknown
 function UnitNetworkHandler:unit_traded(unit, position, rotation) end
 
----@param unit any
+---@param unit Unit
 ---@param enable any
 ---@param trade_success any
 ---@param skip_hint any
 ---@return unknown
 function UnitNetworkHandler:hostage_trade(unit, enable, trade_success, skip_hint) end
 
----@param unit any
+---@param unit Unit
 ---@param invulnerable any
 ---@param immortal any
 ---@return unknown
@@ -625,13 +625,13 @@ function UnitNetworkHandler:set_trade_spawn(criminal_name) end
 ---@return unknown
 function UnitNetworkHandler:set_trade_replace(replace_ai, criminal_name1, criminal_name2, respawn_penalty) end
 
----@param unit any
+---@param unit Unit
 ---@param body_part any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:action_idle_start(unit, body_part, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param act_index any
 ---@param body_part any
 ---@param blocks_hurt any
@@ -640,7 +640,7 @@ function UnitNetworkHandler:action_idle_start(unit, body_part, sender) end
 ---@return unknown
 function UnitNetworkHandler:action_act_start(unit, act_index, body_part, blocks_hurt, clamp_to_graph, needs_full_blend) end
 
----@param unit any
+---@param unit Unit
 ---@param act_index any
 ---@param body_part any
 ---@param blocks_hurt any
@@ -651,12 +651,12 @@ function UnitNetworkHandler:action_act_start(unit, act_index, body_part, blocks_
 ---@return unknown
 function UnitNetworkHandler:action_act_start_align(unit, act_index, body_part, blocks_hurt, clamp_to_graph, needs_full_blend, start_yaw, start_pos) end
 
----@param unit any
+---@param unit Unit
 ---@param body_part any
 ---@return unknown
 function UnitNetworkHandler:action_act_end(unit, body_part) end
 
----@param unit any
+---@param unit Unit
 ---@param body_part any
 ---@param variation any
 ---@param side any
@@ -666,7 +666,7 @@ function UnitNetworkHandler:action_act_end(unit, body_part) end
 ---@return unknown
 function UnitNetworkHandler:action_dodge_start(unit, body_part, variation, side, rotation, speed, shoot_acc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:action_dodge_end(unit) end
 
@@ -692,12 +692,12 @@ function UnitNetworkHandler:revive_player(revive_health_level, revive_damage_red
 ---@return unknown
 function UnitNetworkHandler:start_revive_player(timer, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:pause_downed_timer(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:unpause_downed_timer(unit, sender) end
@@ -714,32 +714,32 @@ function UnitNetworkHandler:start_free_player(sender) end
 ---@return unknown
 function UnitNetworkHandler:interupt_free_player(sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:pause_arrested_timer(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:unpause_arrested_timer(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param reviving_unit any
 ---@return unknown
 function UnitNetworkHandler:revive_unit(unit, reviving_unit) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:pause_bleed_out(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:unpause_bleed_out(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param paused any
 ---@param sender any
 ---@return unknown
@@ -752,17 +752,17 @@ function UnitNetworkHandler:interaction_set_waypoint_paused(unit, paused, sender
 ---@return unknown
 function UnitNetworkHandler:place_trip_mine(pos, normal, sensor_upgrade, rpc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:activate_trip_mine(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param sensor_upgrade any
 ---@param peer_id any
 ---@return unknown
 function UnitNetworkHandler:sync_trip_mine_setup(unit, sensor_upgrade, peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@param user_unit any
 ---@param ray_from any
 ---@param ray_to any
@@ -772,7 +772,7 @@ function UnitNetworkHandler:sync_trip_mine_setup(unit, sensor_upgrade, peer_id) 
 ---@return unknown
 function UnitNetworkHandler:sync_trip_mine_explode(unit, user_unit, ray_from, ray_to, damage_size, damage, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param user_unit any
 ---@param ray_from any
 ---@param ray_to any
@@ -784,7 +784,7 @@ function UnitNetworkHandler:sync_trip_mine_explode(unit, user_unit, ray_from, ra
 ---@return unknown
 function UnitNetworkHandler:sync_trip_mine_explode_spawn_fire(unit, user_unit, ray_from, ray_to, damage_size, damage, added_time, range_multiplier, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param ray_from any
 ---@param ray_to any
 ---@param damage_size any
@@ -793,7 +793,7 @@ function UnitNetworkHandler:sync_trip_mine_explode_spawn_fire(unit, user_unit, r
 ---@return unknown
 function UnitNetworkHandler:sync_trip_mine_explode_no_user(unit, ray_from, ray_to, damage_size, damage, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param bool any
 ---@param length any
 ---@param sender any
@@ -836,7 +836,7 @@ function UnitNetworkHandler:sync_deployable_attachment(deployable_unit, sync_att
 ---@return unknown
 function UnitNetworkHandler:from_server_ecm_jammer_place_result_failed(sender_rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param ext_name any
 ---@param event_id any
 ---@param rpc any
@@ -862,7 +862,7 @@ function UnitNetworkHandler:m79grenade_explode_on_client(position, normal, user,
 ---@return unknown
 function UnitNetworkHandler:element_explode_on_client(position, normal, damage, range, curve_pow, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param rpc any
 ---@return unknown
 function UnitNetworkHandler:picked_up_sentry_gun(unit, rpc) end
@@ -898,52 +898,52 @@ function UnitNetworkHandler:place_sentry_gun(pos, rot, equipment_selection_index
 ---@return unknown
 function UnitNetworkHandler:from_server_sentry_gun_place_result(owner_peer_id, equipment_selection_index, sentry_gun_unit, rot_level, spread_level, shield, ammo_level, fire_mode_index, rpc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:sync_sentrygun_dynamic(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param ammo_ratio any
 ---@param owner_id any
 ---@return unknown
 function UnitNetworkHandler:sentrygun_ammo(unit, ammo_ratio, owner_id) end
 
----@param unit any
+---@param unit Unit
 ---@param use_armor_piercing any
 ---@return unknown
 function UnitNetworkHandler:sentrygun_sync_armor_piercing(unit, use_armor_piercing) end
 
----@param unit any
+---@param unit Unit
 ---@param fire_mode_unit any
 ---@param owner_id any
 ---@return unknown
 function UnitNetworkHandler:sync_fire_mode_interaction(unit, fire_mode_unit, owner_id) end
 
----@param unit any
+---@param unit Unit
 ---@param health_ratio any
 ---@return unknown
 function UnitNetworkHandler:sentrygun_health(unit, health_ratio) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function UnitNetworkHandler:turret_idle_state(unit, state) end
 
----@param unit any
+---@param unit Unit
 ---@param ratio any
 ---@param up any
 ---@return unknown
 function UnitNetworkHandler:turret_update_shield_smoke_level(unit, ratio, up) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:turret_repair(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:turret_complete_repairing(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:turret_repair_shield(unit) end
 
@@ -964,31 +964,31 @@ function UnitNetworkHandler:sync_unit_module(parent_unit, module_unit, align_obj
 ---@return unknown
 function UnitNetworkHandler:run_unit_module_function(parent_unit, module_id, parent_extension_name, module_extension_name, func_name, params) end
 
----@param unit any
+---@param unit Unit
 ---@param upgrade_lvl any
 ---@param peer_id any
 ---@return unknown
 function UnitNetworkHandler:sync_equipment_setup(unit, upgrade_lvl, peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@param upgrade_lvl any
 ---@param peer_id any
 ---@param bullet_storm_level any
 ---@return unknown
 function UnitNetworkHandler:sync_ammo_bag_setup(unit, upgrade_lvl, peer_id, bullet_storm_level) end
 
----@param unit any
+---@param unit Unit
 ---@param buff_id any
 ---@return unknown
 function UnitNetworkHandler:sync_a10th_balloon_setup(unit, buff_id) end
 
----@param unit any
+---@param unit Unit
 ---@param amount any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_ammo_bag_ammo_taken(unit, amount, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param amount any
 ---@param sender any
 ---@return unknown
@@ -1014,23 +1014,23 @@ function UnitNetworkHandler:place_ammo_bag(pos, rot, upgrade_lvl, bullet_storm_l
 ---@return unknown
 function UnitNetworkHandler:used_deployable(rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param amount any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_doctor_bag_taken(unit, amount, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_money_wrap_money_taken(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_pickup(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param event_id any
 ---@param source any
 ---@param sender any
@@ -1043,7 +1043,7 @@ function UnitNetworkHandler:unit_sound_play(unit, event_id, source, sender) end
 ---@return unknown
 function UnitNetworkHandler:corpse_sound_play(unit_id, event_id, source) end
 
----@param unit any
+---@param unit Unit
 ---@param event_id any
 ---@param sender any
 ---@return unknown
@@ -1085,20 +1085,20 @@ function UnitNetworkHandler:sync_cs_grenade_kill() end
 ---@return unknown
 function UnitNetworkHandler:sync_hostage_headcount(value) end
 
----@param unit any
+---@param unit Unit
 ---@param redirect any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:play_distance_interact_redirect(unit, redirect, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param redirect any
 ---@param delay any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:play_distance_interact_redirect_delay(unit, redirect, delay, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param timer any
 ---@param sender any
 ---@return unknown
@@ -1120,7 +1120,7 @@ function UnitNetworkHandler:on_sole_criminal_respawned(peer_id, sender) end
 ---@return unknown
 function UnitNetworkHandler:dangerzone_set_level(level) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@param down_time any
 ---@param unit_id_str any
@@ -1133,7 +1133,7 @@ function UnitNetworkHandler:sync_player_movement_state(unit, state, down_time, u
 ---@return unknown
 function UnitNetworkHandler:sync_show_hint(id, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param id any
 ---@param sender any
 ---@return unknown
@@ -1162,7 +1162,7 @@ function UnitNetworkHandler:criminal_hurt(criminal_unit, attacker_unit, damage_r
 ---@return unknown
 function UnitNetworkHandler:copr_teammate_heal(healer_unit, upgrade_level, sender) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:arrested(unit) end
 
@@ -1250,7 +1250,7 @@ function UnitNetworkHandler:sync_remove_carry(sender) end
 ---@return unknown
 function UnitNetworkHandler:server_drop_carry(carry_id, carry_multiplier, dye_initiated, has_dye_pack, dye_value_multiplier, position, rotation, dir, throw_distance_multiplier_upgrade_level, zipline_unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param carry_id any
 ---@param carry_multiplier any
 ---@param dye_initiated any
@@ -1280,7 +1280,7 @@ function UnitNetworkHandler:sync_cocaine_stacks(amount, in_use, upgrade_level, p
 ---@return unknown
 function UnitNetworkHandler:request_throw_projectile(projectile_type_index, position, dir, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@param dir any
 ---@param projectile_type_index any
@@ -1289,7 +1289,7 @@ function UnitNetworkHandler:request_throw_projectile(projectile_type_index, posi
 ---@return unknown
 function UnitNetworkHandler:sync_throw_projectile(unit, pos, dir, projectile_type_index, peer_id, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@param dir any
 ---@param projectile_type_index any
@@ -1298,7 +1298,7 @@ function UnitNetworkHandler:sync_throw_projectile(unit, pos, dir, projectile_typ
 ---@return unknown
 function UnitNetworkHandler:sync_throw_projectile_npc(unit, pos, dir, projectile_type_index, thrower_unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param instant_dynamic_pickup any
 ---@param parent_unit any
 ---@param parent_body any
@@ -1311,12 +1311,12 @@ function UnitNetworkHandler:sync_throw_projectile_npc(unit, pos, dir, projectile
 ---@return unknown
 function UnitNetworkHandler:sync_attach_projectile(unit, instant_dynamic_pickup, parent_unit, parent_body, parent_object, local_pos, dir, projectile_type_index, peer_id, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param rpc any
 ---@return unknown
 function UnitNetworkHandler:sync_aoe_preparing(unit, rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param ext_name any
 ---@param event_id any
 ---@param normal any
@@ -1324,7 +1324,7 @@ function UnitNetworkHandler:sync_aoe_preparing(unit, rpc) end
 ---@return unknown
 function UnitNetworkHandler:sync_detonate_incendiary_grenade(unit, ext_name, event_id, normal, rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param ext_name any
 ---@param event_id any
 ---@param normal any
@@ -1358,7 +1358,7 @@ function UnitNetworkHandler:server_secure_loot(carry_id, multiplier_level, peer_
 ---@return unknown
 function UnitNetworkHandler:sync_secure_loot(carry_id, multiplier_level, silent, peer_id, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param multiplier_level any
 ---@param sender any
 ---@return unknown
@@ -1393,52 +1393,52 @@ function UnitNetworkHandler:sync_relock_assets(string_table, sender) end
 ---@return unknown
 function UnitNetworkHandler:sync_heist_time(time, id, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sequence_name any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:run_mission_door_sequence(unit, sequence_name, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param powered any
 ---@param interaction_enabled any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:set_mission_door_device_powered(unit, powered, interaction_enabled, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sequence_name any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:run_mission_door_device_sequence(unit, sequence_name, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param player any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:server_place_mission_door_device(unit, player, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param result any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:result_place_mission_door_device(unit, result, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param percent any
 ---@param max_mul any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:set_armor(unit, percent, max_mul, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param percent any
 ---@param max_mul any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:set_health(unit, percent, max_mul, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param revive_amount any
 ---@param is_max any
 ---@param sender any
@@ -1476,7 +1476,7 @@ function UnitNetworkHandler:sync_end_assault(result) end
 ---@return unknown
 function UnitNetworkHandler:sync_assault_dialog(index) end
 
----@param unit any
+---@param unit Unit
 ---@param u_id any
 ---@param type_index any
 ---@param multiplier any
@@ -1484,14 +1484,14 @@ function UnitNetworkHandler:sync_assault_dialog(index) end
 ---@return unknown
 function UnitNetworkHandler:sync_contour_add(unit, u_id, type_index, multiplier, sender_rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param u_id any
 ---@param type_index any
 ---@param sender_rpc any
 ---@return unknown
 function UnitNetworkHandler:sync_contour_remove(unit, u_id, type_index, sender_rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param minion_owner_peer_id any
 ---@param convert_enemies_health_multiplier_level any
 ---@param passive_convert_enemies_health_multiplier_level any
@@ -1499,12 +1499,12 @@ function UnitNetworkHandler:sync_contour_remove(unit, u_id, type_index, sender_r
 ---@return unknown
 function UnitNetworkHandler:mark_minion(unit, minion_owner_peer_id, convert_enemies_health_multiplier_level, passive_convert_enemies_health_multiplier_level, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:remove_minion(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:spot_enemy(unit) end
 
@@ -1526,7 +1526,7 @@ function UnitNetworkHandler:sync_assault_mode(enabled) end
 ---@return unknown
 function UnitNetworkHandler:sync_hostage_killed_warning(warning) end
 
----@param unit any
+---@param unit Unit
 ---@param voice any
 ---@param sender any
 ---@return unknown
@@ -1540,7 +1540,7 @@ function UnitNetworkHandler:set_interaction_voice(unit, voice, sender) end
 ---@return unknown
 function UnitNetworkHandler:sync_teammate_comment(message, pos, pos_based, radius, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param message any
 ---@return unknown
 function UnitNetworkHandler:sync_teammate_comment_instigator(unit, message) end
@@ -1587,13 +1587,13 @@ function UnitNetworkHandler:mission_ended(win, num_is_inside, sender) end
 ---@return unknown
 function UnitNetworkHandler:sync_level_up(level, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_disable_shout(unit, state, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param seq any
 ---@param sender any
 ---@return unknown
@@ -1608,7 +1608,7 @@ function UnitNetworkHandler:sync_run_sequence_char(unit, seq, sender) end
 ---@return unknown
 function UnitNetworkHandler:sync_player_kill_statistic(tweak_table_name, is_headshot, weapon_unit, variant, stats_name, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param setting_index any
 ---@param state any
 ---@param sender any
@@ -1682,13 +1682,13 @@ function UnitNetworkHandler:sync_temporary_upgrade_owned(upgrade_category, upgra
 ---@return unknown
 function UnitNetworkHandler:sync_temporary_upgrade_activated(upgrade_index, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param ratio any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:suppression(unit, ratio, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@param sender any
 ---@return unknown
@@ -1706,19 +1706,19 @@ function UnitNetworkHandler:camera_yaw_pitch(cam_unit, yaw_255, pitch_255) end
 ---@return unknown
 function UnitNetworkHandler:loot_link(loot_unit, parent_unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:remove_unit(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param event_id any
 ---@param value any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_gui_net_event(unit, event_id, value, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param proximity_name any
 ---@param range_data_string any
 ---@param sender any
@@ -1726,7 +1726,7 @@ function UnitNetworkHandler:sync_gui_net_event(unit, event_id, value, sender) en
 function UnitNetworkHandler:sync_proximity_activation(unit, proximity_name, range_data_string, sender) end
 
 ---@param body any
----@param unit any
+---@param unit Unit
 ---@param normal any
 ---@param position any
 ---@param direction any
@@ -1742,13 +1742,13 @@ function UnitNetworkHandler:sync_inflict_body_damage(body, unit, normal, positio
 ---@return unknown
 function UnitNetworkHandler:sync_team_relation(team_index_1, team_index_2, relation_code) end
 
----@param unit any
+---@param unit Unit
 ---@param team_index any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_char_team(unit, team_index, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param autorepair_level_1 any
 ---@param autorepair_level_2 any
 ---@param drill_speed_level any
@@ -1759,12 +1759,12 @@ function UnitNetworkHandler:sync_char_team(unit, team_index, sender) end
 function UnitNetworkHandler:sync_drill_upgrades(unit, autorepair_level_1, autorepair_level_2, drill_speed_level, silent, reduced_alert, sender_rpc) end
 
 ---@param action any
----@param unit any
+---@param unit Unit
 ---@param player any
 ---@return unknown
 function UnitNetworkHandler:sync_vehicle_driving(action, unit, player) end
 
----@param unit any
+---@param unit Unit
 ---@param accelerate any
 ---@param steer any
 ---@param brake any
@@ -1775,7 +1775,7 @@ function UnitNetworkHandler:sync_vehicle_driving(action, unit, player) end
 ---@return unknown
 function UnitNetworkHandler:sync_vehicle_set_input(unit, accelerate, steer, brake, handbrake, gear_up, gear_down, forced_gear) end
 
----@param unit any
+---@param unit Unit
 ---@param position any
 ---@param rotation any
 ---@param velocity any
@@ -1826,7 +1826,7 @@ function UnitNetworkHandler:sync_vehicle_loot(vehicle, carry_id1, multiplier1, c
 ---@param action any
 ---@param vehicle any
 ---@param data any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:sync_ai_vehicle_action(action, vehicle, data, unit) end
 
@@ -1872,42 +1872,42 @@ function UnitNetworkHandler:sync_damage_reduction_buff(damage_reduction) end
 ---@return unknown
 function UnitNetworkHandler:sync_assault_endless(enabled) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@param jump_vec any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:action_jump(unit, pos, jump_vec, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:action_jump_middle(unit, pos, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:action_land(unit, pos, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param active any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_player_swansong(unit, active, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:special_eq_response(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param peer_id any
 ---@return unknown
 function UnitNetworkHandler:sync_swansong_hud(unit, peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@param current any
 ---@param total any
 ---@param revives any
@@ -1915,30 +1915,30 @@ function UnitNetworkHandler:sync_swansong_hud(unit, peer_id) end
 ---@return unknown
 function UnitNetworkHandler:sync_swansong_timer(unit, current, total, revives, peer_id) end
 
----@param unit any
+---@param unit Unit
 ---@param pos any
 ---@param rot any
 ---@return unknown
 function UnitNetworkHandler:sync_fall_position(unit, pos, rot) end
 
----@param unit any
+---@param unit Unit
 ---@param sender_rpc any
 ---@return unknown
 function UnitNetworkHandler:sync_spawn_extra_ammo(unit, sender_rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param sync any
 ---@param pos any
 ---@param rot any
 ---@return unknown
 function UnitNetworkHandler:sync_stored_pos(unit, sync, pos, rot) end
 
----@param unit any
+---@param unit Unit
 ---@param stopped any
 ---@return unknown
 function UnitNetworkHandler:sync_team_ai_stopped(unit, stopped) end
 
----@param unit any
+---@param unit Unit
 ---@param weapon_unit any
 ---@param attacker_unit any
 ---@param distance any
@@ -1959,7 +1959,7 @@ function UnitNetworkHandler:sync_medic_heal(medic_unit, sender) end
 ---@return unknown
 function UnitNetworkHandler:sync_action_healed(healed_unit, do_action, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param position any
 ---@param normal any
 ---@param damage any
@@ -1970,14 +1970,14 @@ function UnitNetworkHandler:sync_action_healed(healed_unit, do_action, sender) e
 function UnitNetworkHandler:sync_explosion_to_client(unit, position, normal, damage, range, curve_pow, sender) end
 
 ---@param peer_id any
----@param unit any
+---@param unit Unit
 ---@param damage any
 ---@param variant any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_friendly_fire_damage(peer_id, unit, damage, variant, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param event_id any
 ---@param sender any
 ---@return unknown
@@ -1996,7 +1996,7 @@ function UnitNetworkHandler:sync_ability_hud(end_time, time_total, sender) end
 ---@return unknown
 function UnitNetworkHandler:sync_underbarrel_switch(selection_index, underbarrel_id, is_on, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param carry_unit any
 ---@param target_unit any
 ---@param sender any
@@ -2022,12 +2022,12 @@ function UnitNetworkHandler:sync_carried_bag_unit(ai_unit, carry_unit, sender) e
 ---@return unknown
 function UnitNetworkHandler:sync_unit_spawn(parent_unit, spawn_unit, align_obj_name, unit_id, parent_extension_name) end
 
----@param unit any
+---@param unit Unit
 ---@param surrendered any
 ---@return unknown
 function UnitNetworkHandler:sync_unit_surrendered(unit, surrendered) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitNetworkHandler:sync_unit_converted(unit) end
 
@@ -2080,35 +2080,35 @@ function UnitNetworkHandler:sync_tear_gas_grenade_properties(grenade, diameter, 
 ---@return unknown
 function UnitNetworkHandler:sync_tear_gas_grenade_detonate(grenade, sender_rpc) end
 
----@param unit any
+---@param unit Unit
 ---@param dodge_bonus any
 ---@return unknown
 function UnitNetworkHandler:sync_spawn_smoke_screen(unit, dodge_bonus) end
 
----@param unit any
+---@param unit Unit
 ---@param hand any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_melee_start(unit, hand, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_melee_stop(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_melee_discharge(unit, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param is_start any
 ---@param tweak_data any
 ---@param sender any
 ---@return unknown
 function UnitNetworkHandler:sync_interaction_anim(unit, is_start, tweak_data, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param hit_pos any
 ---@param dir any
 ---@param distance any
@@ -2117,7 +2117,7 @@ function UnitNetworkHandler:sync_interaction_anim(unit, is_start, tweak_data, se
 ---@return unknown
 function UnitNetworkHandler:sync_shotgun_push(unit, hit_pos, dir, distance, attacker, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param destination any
 ---@param direction any
 ---@param force any
@@ -2125,7 +2125,7 @@ function UnitNetworkHandler:sync_shotgun_push(unit, hit_pos, dir, distance, atta
 ---@return unknown
 function UnitNetworkHandler:sync_carry_set_position_and_throw(unit, destination, direction, force, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param position any
 ---@param sender any
 ---@return unknown
@@ -2177,7 +2177,7 @@ function UnitNetworkHandler:sync_husk_player_turret(turret_unit, sender) end
 ---@return unknown
 function UnitNetworkHandler:shot_player_turret(turret_unit, impact, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param new_tweak_name any
 ---@param sender_rpc any
 ---@return unknown
@@ -2273,7 +2273,7 @@ function UnitNetworkHandler:sync_present_shredded(shredder_unit, bag_carry_int, 
 ---@return unknown
 function UnitNetworkHandler:sync_gain_buff(buff_string, sender) end
 
----@param unit any
+---@param unit Unit
 ---@param anim_id any
 ---@param sender any
 ---@return unknown

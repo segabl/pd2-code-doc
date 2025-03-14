@@ -9,7 +9,7 @@ ElectricGrenade = {}
 function ElectricGrenade:_setup_from_tweak_data() end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -30,7 +30,7 @@ function ElectricGrenade:clbk_impact(tag, unit, body, other_unit, other_body, po
 function ElectricGrenade:_on_collision(col_ray) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -46,7 +46,7 @@ function ElectricGrenade:_on_collision(col_ray) end
 ---@return unknown
 function ElectricGrenade:_detonate(tag, unit, body, other_unit, other_body, position, normal, collision_velocity, velocity, other_velocity, new_velocity, direction, damage, ...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElectricGrenade:_can_tase_unit(unit) end
 

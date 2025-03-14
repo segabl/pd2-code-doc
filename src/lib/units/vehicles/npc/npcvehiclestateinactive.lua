@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : NpcVehicleStateInactive
 NpcVehicleStateInactive = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NpcVehicleStateInactive:init(unit) end
 

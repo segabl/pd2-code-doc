@@ -249,21 +249,21 @@ function NetworkPeer:statistics() end
 ---@return unknown
 function NetworkPeer:has_statistics() end
 
----@param func_name string
+---@param func string
 ---@param ... any
-function NetworkPeer:send(func_name, ...) end
+function NetworkPeer:send(func, ...) end
 
 ---@param queue_name string
----@param func_name string
+---@param func string
 ---@param ... any
-function NetworkPeer:_send_queued(queue_name, func_name, ...) end
+function NetworkPeer:_send_queued(queue_name, func, ...) end
 
 ---@param ... any
 function NetworkPeer:send_after_load(...) end
 
----@param func_name string
+---@param func string
 ---@param ... any
-function NetworkPeer:send_queued_sync(func_name, ...) end
+function NetworkPeer:send_queued_sync(func, ...) end
 
 ---@return unknown
 function NetworkPeer:_chk_flush_msg_queues() end
@@ -595,7 +595,7 @@ function NetworkPeer:_get_old_entry() end
 ---@return unknown
 function NetworkPeer:spawn_unit_called() end
 
----@param unit any
+---@param unit Unit
 ---@param character_name any
 ---@param team_id any
 ---@param visual_seed any

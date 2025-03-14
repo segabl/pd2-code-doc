@@ -14,7 +14,7 @@ OverlayEffectHubElement = {}
 ---@return unknown
 function OverlayEffectHubElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreOverlayEffectHubElement:init(unit) end
 

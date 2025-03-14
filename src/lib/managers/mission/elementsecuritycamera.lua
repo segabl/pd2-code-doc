@@ -21,7 +21,7 @@ function ElementSecurityCamera:client_on_executed(...) end
 ---@return unknown
 function ElementSecurityCamera:_fetch_unit_by_unit_id(unit_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSecurityCamera._load_unit(unit) end
 

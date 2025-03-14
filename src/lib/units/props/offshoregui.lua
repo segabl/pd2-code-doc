@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : OffshoreGui
 OffshoreGui = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function OffshoreGui:init(unit) end
 

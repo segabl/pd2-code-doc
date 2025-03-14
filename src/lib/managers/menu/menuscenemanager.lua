@@ -73,7 +73,7 @@ function MenuSceneManager:_setup_event_confetti() end
 ---@return unknown
 function MenuSceneManager:_set_player_character_unit(unit_name) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MenuSceneManager:_setup_character_dynamic_bodies(unit) end
 
@@ -82,26 +82,26 @@ function MenuSceneManager:_setup_character_dynamic_bodies(unit) end
 function MenuSceneManager:_set_character_dynamic_bodies_state(state) end
 
 ---@param unit_name any
----@param unit any
+---@param unit Unit
 ---@param pos_override any
 ---@return unknown
 function MenuSceneManager:_set_character_unit(unit_name, unit, pos_override) end
 
 ---@param pose any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MenuSceneManager:_set_character_unit_pose(pose, unit) end
 
 ---@return unknown
 function MenuSceneManager:_character_unit_pose_updated() end
 
----@param unit any
+---@param unit Unit
 ---@param secondary any
 ---@param primary any
 ---@return unknown
 function MenuSceneManager:_select_character_pose(unit, secondary, primary) end
 
----@param unit any
+---@param unit Unit
 ---@param weapon_id any
 ---@param index any
 ---@return unknown
@@ -149,7 +149,7 @@ function MenuSceneManager:set_henchmen_loadout(index, character, loadout) end
 ---@return unknown
 function MenuSceneManager:_setup_lobby_characters() end
 
----@param unit any
+---@param unit Unit
 ---@param peer_id any
 ---@return unknown
 function MenuSceneManager:_init_character(unit, peer_id) end
@@ -190,20 +190,20 @@ function MenuSceneManager:set_lobby_character_out_fit(i, outfit_string, rank) en
 function MenuSceneManager:_get_lobby_character_prio_item(rank, outfit) end
 
 ---@param peer_id any
----@param unit any
+---@param unit Unit
 ---@param weapon_info any
 ---@return unknown
 function MenuSceneManager:_select_lobby_character_pose(peer_id, unit, weapon_info) end
 
 ---@param deployable_id any
----@param unit any
+---@param unit Unit
 ---@param peer_id any
 ---@return unknown
 function MenuSceneManager:set_character_deployable(deployable_id, unit, peer_id) end
 
 ---@param mask_id any
 ---@param blueprint any
----@param unit any
+---@param unit Unit
 ---@param peer_id any
 ---@param character_name any
 ---@return unknown
@@ -219,7 +219,7 @@ function MenuSceneManager:clbk_mask_loaded(data, mask_unit) end
 function MenuSceneManager:clbk_character_mask_unit_assembled(data) end
 
 ---@param mask_name_str any
----@param unit any
+---@param unit Unit
 ---@param peer_id_or_char any
 ---@param mask_id any
 ---@param ready_clbk any
@@ -245,33 +245,33 @@ function MenuSceneManager:update_mask_offset(mask_data) end
 function MenuSceneManager:set_mask_offset(mask_unit, mask_align, position, rotation) end
 
 ---@param armor_id any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MenuSceneManager:set_character_armor(armor_id, unit) end
 
 ---@param skin_id any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MenuSceneManager:set_character_armor_skin(skin_id, unit) end
 
 ---@param player_style any
 ---@param material_variation any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MenuSceneManager:set_character_player_style(player_style, material_variation, unit) end
 
 ---@param glove_id any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MenuSceneManager:set_character_gloves(glove_id, unit) end
 
 ---@param peer_id any
 ---@param rank any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MenuSceneManager:set_character_card(peer_id, rank, unit) end
 
----@param unit any
+---@param unit Unit
 ---@param factory_id any
 ---@param blueprint any
 ---@param type any
@@ -296,7 +296,7 @@ function MenuSceneManager:_chk_character_visibility(char_unit) end
 ---@return unknown
 function MenuSceneManager:_set_character_and_outfit_visibility(char_unit, state) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function MenuSceneManager:_set_unit_enabled_tree(unit, state) end
@@ -312,7 +312,7 @@ function MenuSceneManager:clbk_weapon_base_unit_loaded(params, status, asset_typ
 ---@return unknown
 function MenuSceneManager:clbk_weapon_assembly_complete(params) end
 
----@param unit any
+---@param unit Unit
 ---@param rank any
 ---@return unknown
 function MenuSceneManager:set_character_equipped_card(unit, rank) end
@@ -492,7 +492,7 @@ function MenuSceneManager:spawn_item_weapon(factory_id, blueprint, cosmetics, te
 ---@return unknown
 function MenuSceneManager:update_weapon_texture_switches(factory_id, texture_switches) end
 
----@param unit any
+---@param unit Unit
 ---@param oobb_object any
 ---@param max_mod any
 ---@param type any
@@ -811,46 +811,46 @@ function MenuSceneManager:is_character_posing() end
 function MenuSceneManager:is_gun_interactable() end
 
 ---@param skin_id any
----@param unit any
+---@param unit Unit
 ---@param clbks any
 ---@return unknown
 function MenuSceneManager:preview_character_skin(skin_id, unit, clbks) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MenuSceneManager:get_character_armor_skin(unit) end
 
 ---@param player_style any
 ---@param material_variation any
----@param unit any
+---@param unit Unit
 ---@param clbks any
 ---@return unknown
 function MenuSceneManager:preview_player_style(player_style, material_variation, unit, clbks) end
 
----@param unit any
----@return unknown
+---@param unit Unit?
+---@return string
 function MenuSceneManager:get_player_style(unit) end
 
----@param unit any
----@return unknown
+---@param unit Unit?
+---@return string
 function MenuSceneManager:get_suit_variation(unit) end
 
 ---@param glove_id any
----@param unit any
+---@param unit Unit
 ---@param clbks any
 ---@return unknown
 function MenuSceneManager:preview_gloves(glove_id, unit, clbks) end
 
----@param unit any
----@return unknown
+---@param unit Unit?
+---@return string
 function MenuSceneManager:get_glove_id(unit) end
 
----@param unit any
----@return unknown
+---@param unit Unit?
+---@return string
 function MenuSceneManager:get_character_name(unit) end
 
----@param unit any
----@return unknown
+---@param unit Unit?
+---@return string
 function MenuSceneManager:get_character_armor(unit) end
 
 ---@return unknown

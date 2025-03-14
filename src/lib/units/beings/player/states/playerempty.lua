@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerEmpty
 PlayerEmpty = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerEmpty:init(unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CheckDLCUnitElement
 CheckDLCUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CheckDLCUnitElement:init(unit) end
 

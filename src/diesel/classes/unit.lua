@@ -97,7 +97,7 @@ function Unit:can_activate_mover_isolated(...) end
 function Unit:carry_data() end
 
 ---Returns the unit's character damage extension
----@return table?
+---@return PlayerDamage|HuskPlayerDamage|CivilianDamage|BossDamage|CopDamage|MedicDamage|TankCopDamage|TankMedicCopDamage|TeamAIDamage|SentryGunDamage|nil
 function Unit:character_damage() end
 
 ---Returns the unit's linked units
@@ -117,7 +117,7 @@ function Unit:constraint_type(...) end
 function Unit:contour() end
 
 ---Returns the unit's damage extension
----@return table?
+---@return UnitDamage|nil
 function Unit:damage() end
 
 function Unit:deactivate(...) end
@@ -214,11 +214,11 @@ function Unit:in_slot(slot) end
 function Unit:in_slot(slot_mask) end
 
 ---Returns the unit's interaction extension
----@return table?
+---@return BaseInteractionExt|nil
 function Unit:interaction() end
 
 ---Returns the unit's inventory extension
----@return PlayerInventory|HuskPlayerInventory|CopInventory|HuskCopInventory|TeamAIInventory|HuskTeamAIInventory|nil
+---@return PlayerInventory|HuskPlayerInventory|CopInventory|TeamAIInventory|nil
 function Unit:inventory() end
 
 function Unit:is_constraint_enabled(...) end
@@ -273,7 +273,7 @@ function Unit:mission_door_device(...) end
 function Unit:move(...) end
 
 ---Returns the unit's movement extension
----@return PlayerMovement|HuskPlayerMovement|CopMovement|HuskCopMovement|TeamAIMovement|HuskTeamAIMovement|PlayerTurretMovement|SentryGunMovement|nil
+---@return PlayerMovement|HuskPlayerMovement|CopMovement|TeamAIMovement|PlayerTurretMovement|SentryGunMovement|nil
 function Unit:movement() end
 
 function Unit:mover(...) end

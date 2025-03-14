@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : TrailerCamera
 TrailerCamera = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TrailerCamera:init(unit) end
 
@@ -46,7 +46,7 @@ function TrailerCamera:update_slider_speed(data) end
 ---@return unknown
 function TrailerCamera:close_ews() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

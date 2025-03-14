@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : AreaDespawnElement
 AreaDespawnElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AreaDespawnElement:init(unit) end
 

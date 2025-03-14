@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : RaycastWeaponBase
 RaycastWeaponBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RaycastWeaponBase:init(unit) end
 
@@ -174,7 +174,7 @@ function RaycastWeaponBase:_spawn_shell_eject_effect() end
 ---@return unknown
 function RaycastWeaponBase:_spawn_tweak_data_effect(effect_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RaycastWeaponBase:_check_ammo_total(unit) end
 
@@ -604,15 +604,15 @@ function RaycastWeaponBase:play_sound(event) end
 ---@return unknown
 function RaycastWeaponBase:_get_sound_event(event, alternative_event) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RaycastWeaponBase:add_ignore_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RaycastWeaponBase:remove_ignore_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RaycastWeaponBase:destroy(unit) end
 
@@ -652,7 +652,7 @@ function RaycastWeaponBase:set_scope_enabled(enabled) end
 ---@return unknown
 function RaycastWeaponBase:set_timer(timer) end
 
----@param unit any
+---@param unit Unit
 ---@param objects any
 ---@param visible any
 ---@return unknown

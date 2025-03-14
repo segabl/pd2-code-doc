@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : IngameUIExt
 IngameUIExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function IngameUIExt:init(unit) end
 

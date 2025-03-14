@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CivilianHeisterSound
 CivilianHeisterSound = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CivilianHeisterSound:init(unit) end
 
@@ -21,12 +21,12 @@ function CivilianHeisterSound:set_interactor_voice(interactor_voice) end
 ---@return unknown
 function CivilianHeisterSound:set_minigame_response(state) end
 
----@param unit any
+---@param unit Unit
 ---@param queue_name any
 ---@return unknown
 function CivilianHeisterSound:anim_clbk_play_sound(unit, queue_name) end
 
----@param unit any
+---@param unit Unit
 ---@param source_name any
 ---@return unknown
 function CivilianHeisterSound:anim_clbk_stop_sound(unit, source_name) end
@@ -38,7 +38,7 @@ function CivilianHeisterSound:_play(sound_name, source_name) end
 
 ---@param instance any
 ---@param event_type any
----@param unit any
+---@param unit Unit
 ---@param sound_source any
 ---@param label any
 ---@param identifier any

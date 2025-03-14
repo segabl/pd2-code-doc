@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpotterUnitElement
 SpotterUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpotterUnitElement:init(unit) end
 

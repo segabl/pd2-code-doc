@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : GameEventElement
 GameEventElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GameEventElement:init(unit) end
 

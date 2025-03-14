@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerMaskOff
 PlayerMaskOff = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerMaskOff:init(unit) end
 

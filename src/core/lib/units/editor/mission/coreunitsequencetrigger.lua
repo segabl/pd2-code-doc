@@ -14,14 +14,14 @@ UnitSequenceTriggerUnitElement = {}
 ---@return unknown
 function UnitSequenceTriggerUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreUnitSequenceTriggerUnitElement:init(unit) end
 
 ---@return unknown
 function CoreUnitSequenceTriggerUnitElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreUnitSequenceTriggerUnitElement:load_unit(unit) end
 
@@ -54,7 +54,7 @@ function CoreUnitSequenceTriggerUnitElement:update_editing() end
 ---@return unknown
 function CoreUnitSequenceTriggerUnitElement:select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreUnitSequenceTriggerUnitElement:_check_add_unit(unit) end
 
@@ -82,7 +82,7 @@ function CoreUnitSequenceTriggerUnitElement:remove_entry(id) end
 ---@return unknown
 function CoreUnitSequenceTriggerUnitElement:_remove_from_sequence_list(unit_id) end
 
----@param unit any
+---@param unit Unit
 ---@param sequences any
 ---@param sequence_list_data any
 ---@return unknown

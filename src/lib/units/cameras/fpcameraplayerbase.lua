@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : FPCameraPlayerBase
 FPCameraPlayerBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FPCameraPlayerBase:init(unit) end
 
@@ -20,7 +20,7 @@ function FPCameraPlayerBase:parent_destroyed_clbk(parent_unit) end
 ---@return unknown
 function FPCameraPlayerBase:reset_properties() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -277,17 +277,17 @@ function FPCameraPlayerBase:set_anims_enabled(state) end
 ---@return unknown
 function FPCameraPlayerBase:anims_enabled() end
 
----@param unit any
+---@param unit Unit
 ---@param event any
 ---@return unknown
 function FPCameraPlayerBase:play_sound(unit, event) end
 
----@param unit any
+---@param unit Unit
 ---@param sound_id any
 ---@return unknown
 function FPCameraPlayerBase:play_melee_sound(unit, sound_id) end
 
----@param unit any
+---@param unit Unit
 ---@param event any
 ---@param condition any
 ---@param condition_param any
@@ -302,11 +302,11 @@ function FPCameraPlayerBase:set_limits(spin, pitch) end
 ---@return unknown
 function FPCameraPlayerBase:remove_limits() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FPCameraPlayerBase:throw_projectile(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FPCameraPlayerBase:throw_grenade(unit) end
 
@@ -332,7 +332,7 @@ function FPCameraPlayerBase:hide_weapon() end
 ---@return unknown
 function FPCameraPlayerBase:show_weapon() end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@param ... any
 ---@return unknown
@@ -365,13 +365,13 @@ function FPCameraPlayerBase:anim_clbk_check_bullet_object() end
 ---@return unknown
 function FPCameraPlayerBase:anim_clbk_stop_weapon_reload() end
 
----@param unit any
+---@param unit Unit
 ---@param anim any
 ---@param speed any
 ---@return unknown
 function FPCameraPlayerBase:anim_clbk_play_weapon_anim(unit, anim, speed) end
 
----@param unit any
+---@param unit Unit
 ---@param anim any
 ---@return unknown
 function FPCameraPlayerBase:anim_clbk_stop_weapon_anim(unit, anim) end

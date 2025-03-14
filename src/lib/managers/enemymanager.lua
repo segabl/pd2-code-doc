@@ -41,7 +41,7 @@ function EnemyManager:_update_gfx_lod() end
 ---@return unknown
 function EnemyManager:_remove_i_from_lod_prio(i, anim_lod) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnemyManager:_create_unit_gfx_lod_data(unit) end
 
@@ -159,11 +159,11 @@ function EnemyManager:on_enemy_died(dead_unit, damage_info) end
 ---@return unknown
 function EnemyManager:on_enemy_destroyed(enemy) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnemyManager:on_enemy_registered(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnemyManager:on_enemy_unregistered(unit) end
 
@@ -179,7 +179,7 @@ function EnemyManager:register_shield(shield_unit) end
 ---@return unknown
 function EnemyManager:unregister_shield(shield_unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnemyManager:register_civilian(unit) end
 
@@ -192,7 +192,7 @@ function EnemyManager:on_civilian_died(dead_unit, damage_info) end
 ---@return unknown
 function EnemyManager:on_civilian_destroyed(civilian) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnemyManager:on_criminal_registered(unit) end
 
@@ -201,14 +201,14 @@ function EnemyManager:on_criminal_registered(unit) end
 function EnemyManager:on_criminal_unregistered(u_key) end
 
 ---@param u_key any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnemyManager:_store_for_disposal_detach(u_key, unit) end
 
 ---@return unknown
 function EnemyManager:_chk_detach_stored_units() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnemyManager:enable_disposal_on_corpse(unit) end
 

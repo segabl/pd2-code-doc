@@ -84,7 +84,7 @@ function HostNetworkSession:on_peer_save_received(event, event_data) end
 ---@return unknown
 function HostNetworkSession:update() end
 
----@param peer any
+---@param peer NetworkPeer
 ---@param state any
 ---@param load_counter any
 ---@return unknown
@@ -125,8 +125,8 @@ function HostNetworkSession:add_peer(name, rpc, in_lobby, loading, synched, id, 
 ---@return unknown
 function HostNetworkSession:_get_free_client_id(user_id) end
 
----@param peer any
----@param peer_id any
+---@param peer NetworkPeer
+---@param peer_id integer
 ---@param reason any
 ---@return unknown
 function HostNetworkSession:remove_peer(peer, peer_id, reason) end
@@ -144,16 +144,16 @@ function HostNetworkSession:on_dead_connection_reported(reporter_peer_id, other_
 ---@return unknown
 function HostNetworkSession:process_dead_con_reports() end
 
----@param peer any
----@param peer_id any
+---@param peer NetworkPeer
+---@param peer_id integer
 ---@return unknown
 function HostNetworkSession:chk_spawn_member_unit(peer, peer_id) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function HostNetworkSession:_add_waiting(peer) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function HostNetworkSession:_spawn_dropin_player(peer) end
 
@@ -168,14 +168,14 @@ function HostNetworkSession:on_load_complete(simulation) end
 ---@return unknown
 function HostNetworkSession:prepare_to_close(...) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function HostNetworkSession:chk_peer_handshakes_complete(peer) end
 
 ---@return unknown
 function HostNetworkSession:chk_all_handshakes_complete() end
 
----@param peer any
+---@param peer NetworkPeer
 ---@param dropin_peer_id any
 ---@param state any
 ---@return unknown
@@ -189,7 +189,7 @@ function HostNetworkSession:chk_send_ready_to_unpause() end
 ---@return unknown
 function HostNetworkSession:set_state(name, enter_params) end
 
----@param peer any
+---@param peer NetworkPeer
 ---@param state any
 ---@return unknown
 function HostNetworkSession:on_re_open_lobby_request(peer, state) end
@@ -200,13 +200,13 @@ function HostNetworkSession:all_peers_done_loading_outfits() end
 ---@return unknown
 function HostNetworkSession:chk_request_peer_outfit_load_status() end
 
----@param peer any
+---@param peer NetworkPeer
 ---@param request_id any
 ---@param outfit_versions_str_in any
 ---@return unknown
 function HostNetworkSession:on_peer_finished_loading_outfit(peer, request_id, outfit_versions_str_in) end
 
----@param peer_id any
+---@param peer_id integer
 ---@param ready any
 ---@param state_changed any
 ---@param from_network any
@@ -219,7 +219,7 @@ function HostNetworkSession:_increment_outfit_loading_status_request_id() end
 ---@return unknown
 function HostNetworkSession:_reset_outfit_loading_status_request() end
 
----@param peer any
+---@param peer NetworkPeer
 ---@return unknown
 function HostNetworkSession:on_peer_outfit_loaded(peer) end
 

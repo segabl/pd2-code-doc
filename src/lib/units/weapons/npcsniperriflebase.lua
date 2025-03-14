@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : NPCSniperRifleBase
 NPCSniperRifleBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NPCSniperRifleBase:init(unit) end
 

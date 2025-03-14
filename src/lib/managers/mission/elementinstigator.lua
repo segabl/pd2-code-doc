@@ -33,7 +33,7 @@ function ElementInstigator:instigator_operation_add_last(instigator) end
 ---@return unknown
 function ElementInstigator:_is_valid_instigator(instigator) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementInstigator:on_instigator_death(unit) end
 

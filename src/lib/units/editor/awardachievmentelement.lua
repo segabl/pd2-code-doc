@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : AwardAchievmentElement
 AwardAchievmentElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AwardAchievmentElement:init(unit) end
 

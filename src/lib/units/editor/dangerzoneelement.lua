@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : DangerZoneUnitElement
 DangerZoneUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DangerZoneUnitElement:init(unit) end
 

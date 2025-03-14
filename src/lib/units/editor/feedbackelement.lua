@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : FeedbackUnitElement
 FeedbackUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FeedbackUnitElement:init(unit) end
 

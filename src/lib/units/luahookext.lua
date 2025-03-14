@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : LuaHookExt
 LuaHookExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function LuaHookExt:init(unit) end
 

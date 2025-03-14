@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : MenuArmourBase
 MenuArmourBase = {}
 
----@param unit any
+---@param unit Unit
 ---@param update_enabled any
 ---@return unknown
 function MenuArmourBase:init(unit, update_enabled) end

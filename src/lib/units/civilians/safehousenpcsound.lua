@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SafehouseNPCSound
 SafehouseNPCSound = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SafehouseNPCSound:init(unit) end
 
@@ -14,7 +14,7 @@ function SafehouseNPCSound:_randomize_speech_time() end
 
 ---@param instance any
 ---@param event_type any
----@param unit any
+---@param unit Unit
 ---@param sound_source any
 ---@param label any
 ---@param identifier any
@@ -22,7 +22,7 @@ function SafehouseNPCSound:_randomize_speech_time() end
 ---@return unknown
 function SafehouseNPCSound:sound_callback(instance, event_type, unit, sound_source, label, identifier, position) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

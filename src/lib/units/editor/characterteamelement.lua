@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CharacterTeamElement
 CharacterTeamElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CharacterTeamElement:init(unit) end
 

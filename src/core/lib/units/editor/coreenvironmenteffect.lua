@@ -14,7 +14,7 @@ EnvironmentEffectHubElement = {}
 ---@return unknown
 function EnvironmentEffectHubElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreEnvironmentEffectHubElement:init(unit) end
 

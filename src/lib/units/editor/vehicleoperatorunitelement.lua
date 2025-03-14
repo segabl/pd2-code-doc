@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : VehicleOperatorUnitElement
 VehicleOperatorUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleOperatorUnitElement:init(unit) end
 

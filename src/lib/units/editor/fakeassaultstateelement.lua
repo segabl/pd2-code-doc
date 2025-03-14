@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : FakeAssaultStateUnitElement
 FakeAssaultStateUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FakeAssaultStateUnitElement:init(unit) end
 

@@ -16,14 +16,14 @@ function ExpressionManager:update(t, dt) end
 ---@return unknown
 function ExpressionManager:preload(movie_name) end
 
----@param unit any
+---@param unit Unit
 ---@param target any
 ---@param movie_name any
 ---@param loop any
 ---@return unknown
 function ExpressionManager:play(unit, target, movie_name, loop) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ExpressionManager:stop(unit) end
 

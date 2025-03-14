@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : AIAreaElement
 AIAreaElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AIAreaElement:init(unit) end
 
@@ -16,7 +16,7 @@ function AIAreaElement:post_init(...) end
 ---@return unknown
 function AIAreaElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AIAreaElement:load_nav_seg_unit(unit) end
 
@@ -68,7 +68,7 @@ function AIAreaElement:_build_panel(panel, panel_sizer) end
 ---@return unknown
 function AIAreaElement:add_to_mission_package() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AIAreaElement:_add_nav_seg(unit) end
 

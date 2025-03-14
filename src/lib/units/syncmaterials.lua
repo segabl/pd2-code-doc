@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : SyncMaterials
 SyncMaterials = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SyncMaterials:init(unit) end
 

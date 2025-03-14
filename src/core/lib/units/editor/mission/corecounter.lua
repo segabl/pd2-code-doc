@@ -14,14 +14,14 @@ CounterUnitElement = {}
 ---@return unknown
 function CounterUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCounterUnitElement:init(unit) end
 
 ---@return unknown
 function CoreCounterUnitElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCounterUnitElement:load_unit(unit) end
 
@@ -45,11 +45,11 @@ function CoreCounterUnitElement:update_editing() end
 ---@return unknown
 function CoreCounterUnitElement:select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCounterUnitElement:_remove_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCounterUnitElement:_add_unit(unit) end
 
@@ -57,11 +57,11 @@ function CoreCounterUnitElement:_add_unit(unit) end
 ---@return unknown
 function CoreCounterUnitElement:add_triggers(vc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCounterUnitElement:_add_unit_filter(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCounterUnitElement:_remove_unit_filter(unit) end
 
@@ -84,7 +84,7 @@ CounterOperatorUnitElement = {}
 ---@return unknown
 function CounterOperatorUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCounterOperatorUnitElement:init(unit) end
 
@@ -128,7 +128,7 @@ CounterTriggerUnitElement = {}
 ---@return unknown
 function CounterTriggerUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCounterTriggerUnitElement:init(unit) end
 
@@ -172,7 +172,7 @@ CounterFilterUnitElement = {}
 ---@return unknown
 function CounterFilterUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCounterFilterUnitElement:init(unit) end
 

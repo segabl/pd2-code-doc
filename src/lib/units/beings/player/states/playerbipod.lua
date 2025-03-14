@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerBipod
 PlayerBipod = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerBipod:init(unit) end
 

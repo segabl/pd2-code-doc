@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : GroupAIStateEmpty
 GroupAIStateEmpty = {}
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateEmpty:assign_enemy_to_group_ai(unit) end
 
@@ -24,12 +24,12 @@ function GroupAIStateEmpty:on_civilian_tied(u_key) end
 ---@return any
 function GroupAIStateEmpty:can_hostage_flee() end
 
----@param unit any
+---@param unit Unit
 ---@param update any
 ---@return any
 function GroupAIStateEmpty:add_to_surrendered(unit, update) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateEmpty:remove_from_surrendered(unit) end
 
@@ -70,15 +70,15 @@ function GroupAIStateEmpty:add_preferred_spawn_points(id, spawn_points) end
 ---@return any
 function GroupAIStateEmpty:remove_preferred_spawn_points(id) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateEmpty:register_criminal(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateEmpty:unregister_criminal(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param objective any
 ---@return any
 function GroupAIStateEmpty:on_defend_travel_end(unit, objective) end
@@ -114,19 +114,19 @@ function GroupAIStateEmpty:save(save_data) end
 ---@return any
 function GroupAIStateEmpty:load(load_data) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateEmpty:on_cop_jobless(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateEmpty:spawn_one_teamAI(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateEmpty:remove_one_teamAI(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateEmpty:fill_criminal_team_with_AI(unit) end
 
@@ -139,11 +139,11 @@ function GroupAIStateEmpty:set_importance_weight(cop_unit, dis_report) end
 ---@return any
 function GroupAIStateEmpty:on_criminal_recovered(criminal_unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateEmpty:on_criminal_disabled(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateEmpty:on_criminal_neutralized(unit) end
 

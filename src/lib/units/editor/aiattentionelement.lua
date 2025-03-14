@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : AIAttentionElement
 AIAttentionElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AIAttentionElement:init(unit) end
 
@@ -20,11 +20,11 @@ function AIAttentionElement:save(t) end
 ---@return unknown
 function AIAttentionElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AIAttentionElement:load_parent_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AIAttentionElement:load_att_obj_unit(unit) end
 

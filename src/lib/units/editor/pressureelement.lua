@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PressureUnitElement
 PressureUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PressureUnitElement:init(unit) end
 

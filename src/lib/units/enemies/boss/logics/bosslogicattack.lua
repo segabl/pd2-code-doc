@@ -27,23 +27,23 @@ function BossLogicAttack.update(data) end
 function BossLogicAttack._upd_enemy_detection(data, is_synchronous) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function BossLogicAttack._upd_combat_movement(data, my_data) end
 
 ---@param data logicdata
----@param attention_objects any
+---@param attention_objects table<userdata, attentiondata>
 ---@param reaction_func any
 ---@return unknown
 function BossLogicAttack._get_priority_attention(data, attention_objects, reaction_func) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function BossLogicAttack._upd_aim(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param focus any
 ---@return unknown
 function BossLogicAttack._chk_use_throwable(data, my_data, focus) end
@@ -53,12 +53,12 @@ function BossLogicAttack._chk_use_throwable(data, my_data, focus) end
 function BossLogicAttack.queued_update(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function BossLogicAttack._process_pathing_results(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function BossLogicAttack._cancel_chase_attempt(data, my_data) end
 
@@ -68,28 +68,28 @@ function BossLogicAttack._cancel_chase_attempt(data, my_data) end
 function BossLogicAttack.action_complete_clbk(data, action) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function BossLogicAttack.chk_should_turn(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function BossLogicAttack.action_taken(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function BossLogicAttack.queue_update(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param speed any
 ---@return unknown
 function BossLogicAttack._chk_request_action_walk_to_chase_pos(data, my_data, speed) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function BossLogicAttack._chk_start_action_move_out_of_the_way(data, my_data) end
 

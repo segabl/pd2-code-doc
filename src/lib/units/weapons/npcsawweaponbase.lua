@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : NPCSawWeaponBase
 NPCSawWeaponBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NPCSawWeaponBase:init(unit) end
 
@@ -15,7 +15,7 @@ function NPCSawWeaponBase:_play_sound_sawing() end
 ---@return unknown
 function NPCSawWeaponBase:_play_sound_idle() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

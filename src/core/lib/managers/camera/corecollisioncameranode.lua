@@ -9,7 +9,7 @@ CollisionCameraNode = {}
 ---@return unknown
 function CollisionCameraNode:init(settings) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CollisionCameraNode:set_unit(unit) end
 

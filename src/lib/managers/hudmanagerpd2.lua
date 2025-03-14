@@ -94,12 +94,12 @@ function HUDManager:set_teammate_ammo_amount(id, selection_index, max_clip, curr
 ---@return unknown
 function HUDManager:set_alt_ammo(state) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HUDManager:set_weapon_ammo_by_unit(unit) end
 
 ---@param i any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HUDManager:_update_second_weapon_ammo_info(i, unit) end
 

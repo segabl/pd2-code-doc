@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CharacterAttentionObject
 CharacterAttentionObject = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CharacterAttentionObject:init(unit) end
 

@@ -146,8 +146,8 @@ function NetworkManager.clbk_msg_overwrite(overwrite_data, msg_queue, ...) end
 ---@return unknown
 function NetworkManager:set_packet_throttling_enabled(state) end
 
----@param peer any
----@param peer_id any
+---@param peer NetworkPeer
+---@param peer_id integer
 ---@return unknown
 function NetworkManager:on_peer_added(peer, peer_id) end
 

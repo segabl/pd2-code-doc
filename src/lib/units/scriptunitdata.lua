@@ -5,11 +5,11 @@
 ---@field new fun(self, ...) : ScriptUnitData
 ScriptUnitData = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ScriptUnitData:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ScriptUnitData:destroy(unit) end
 

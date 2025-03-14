@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : WeaponLaser
 WeaponLaser = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponLaser:init(unit) end
 
@@ -17,7 +17,7 @@ function WeaponLaser:set_position(pos) end
 ---@return unknown
 function WeaponLaser:set_rotation(rot) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -30,7 +30,7 @@ function WeaponLaser:_check_state(current_state) end
 ---@return unknown
 function WeaponLaser:set_npc() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponLaser:destroy(unit) end
 
@@ -52,7 +52,7 @@ function WeaponLaser:color() end
 ---@return unknown
 function WeaponLaser:set_max_distace(dis) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponLaser:add_ray_ignore_unit(unit) end
 
@@ -61,11 +61,11 @@ function WeaponLaser:add_ray_ignore_unit(unit) end
 ---@field new fun(self, ...) : WeaponMultiLaser
 WeaponMultiLaser = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponMultiLaser:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -83,7 +83,7 @@ function WeaponMultiLaser:set_color_by_theme(type) end
 ---@return unknown
 function WeaponMultiLaser:set_color(color) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponMultiLaser:destroy(unit) end
 

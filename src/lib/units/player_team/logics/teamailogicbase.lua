@@ -26,7 +26,7 @@ function TeamAILogicBase.on_recovered(data, reviving_unit) end
 function TeamAILogicBase.clbk_heat(data) end
 
 ---@param data logicdata
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TeamAILogicBase.on_objective_unit_destroyed(data, unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : KillzoneUnitElement
 KillzoneUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function KillzoneUnitElement:init(unit) end
 

@@ -23,7 +23,7 @@ function CopDamage._notify_listeners(event, ...) end
 ---@return unknown
 function CopDamage.MAD_3_ACHIEVEMENT(attack_data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopDamage:init(unit) end
 
@@ -81,7 +81,7 @@ function CopDamage:_dismember_body_part(attack_data) end
 ---@return unknown
 function CopDamage:_check_special_death_conditions(variant, body, attacker_unit, weapon_unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopDamage:is_friendly_fire(unit) end
 
@@ -141,13 +141,13 @@ function CopDamage:_show_death_hint(type) end
 ---@return unknown
 function CopDamage:_comment_death(attacker, killed_unit, special_comment) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
 function CopDamage:update(unit, t, dt) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -305,7 +305,7 @@ function CopDamage:die(attack_data) end
 ---@return unknown
 function CopDamage:set_mover_collision_state(state) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function CopDamage:anim_clbk_mover_collision_state(unit, state) end

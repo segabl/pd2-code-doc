@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : UnoPuzzleDoorBase
 UnoPuzzleDoorBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnoPuzzleDoorBase:init(unit) end
 
 ---@return unknown
 function UnoPuzzleDoorBase:init_puzzle() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpawnPlayerElement
 SpawnPlayerElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpawnPlayerElement:init(unit) end
 

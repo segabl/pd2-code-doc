@@ -17,7 +17,7 @@ function HandMelee:has_melee_weapon() end
 ---@return unknown
 function HandMelee:has_custom_weapon() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HandMelee:set_melee_unit(unit) end
 
@@ -25,11 +25,11 @@ function HandMelee:set_melee_unit(unit) end
 ---@return unknown
 function HandMelee:set_fist(entry) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HandMelee:set_weapon_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param id any
 ---@return unknown
 function HandMelee:set_custom_unit(unit, id) end
@@ -40,7 +40,7 @@ function HandMelee:unit() end
 ---@return unknown
 function HandMelee:_get_hitpoint() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

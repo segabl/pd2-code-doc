@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : CorePlayerHandler.Player
 Player = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function Player:set_avatar(unit) end
 

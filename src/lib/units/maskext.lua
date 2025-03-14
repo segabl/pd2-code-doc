@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : MaskExt
 MaskExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MaskExt:init(unit) end
 
@@ -22,7 +22,7 @@ function MaskExt:clbk_texture_loaded(async_clbk, tex_name) end
 ---@return unknown
 function MaskExt:_chk_load_complete(async_clbk) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MaskExt:destroy(unit) end
 

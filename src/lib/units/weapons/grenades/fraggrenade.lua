@@ -8,14 +8,14 @@ FragGrenade = {}
 ---@return unknown
 function FragGrenade:_setup_from_tweak_data() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
 function FragGrenade:update(unit, t, dt) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -36,7 +36,7 @@ function FragGrenade:clbk_impact(tag, unit, body, other_unit, other_body, positi
 function FragGrenade:_on_collision(col_ray) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : LootBagUnitElement
 LootBagUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function LootBagUnitElement:init(unit) end
 
@@ -39,7 +39,7 @@ function LootBagUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : LootBagTriggerUnitElement
 LootBagTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function LootBagTriggerUnitElement:init(unit) end
 

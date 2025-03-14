@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : WhisperStateUnitElement
 WhisperStateUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WhisperStateUnitElement:init(unit) end
 

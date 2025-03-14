@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : DropinStateElement
 DropinStateElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DropinStateElement:init(unit) end
 

@@ -14,7 +14,7 @@ WorldCameraTriggerUnitElement = {}
 ---@return unknown
 function WorldCameraTriggerUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreWorldCameraTriggerUnitElement:init(unit) end
 

@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : AnniversaryPiggyBank
 AnniversaryPiggyBank = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AnniversaryPiggyBank:init(unit) end
 
 ---@return unknown
 function AnniversaryPiggyBank:sync_feed_pig() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AnniversaryPiggyBank:explode_pig(unit) end
 

@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : AccessCameraUnitElement
 AccessCameraUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessCameraUnitElement:init(unit) end
 
 ---@return unknown
 function AccessCameraUnitElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessCameraUnitElement:load_unit(unit) end
 
@@ -55,15 +55,15 @@ function AccessCameraUnitElement:set_element_data(params, ...) end
 ---@return unknown
 function AccessCameraUnitElement:add_triggers(vc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessCameraUnitElement:_add_camera_filter(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessCameraUnitElement:_remove_camera_filter(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessCameraUnitElement:_add_camera_unit(unit) end
 
@@ -80,7 +80,7 @@ function AccessCameraUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : AccessCameraOperatorUnitElement
 AccessCameraOperatorUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessCameraOperatorUnitElement:init(unit) end
 
@@ -111,7 +111,7 @@ function AccessCameraOperatorUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : AccessCameraTriggerUnitElement
 AccessCameraTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessCameraTriggerUnitElement:init(unit) end
 

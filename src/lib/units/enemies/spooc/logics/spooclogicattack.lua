@@ -27,23 +27,23 @@ function SpoocLogicAttack.queued_update(data) end
 function SpoocLogicAttack.action_complete_clbk(data, action) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function SpoocLogicAttack._cancel_spooc_attempt(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function SpoocLogicAttack._upd_spooc_attack(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param flying_strike any
 ---@return unknown
 function SpoocLogicAttack._chk_request_action_spooc_attack(data, my_data, flying_strike) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function SpoocLogicAttack.chk_should_turn(data, my_data) end
 
@@ -58,7 +58,7 @@ function SpoocLogicAttack.damage_clbk(data, damage_info) end
 function SpoocLogicAttack.is_available_for_assignment(data, objective) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function SpoocLogicAttack.action_taken(data, my_data) end
 
@@ -68,7 +68,7 @@ function SpoocLogicAttack.action_taken(data, my_data) end
 function SpoocLogicAttack._chk_exit_attack_logic(data, new_reaction) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function SpoocLogicAttack._upd_aim(data, my_data) end
 

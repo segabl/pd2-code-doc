@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : SecurityLockGui
 SecurityLockGui = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SecurityLockGui:init(unit) end
 
@@ -37,7 +37,7 @@ function SecurityLockGui:start(bar, timer, restart) end
 ---@return unknown
 function SecurityLockGui:sync_start(bar, timer) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

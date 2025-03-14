@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerArrested
 PlayerArrested = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerArrested:init(unit) end
 

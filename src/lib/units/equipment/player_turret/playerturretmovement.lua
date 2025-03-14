@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : PlayerTurretMovement
 PlayerTurretMovement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerTurretMovement:init(unit) end
 
@@ -36,7 +36,7 @@ function PlayerTurretMovement:switch_off() end
 ---@return unknown
 function PlayerTurretMovement:switch_on() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

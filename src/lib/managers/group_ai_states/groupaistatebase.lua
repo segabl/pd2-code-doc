@@ -1,5 +1,22 @@
 ---@meta
 
+---@class areadata
+---@field police { units: table<userdata, enemydata> }
+---@field criminal { units: table<userdata, criminaldata> }
+---@field factors table
+---@field neighbours table<integer, areadata>
+---@field nav_segs table<integer, boolean>
+---@field id integer
+---@field pos Vector3
+---@field pos_nav_seg integer
+---@field is_safe boolean
+---@field spawn_points table?
+---@field spawn_groups table?
+---@field flee_points table?
+---@field enemy_loot_drop_points table?
+---@field loot table<userdata, Unit>?
+---@field hostages table<userdata, Unit>?
+
 ---@class criminaldata
 ---@field arrest_timeout number
 ---@field engaged_force number
@@ -8,8 +25,8 @@
 ---@field unit Unit
 ---@field is_AI boolean
 ---@field tracker any
----@field seg number
----@field area table
+---@field seg integer
+---@field area areadata
 ---@field pos Vector3
 ---@field m_pos Vector3
 ---@field m_det_pos Vector3
@@ -280,7 +297,7 @@ function GroupAIStateBase:register_special_unit(u_key, category_name) end
 ---@param category_name string
 function GroupAIStateBase:unregister_special_unit(u_key, category_name) end
 
----@param unit any
+---@param unit Unit
 ---@param old_tags any
 ---@param new_tags any
 ---@return any
@@ -312,16 +329,16 @@ function GroupAIStateBase:_gameover_clbk_func() end
 ---@return any
 function GroupAIStateBase:begin_gameover_fadeout() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:report_criminal_downed(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param custom_status any
 ---@return any
 function GroupAIStateBase:on_criminal_disabled(unit, custom_status) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:on_criminal_neutralized(unit) end
 
@@ -386,7 +403,7 @@ function GroupAIStateBase:_try_use_task_spawn_event(t, target_area, task_type, t
 ---@return any
 function GroupAIStateBase:_use_spawn_event(event_data) end
 
----@param unit any
+---@param unit Unit
 ---@param objective any
 ---@return any
 function GroupAIStateBase:on_objective_failed(unit, objective) end
@@ -477,7 +494,7 @@ function GroupAIStateBase:spawn_one_teamAI(is_drop_in, char_name, pos, rotation,
 ---@return any
 function GroupAIStateBase:remove_one_teamAI(name_to_remove, replace_with_player) end
 
----@param unit any
+---@param unit Unit
 ---@param character_name any
 ---@param team_id any
 ---@param visual_seed any
@@ -517,35 +534,35 @@ function GroupAIStateBase:fill_criminal_team_with_AI(is_drop_in) end
 ---@return any
 function GroupAIStateBase:team_ai_enabled() end
 
----@param unit any
+---@param unit Unit
 ---@param objective any
 ---@return any
 function GroupAIStateBase:on_civilian_objective_complete(unit, objective) end
 
----@param unit any
+---@param unit Unit
 ---@param objective any
 ---@return any
 function GroupAIStateBase:on_civilian_objective_failed(unit, objective) end
 
----@param unit any
+---@param unit Unit
 ---@param objective any
 ---@return any
 function GroupAIStateBase:on_criminal_objective_complete(unit, objective) end
 
----@param unit any
+---@param unit Unit
 ---@param objective any
 ---@param no_new_objective any
 ---@return any
 function GroupAIStateBase:on_criminal_objective_failed(unit, objective, no_new_objective) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:on_criminal_jobless(unit) end
 
 ---@return any
 function GroupAIStateBase:_determine_spawn_objective_for_criminal_AI() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:_determine_objective_for_criminal_AI(unit) end
 
@@ -634,7 +651,7 @@ function GroupAIStateBase:hostage_killed(killer_unit) end
 function GroupAIStateBase:set_dropin_hostages_killed(criminal_unit, hostages_killed, respawn_penalty) end
 
 ---@param criminal_name any
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:on_AI_criminal_death(criminal_name, unit) end
 
@@ -806,13 +823,13 @@ function GroupAIStateBase:on_occasional_event(event_type) end
 ---@return any
 function GroupAIStateBase:on_player_spawn_state_set(state_name) end
 
----@param unit any
+---@param unit Unit
 ---@param unit_pos any
 ---@param chatter_type any
 ---@return any
 function GroupAIStateBase:chk_say_enemy_chatter(unit, unit_pos, chatter_type) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:chk_say_teamAI_combat_chatter(unit) end
 
@@ -871,7 +888,7 @@ function GroupAIStateBase:_remove_preferred_spawn_group_from_area(area, sp_data)
 ---@return any
 function GroupAIStateBase:remove_preferred_spawn_points(id) end
 
----@param unit any
+---@param unit Unit
 ---@param handler any
 ---@param nav_tracker any
 ---@param team any
@@ -908,7 +925,7 @@ function GroupAIStateBase:_create_group(group_desc) end
 ---@return any
 function GroupAIStateBase:_remove_group_member(group, u_key, is_casualty) end
 
----@param unit any
+---@param unit Unit
 ---@param is_casualty any
 ---@return any
 function GroupAIStateBase:unit_leave_group(unit, is_casualty) end
@@ -930,31 +947,31 @@ function GroupAIStateBase:_empty_area_data() end
 ---@return any
 function GroupAIStateBase:_create_area_data() end
 
----@param nav_seg_id any
----@return any
+---@param nav_seg_id integer
+---@return areadata
 function GroupAIStateBase:get_area_from_nav_seg_id(nav_seg_id) end
 
----@param nav_seg_id any
----@return any
+---@param nav_seg_id integer
+---@return areadata[]
 function GroupAIStateBase:get_areas_from_nav_seg_id(nav_seg_id) end
 
----@param area any
----@return any
+---@param area areadata
+---@return integer
 function GroupAIStateBase.get_nav_seg_id_from_area(area) end
 
----@param area any
----@return any
+---@param area areadata
+---@return boolean
 function GroupAIStateBase:is_area_safe(area) end
 
----@param area any
----@return any
+---@param area areadata
+---@return boolean
 function GroupAIStateBase:is_area_safe_assault(area) end
 
----@param nav_seg any
----@return any
+---@param nav_seg integer
+---@return boolean
 function GroupAIStateBase:is_nav_seg_safe(nav_seg) end
 
----@param area any
+---@param area areadata
 ---@param event any
 ---@return any
 function GroupAIStateBase:_on_area_safety_status(area, event) end
@@ -970,8 +987,8 @@ function GroupAIStateBase:on_nav_segment_state_change(changed_seg_id, state) end
 ---@return any
 function GroupAIStateBase:on_nav_seg_neighbour_state(start_seg_id, end_seg_id, state) end
 
----@param area any
----@param unit_key any
+---@param area areadata
+---@param unit_key userdata
 ---@return any
 function GroupAIStateBase:set_enemy_assigned(area, unit_key) end
 
@@ -979,7 +996,7 @@ function GroupAIStateBase:set_enemy_assigned(area, unit_key) end
 ---@return any
 function GroupAIStateBase.clone_objective(objective) end
 
----@param unit any
+---@param unit Unit
 ---@param peer_unit any
 ---@return any
 function GroupAIStateBase:convert_hostage_to_criminal(unit, peer_unit) end
@@ -1004,7 +1021,7 @@ function GroupAIStateBase:remove_minion(minion_key, player_key) end
 function GroupAIStateBase:check_converted_achievements() end
 
 ---@param u_key any
----@param unit any
+---@param unit Unit
 ---@param owner_unit any
 ---@return any
 function GroupAIStateBase:_set_converted_police(u_key, unit, owner_unit) end
@@ -1014,17 +1031,17 @@ function GroupAIStateBase:_set_converted_police(u_key, unit, owner_unit) end
 ---@return any
 function GroupAIStateBase:sync_converted_enemy(converted_enemy, owner_peer_id) end
 
----@param area any
+---@param area areadata
 ---@param except_key any
 ---@return any
 function GroupAIStateBase:chk_enemy_calling_in_area(area, except_key) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return any
 function GroupAIStateBase:register_security_camera(unit, state) end
 
----@param unit any
+---@param unit Unit
 ---@param jam_settings any
 ---@return any
 function GroupAIStateBase:register_ecm_jammer(unit, jam_settings) end
@@ -1090,17 +1107,17 @@ function GroupAIStateBase:_merge_coarse_path_by_area(coarse_path) end
 ---@return any
 function GroupAIStateBase:on_nav_seg_neighbours_state(changed_seg_id, neighbours, state) end
 
----@param loot_unit any
----@param pickup_area any
+---@param loot_unit Unit
+---@param pickup_area areadata
 ---@return any
 function GroupAIStateBase:register_loot(loot_unit, pickup_area) end
 
----@param loot_u_key any
+---@param loot_u_key userdata
 ---@return any
 function GroupAIStateBase:unregister_loot(loot_u_key) end
 
----@param unit any
----@param rescue_area any
+---@param unit Unit
+---@param rescue_area areadata
 ---@return any
 function GroupAIStateBase:register_rescueable_hostage(unit, rescue_area) end
 
@@ -1145,7 +1162,7 @@ function GroupAIStateBase:sync_alarm_pager_bluff() end
 ---@return any
 function GroupAIStateBase:trim_coarse_path_to_areas(coarse_path) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:on_editor_sim_unit_spawned(unit) end
 
@@ -1160,7 +1177,7 @@ function GroupAIStateBase:draw_attention_objects_by_preset_name(wanted_preset_na
 ---@return any
 function GroupAIStateBase:_upd_debug_draw_attentions() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:is_enemy_converted_to_criminal(unit) end
 
@@ -1187,18 +1204,18 @@ function GroupAIStateBase:get_following_hostages(owner) end
 ---@return any
 function GroupAIStateBase:check_criminals_dead() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:register_turret(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:unregister_turret(unit) end
 
 ---@return any
 function GroupAIStateBase:turrets() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:is_unit_turret(unit) end
 
@@ -1211,11 +1228,11 @@ function GroupAIStateBase:phalanx_vip() end
 ---@return any
 function GroupAIStateBase:get_phalanx_minion_count() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:register_phalanx_minion(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:register_phalanx_vip(unit) end
 
@@ -1230,7 +1247,7 @@ function GroupAIStateBase:unregister_phalanx_vip() end
 ---@return any
 function GroupAIStateBase:is_unit_in_phalanx_minion_data(unit_key) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:is_unit_team_AI(unit) end
 
@@ -1238,19 +1255,19 @@ function GroupAIStateBase:is_unit_team_AI(unit) end
 ---@return any
 function GroupAIStateBase:set_force_attention(data) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:add_affected_force_attention_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:add_excluded_force_attention_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:force_attention_data(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBase:get_AI_attention_object_by_unit(unit) end
 

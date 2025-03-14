@@ -32,11 +32,11 @@ function MedicDamage:verify_heal_requesting_unit(requesting_unit) end
 ---@return unknown
 function MedicDamage:is_available_for_healing(requesting_unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MedicDamage:heal_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param skip_verification any
 ---@return unknown
 function MedicDamage:heal_unit_external(unit, skip_verification) end

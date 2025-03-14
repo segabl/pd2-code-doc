@@ -16,7 +16,7 @@ function SpawnManager:spawn_enemy_group_in_vis_group(event, i_vis_group) end
 ---@return unknown
 function SpawnManager:spawn_enemy_group(event) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

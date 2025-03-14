@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : NpcVehicleStateManeuverBackRight
 NpcVehicleStateManeuverBackRight = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NpcVehicleStateManeuverBackRight:init(unit) end
 

@@ -14,14 +14,14 @@ TimerUnitElement = {}
 ---@return unknown
 function TimerUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreTimerUnitElement:init(unit) end
 
 ---@return unknown
 function CoreTimerUnitElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreTimerUnitElement:load_unit(unit) end
 
@@ -45,11 +45,11 @@ function CoreTimerUnitElement:update_editing() end
 ---@return unknown
 function CoreTimerUnitElement:select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreTimerUnitElement:_remove_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreTimerUnitElement:_add_unit(unit) end
 
@@ -57,11 +57,11 @@ function CoreTimerUnitElement:_add_unit(unit) end
 ---@return unknown
 function CoreTimerUnitElement:add_triggers(vc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreTimerUnitElement:_add_unit_filter(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreTimerUnitElement:_remove_unit_filter(unit) end
 
@@ -84,7 +84,7 @@ TimerOperatorUnitElement = {}
 ---@return unknown
 function TimerOperatorUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreTimerOperatorUnitElement:init(unit) end
 
@@ -128,7 +128,7 @@ TimerTriggerUnitElement = {}
 ---@return unknown
 function TimerTriggerUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreTimerTriggerUnitElement:init(unit) end
 

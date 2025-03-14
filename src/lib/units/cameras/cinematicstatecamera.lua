@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : CinematicStateCamera
 CinematicStateCamera = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CinematicStateCamera:init(unit) end
 
@@ -39,7 +39,7 @@ function CinematicStateCamera:set_mission_element(mission_element) end
 ---@return unknown
 function CinematicStateCamera:anim_clbk_done() end
 
----@param unit any
+---@param unit Unit
 ---@param fov any
 ---@param transition_t any
 ---@return unknown
@@ -81,7 +81,7 @@ function CinematicStateCamera:update_slider_speed(data) end
 ---@return unknown
 function CinematicStateCamera:close_ews() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

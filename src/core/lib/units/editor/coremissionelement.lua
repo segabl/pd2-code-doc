@@ -13,7 +13,7 @@ MissionElement = {}
 ---@return unknown
 function MissionElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreMissionElement:init(unit) end
 
@@ -268,11 +268,11 @@ function CoreMissionElement:_base_check_removed_units(all_units) end
 function CoreMissionElement:_draw_elements(t, dt, elements, selected_unit, all_units) end
 
 ---@param selected_unit any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreMissionElement:_should_draw_link(selected_unit, unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreMissionElement:get_link_color(unit) end
 
@@ -286,12 +286,12 @@ function CoreMissionElement:draw_link_on_executed(t, dt, selected_unit) end
 ---@return unknown
 function CoreMissionElement:_get_delay_string(unit_id) end
 
----@param unit any
+---@param unit Unit
 ---@param prevent_undo any
 ---@return unknown
 function CoreMissionElement:add_on_executed(unit, prevent_undo) end
 
----@param unit any
+---@param unit Unit
 ---@param prevent_undo any
 ---@return unknown
 function CoreMissionElement:remove_on_execute(unit, prevent_undo) end
@@ -318,7 +318,7 @@ function CoreMissionElement:remove_link_element(element_name, unit_id, prevent_u
 ---@return unknown
 function CoreMissionElement:on_removed_link_element(element_name, unit_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreMissionElement:remove_links(unit) end
 
@@ -329,7 +329,7 @@ function CoreMissionElement:remove_all_links() end
 ---@return unknown
 function CoreMissionElement:delete_unit(units) end
 
----@param unit any
+---@param unit Unit
 ---@param id any
 ---@return unknown
 function CoreMissionElement:set_on_executed_element(unit, id) end
@@ -369,7 +369,7 @@ function CoreMissionElement:on_executed_alternatives_types() end
 ---@return unknown
 function CoreMissionElement:append_elements_sorted() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreMissionElement:combobox_name(unit) end
 

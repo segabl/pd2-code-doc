@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : TextGui
 TextGui = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TextGui:init(unit) end
 
@@ -19,7 +19,7 @@ function TextGui:setup() end
 ---@return unknown
 function TextGui:_create_text_gui(row) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

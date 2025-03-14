@@ -13,7 +13,7 @@ function NewFlamethrowerBase:init(...) end
 ---@return unknown
 function NewFlamethrowerBase:destroy(...) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

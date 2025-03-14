@@ -14,7 +14,7 @@ function UnitLinkCameraNode:init(settings) end
 ---@return unknown
 function UnitLinkCameraNode.compile_settings(xml_node, settings) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitLinkCameraNode:set_unit(unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : UnitDamage
 UnitDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@param ... any
 ---@return unknown
 function UnitDamage:init(unit, ...) end
@@ -46,7 +46,7 @@ function UnitDamage:can_play_collision_sfx() end
 function UnitDamage:set_play_collision_sfx_quite_time(quite_time) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any

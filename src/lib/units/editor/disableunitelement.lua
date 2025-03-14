@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : DisableUnitUnitElement
 DisableUnitUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DisableUnitUnitElement:init(unit) end
 
 ---@return unknown
 function DisableUnitUnitElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DisableUnitUnitElement:load_unit(unit) end
 
@@ -36,11 +36,11 @@ function DisableUnitUnitElement:update_editing() end
 ---@return unknown
 function DisableUnitUnitElement:select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DisableUnitUnitElement:_remove_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DisableUnitUnitElement:_add_unit(unit) end
 

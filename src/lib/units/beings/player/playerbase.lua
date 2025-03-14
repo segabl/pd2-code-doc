@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerBase
 PlayerBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerBase:init(unit) end
 
@@ -15,7 +15,7 @@ function PlayerBase:post_init() end
 ---@return unknown
 function PlayerBase:update_concealment() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -103,7 +103,7 @@ function PlayerBase:arrest_settings() end
 ---@return unknown
 function PlayerBase:_unregister() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerBase:pre_destroy(unit) end
 

@@ -18,7 +18,7 @@ function TeamAIBase:default_weapon_name(slot) end
 ---@return unknown
 function TeamAIBase:arrest_settings() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TeamAIBase:pre_destroy(unit) end
 

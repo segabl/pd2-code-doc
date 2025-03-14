@@ -18,7 +18,7 @@ function ElementAreaTrigger:project_amount_all() end
 ---@return unknown
 function ElementAreaTrigger:project_amount_inside() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaTrigger:is_instigator_valid(unit) end
 

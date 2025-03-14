@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpecialObjectiveUnitElement
 SpecialObjectiveUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpecialObjectiveUnitElement:init(unit) end
 

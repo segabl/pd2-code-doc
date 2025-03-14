@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : CoreEditableGui
 CoreEditableGui = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreEditableGui:init(unit) end
 

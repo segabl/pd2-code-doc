@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : TeammateCommentUnitElement
 TeammateCommentUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TeammateCommentUnitElement:init(unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerStateUnitElement
 PlayerStateUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerStateUnitElement:init(unit) end
 

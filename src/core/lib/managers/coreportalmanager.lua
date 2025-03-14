@@ -19,26 +19,26 @@ function PortalManager:pseudo_reset() end
 ---@return unknown
 function PortalManager:add_portal(polygon_tbl, min, max) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalManager:add_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalManager:remove_dynamic_unit(unit) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param activated any
 ---@return unknown
 function PortalManager:unit_deactivated(tag, unit, body, activated) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalManager:remove_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalManager:delete_unit(unit) end
 
@@ -48,7 +48,7 @@ function PortalManager:find_unused_ids() end
 ---@return unknown
 function PortalManager:remove_unused_ids() end
 
----@param unit any
+---@param unit Unit
 ---@param i any
 ---@param inverse any
 ---@return unknown
@@ -69,11 +69,11 @@ function PortalManager:restart_effects() end
 ---@return unknown
 function PortalManager:render() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalManager:add_to_hide_list(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalManager:remove_from_hide_list(unit) end
 
@@ -116,7 +116,7 @@ function PortalManager:group_name() end
 ---@return unknown
 function PortalManager:check_positions() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalManager:unit_in_any_unit_group(unit) end
 
@@ -137,11 +137,11 @@ PortalShape = {}
 ---@return unknown
 function PortalShape:init(polygon_tbl, min, max) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalShape:add_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalShape:remove_unit(unit) end
 
@@ -167,7 +167,7 @@ function PortalShape:is_inside() end
 ---@return unknown
 function PortalShape:update(time, rel_time) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalShape:_change_visibility(unit) end
 
@@ -204,15 +204,15 @@ function PortalUnitGroup:add_shape(params) end
 ---@return unknown
 function PortalUnitGroup:remove_shape(shape) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalUnitGroup:add_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalUnitGroup:add_unit_id(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalUnitGroup:remove_unit_id(unit) end
 
@@ -236,12 +236,12 @@ function PortalUnitGroup:_change_units_visibility(diff) end
 ---@return unknown
 function PortalUnitGroup:_change_units_visibility_in_editor(diff) end
 
----@param unit any
+---@param unit Unit
 ---@param diff any
 ---@return unknown
 function PortalUnitGroup:_change_visibility(unit, diff) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PortalUnitGroup:unit_in_group(unit) end
 

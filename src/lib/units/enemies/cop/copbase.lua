@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CopBase
 CopBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopBase:init(unit) end
 
@@ -16,7 +16,7 @@ function CopBase:post_init() end
 ---@return unknown
 function CopBase:hide_and_remove_collisions_for_a_few_frames(frames) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -92,7 +92,7 @@ function CopBase:prevent_main_bones_disabling(state) end
 ---@return unknown
 function CopBase:_set_animated_bones_state(state, changing_prevention_state) end
 
----@param unit any
+---@param unit Unit
 ---@param anim_act any
 ---@param send_to_action any
 ---@return unknown
@@ -130,7 +130,7 @@ function CopBase:char_tweak() end
 ---@return unknown
 function CopBase:melee_weapon() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopBase:pre_destroy(unit) end
 

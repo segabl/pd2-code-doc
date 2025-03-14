@@ -12,7 +12,7 @@ function ElementDisableUnit:init(...) end
 ---@return unknown
 function ElementDisableUnit:on_script_activated() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementDisableUnit:_load_unit(unit) end
 

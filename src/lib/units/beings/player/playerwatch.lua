@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : PlayerWatch
 PlayerWatch = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerWatch:init(unit) end
 

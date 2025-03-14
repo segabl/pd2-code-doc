@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ModifyPlayerElement
 ModifyPlayerElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ModifyPlayerElement:init(unit) end
 

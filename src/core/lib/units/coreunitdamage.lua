@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : CoreUnitDamage
 CoreUnitDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@param default_body_extension_class any
 ---@param body_extension_class_map any
 ---@param ignore_body_collisions any
@@ -20,7 +20,7 @@ function CoreUnitDamage:get_sound_source(object) end
 ---@return unknown
 function CoreUnitDamage:destroy() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -42,7 +42,7 @@ function CoreUnitDamage:populate_proximity_range_data(data, sub_data_name, eleme
 ---@return unknown
 function CoreUnitDamage:set_proximity_enabled(name, enabled) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -70,7 +70,7 @@ function CoreUnitDamage:is_proximity_range_active(range_data) end
 ---@return unknown
 function CoreUnitDamage:check_proximity_activation_count(data) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@param data any
@@ -619,7 +619,7 @@ function CoreUnitDamage:receive_mover_collision_damage() end
 function CoreUnitDamage:set_receive_mover_collision_damage(receive_mover_damage) end
 
 ---@param time any
----@param unit any
+---@param unit Unit
 ---@param other_unit any
 ---@param other_body any
 ---@param position any
@@ -632,7 +632,7 @@ function CoreUnitDamage:can_mover_collide(time, unit, other_unit, other_body, po
 
 ---@param time any
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -678,7 +678,7 @@ function CoreUnitDamage:add_angular_velocity(position, direction, body, other_bo
 function CoreUnitDamage:get_collision_damage(tag, body, other_unit, other_body, position, normal, collision_velocity, is_mover_collision) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -690,7 +690,7 @@ function CoreUnitDamage:get_collision_damage(tag, body, other_unit, other_body, 
 ---@return unknown
 function CoreUnitDamage:body_collision_callback(tag, unit, body, other_unit, other_body, position, normal, collision_velocity, velocity, other_velocity) end
 
----@param unit any
+---@param unit Unit
 ---@param other_unit any
 ---@param other_body any
 ---@param position any
@@ -702,7 +702,7 @@ function CoreUnitDamage:body_collision_callback(tag, unit, body, other_unit, oth
 function CoreUnitDamage:mover_collision_callback(unit, other_unit, other_body, position, normal, collision_velocity, velocity, other_velocity) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -737,7 +737,7 @@ function CoreUnitDamage:toggle_debug_collision_mover() end
 function CoreUnitDamage:set_debug_collision_mover(enabled) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -752,7 +752,7 @@ function CoreUnitDamage:set_debug_collision_mover(enabled) end
 ---@return unknown
 function CoreUnitDamage:debug_collision_body(tag, unit, body, other_unit, other_body, position, normal, collision_velocity, velocity, other_velocity, new_velocity, direction, damage) end
 
----@param unit any
+---@param unit Unit
 ---@param other_unit any
 ---@param other_body any
 ---@param position any
@@ -796,7 +796,7 @@ function CoreUnitDamage:kill(endurance_type, attack_unit, dest_body, normal, pos
 ---@return unknown
 function CoreUnitDamage:remove() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreUnitDamage:add_inherit_destroy_unit(unit) end
 
@@ -809,7 +809,7 @@ function CoreUnitDamage:has_sequence(sequence_name) end
 ---@return unknown
 function CoreUnitDamage:set_variable(key, val) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function CoreUnitDamage:anim_clbk_set_sequence_block_state(unit, state) end
@@ -830,7 +830,7 @@ function CoreUnitDamage:add_queued_sequence(name, params) end
 ---@field new fun(self, ...) : CoreBodyDamage
 CoreBodyDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@param unit_extension any
 ---@param body any
 ---@param body_element any
@@ -1067,7 +1067,7 @@ function CoreBodyDamage:load(data) end
 ---@field new fun(self, ...) : CoreAfroBodyDamage
 CoreAfroBodyDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@param unit_extension any
 ---@param body any
 ---@param body_element any
@@ -1138,7 +1138,7 @@ function CoreAfroBodyDamage:damage(endurance_type, attack_unit, normal, position
 ---@field new fun(self, ...) : CoreDamageWaterCheck
 CoreDamageWaterCheck = {}
 
----@param unit any
+---@param unit Unit
 ---@param damage_ext any
 ---@param name any
 ---@param interval any
@@ -1210,7 +1210,7 @@ function CoreDamageWaterCheck:get_body_depth() end
 function CoreDamageWaterCheck:set_body_depth(body_depth) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param surface any
 ---@param enter any
@@ -1221,7 +1221,7 @@ function CoreDamageWaterCheck:set_body_depth(body_depth) end
 function CoreDamageWaterCheck:water_collision(tag, unit, body, surface, enter, position, normal, velocity) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param activated any
 ---@return unknown
@@ -1234,7 +1234,7 @@ function CoreDamageWaterCheck:to_string() end
 ---@field new fun(self, ...) : CoreInflictUpdator
 CoreInflictUpdator = {}
 
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param body_damage_ext any
 ---@param inflict_element any
@@ -1288,7 +1288,7 @@ function CoreInflictUpdator:get_attribute(attribute) end
 ---@field new fun(self, ...) : CoreInflictFireUpdator
 CoreInflictFireUpdator = {}
 
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param body_damage_ext any
 ---@param inflict_element any

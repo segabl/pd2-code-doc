@@ -28,11 +28,11 @@ function ObjectInteractionManager:interupt_action_interact() end
 ---@return unknown
 function ObjectInteractionManager:active_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ObjectInteractionManager:add_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ObjectInteractionManager:remove_unit(unit) end
 
@@ -43,13 +43,13 @@ function ObjectInteractionManager:remove_unit(unit) end
 ---@return unknown
 function ObjectInteractionManager:_update_targeted(player_pos, player_unit, hand_unit, hand_id) end
 
----@param unit any
+---@param unit Unit
 ---@param camera_pos any
 ---@param locator any
 ---@return unknown
 function ObjectInteractionManager:_raycheck_ok(unit, camera_pos, locator) end
 
----@param unit any
+---@param unit Unit
 ---@param id any
 ---@return unknown
 function ObjectInteractionManager:_in_close_list(unit, id) end

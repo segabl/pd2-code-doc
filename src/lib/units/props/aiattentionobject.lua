@@ -2,9 +2,24 @@
 
 ---@class AIAttentionObject
 ---@field new fun(self, ...) : AIAttentionObject
+---@field REACT_IDLE 1
+---@field REACT_CURIOUS 2
+---@field REACT_CHECK 3
+---@field REACT_SUSPICIOUS 4
+---@field REACT_SURPRISED 5
+---@field REACT_SCARED 6
+---@field REACT_AIM 7
+---@field REACT_ARREST 8
+---@field REACT_DISARM 9
+---@field REACT_SHOOT 10
+---@field REACT_MELEE 11
+---@field REACT_COMBAT 12
+---@field REACT_SPECIAL_ATTACK 13
+---@field REACT_MIN 1
+---@field REACT_MAX 13
 AIAttentionObject = {}
 
----@param unit any
+---@param unit Unit
 ---@param is_not_extension any
 ---@return unknown
 function AIAttentionObject:init(unit, is_not_extension) end
@@ -12,7 +27,7 @@ function AIAttentionObject:init(unit, is_not_extension) end
 ---@return unknown
 function AIAttentionObject:is_extension() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -56,14 +71,14 @@ function AIAttentionObject:override_attention(original_preset_name, override_pre
 ---@param filter any
 ---@param min any
 ---@param max any
----@param team any
+---@param team teamdata?
 ---@return unknown
 function AIAttentionObject:get_attention(filter, min, max, team) end
 
 ---@param test_settings any
 ---@param min any
 ---@param max any
----@param team any
+---@param team teamdata?
 ---@return unknown
 function AIAttentionObject:verify_attention(test_settings, min, max, team) end
 
@@ -110,8 +125,7 @@ function AIAttentionObject:on_enemy_weapons_hot() end
 ---@return unknown
 function AIAttentionObject:link(parent_unit, obj_name, local_pos) end
 
----@param team any
----@return unknown
+---@param team teamdata
 function AIAttentionObject:set_team(team) end
 
 ---@param data any

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : MissionEndUnitElement
 MissionEndUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionEndUnitElement:init(unit) end
 

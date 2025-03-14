@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : AIForceAttentionOperatorElement
 AIForceAttentionOperatorElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AIForceAttentionOperatorElement:init(unit) end
 

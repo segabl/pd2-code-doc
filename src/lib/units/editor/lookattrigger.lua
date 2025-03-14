@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : LookAtTriggerUnitElement
 LookAtTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function LookAtTriggerUnitElement:init(unit) end
 

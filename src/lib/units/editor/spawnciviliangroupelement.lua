@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpawnCivilianGroupUnitElement
 SpawnCivilianGroupUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpawnCivilianGroupUnitElement:init(unit) end
 

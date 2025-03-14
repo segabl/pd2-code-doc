@@ -14,7 +14,7 @@ RandomUnitElement = {}
 ---@return unknown
 function RandomUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreRandomUnitElement:init(unit) end
 
@@ -35,23 +35,23 @@ function CoreRandomUnitElement:add_element() end
 ---@return unknown
 function CoreRandomUnitElement:add_triggers(vc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreRandomUnitElement:remove_links(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreRandomUnitElement:_add_counter_filter(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreRandomUnitElement:_set_counter_id(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreRandomUnitElement:_remove_counter_filter(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreRandomUnitElement:_remove_counter_id(unit) end
 

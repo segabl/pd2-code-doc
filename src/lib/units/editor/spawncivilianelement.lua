@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpawnCivilianUnitElement
 SpawnCivilianUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpawnCivilianUnitElement:init(unit) end
 
@@ -41,7 +41,7 @@ function SpawnCivilianUnitElement:_load_pickup() end
 ---@return unknown
 function SpawnCivilianUnitElement:add_to_mission_package() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpawnCivilianUnitElement:_resolve_team(unit) end
 

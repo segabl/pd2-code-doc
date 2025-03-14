@@ -5,11 +5,11 @@
 ---@field new fun(self, ...) : SmokeGrenade
 SmokeGrenade = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SmokeGrenade:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -22,7 +22,7 @@ function SmokeGrenade:_detonate() end
 function SmokeGrenade:_play_sound_and_effects() end
 
 ---@param col_ray any
----@param unit any
+---@param unit Unit
 ---@param damage any
 ---@return unknown
 function SmokeGrenade:_give_smoke_damage(col_ray, unit, damage) end

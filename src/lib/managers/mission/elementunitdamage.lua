@@ -18,11 +18,11 @@ function MissionScriptElement:on_created() end
 ---@return unknown
 function ElementUnitDamage:on_script_activated() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementUnitDamage:_load_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param attacker any
 ---@param damage_type any
 ---@param damage any

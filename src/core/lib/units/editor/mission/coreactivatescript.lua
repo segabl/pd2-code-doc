@@ -14,7 +14,7 @@ ActivateScriptUnitElement = {}
 ---@return unknown
 function ActivateScriptUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreActivateScriptUnitElement:init(unit) end
 

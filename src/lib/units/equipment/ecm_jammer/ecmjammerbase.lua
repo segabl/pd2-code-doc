@@ -20,7 +20,7 @@ function ECMJammerBase:set_server_information(peer_id) end
 ---@return unknown
 function ECMJammerBase:server_information() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ECMJammerBase:init(unit) end
 
@@ -75,7 +75,7 @@ function ECMJammerBase:set_active(active) end
 ---@return unknown
 function ECMJammerBase:active() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

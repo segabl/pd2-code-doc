@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SmokeGrenadeElement
 SmokeGrenadeElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SmokeGrenadeElement:init(unit) end
 

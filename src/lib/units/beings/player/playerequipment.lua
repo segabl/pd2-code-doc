@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : PlayerEquipment
 PlayerEquipment = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerEquipment:init(unit) end
 
@@ -25,7 +25,7 @@ function PlayerEquipment:use_trip_mine() end
 ---@return unknown
 function PlayerEquipment:valid_placement(equipment_data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerEquipment:_disable_contour(unit) end
 

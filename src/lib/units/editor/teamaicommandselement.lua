@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : TeamAICommandsElement
 TeamAICommandsElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TeamAICommandsElement:init(unit) end
 

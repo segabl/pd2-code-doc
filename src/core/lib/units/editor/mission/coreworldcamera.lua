@@ -14,7 +14,7 @@ WorldCameraUnitElement = {}
 ---@return unknown
 function WorldCameraUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreWorldCameraUnitElement:init(unit) end
 

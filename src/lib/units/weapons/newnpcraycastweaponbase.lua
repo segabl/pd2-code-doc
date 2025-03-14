@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : NewNPCRaycastWeaponBase
 NewNPCRaycastWeaponBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NewNPCRaycastWeaponBase:init(unit) end
 
@@ -77,7 +77,7 @@ function NewNPCRaycastWeaponBase:fire_blank(direction, impact, sub_id, override_
 ---@return unknown
 function NewNPCRaycastWeaponBase:_spawn_muzzle_effect(from_pos, direction) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NewNPCRaycastWeaponBase:destroy(unit) end
 

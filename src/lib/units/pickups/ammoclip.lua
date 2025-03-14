@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : AmmoClip
 AmmoClip = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AmmoClip:init(unit) end
 
 ---@return unknown
 function AmmoClip:reload_contour() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AmmoClip:_pickup(unit) end
 

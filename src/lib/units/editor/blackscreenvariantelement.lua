@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : BlackscreenVariantElement
 BlackscreenVariantElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BlackscreenVariantElement:init(unit) end
 
@@ -24,7 +24,7 @@ function BlackscreenVariantElement:_get_params(panel, panel_sizer) end
 ---@field new fun(self, ...) : EndscreenVariantElement
 EndscreenVariantElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EndscreenVariantElement:init(unit) end
 
@@ -38,7 +38,7 @@ function EndscreenVariantElement:_get_params(panel, panel_sizer) end
 ---@field new fun(self, ...) : FailureVariantElement
 FailureVariantElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FailureVariantElement:init(unit) end
 

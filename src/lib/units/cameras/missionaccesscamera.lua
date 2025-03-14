@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : MissionAccessCamera
 MissionAccessCamera = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionAccessCamera:init(unit) end
 

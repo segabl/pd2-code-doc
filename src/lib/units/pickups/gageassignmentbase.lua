@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : GageAssignmentBase
 GageAssignmentBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GageAssignmentBase:init(unit) end
 
@@ -13,7 +13,7 @@ function GageAssignmentBase:init(unit) end
 ---@return unknown
 function GageAssignmentBase:sync_pickup(peer) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GageAssignmentBase:_pickup(unit) end
 

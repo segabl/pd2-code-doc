@@ -55,7 +55,7 @@ function Shape:name() end
 ---@return unknown
 function Shape:unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function Shape:set_unit(unit) end
 

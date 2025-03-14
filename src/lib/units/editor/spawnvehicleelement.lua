@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpawnVehicleElement
 SpawnVehicleElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpawnVehicleElement:init(unit) end
 

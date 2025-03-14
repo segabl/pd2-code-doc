@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : VehicleDamage
 VehicleDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDamage:init(unit) end
 

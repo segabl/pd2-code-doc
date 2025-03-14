@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : Pickup
 Pickup = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function Pickup:init(unit) end
 
@@ -14,7 +14,7 @@ function Pickup:sync_pickup() end
 ---@return unknown
 function Pickup:_pickup() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function Pickup:pickup(unit) end
 
@@ -41,7 +41,7 @@ function Pickup:load(data) end
 ---@return unknown
 function Pickup:sync_net_event(event, peer) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function Pickup:destroy(unit) end
 

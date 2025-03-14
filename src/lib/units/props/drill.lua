@@ -18,7 +18,7 @@ function Drill.get_upgrades(drill_unit, player) end
 ---@return unknown
 function Drill.create_upgrades(auto_repair_level_1, auto_repair_level_2, speed_upgrade_level, silent_drill, reduced_alert) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function Drill:init(unit) end
 

@@ -14,7 +14,7 @@ LogicChanceUnitElement = {}
 ---@return unknown
 function LogicChanceUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreLogicChanceUnitElement:init(unit) end
 
@@ -37,7 +37,7 @@ LogicChanceOperatorUnitElement = {}
 ---@return unknown
 function LogicChanceOperatorUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreLogicChanceOperatorUnitElement:init(unit) end
 
@@ -81,7 +81,7 @@ LogicChanceTriggerUnitElement = {}
 ---@return unknown
 function LogicChanceTriggerUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreLogicChanceTriggerUnitElement:init(unit) end
 

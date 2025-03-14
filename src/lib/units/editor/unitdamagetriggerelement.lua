@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : UnitDamageTriggerUnitElement
 UnitDamageTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitDamageTriggerUnitElement:init(unit) end
 
 ---@return unknown
 function UnitDamageTriggerUnitElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitDamageTriggerUnitElement:load_unit(unit) end
 
@@ -36,11 +36,11 @@ function UnitDamageTriggerUnitElement:update_editing() end
 ---@return unknown
 function UnitDamageTriggerUnitElement:select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitDamageTriggerUnitElement:_remove_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitDamageTriggerUnitElement:_add_unit(unit) end
 

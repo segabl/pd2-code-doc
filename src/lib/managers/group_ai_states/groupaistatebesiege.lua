@@ -25,17 +25,17 @@ function GroupAIStateBesiege:paused_update(t, dt) end
 ---@return any
 function GroupAIStateBesiege:_queue_police_upd_task() end
 
----@param unit any
+---@param unit Unit
 ---@param team_id any
 ---@return any
 function GroupAIStateBesiege:assign_enemy_to_group_ai(unit, team_id) end
 
----@param unit any
+---@param unit Unit
 ---@param group any
 ---@return any
 function GroupAIStateBesiege:assign_enemy_to_existing_group(unit, group) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBesiege:on_enemy_unregistered(unit) end
 
@@ -163,25 +163,25 @@ function GroupAIStateBesiege:_perform_group_spawning(spawn_task, force, use_last
 ---@return any
 function GroupAIStateBesiege:_upd_reenforce_tasks() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBesiege:register_criminal(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBesiege:unregister_criminal(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param objective any
 ---@return any
 function GroupAIStateBesiege:on_objective_complete(unit, objective) end
 
----@param unit any
+---@param unit Unit
 ---@param objective any
 ---@return any
 function GroupAIStateBesiege:on_defend_travel_end(unit, objective) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBesiege:on_cop_jobless(unit) end
 
@@ -241,7 +241,7 @@ function GroupAIStateBesiege:get_safe_enemy_loot_drop_point(start_nav_seg) end
 ---@return any
 function GroupAIStateBesiege:_draw_spawn_points() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBesiege:on_hostage_fleeing(unit) end
 
@@ -251,12 +251,12 @@ function GroupAIStateBesiege:on_hostage_flee_end() end
 ---@return any
 function GroupAIStateBesiege:can_hostage_flee() end
 
----@param unit any
+---@param unit Unit
 ---@param update any
 ---@return any
 function GroupAIStateBesiege:add_to_surrendered(unit, update) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function GroupAIStateBesiege:remove_from_surrendered(unit) end
 
@@ -402,7 +402,7 @@ function GroupAIStateBesiege:_verify_group_objective(group) end
 ---@return any
 function GroupAIStateBesiege:team_data(team_id) end
 
----@param unit any
+---@param unit Unit
 ---@param team_id any
 ---@return any
 function GroupAIStateBesiege:set_char_team(unit, team_id) end

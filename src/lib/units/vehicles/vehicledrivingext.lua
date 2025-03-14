@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : VehicleDrivingExt
 VehicleDrivingExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:init(unit) end
 
@@ -18,7 +18,7 @@ function VehicleDrivingExt:set_tweak_data(data) end
 ---@return unknown
 function VehicleDrivingExt:get_view() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -120,15 +120,15 @@ function VehicleDrivingExt:drop_loot() end
 ---@return unknown
 function VehicleDrivingExt:_should_drop_loot() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:_store_loot(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:server_store_loot_in_vehicle(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param carry_id any
 ---@param multiplier any
 ---@return unknown
@@ -206,7 +206,7 @@ function VehicleDrivingExt:find_seat_for_player(player) end
 ---@return unknown
 function VehicleDrivingExt:num_players_inside() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:place_team_ai_in_vehicle(unit) end
 
@@ -292,7 +292,7 @@ function VehicleDrivingExt:_set_input(accelerate, steer, brake, handbrake, gear_
 ---@return unknown
 function VehicleDrivingExt:_wake_nearby_dynamics() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:_should_push(unit) end
 
@@ -359,33 +359,33 @@ function VehicleDrivingExt:_create_seat_SO(seat, dont_register) end
 function VehicleDrivingExt:clbk_drive_SO_verification(seat, candidate_unit) end
 
 ---@param seat any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:on_drive_SO_administered(seat, unit) end
 
 ---@param seat any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:on_drive_SO_started(seat, unit) end
 
 ---@param seat any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:on_drive_SO_completed(seat, unit) end
 
 ---@param seat any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:on_drive_SO_failed(seat, unit) end
 
 ---@param action any
 ---@param seat_name any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:sync_ai_vehicle_action(action, seat_name, unit) end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -414,11 +414,11 @@ function VehicleDrivingExt:_interact_trunk() end
 ---@return unknown
 function VehicleDrivingExt:_number_in_the_vehicle() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:pre_destroy(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleDrivingExt:destroy(unit) end
 

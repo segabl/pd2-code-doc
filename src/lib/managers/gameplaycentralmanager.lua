@@ -7,21 +7,21 @@ GamePlayCentralManager = {}
 ---@return unknown
 function GamePlayCentralManager:init() end
 
----@param unit any
+---@param unit Unit
 ---@param redirect_unit any
 ---@return unknown
 function GamePlayCentralManager:add_decal_unit_redirect(unit, redirect_unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GamePlayCentralManager:remove_decal_unit_redirect(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param redirect_str any
 ---@return unknown
 function GamePlayCentralManager:add_impact_override(unit, redirect_str) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GamePlayCentralManager:remove_impact_override(unit) end
 
@@ -72,7 +72,7 @@ function GamePlayCentralManager:end_update(t, dt) end
 ---@return unknown
 function GamePlayCentralManager:play_impact_sound_and_effects(params) end
 
----@param unit any
+---@param unit Unit
 ---@param m_pos any
 ---@return unknown
 function GamePlayCentralManager:request_play_footstep(unit, m_pos) end
@@ -140,11 +140,11 @@ function GamePlayCentralManager:set_flashlights_on_player_on(flashlights_on_play
 ---@return unknown
 function GamePlayCentralManager:flashlights_on_player_on() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GamePlayCentralManager:mission_disable_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GamePlayCentralManager:mission_enable_unit(unit) end
 
@@ -185,7 +185,7 @@ function GamePlayCentralManager:queue_fire_raycast(expire_t, weapon_unit, ...) e
 ---@return unknown
 function GamePlayCentralManager:_flush_queue_fire_raycast() end
 
----@param unit any
+---@param unit Unit
 ---@param use_player_upgrades any
 ---@return unknown
 function GamePlayCentralManager:auto_highlight_enemy(unit, use_player_upgrades) end
@@ -194,7 +194,7 @@ function GamePlayCentralManager:auto_highlight_enemy(unit, use_player_upgrades) 
 ---@return unknown
 function GamePlayCentralManager:get_shotgun_push_range(attacker) end
 
----@param unit any
+---@param unit Unit
 ---@param hit_pos any
 ---@param dir any
 ---@param distance any
@@ -202,7 +202,7 @@ function GamePlayCentralManager:get_shotgun_push_range(attacker) end
 ---@return unknown
 function GamePlayCentralManager:do_shotgun_push(unit, hit_pos, dir, distance, attacker) end
 
----@param unit any
+---@param unit Unit
 ---@param hit_pos any
 ---@param dir any
 ---@param distance any
@@ -210,13 +210,13 @@ function GamePlayCentralManager:do_shotgun_push(unit, hit_pos, dir, distance, at
 ---@return unknown
 function GamePlayCentralManager:_do_shotgun_push(unit, hit_pos, dir, distance, attacker) end
 
----@param unit any
+---@param unit Unit
 ---@param object any
 ---@param effect any
 ---@return unknown
 function GamePlayCentralManager:add_projectile_trail(unit, object, effect) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GamePlayCentralManager:remove_projectile_trail(unit) end
 

@@ -82,7 +82,7 @@ function CivilianLogicIdle.clbk_action_timeout(ignore_this, data) end
 function CivilianLogicIdle.is_obstructed(data, aggressor_unit) end
 
 ---@param data logicdata
----@param attention_objects any
+---@param attention_objects table<userdata, attentiondata>
 ---@return unknown
 function CivilianLogicIdle._get_priority_attention(data, attention_objects) end
 

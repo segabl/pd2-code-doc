@@ -9,7 +9,7 @@ function simple_value_string(name, value, t) end
 ---@param c any
 ---@param name any
 ---@param t any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function save_value_string(c, name, t, unit) end
 

@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : StopwatchUnitElement
 StopwatchUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchUnitElement:init(unit) end
 
 ---@return unknown
 function StopwatchUnitElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchUnitElement:load_unit(unit) end
 
@@ -36,11 +36,11 @@ function StopwatchUnitElement:update_editing() end
 ---@return unknown
 function StopwatchUnitElement:select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchUnitElement:_remove_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchUnitElement:_add_unit(unit) end
 
@@ -58,11 +58,11 @@ function StopwatchUnitElement:on_removed_link_element(element_name, unit_id) end
 ---@return unknown
 function StopwatchUnitElement:add_triggers(vc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchUnitElement:_add_unit_filter(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchUnitElement:_remove_unit_filter(unit) end
 
@@ -76,7 +76,7 @@ function StopwatchUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : StopwatchOperatorUnitElement
 StopwatchOperatorUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchOperatorUnitElement:init(unit) end
 
@@ -115,7 +115,7 @@ function StopwatchOperatorUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : StopwatchTriggerUnitElement
 StopwatchTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchTriggerUnitElement:init(unit) end
 
@@ -150,7 +150,7 @@ function StopwatchTriggerUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : StopwatchFilterUnitElement
 StopwatchFilterUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchFilterUnitElement:init(unit) end
 
@@ -179,11 +179,11 @@ function StopwatchFilterUnitElement:add_triggers(vc) end
 ---@return unknown
 function StopwatchFilterUnitElement:_add_stopwatch_value_unit(params) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchFilterUnitElement:_add_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StopwatchFilterUnitElement:_add_unit_filter(unit) end
 

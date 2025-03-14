@@ -41,7 +41,7 @@ function DOTManager:_on_removed_dot(dot_info, destroyed) end
 ---@return unknown
 function DOTManager:_on_removed_variant(dot_info, var_info, destroyed) end
 
----@param unit any
+---@param unit Unit
 ---@param by_variant any
 ---@return unknown
 function DOTManager:is_enemy_doted(unit, by_variant) end

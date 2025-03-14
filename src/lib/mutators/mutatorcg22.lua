@@ -31,7 +31,7 @@ function MutatorCG22:spawn_network_units() end
 ---@return unknown
 function MutatorCG22:remove_network_units() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MutatorCG22:network_delete_unit(unit) end
 
@@ -79,12 +79,12 @@ function MutatorCG22:_spawn_present() end
 ---@return unknown
 function MutatorCG22:sync_spawn_present(tree, sequence, bag_carry_int) end
 
----@param unit any
+---@param unit Unit
 ---@param env any
 ---@return unknown
 function MutatorCG22:damage_on_present_spawned(unit, env) end
 
----@param unit any
+---@param unit Unit
 ---@param env any
 ---@return unknown
 function MutatorCG22:server_present_spawned(unit, env) end
@@ -213,17 +213,17 @@ function MutatorCG22:activate_ammo_types_buff(buff_td) end
 ---@return unknown
 function MutatorCG22:remove_ammo_types_buff(buff_id, ammo_type) end
 
----@param unit any
+---@param unit Unit
 ---@param sequence any
 ---@return unknown
 function MutatorCG22:safe_run_sequence(unit, sequence) end
 
----@param unit any
+---@param unit Unit
 ---@param anim_id any
 ---@return unknown
 function MutatorCG22:sync_santa_anim(unit, anim_id) end
 
----@param unit any
+---@param unit Unit
 ---@param damage_info any
 ---@return unknown
 function MutatorCG22:on_snowman_killed(unit, damage_info) end

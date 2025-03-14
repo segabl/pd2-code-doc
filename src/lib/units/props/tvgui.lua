@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : TvGui
 TvGui = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TvGui:init(unit) end
 

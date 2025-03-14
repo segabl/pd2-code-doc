@@ -14,7 +14,7 @@ ToggleUnitElement = {}
 ---@return unknown
 function ToggleUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreToggleUnitElement:init(unit) end
 

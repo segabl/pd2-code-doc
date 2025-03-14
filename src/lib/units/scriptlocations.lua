@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : ScriptLocations
 ScriptLocations = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ScriptLocations:init(unit) end
 

@@ -94,14 +94,14 @@ function SkinEditor:set_category_slot(category, slot) end
 ---@return unknown
 function SkinEditor:category_slot() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SkinEditor:set_weapon_unit(unit) end
 
 ---@return unknown
 function SkinEditor:weapon_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SkinEditor:set_second_weapon_unit(unit) end
 

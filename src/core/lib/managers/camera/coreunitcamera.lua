@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : CoreUnitCamera.UnitCamera
 UnitCamera = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitCamera:init(unit) end
 

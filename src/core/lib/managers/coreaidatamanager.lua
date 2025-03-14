@@ -19,19 +19,19 @@ function AiDataManager:add_patrol_path(name) end
 function AiDataManager:remove_patrol_path(name) end
 
 ---@param name any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AiDataManager:add_patrol_point(name, unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AiDataManager:delete_point_by_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AiDataManager:patrol_path_by_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AiDataManager:patrol_point_index_by_unit(unit) end
 

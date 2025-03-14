@@ -58,7 +58,7 @@ function NewRaycastWeaponBaseVR:update_reload_finish(t, dt) end
 ---@param anim_group_id any
 ---@param to any
 ---@param from any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NewRaycastWeaponBase:_play_reload_anim(anim_group_id, to, from, unit) end
 

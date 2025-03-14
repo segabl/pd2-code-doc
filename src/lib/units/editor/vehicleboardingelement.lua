@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : VehicleBoardingElement
 VehicleBoardingElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleBoardingElement:init(unit) end
 

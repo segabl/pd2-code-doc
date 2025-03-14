@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : VehicleStateInactive
 VehicleStateInactive = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleStateInactive:init(unit) end
 

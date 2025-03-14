@@ -14,7 +14,7 @@ GlobalEventTriggerUnitElement = {}
 ---@return unknown
 function GlobalEventTriggerUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreGlobalEventTriggerUnitElement:init(unit) end
 

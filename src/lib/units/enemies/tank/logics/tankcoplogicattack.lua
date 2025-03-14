@@ -26,12 +26,12 @@ function TankCopLogicAttack.update(data) end
 function TankCopLogicAttack.queued_update(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function TankCopLogicAttack._process_pathing_results(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function TankCopLogicAttack._cancel_chase_attempt(data, my_data) end
 
@@ -41,17 +41,17 @@ function TankCopLogicAttack._cancel_chase_attempt(data, my_data) end
 function TankCopLogicAttack.action_complete_clbk(data, action) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function TankCopLogicAttack.chk_should_turn(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function TankCopLogicAttack.queue_update(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param speed any
 ---@param end_rot any
 ---@return unknown

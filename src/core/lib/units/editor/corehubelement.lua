@@ -13,7 +13,7 @@ HubElement = {}
 ---@return unknown
 function HubElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreHubElement:init(unit) end
 

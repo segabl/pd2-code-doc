@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ActionMessageUnitElement
 ActionMessageUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ActionMessageUnitElement:init(unit) end
 

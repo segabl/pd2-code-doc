@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpecialObjectiveGroupElement
 SpecialObjectiveGroupElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpecialObjectiveGroupElement:init(unit) end
 

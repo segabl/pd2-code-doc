@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : HuskCopBrain
 HuskCopBrain = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskCopBrain:init(unit) end
 
@@ -96,7 +96,7 @@ function HuskCopBrain:player_ignore() end
 ---@return unknown
 function HuskCopBrain:on_team_set(team_data) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

@@ -4,17 +4,17 @@
 ---@field new fun(self, ...) : SimpleCharacter
 SimpleCharacter = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SimpleCharacter:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
 function SimpleCharacter:update(unit, t, dt) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

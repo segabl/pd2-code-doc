@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerParachuting
 PlayerParachuting = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerParachuting:init(unit) end
 

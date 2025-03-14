@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerIncapacitated
 PlayerIncapacitated = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerIncapacitated:init(unit) end
 

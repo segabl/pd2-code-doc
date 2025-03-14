@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SlowMotionElement
 SlowMotionElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SlowMotionElement:init(unit) end
 

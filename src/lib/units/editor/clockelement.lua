@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ClockUnitElement
 ClockUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ClockUnitElement:init(unit) end
 

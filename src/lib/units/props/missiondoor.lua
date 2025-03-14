@@ -5,11 +5,11 @@
 ---@field new fun(self, ...) : MissionDoor
 MissionDoor = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionDoor:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -18,7 +18,7 @@ function MissionDoor:update(unit, t, dt) end
 ---@return unknown
 function MissionDoor:activate() end
 
----@param unit any
+---@param unit Unit
 ---@param sequence_name any
 ---@return unknown
 function MissionDoor.run_mission_door_device_sequence(unit, sequence_name) end
@@ -26,7 +26,7 @@ function MissionDoor.run_mission_door_device_sequence(unit, sequence_name) end
 ---@return unknown
 function MissionDoor:deactivate() end
 
----@param unit any
+---@param unit Unit
 ---@param powered any
 ---@param enabled_interaction any
 ---@return unknown
@@ -44,12 +44,12 @@ function MissionDoor:set_powered(powered) end
 ---@return unknown
 function MissionDoor:set_on(state) end
 
----@param unit any
+---@param unit Unit
 ---@param type any
 ---@return unknown
 function MissionDoor:_get_device_unit_data(unit, type) end
 
----@param unit any
+---@param unit Unit
 ---@param type any
 ---@return unknown
 function MissionDoor:device_placed(unit, type) end
@@ -103,7 +103,7 @@ function MissionDoor:destroy(...) end
 ---@field new fun(self, ...) : MissionDoorDevice
 MissionDoorDevice = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionDoorDevice:init(unit) end
 

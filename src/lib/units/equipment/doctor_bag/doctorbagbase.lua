@@ -19,7 +19,7 @@ function DoctorBagBase:set_server_information(peer_id) end
 ---@return unknown
 function DoctorBagBase:server_information() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DoctorBagBase:init(unit) end
 
@@ -38,7 +38,7 @@ function DoctorBagBase:sync_setup(bits, peer_id) end
 ---@return unknown
 function DoctorBagBase:setup(bits) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -57,7 +57,7 @@ function DoctorBagBase:sync_net_event(event_id) end
 ---@return unknown
 function DoctorBagBase:_set_dynamic() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DoctorBagBase:take(unit) end
 
@@ -68,7 +68,7 @@ function DoctorBagBase:_set_visual_stage() end
 ---@return unknown
 function DoctorBagBase:sync_taken(amount) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DoctorBagBase:_take(unit) end
 
@@ -95,7 +95,7 @@ function DoctorBagBase:destroy() end
 ---@field new fun(self, ...) : CustomDoctorBagBase
 CustomDoctorBagBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CustomDoctorBagBase:init(unit) end
 

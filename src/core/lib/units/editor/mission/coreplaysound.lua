@@ -14,7 +14,7 @@ PlaySoundUnitElement = {}
 ---@return unknown
 function PlaySoundUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CorePlaySoundUnitElement:init(unit) end
 

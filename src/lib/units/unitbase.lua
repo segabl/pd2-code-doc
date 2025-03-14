@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : UnitBase
 UnitBase = {}
 
----@param unit any
+---@param unit Unit
 ---@param update_enabled any
 ---@return unknown
 function UnitBase:init(unit, update_enabled) end
@@ -26,15 +26,15 @@ function UnitBase:save(data) end
 ---@return unknown
 function UnitBase:load(data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitBase:pre_destroy(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitBase:destroy(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param slot any
 ---@return unknown
 function UnitBase:set_slot(unit, slot) end

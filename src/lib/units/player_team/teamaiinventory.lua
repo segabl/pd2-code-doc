@@ -55,7 +55,7 @@ function TeamAIInventory:_unload_mask() end
 ---@return unknown
 function TeamAIInventory:_reset_mask_visibility() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TeamAIInventory:pre_destroy(unit) end
 

@@ -61,7 +61,7 @@ function ElementAreaTrigger:project_amount_all() end
 ---@return unknown
 function ElementAreaTrigger:project_amount_inside() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaTrigger:is_instigator_valid(unit) end
 
@@ -71,34 +71,34 @@ function ElementAreaTrigger:debug_draw() end
 ---@return unknown
 function ElementAreaTrigger:update_area() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaTrigger:sync_enter_area(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaTrigger:sync_exit_area(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaTrigger:sync_while_in_area(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaTrigger:_check_amount(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaTrigger:_should_trigger(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaTrigger:_check_instigator_rules(unit) end
 
 ---@return unknown
 function ElementAreaTrigger:_clean_destroyed_units() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaTrigger:_client_check_state(unit) end
 
@@ -158,27 +158,27 @@ function ElementAreaReportTrigger:_chk_local_client_execute(instigator, alternat
 ---@return unknown
 function ElementAreaReportTrigger:update_area() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:_check_state(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:_add_inside(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:_check_on_executed_reached_amount(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:_while_inside(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:_rule_failed(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:_remove_inside(unit) end
 
@@ -189,23 +189,23 @@ function ElementAreaReportTrigger:_remove_inside_by_index(index) end
 ---@return unknown
 function ElementAreaReportTrigger:_clean_destroyed_units() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:_client_check_state(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:sync_enter_area(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:sync_exit_area(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:sync_while_in_area(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAreaReportTrigger:sync_rule_failed(unit) end
 

@@ -14,7 +14,7 @@ function Ladder.current_ladder() end
 ---@return unknown
 function Ladder.next_ladder() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function Ladder:init(unit) end
 
@@ -25,7 +25,7 @@ function Ladder:set_config(check_ground_clipping) end
 ---@return unknown
 function Ladder:check_ground_clipping() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -130,7 +130,7 @@ function Ladder:set_upd_state(enabled) end
 ---@return unknown
 function Ladder:enabled() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function Ladder:destroy(unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : InvulnerableUnitElement
 InvulnerableUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function InvulnerableUnitElement:init(unit) end
 

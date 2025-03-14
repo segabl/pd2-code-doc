@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SentryGunBase
 SentryGunBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunBase:init(unit) end
 
@@ -84,7 +84,7 @@ function SentryGunBase:setup(owner, ammo_multiplier, armor_multiplier, spread_mu
 ---@return unknown
 function SentryGunBase:post_setup(fire_mode_index) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunBase:_on_picked_up_cash(unit) end
 
@@ -104,7 +104,7 @@ function SentryGunBase:get_type() end
 ---@return unknown
 function SentryGunBase:remove_dead_owner(dead_owner) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

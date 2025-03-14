@@ -128,7 +128,7 @@ function MotionPathManager:update(t, dt) end
 ---@param t any
 ---@param dt any
 ---@param path any
----@param unit any
+---@param unit Unit
 ---@param unit_and_pos any
 ---@param default_distance_threshold any
 ---@return unknown
@@ -137,19 +137,19 @@ function MotionPathManager:_move_unit(t, dt, path, unit, unit_and_pos, default_d
 ---@param t any
 ---@param dt any
 ---@param path any
----@param unit any
+---@param unit Unit
 ---@param unit_and_pos any
 ---@param default_distance_threshold any
 ---@param points_in_direction any
 ---@return unknown
 function MotionPathManager:_move_unit_to_checkpoint(t, dt, path, unit, unit_and_pos, default_distance_threshold, points_in_direction) end
 
----@param unit any
+---@param unit Unit
 ---@param move_direction any
 ---@return unknown
 function MotionPathManager:_get_target_rotation_for_unit(unit, move_direction) end
 
----@param unit any
+---@param unit Unit
 ---@param path any
 ---@return unknown
 function MotionPathManager:_remove_unit_from_path(unit, path) end
@@ -257,7 +257,7 @@ function MotionPathManager:find_nearest_ground_path(ground_unit_id) end
 function MotionPathManager:_choose_target_path_direction(ground_unit_position, target_path_info) end
 
 ---@param marker_position any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MotionPathManager:_is_marker_in_front(marker_position, unit) end
 

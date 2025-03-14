@@ -13,7 +13,7 @@ function HelperUnitManager:clear() end
 ---@return unknown
 function HelperUnitManager:_setup() end
 
----@param unit any
+---@param unit Unit
 ---@param type any
 ---@return unknown
 function HelperUnitManager:add_unit(unit, type) end

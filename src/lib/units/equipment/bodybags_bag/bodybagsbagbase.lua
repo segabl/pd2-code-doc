@@ -19,7 +19,7 @@ function BodyBagsBagBase:set_server_information(peer_id) end
 ---@return unknown
 function BodyBagsBagBase:server_information() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BodyBagsBagBase:init(unit) end
 
@@ -37,7 +37,7 @@ function BodyBagsBagBase:sync_setup(upgrade_lvl, peer_id) end
 ---@return unknown
 function BodyBagsBagBase:setup() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -56,7 +56,7 @@ function BodyBagsBagBase:sync_net_event(event_id) end
 ---@return unknown
 function BodyBagsBagBase:_set_dynamic() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BodyBagsBagBase:take_bodybag(unit) end
 
@@ -67,7 +67,7 @@ function BodyBagsBagBase:_set_visual_stage() end
 ---@return unknown
 function BodyBagsBagBase:sync_bodybag_taken(amount) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BodyBagsBagBase:_can_take_bodybag(unit) end
 
@@ -90,7 +90,7 @@ function BodyBagsBagBase:destroy() end
 ---@field new fun(self, ...) : CustomBodyBagsBagBase
 CustomBodyBagsBagBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CustomBodyBagsBagBase:init(unit) end
 

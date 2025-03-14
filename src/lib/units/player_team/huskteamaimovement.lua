@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : HuskTeamAIMovement
 HuskTeamAIMovement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskTeamAIMovement:init(unit) end
 

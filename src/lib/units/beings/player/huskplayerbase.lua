@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : HuskPlayerBase
 HuskPlayerBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerBase:init(unit) end
 
@@ -58,7 +58,7 @@ function HuskPlayerBase:upgrade_value(category, upgrade) end
 ---@return unknown
 function HuskPlayerBase:upgrade_level(category, upgrade) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerBase:pre_destroy(unit) end
 

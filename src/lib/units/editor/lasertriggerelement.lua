@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : LaserTriggerUnitElement
 LaserTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function LaserTriggerUnitElement:init(unit) end
 

@@ -4,12 +4,12 @@
 ---@field new fun(self, ...) : ArmorSkinExt
 ArmorSkinExt = {}
 
----@param unit any
+---@param unit Unit
 ---@param update_enabled any
 ---@return unknown
 function ArmorSkinExt:init(unit, update_enabled) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

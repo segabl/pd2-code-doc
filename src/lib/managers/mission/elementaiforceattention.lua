@@ -17,7 +17,7 @@ function ElementAIForceAttention:_get_unit(unit_id) end
 ---@return unknown
 function ElementAIForceAttention:on_executed(instigator) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementAIForceAttention:_register_force_attention_unit(unit) end
 

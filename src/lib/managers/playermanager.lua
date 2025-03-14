@@ -24,12 +24,12 @@ function PlayerManager:damage_absorption() end
 ---@return any
 function PlayerManager:set_damage_absorption(key, value) end
 
----@param unit any
+---@param unit Unit
 ---@param attack_data any
 ---@return any
 function PlayerManager:_on_expert_handling_event(unit, attack_data) end
 
----@param unit any
+---@param unit Unit
 ---@param attack_data any
 ---@return any
 function PlayerManager:_on_enter_trigger_happy_event(unit, attack_data) end
@@ -248,7 +248,7 @@ function PlayerManager:nr_players() end
 ---@return any
 function PlayerManager:set_nr_players(nr) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function PlayerManager:player_id(unit) end
 
@@ -281,7 +281,7 @@ function PlayerManager:set_player_state(state) end
 function PlayerManager:spawn_players(position, rotation, state) end
 
 ---@param id any
----@param unit any
+---@param unit Unit
 ---@return any
 function PlayerManager:spawned_player(id, unit) end
 
@@ -394,13 +394,13 @@ function PlayerManager:chk_store_armor_health_kill_counter(killed_unit, variant)
 ---@return any
 function PlayerManager:_update_damage_dealt(t, dt) end
 
----@param unit any
+---@param unit Unit
 ---@param damage_info any
 ---@return any
 function PlayerManager:on_damage_dealt(unit, damage_info) end
 
 ---@param t any
----@param unit any
+---@param unit Unit
 ---@param damage_info any
 ---@return any
 function PlayerManager:_check_damage_to_cops(t, unit, damage_info) end
@@ -414,7 +414,7 @@ function PlayerManager:on_headshot_dealt() end
 function PlayerManager:on_lethal_headshot_dealt(attacker_unit, attack_data) end
 
 ---@param t any
----@param unit any
+---@param unit Unit
 ---@param damage_info any
 ---@return any
 function PlayerManager:_check_damage_to_hot(t, unit, damage_info) end
@@ -1110,12 +1110,12 @@ function PlayerManager:select_previous_item() end
 function PlayerManager:clear_equipment() end
 
 ---@param selected_index any
----@param unit any
+---@param unit Unit
 ---@param sentry_gun_unit any
 ---@return any
 function PlayerManager:from_server_equipment_place_result(selected_index, unit, sentry_gun_unit) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function PlayerManager:can_use_selected_equipment(unit) end
 
@@ -1146,7 +1146,7 @@ function PlayerManager:selected_equipment_sound_interupt() end
 ---@return any
 function PlayerManager:selected_equipment_sound_done() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function PlayerManager:use_selected_equipment(unit) end
 
@@ -1327,7 +1327,7 @@ function PlayerManager:drop_carry(zipline_unit) end
 ---@return any
 function PlayerManager:server_drop_carry(carry_id, carry_multiplier, dye_initiated, has_dye_pack, dye_value_multiplier, position, rotation, dir, throw_distance_multiplier_upgrade_level, zipline_unit, peer) end
 
----@param unit any
+---@param unit Unit
 ---@param carry_id any
 ---@param carry_multiplier any
 ---@param dye_initiated any
@@ -1577,7 +1577,7 @@ function PlayerManager:sync_exit_vehicle(peer_id, player) end
 ---@return any
 function PlayerManager:_exit_vehicle(peer_id, player) end
 
----@param unit any
+---@param unit Unit
 ---@param health any
 ---@return any
 function PlayerManager:update_player_list(unit, health) end
@@ -1585,7 +1585,7 @@ function PlayerManager:update_player_list(unit, health) end
 ---@return any
 function PlayerManager:debug_print_player_status() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function PlayerManager:remove_from_player_list(unit) end
 

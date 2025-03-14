@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : VehicleStateInvalid
 VehicleStateInvalid = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleStateInvalid:init(unit) end
 

@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : CoreWireData
 CoreWireData = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreWireData:init(unit) end
 

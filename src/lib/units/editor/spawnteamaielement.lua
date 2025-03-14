@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SpawnTeamAIUnitElement
 SpawnTeamAIUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SpawnTeamAIUnitElement:init(unit) end
 

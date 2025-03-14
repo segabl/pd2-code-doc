@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SecurityCameraUnitElement
 SecurityCameraUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SecurityCameraUnitElement:init(unit) end
 
@@ -13,11 +13,11 @@ function SecurityCameraUnitElement:init(unit) end
 ---@return unknown
 function SecurityCameraUnitElement:post_init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SecurityCameraUnitElement:_add_camera_filter(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SecurityCameraUnitElement:_remove_camera_filter(unit) end
 
@@ -68,7 +68,7 @@ function SecurityCameraUnitElement:draw_links(t, dt, selected_unit, all_units) e
 ---@return unknown
 function SecurityCameraUnitElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SecurityCameraUnitElement:load_camera_unit(unit) end
 
@@ -79,7 +79,7 @@ function SecurityCameraUnitElement:selected() end
 ---@return unknown
 function SecurityCameraUnitElement:add_triggers(vc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SecurityCameraUnitElement:_set_camera_unit(unit) end
 

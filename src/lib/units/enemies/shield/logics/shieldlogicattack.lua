@@ -27,23 +27,23 @@ function ShieldLogicAttack.queued_update(data) end
 function ShieldLogicAttack:_reserve_pos_step_clbk(data, test_pos) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function ShieldLogicAttack._process_pathing_results(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param end_rot any
 ---@return unknown
 function ShieldLogicAttack._chk_request_action_walk_to_optimal_pos(data, my_data, end_rot) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function ShieldLogicAttack._cancel_optimal_attempt(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function ShieldLogicAttack.queue_update(data, my_data) end
 
@@ -70,7 +70,7 @@ function ShieldLogicAttack._get_all_paths(data) end
 function ShieldLogicAttack._set_verified_paths(data, verified_paths) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param pos any
 ---@param second_pass any
 ---@return unknown

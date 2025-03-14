@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : AlertTriggerElement
 AlertTriggerElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AlertTriggerElement:init(unit) end
 

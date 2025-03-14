@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : PlayerMenuCamera
 PlayerMenuCamera = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerMenuCamera:init(unit) end
 

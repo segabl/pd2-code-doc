@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : EnableSoundEnvironmentElement
 EnableSoundEnvironmentElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnableSoundEnvironmentElement:init(unit) end
 
@@ -28,7 +28,7 @@ function EnableSoundEnvironmentElement:update_unselected() end
 ---@return unknown
 function EnableSoundEnvironmentElement:add_element() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnableSoundEnvironmentElement:remove_links(unit) end
 

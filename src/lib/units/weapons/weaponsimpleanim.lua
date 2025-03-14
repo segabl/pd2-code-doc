@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : WeaponSimpleAnim
 WeaponSimpleAnim = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponSimpleAnim:init(unit) end
 
@@ -19,7 +19,7 @@ function WeaponSimpleAnim:play_anim() end
 ---@return unknown
 function WeaponSimpleAnim:toggle_requires_stance_update() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponSimpleAnim:destroy(unit) end
 

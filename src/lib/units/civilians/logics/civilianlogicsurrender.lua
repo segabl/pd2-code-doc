@@ -59,7 +59,7 @@ function CivilianLogicSurrender._delayed_intimidate_clbk(ignore_this, params) en
 function CivilianLogicSurrender.on_alert(data, alert_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CivilianLogicSurrender._update_enemy_detection(data, my_data) end
 

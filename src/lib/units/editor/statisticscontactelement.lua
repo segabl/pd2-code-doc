@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : StatisticsContactElement
 StatisticsContactElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function StatisticsContactElement:init(unit) end
 

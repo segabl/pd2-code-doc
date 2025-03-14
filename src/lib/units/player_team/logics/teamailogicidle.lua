@@ -37,7 +37,7 @@ function TeamAILogicIdle.on_cop_neutralized(data, cop_key) end
 function TeamAILogicIdle.damage_clbk(data, damage_info) end
 
 ---@param data logicdata
----@param unit any
+---@param unit Unit
 ---@param attacker_unit any
 ---@return unknown
 function TeamAILogicIdle.on_objective_unit_damaged(data, unit, attacker_unit) end
@@ -108,24 +108,24 @@ function TeamAILogicIdle.clbk_revive_complete(ignore_this, data) end
 function TeamAILogicIdle.clbk_action_timeout(ignore_this, data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param objective any
 ---@return unknown
 function TeamAILogicIdle._check_should_relocate(data, my_data, objective) end
 
----@param unit any
+---@param unit Unit
 ---@param attention any
 ---@return unknown
 function TeamAILogicIdle._ignore_shield(unit, attention) end
 
 ---@param data logicdata
----@param attention_objects any
+---@param attention_objects table<userdata, attentiondata>
 ---@param reaction_func any
 ---@return unknown
 function TeamAILogicIdle._get_priority_attention(data, attention_objects, reaction_func) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function TeamAILogicIdle._upd_sneak_spotting(data, my_data) end
 

@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : PlayerCamera
 PlayerCamera = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerCamera:init(unit) end
 
@@ -69,7 +69,7 @@ function PlayerCamera:link_scope(camera_object, screen_object, material, texture
 ---@return unknown
 function PlayerCamera:unlink_scope() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

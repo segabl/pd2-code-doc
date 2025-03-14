@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : WaitingForPlayersCamera
 WaitingForPlayersCamera = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WaitingForPlayersCamera:init(unit) end
 
@@ -18,7 +18,7 @@ function WaitingForPlayersCamera:start(time) end
 ---@return unknown
 function WaitingForPlayersCamera:stop() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

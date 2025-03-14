@@ -54,31 +54,31 @@ function ElementLaserTrigger:project_amount_all() end
 ---@return unknown
 function ElementLaserTrigger:update_laser() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementLaserTrigger:sync_enter_area(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementLaserTrigger:sync_exit_area(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementLaserTrigger:sync_while_in_area(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementLaserTrigger:_check_state(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementLaserTrigger:_add_inside(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementLaserTrigger:_while_inside(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementLaserTrigger:_remove_inside(unit) end
 
@@ -86,14 +86,14 @@ function ElementLaserTrigger:_remove_inside(unit) end
 ---@return unknown
 function ElementLaserTrigger:_remove_inside_by_index(index) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementLaserTrigger:_check_instigator_rules(unit) end
 
 ---@return unknown
 function ElementLaserTrigger:_clean_destroyed_units() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementLaserTrigger:_client_check_state(unit) end
 

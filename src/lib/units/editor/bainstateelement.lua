@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : BainStateElement
 BainStateElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BainStateElement:init(unit) end
 

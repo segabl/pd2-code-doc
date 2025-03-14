@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : PlayerMovement
 PlayerMovement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerMovement:init(unit) end
 
@@ -40,7 +40,7 @@ function PlayerMovement:set_driving(mode) end
 ---@return unknown
 function PlayerMovement:change_state(name) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -60,40 +60,40 @@ function PlayerMovement:set_position(pos) end
 ---@return unknown
 function PlayerMovement:set_m_pos(pos) end
 
----@return unknown
+---@return Vector3
 function PlayerMovement:m_pos() end
 
----@return unknown
+---@return Vector3
 function PlayerMovement:m_stand_pos() end
 
----@return unknown
+---@return Vector3
 function PlayerMovement:m_com() end
 
----@return unknown
+---@return Rotation
 function PlayerMovement:m_rot() end
 
----@return unknown
+---@return Vector3
 function PlayerMovement:m_fwd() end
 
----@return unknown
+---@return Vector3
 function PlayerMovement:m_right() end
 
----@return unknown
+---@return Vector3
 function PlayerMovement:m_head_pos() end
 
----@return unknown
+---@return Rotation
 function PlayerMovement:m_head_rot() end
 
----@return unknown
+---@return Vector3
 function PlayerMovement:m_head_fwd() end
 
----@return unknown
+---@return Vector3
 function PlayerMovement:m_detect_pos() end
 
----@return unknown
+---@return Vector3
 function PlayerMovement:m_newest_pos() end
 
----@return unknown
+---@return Vector3
 function PlayerMovement:detect_look_dir() end
 
 ---@param object_name any
@@ -226,7 +226,7 @@ function PlayerMovement.clbk_msg_overwrite_suspicion(overwrite_data, msg_queue, 
 ---@return unknown
 function PlayerMovement:clbk_enemy_weapons_hot() end
 
----@param unit any
+---@param unit Unit
 ---@param event any
 ---@return unknown
 function PlayerMovement:inventory_clbk_listener(unit, event) end
@@ -277,11 +277,10 @@ function PlayerMovement:clbk_morale_boost_expire() end
 ---@return unknown
 function PlayerMovement:push(vel) end
 
----@param team_data any
----@return unknown
+---@param team_data teamdata
 function PlayerMovement:set_team(team_data) end
 
----@return unknown
+---@return teamdata
 function PlayerMovement:team() end
 
 ---@param event_id any
@@ -293,7 +292,7 @@ function PlayerMovement:sync_net_event(event_id, peer) end
 ---@return unknown
 function PlayerMovement:set_friendly_fire(state) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerMovement:friendly_fire(unit) end
 
@@ -301,11 +300,11 @@ function PlayerMovement:friendly_fire(unit) end
 ---@return unknown
 function PlayerMovement:save(data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerMovement:pre_destroy(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerMovement:destroy(unit) end
 
@@ -387,7 +386,7 @@ function PlayerMovement:next_reload_speed_multiplier() end
 ---@return unknown
 function PlayerMovement:reset_next_reload_speed_multiplier() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

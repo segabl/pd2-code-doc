@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : DisableShoutElement
 DisableShoutElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DisableShoutElement:init(unit) end
 

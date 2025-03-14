@@ -14,7 +14,7 @@ AreaTriggerUnitElement = {}
 ---@return unknown
 function AreaTriggerUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreAreaTriggerUnitElement:init(unit) end
 
@@ -121,7 +121,7 @@ AreaOperatorUnitElement = {}
 ---@return unknown
 function AreaOperatorUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreAreaOperatorUnitElement:init(unit) end
 

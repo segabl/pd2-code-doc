@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : MaterialControl
 MaterialControl = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MaterialControl:init(unit) end
 

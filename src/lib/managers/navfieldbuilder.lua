@@ -254,18 +254,18 @@ function NavFieldBuilder:_expansion_check_obstacles(dir_str, dir_vec, exp_space,
 ---@return unknown
 function NavFieldBuilder:_expansion_check_neighbours(dir_str, exp_space) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NavFieldBuilder:_on_helper_hit(unit) end
 
 ---@return unknown
 function NavFieldBuilder:_set_new_blockers_used() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NavFieldBuilder:_disable_blocker(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NavFieldBuilder:_enable_blocker(unit) end
 

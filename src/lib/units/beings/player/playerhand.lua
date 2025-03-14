@@ -12,7 +12,7 @@ function PlayerHand.hand_id(arg) end
 ---@return unknown
 function PlayerHand.other_hand_id(arg) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerHand:init(unit) end
 
@@ -110,7 +110,7 @@ function PlayerHand:aim_target(hand, weapon, origin, melee_hand) end
 ---@return unknown
 function PlayerHand:set_moving(moving, dir) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ModifierMedicRage
 ModifierMedicRage = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ModifierMedicRage:OnEnemyDied(unit) end
 

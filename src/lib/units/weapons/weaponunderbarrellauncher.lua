@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : WeaponUnderbarrelLauncher
 WeaponUnderbarrelLauncher = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponUnderbarrelLauncher:init(unit) end
 

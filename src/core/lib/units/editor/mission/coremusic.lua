@@ -14,7 +14,7 @@ MusicUnitElement = {}
 ---@return unknown
 function MusicUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreMusicUnitElement:init(unit) end
 

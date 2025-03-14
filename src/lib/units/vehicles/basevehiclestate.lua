@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : BaseVehicleState
 BaseVehicleState = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BaseVehicleState:init(unit) end
 

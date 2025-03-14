@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : UnoDeviceBase
 UnoDeviceBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnoDeviceBase:init(unit) end
 

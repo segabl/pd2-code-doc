@@ -226,7 +226,7 @@ function MutatorPiggyRevenge:on_boss_killed(dead_unit, damage_info) end
 ---@return unknown
 function MutatorPiggyRevenge:on_unit_start_interact(interaction_id, interaction_tweak_data) end
 
----@param unit any
+---@param unit Unit
 ---@param sequence any
 ---@return unknown
 function MutatorPiggyRevenge:safe_run_sequence(unit, sequence) end

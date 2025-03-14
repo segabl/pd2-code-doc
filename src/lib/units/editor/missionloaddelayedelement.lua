@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : MissionLoadDelayedElement
 MissionLoadDelayedElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionLoadDelayedElement:init(unit) end
 
 ---@return unknown
 function MissionLoadDelayedElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionLoadDelayedElement:save_unit_data(unit) end
 
@@ -36,11 +36,11 @@ function MissionLoadDelayedElement:update_editing() end
 ---@return unknown
 function MissionLoadDelayedElement:select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionLoadDelayedElement:_remove_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MissionLoadDelayedElement:_add_unit(unit) end
 

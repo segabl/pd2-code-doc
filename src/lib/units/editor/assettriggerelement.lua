@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : AssetTriggerUnitElement
 AssetTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AssetTriggerUnitElement:init(unit) end
 

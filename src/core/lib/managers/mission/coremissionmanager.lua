@@ -69,7 +69,7 @@ function MissionManager:on_simulation_started() end
 ---@return unknown
 function MissionManager:add_runned_unit_sequence_trigger(id, sequence, callback) end
 
----@param unit any
+---@param unit Unit
 ---@param sequence any
 ---@param params any
 ---@return unknown

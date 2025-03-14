@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : RandomInstanceElement
 RandomInstanceElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RandomInstanceElement:init(unit) end
 
@@ -60,19 +60,19 @@ function RandomInstanceElement:on_instance_changed_name(old_name, new_name) end
 ---@return unknown
 function RandomInstanceElement:add_triggers(vc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RandomInstanceElement:_add_counter_filter(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RandomInstanceElement:_set_counter_id(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RandomInstanceElement:_remove_counter_filter(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RandomInstanceElement:_remove_counter_id(unit) end
 

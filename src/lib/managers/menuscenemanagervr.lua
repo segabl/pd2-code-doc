@@ -49,7 +49,7 @@ function MenuSceneManagerVR:_set_up_templates() end
 ---@return unknown
 function MenuSceneManagerVR:set_lobby_character_out_fit(i, outfit_string, rank) end
 
----@param unit any
+---@param unit Unit
 ---@param oobb_object any
 ---@param max_mod any
 ---@param type any

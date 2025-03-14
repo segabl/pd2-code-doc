@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : VehicleStateLocked
 VehicleStateLocked = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleStateLocked:init(unit) end
 

@@ -14,27 +14,27 @@ function ElementSpecialObjective:init(...) end
 function ElementSpecialObjective:_finalize_values(values) end
 
 ---@param name any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSpecialObjective:event(name, unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSpecialObjective:clbk_objective_action_start(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSpecialObjective:clbk_objective_administered(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSpecialObjective:clbk_objective_complete(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSpecialObjective:clbk_objective_failed(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSpecialObjective:clbk_verify_administration(unit) end
 
@@ -98,17 +98,17 @@ function ElementSpecialObjective:_select_units_from_spawners() end
 ---@return unknown
 function ElementSpecialObjective:get_objective_trigger() end
 
----@param unit any
+---@param unit Unit
 ---@param objective any
 ---@return unknown
 function ElementSpecialObjective:_administer_objective(unit, objective) end
 
----@param unit any
+---@param unit Unit
 ---@param skip_element_ids any
 ---@return unknown
 function ElementSpecialObjective:choose_followup_SO(unit, skip_element_ids) end
 
----@param unit any
+---@param unit Unit
 ---@param skip_element_ids any
 ---@return unknown
 function ElementSpecialObjective:get_as_followup(unit, skip_element_ids) end

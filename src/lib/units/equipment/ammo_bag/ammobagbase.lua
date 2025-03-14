@@ -20,7 +20,7 @@ function AmmoBagBase:set_server_information(peer_id) end
 ---@return unknown
 function AmmoBagBase:server_information() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AmmoBagBase:init(unit) end
 
@@ -41,7 +41,7 @@ function AmmoBagBase:sync_setup(ammo_upgrade_lvl, peer_id, bullet_storm_level) e
 ---@return unknown
 function AmmoBagBase:setup(ammo_upgrade_lvl, bullet_storm_level) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -60,7 +60,7 @@ function AmmoBagBase:sync_net_event(event_id) end
 ---@return unknown
 function AmmoBagBase:_set_dynamic() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AmmoBagBase:take_ammo(unit) end
 
@@ -71,7 +71,7 @@ function AmmoBagBase:_set_visual_stage() end
 ---@return unknown
 function AmmoBagBase:sync_ammo_taken(amount) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AmmoBagBase:_take_ammo(unit) end
 
@@ -98,7 +98,7 @@ function AmmoBagBase:destroy() end
 ---@field new fun(self, ...) : CustomAmmoBagBase
 CustomAmmoBagBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CustomAmmoBagBase:init(unit) end
 

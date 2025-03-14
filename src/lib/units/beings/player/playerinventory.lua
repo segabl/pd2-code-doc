@@ -4,26 +4,26 @@
 ---@field new fun(self, ...) : PlayerInventory
 PlayerInventory = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerInventory:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerInventory:pre_destroy(unit) end
 
 ---@return unknown
 function PlayerInventory:destroy_all_items() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerInventory:add_ignore_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerInventory:_clbk_remove_ignore_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param is_callback any
 ---@return unknown
 function PlayerInventory:remove_ignore_unit(unit, is_callback) end
@@ -125,7 +125,7 @@ function PlayerInventory:available_selections() end
 function PlayerInventory:num_selections() end
 
 ---@param equip any
----@param unit any
+---@param unit Unit
 ---@param align_place any
 ---@return unknown
 function PlayerInventory:_align_place(equip, unit, align_place) end
@@ -135,7 +135,7 @@ function PlayerInventory:_align_place(equip, unit, align_place) end
 ---@return unknown
 function PlayerInventory:_place_selection(selection_index, is_equip) end
 
----@param unit any
+---@param unit Unit
 ---@param align_place any
 ---@return unknown
 function PlayerInventory:_link_weapon(unit, align_place) end
@@ -258,11 +258,11 @@ function PlayerInventory:need_ammo() end
 ---@return unknown
 function PlayerInventory:all_out_of_ammo() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerInventory:anim_cbk_spawn_character_mask(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerInventory:anim_clbk_equip_exit(unit) end
 

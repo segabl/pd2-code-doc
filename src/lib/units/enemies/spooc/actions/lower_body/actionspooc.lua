@@ -147,12 +147,12 @@ function ActionSpooc:action_id() end
 ---@return unknown
 function ActionSpooc:anim_act_clbk(anim_act) end
 
----@param unit any
+---@param unit Unit
 ---@param target_unit any
 ---@return unknown
 function ActionSpooc.chk_can_start_spooc_sprint(unit, target_unit) end
 
----@param unit any
+---@param unit Unit
 ---@param target_unit any
 ---@return unknown
 function ActionSpooc.chk_can_start_flying_strike(unit, target_unit) end

@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : CoreCutsceneData
 CoreCutsceneData = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreCutsceneData:init(unit) end
 

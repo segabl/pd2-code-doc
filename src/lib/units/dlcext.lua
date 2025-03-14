@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : DLCExt
 DLCExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DLCExt:init(unit) end
 

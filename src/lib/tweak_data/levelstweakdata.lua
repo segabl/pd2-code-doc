@@ -1,5 +1,10 @@
 ---@meta
 
+---@class teamdata
+---@field id string
+---@field foes table<string, boolean>
+---@field friends table<string, boolean>
+
 ---@class LevelsTweakData
 ---@field new fun(self, ...) : LevelsTweakData
 LevelsTweakData = {}
@@ -67,21 +72,21 @@ function LevelsTweakData:get_music_event_ext() end
 ---@return unknown
 function LevelsTweakData:get_music_event_ext_ghost() end
 
----@param type any
----@return unknown
+---@param type string
+---@return string
 function LevelsTweakData:get_default_team_ID(type) end
 
----@return unknown
+---@return table<string, teamdata>
 function LevelsTweakData:get_team_setup() end
 
----@return unknown
+---@return table<string, string>
 function LevelsTweakData:get_default_team_IDs() end
 
----@return unknown
+---@return string[]
 function LevelsTweakData:get_team_names_indexed() end
 
----@param team_id any
----@return unknown
+---@param team_id string
+---@return number
 function LevelsTweakData:get_team_index(team_id) end
 
 ---@return unknown

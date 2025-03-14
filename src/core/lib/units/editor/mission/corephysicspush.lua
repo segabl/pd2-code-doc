@@ -14,7 +14,7 @@ PhysicsPushUnitElement = {}
 ---@return unknown
 function PhysicsPushUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CorePhysicsPushUnitElement:init(unit) end
 

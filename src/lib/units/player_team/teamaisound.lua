@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : TeamAISound
 TeamAISound = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TeamAISound:init(unit) end
 

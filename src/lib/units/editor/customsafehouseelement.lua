@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CustomSafehouseFilterUnitElement
 CustomSafehouseFilterUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CustomSafehouseFilterUnitElement:init(unit) end
 
@@ -23,7 +23,7 @@ function CustomSafehouseFilterUnitElement:set_element_data(data) end
 ---@field new fun(self, ...) : CustomSafehouseTrophyFilterUnitElement
 CustomSafehouseTrophyFilterUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CustomSafehouseTrophyFilterUnitElement:init(unit) end
 
@@ -37,7 +37,7 @@ function CustomSafehouseTrophyFilterUnitElement:_build_panel(panel, panel_sizer)
 ---@field new fun(self, ...) : CustomSafehouseAwardTrophyUnitElement
 CustomSafehouseAwardTrophyUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CustomSafehouseAwardTrophyUnitElement:init(unit) end
 

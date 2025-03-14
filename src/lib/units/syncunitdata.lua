@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : SyncUnitData
 SyncUnitData = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SyncUnitData:init(unit) end
 

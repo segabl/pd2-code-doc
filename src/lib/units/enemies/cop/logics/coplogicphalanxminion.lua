@@ -22,11 +22,11 @@ function CopLogicPhalanxMinion.exit(data, new_logic_name, enter_params) end
 function CopLogicPhalanxMinion.queued_update(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicPhalanxMinion.chk_should_turn(data, my_data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopLogicPhalanxMinion.register_in_group_ai(unit) end
 
@@ -45,7 +45,7 @@ function CopLogicPhalanxMinion.breakup(remote_call) end
 function CopLogicPhalanxMinion._upd_enemy_detection(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicPhalanxMinion._upd_turn_outwards(data, my_data) end
 

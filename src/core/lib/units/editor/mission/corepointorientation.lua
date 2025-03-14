@@ -14,7 +14,7 @@ PointOrientationUnitElement = {}
 ---@return unknown
 function PointOrientationUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CorePointOrientationUnitElement:init(unit) end
 

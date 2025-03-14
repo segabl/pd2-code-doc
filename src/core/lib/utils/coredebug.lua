@@ -97,7 +97,7 @@ function trace_ref_add_destroy_all(class_name, func_name) end
 ---@return unknown
 function debug_pause(...) end
 
----@param unit any
+---@param unit Unit
 ---@param ... any
 ---@return unknown
 function debug_pause_unit(unit, ...) end

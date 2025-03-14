@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CharacterSequenceElement
 CharacterSequenceElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CharacterSequenceElement:init(unit) end
 

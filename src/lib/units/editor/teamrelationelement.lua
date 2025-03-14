@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : TeamRelationElement
 TeamRelationElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TeamRelationElement:init(unit) end
 

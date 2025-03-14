@@ -9,7 +9,7 @@ IncendiaryBurstGrenade = {}
 function IncendiaryBurstGrenade:_setup_from_tweak_data() end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any

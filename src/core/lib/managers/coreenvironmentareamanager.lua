@@ -75,7 +75,7 @@ function EnvironmentArea:_generate_id() end
 ---@return unknown
 function EnvironmentArea:save_level_data() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnvironmentArea:set_unit(unit) end
 

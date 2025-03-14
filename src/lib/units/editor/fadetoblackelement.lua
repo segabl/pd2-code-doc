@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : FadeToBlackElement
 FadeToBlackElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FadeToBlackElement:init(unit) end
 

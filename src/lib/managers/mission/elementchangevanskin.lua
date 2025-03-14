@@ -12,7 +12,7 @@ function ElementChangeVanSkin:init(...) end
 ---@return unknown
 function ElementChangeVanSkin:on_script_activated() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementChangeVanSkin:_load_unit(unit) end
 

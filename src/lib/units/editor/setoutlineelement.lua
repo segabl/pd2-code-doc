@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : SetOutlineElement
 SetOutlineElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SetOutlineElement:init(unit) end
 

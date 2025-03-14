@@ -5,11 +5,11 @@
 ---@field new fun(self, ...) : AnimatedVehicleBase
 AnimatedVehicleBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AnimatedVehicleBase:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -29,25 +29,25 @@ function AnimatedVehicleBase:stop_doppler() end
 ---@return unknown
 function AnimatedVehicleBase:set_enabled(state) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AnimatedVehicleBase:anim_clbk_empty_full_blend(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AnimatedVehicleBase:anim_clbk_empty_exit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param state any
 ---@return unknown
 function AnimatedVehicleBase:anim_clbk_animated_driving(unit, state) end
 
----@param unit any
+---@param unit Unit
 ---@param pose_id any
 ---@return unknown
 function AnimatedVehicleBase:anim_clbk_save_pose(unit, pose_id) end
 
----@param unit any
+---@param unit Unit
 ---@param pose_id any
 ---@param delete any
 ---@return unknown
@@ -84,7 +84,7 @@ function AnimatedVehicleBase:run_module_function_unsafe(module_id, extension_nam
 ---@return unknown
 function AnimatedVehicleBase:clbk_send_modules(module_units_to_sync) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AnimatedVehicleBase:anim_clbk_blackhawk_1_at_loop_end(unit) end
 
@@ -92,7 +92,7 @@ function AnimatedVehicleBase:anim_clbk_blackhawk_1_at_loop_end(unit) end
 ---@return unknown
 function AnimatedVehicleBase:clbk_request_anim_redirect(redirect_name) end
 
----@param unit any
+---@param unit Unit
 ---@param seq_name any
 ---@return unknown
 function AnimatedVehicleBase:anim_clbk_run_seq(unit, seq_name) end
@@ -105,7 +105,7 @@ function AnimatedVehicleBase:save(save_data) end
 ---@return unknown
 function AnimatedVehicleBase:load(save_data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AnimatedVehicleBase:destroy(unit) end
 

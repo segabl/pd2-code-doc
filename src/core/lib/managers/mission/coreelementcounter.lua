@@ -12,7 +12,7 @@ function ElementCounter:init(...) end
 ---@return unknown
 function ElementCounter:on_script_activated() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementCounter:_load_unit(unit) end
 

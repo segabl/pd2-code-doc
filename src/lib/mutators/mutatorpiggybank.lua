@@ -93,7 +93,7 @@ function MutatorPiggyBank:_remove_piggybank_clbk(piggybank_unit) end
 ---@return unknown
 function MutatorPiggyBank:_explode_piggybank_clbk() end
 
----@param unit any
+---@param unit Unit
 ---@param sequence any
 ---@return unknown
 function MutatorPiggyBank:safe_run_sequence(unit, sequence) end

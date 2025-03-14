@@ -22,12 +22,12 @@ function ElementSpawnEnemyDummy:units() end
 ---@return unknown
 function ElementSpawnEnemyDummy:produce(params) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSpawnEnemyDummy:clbk_unit_destroyed(unit) end
 
 ---@param name any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSpawnEnemyDummy:event(name, unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : InteractionUnitElement
 InteractionUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function InteractionUnitElement:init(unit) end
 

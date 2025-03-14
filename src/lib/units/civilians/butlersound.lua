@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ButlerSound
 ButlerSound = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ButlerSound:init(unit) end
 

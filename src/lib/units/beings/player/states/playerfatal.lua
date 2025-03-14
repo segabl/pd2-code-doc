@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerFatal
 PlayerFatal = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerFatal:init(unit) end
 

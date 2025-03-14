@@ -282,15 +282,15 @@ function SequenceManager:_verify_material_configs(data, material_config_map, mat
 ---@return unknown
 function SequenceManager:test_unit_by_name(unit_name, pos, rot) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SequenceManager:test_unit_variations(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SequenceManager:test_unit_damage(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param element_name any
 ---@param data any
 ---@return unknown
@@ -337,7 +337,7 @@ function SequenceManager:_safe_load_map_done(data_map) end
 function SequenceManager:_safe_load_map(state, wait_unit_load_map, done_callback_func, visited_map) end
 
 ---@param data any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SequenceManager:_on_load_unit_done_callback(data, unit) end
 
@@ -373,7 +373,7 @@ function SequenceManager:remove_area_damage_callback(id) end
 ---@return unknown
 function SequenceManager:do_area_damage(damage_type, attack_unit, pos, range, constant_damage, damage, physic_effect, mass, ignore_unit, direct_attack_unit, ignore_mask, get_damage_func, velocity) end
 
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param body_extension any
 ---@param damage_type any
@@ -388,7 +388,7 @@ function SequenceManager:do_area_damage(damage_type, attack_unit, pos, range, co
 ---@return unknown
 function SequenceManager:do_area_damage_on_body(unit, body, body_extension, damage_type, attack_unit, normal, pos, dir, body_damage, velocity, ignore_unit, direct_attack_unit) end
 
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param unit_extension any
 ---@param damage_type any
@@ -699,18 +699,18 @@ function BaseElement:delayed_filter_callback(env) end
 ---@return unknown
 function BaseElement:activate_callback(env) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function BaseElement:set_state(unit, data) end
 
----@param unit any
+---@param unit Unit
 ---@param category any
 ---@param cat_data any
 ---@return unknown
 function BaseElement:set_cat_state(unit, category, cat_data) end
 
----@param unit any
+---@param unit Unit
 ---@param category1 any
 ---@param category2 any
 ---@param cat_data any
@@ -770,12 +770,12 @@ function UnitElement:init(node, name, is_global) end
 ---@return unknown
 function UnitElement:_register_start_time_callback(id, element, node) end
 
----@param unit any
+---@param unit Unit
 ---@param damage_ext any
 ---@return unknown
 function UnitElement:get_startup_sequence_map(unit, damage_ext) end
 
----@param unit any
+---@param unit Unit
 ---@param damage_ext any
 ---@return unknown
 function UnitElement:get_editor_startup_sequence_map(unit, damage_ext) end
@@ -829,7 +829,7 @@ function UnitElement:get_endurance() end
 ---@return unknown
 function UnitElement:set_endurance(endurance) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function UnitElement:reset_damage(unit) end
 
@@ -858,12 +858,12 @@ function UnitElement:get_sequence_element(sequence_name) end
 ---@return unknown
 function UnitElement:get_proximity_element_map() end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function UnitElement:save_by_unit(unit, data) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function UnitElement:load_by_unit(unit, data) end
@@ -1321,7 +1321,7 @@ function AnimationGroupElement:stop(env, name) end
 ---@return unknown
 function AnimationGroupElement:set_time(env, name) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function AnimationGroupElement.load(unit, data) end
@@ -1376,7 +1376,7 @@ function AreaDamageElement:get_params(env) end
 function AreaDamageElement:do_area_damage(env, damage_type, attack_unit, pos, range, constant_damage, damage, physic_effect, mass, ignore_unit, direct_attack_unit, ignore_mask, get_damage_func, velocity) end
 
 ---@param params any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param dir any
 ---@param hit_pos any
@@ -1394,7 +1394,7 @@ function AreaDamageElement:do_area_damage(env, damage_type, attack_unit, pos, ra
 function AreaDamageElement:get_falloff_key_damage(params, unit, body, dir, hit_pos, damage_type, attack_unit, pos, range, constant_damage, damage, velocity, ignore_unit, direct_attack_unit, ignore_mask) end
 
 ---@param params any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param dir any
 ---@param hit_pos any
@@ -1439,7 +1439,7 @@ function AreaDamageKeyElement:get_parsed_key(env) end
 function AreaDamageKeyElement:get_distance_damage(parsed_key, distance, prev_key_range, prev_key_damage) end
 
 ---@param env any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param pos any
 ---@param distance any
@@ -1544,7 +1544,7 @@ function BodyElement:set_mover(env, mover, body) end
 ---@return unknown
 function BodyElement:interpolate(env, value, body) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function BodyElement.load(unit, data) end
@@ -1563,7 +1563,7 @@ function ConstraintElement:init(node, unit_element) end
 ---@return unknown
 function ConstraintElement:activate_callback(env) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function ConstraintElement.load(unit, data) end
@@ -1624,7 +1624,7 @@ function DecalMeshElement:init(node, unit_element) end
 ---@return unknown
 function DecalMeshElement:activate_callback(env) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function DecalMeshElement.load(unit, data) end
@@ -1664,7 +1664,7 @@ function EffectSpawnerElement:activate_callback(env) end
 ---@return unknown
 function EffectSpawnerElement:set_enabled(env, enabled, effect_spawner, name) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function EffectSpawnerElement.load(unit, data) end
@@ -1742,7 +1742,7 @@ function GraphicGroupElement:init(node, unit_element) end
 ---@return unknown
 function GraphicGroupElement:activate_callback(env) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function GraphicGroupElement.load(unit, data) end
@@ -1803,7 +1803,7 @@ function LightElement:set_spot_angle_start(env, spot_angle_start, light_obj, nam
 ---@return unknown
 function LightElement:set_spot_angle_end(env, spot_angle_end, light_obj, name) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function LightElement.load(unit, data) end
@@ -1822,7 +1822,7 @@ function MaterialConfigElement:init(node, unit_element) end
 ---@return unknown
 function MaterialConfigElement:activate_callback(env) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function MaterialConfigElement.load(unit, data) end
@@ -1942,7 +1942,7 @@ function ObjectElement:set_rotation(env, rotation, object_list, local_scope) end
 ---@return unknown
 function ObjectElement:set_object(dest_unit, object_list, func_name, value) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function ObjectElement.load(unit, data) end
@@ -1961,7 +1961,7 @@ function PhantomElement:init(node, unit_element) end
 ---@return unknown
 function PhantomElement:activate_callback(env) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function PhantomElement.load(unit, data) end
@@ -2358,7 +2358,7 @@ function SlotElement:activate_callback(env) end
 ---@return unknown
 function SlotElement:activate_element(env) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function SlotElement.load(unit, data) end
@@ -2406,7 +2406,7 @@ function WwiseElement:set_switch(env) end
 ---@return unknown
 function WwiseElement:_get_sound_source(env) end
 
----@param unit any
+---@param unit Unit
 ---@param data any
 ---@return unknown
 function WwiseElement.load(unit, data) end

@@ -9,7 +9,7 @@ MolotovGrenade = {}
 function MolotovGrenade:_setup_from_tweak_data() end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -41,7 +41,7 @@ function MolotovGrenade:_spawn_environment_fire(normal) end
 ---@return unknown
 function MolotovGrenade:bullet_hit() end
 
----@param unit any
+---@param unit Unit
 ---@param is_dead any
 ---@param damage_percent any
 ---@return unknown

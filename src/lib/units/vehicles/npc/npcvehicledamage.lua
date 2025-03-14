@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : NpcVehicleDamage
 NpcVehicleDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NpcVehicleDamage:init(unit) end
 

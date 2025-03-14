@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : TextTemplateBase
 TextTemplateBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TextTemplateBase:init(unit) end
 

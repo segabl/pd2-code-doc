@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : FlashlightUnitElement
 FlashlightUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FlashlightUnitElement:init(unit) end
 

@@ -4,17 +4,17 @@
 ---@field new fun(self, ...) : SecurityCamera
 SecurityCamera = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SecurityCamera:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
 function SecurityCamera:_update_tape_loop_restarting(unit, t, dt) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -118,7 +118,7 @@ function SecurityCamera:_stop_all_sounds() end
 ---@return unknown
 function SecurityCamera:_set_suspicion_sound(suspicion_level) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@return unknown
 function SecurityCamera:_upd_sound(unit, t) end
@@ -189,7 +189,7 @@ function SecurityCamera:save(data) end
 ---@return unknown
 function SecurityCamera:load(data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SecurityCamera:destroy(unit) end
 

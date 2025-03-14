@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : JobStageAlternativeUnitElement
 JobStageAlternativeUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function JobStageAlternativeUnitElement:init(unit) end
 

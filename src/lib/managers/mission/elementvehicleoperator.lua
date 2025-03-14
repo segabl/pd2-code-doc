@@ -17,7 +17,7 @@ function ElementVehicleOperator:client_on_executed(...) end
 ---@return unknown
 function ElementVehicleOperator:_get_unit(unit_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementVehicleOperator:_apply_opreator(unit) end
 

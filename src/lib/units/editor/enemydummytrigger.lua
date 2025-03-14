@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : EnemyDummyTriggerUnitElement
 EnemyDummyTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function EnemyDummyTriggerUnitElement:init(unit) end
 

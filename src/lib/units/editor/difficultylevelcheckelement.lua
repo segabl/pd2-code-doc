@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : DifficultyLevelCheckElement
 DifficultyLevelCheckElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DifficultyLevelCheckElement:init(unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : InstigatorUnitElement
 InstigatorUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function InstigatorUnitElement:init(unit) end
 
@@ -19,7 +19,7 @@ function InstigatorUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : InstigatorOperatorUnitElement
 InstigatorOperatorUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function InstigatorOperatorUnitElement:init(unit) end
 
@@ -54,7 +54,7 @@ function InstigatorOperatorUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : InstigatorTriggerUnitElement
 InstigatorTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function InstigatorTriggerUnitElement:init(unit) end
 

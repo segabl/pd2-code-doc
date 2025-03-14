@@ -14,7 +14,7 @@ RumbleHubElement = {}
 ---@return unknown
 function RumbleHubElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreRumbleHubElement:init(unit) end
 

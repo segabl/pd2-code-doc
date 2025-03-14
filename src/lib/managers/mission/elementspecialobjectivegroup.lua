@@ -9,7 +9,7 @@ ElementSpecialObjectiveGroup = {}
 ---@return unknown
 function ElementSpecialObjectiveGroup:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSpecialObjectiveGroup:clbk_verify_administration(unit) end
 
@@ -29,12 +29,12 @@ function ElementSpecialObjectiveGroup:_register_to_group_AI() end
 ---@return unknown
 function ElementSpecialObjectiveGroup:_select_units_from_spawners() end
 
----@param unit any
+---@param unit Unit
 ---@param skip_element_ids any
 ---@return unknown
 function ElementSpecialObjectiveGroup:choose_followup_SO(unit, skip_element_ids) end
 
----@param unit any
+---@param unit Unit
 ---@param skip_element_ids any
 ---@return unknown
 function ElementSpecialObjectiveGroup:get_as_followup(unit, skip_element_ids) end

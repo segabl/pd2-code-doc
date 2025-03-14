@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : SequenceActivator
 SequenceActivator = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SequenceActivator:init(unit) end
 

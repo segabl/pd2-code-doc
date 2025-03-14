@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PickupUnitElement
 PickupUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PickupUnitElement:init(unit) end
 

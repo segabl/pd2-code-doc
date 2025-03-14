@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : FilterProfileUnitElement
 FilterProfileUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FilterProfileUnitElement:init(unit) end
 

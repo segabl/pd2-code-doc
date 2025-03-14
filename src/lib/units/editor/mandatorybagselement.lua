@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : MandatoryBagsUnitElement
 MandatoryBagsUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MandatoryBagsUnitElement:init(unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CivilianDamage
 CivilianDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CivilianDamage:init(unit) end
 
@@ -44,7 +44,7 @@ function CivilianDamage:_unregister_from_enemy_manager(damage_info) end
 ---@return unknown
 function CivilianDamage:no_intimidation_by_dmg() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CivilianDamage:is_friendly_fire(unit) end
 

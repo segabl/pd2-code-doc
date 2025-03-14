@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : AiGlobalEventUnitElement
 AiGlobalEventUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AiGlobalEventUnitElement:init(unit) end
 

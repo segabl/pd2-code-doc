@@ -4,11 +4,11 @@
 ---@field new fun(self, ...) : RepelRopeBase
 RepelRopeBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function RepelRopeBase:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

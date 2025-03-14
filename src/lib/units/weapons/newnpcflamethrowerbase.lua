@@ -22,7 +22,7 @@ function NewNPCFlamethrowerBase:setup_default(...) end
 ---@return unknown
 function NewNPCFlamethrowerBase:_spawn_muzzle_effect(from_pos, direction) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ShieldBase
 ShieldBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ShieldBase:init(unit) end
 
@@ -112,11 +112,11 @@ function ShieldFlashBase:clbk_seq_chk_interrupt_flash_hit(pos, normal, attacker_
 function ShieldFlashBase:_do_counter_stun(pos, normal, attacker_unit, event_sync_idx) end
 
 ---@param parent_key any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ShieldFlashBase:_can_stun_unit(parent_key, unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ShieldFlashBase:_can_flash_unit(unit) end
 
@@ -126,7 +126,7 @@ function ShieldFlashBase:_can_flash_unit(unit) end
 ---@return unknown
 function ShieldFlashBase:_flash_local_player(detonate_pos, dir, range) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

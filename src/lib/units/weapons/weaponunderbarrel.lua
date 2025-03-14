@@ -5,11 +5,11 @@
 ---@field new fun(self, ...) : WeaponUnderbarrel
 WeaponUnderbarrel = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponUnderbarrel:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponUnderbarrel:destroy(unit) end
 

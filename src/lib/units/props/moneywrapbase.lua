@@ -5,21 +5,21 @@
 ---@field new fun(self, ...) : MoneyWrapBase
 MoneyWrapBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MoneyWrapBase:init(unit) end
 
 ---@return unknown
 function MoneyWrapBase:_setup() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MoneyWrapBase:take_money(unit) end
 
 ---@return unknown
 function MoneyWrapBase:sync_money_taken() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MoneyWrapBase:_take_money(unit) end
 

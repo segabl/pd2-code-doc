@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : LootSecuredTriggerUnitElement
 LootSecuredTriggerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function LootSecuredTriggerUnitElement:init(unit) end
 

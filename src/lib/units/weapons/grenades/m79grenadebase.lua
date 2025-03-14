@@ -10,7 +10,7 @@ M79GrenadeBase = {}
 ---@return unknown
 function M79GrenadeBase.spawn(unit_name, pos, rot) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function M79GrenadeBase:init(unit) end
 
@@ -18,7 +18,7 @@ function M79GrenadeBase:init(unit) end
 ---@return unknown
 function M79GrenadeBase:launch(params) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

@@ -61,12 +61,12 @@ function MutatorExplodingEnemies:options_fill() end
 ---@return unknown
 function MutatorExplodingEnemies:update(t, dt) end
 
----@param unit any
+---@param unit Unit
 ---@param attack_data any
 ---@return unknown
 function MutatorExplodingEnemies:explode(unit, attack_data) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MutatorExplodingEnemies:_chk_nuclear(unit) end
 

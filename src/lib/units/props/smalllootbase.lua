@@ -5,14 +5,14 @@
 ---@field new fun(self, ...) : SmallLootBase
 SmallLootBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SmallLootBase:init(unit) end
 
 ---@return unknown
 function SmallLootBase:_setup() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SmallLootBase:take(unit) end
 

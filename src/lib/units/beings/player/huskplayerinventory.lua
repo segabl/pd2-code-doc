@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : HuskPlayerInventory
 HuskPlayerInventory = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerInventory:init(unit) end
 

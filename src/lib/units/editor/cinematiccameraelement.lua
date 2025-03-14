@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : CinematicCameraUnitElement
 CinematicCameraUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CinematicCameraUnitElement:init(unit) end
 

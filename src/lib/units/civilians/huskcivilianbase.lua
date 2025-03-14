@@ -20,7 +20,7 @@ function HuskCivilianBase:sync_net_event(event_id) end
 ---@field new fun(self, ...) : HuskCivilianBaseResetSpawnPos
 HuskCivilianBaseResetSpawnPos = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskCivilianBaseResetSpawnPos:init(unit) end
 

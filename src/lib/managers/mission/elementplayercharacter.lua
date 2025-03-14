@@ -13,7 +13,7 @@ function ElementPlayerCharacterTrigger:init(...) end
 function ElementPlayerCharacterTrigger:on_script_activated() end
 
 ---@param name any
----@param unit any
+---@param unit Unit
 ---@param peer_id any
 ---@param ai any
 ---@return unknown

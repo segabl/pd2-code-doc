@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : VehicleCamera
 VehicleCamera = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleCamera:init(unit) end
 

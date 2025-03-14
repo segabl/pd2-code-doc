@@ -5,11 +5,11 @@
 ---@field new fun(self, ...) : ChristmasPresentBase
 ChristmasPresentBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ChristmasPresentBase:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ChristmasPresentBase:take_money(unit) end
 

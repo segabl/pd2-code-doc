@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : HuskPlayerDamage
 HuskPlayerDamage = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskPlayerDamage:init(unit) end
 

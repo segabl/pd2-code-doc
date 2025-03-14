@@ -56,12 +56,12 @@ function DynamicResourceManager:is_resource_ready(resource_type, resource_name, 
 function DynamicResourceManager:clbk_resource_loaded(status, resource_type, resource_name, package_name) end
 
 ---@param name any
----@param unit any
+---@param unit Unit
 ---@param synchronous any
 ---@return unknown
 function DynamicResourceManager:change_material_config(name, unit, synchronous) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DynamicResourceManager:on_material_applied(unit) end
 

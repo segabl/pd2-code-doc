@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : HuskCopMovement
 HuskCopMovement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskCopMovement:init(unit) end
 

@@ -14,7 +14,7 @@ OperatorUnitElement = {}
 ---@return unknown
 function OperatorUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreOperatorUnitElement:init(unit) end
 

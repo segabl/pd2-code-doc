@@ -24,7 +24,7 @@ function SmokeScreenEffect:position() end
 ---@return unknown
 function SmokeScreenEffect:alive() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SmokeScreenEffect:is_in_smoke(unit) end
 

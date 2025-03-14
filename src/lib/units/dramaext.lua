@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : DramaExt
 DramaExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DramaExt:init(unit) end
 
@@ -26,7 +26,7 @@ function DramaExt:stop_cue() end
 
 ---@param instance any
 ---@param event_type any
----@param unit any
+---@param unit Unit
 ---@param sound_source any
 ---@param label any
 ---@param identifier any

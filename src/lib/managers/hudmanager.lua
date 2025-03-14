@@ -259,7 +259,7 @@ function HUDManager:clear_waypoints() end
 ---@return any
 function HUDManager:clear_weapons() end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function HUDManager:add_mugshot_by_unit(unit) end
 
@@ -274,7 +274,7 @@ function HUDManager:add_mugshot_without_unit(char_name, ai, peer_id, name) end
 ---@return any
 function HUDManager:add_mugshot(data) end
 
----@param unit any
+---@param unit Unit
 ---@return any
 function HUDManager:remove_hud_info_by_unit(unit) end
 

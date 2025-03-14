@@ -11,7 +11,7 @@ CopLogicTrade = {}
 ---@return unknown
 function CopLogicTrade.enter(data, new_logic_name, enter_params) end
 
----@param unit any
+---@param unit Unit
 ---@param enable any
 ---@param trade_success any
 ---@param skip_hint any
@@ -36,12 +36,12 @@ function CopLogicTrade.on_trade(data, pos, rotation, free_criminal) end
 function CopLogicTrade.update(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicTrade._process_pathing_results(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param end_rot any
 ---@return unknown
 function CopLogicTrade._chk_request_action_walk_to_flee_pos(data, my_data, end_rot) end

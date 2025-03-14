@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerTurretBase
 PlayerTurretBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerTurretBase:init(unit) end
 

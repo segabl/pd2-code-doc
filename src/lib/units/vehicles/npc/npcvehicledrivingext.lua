@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : NpcVehicleDrivingExt
 NpcVehicleDrivingExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NpcVehicleDrivingExt:init(unit) end
 
@@ -41,7 +41,7 @@ function NpcVehicleDrivingExt:sync_stop() end
 ---@return unknown
 function NpcVehicleDrivingExt:_stop() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -50,7 +50,7 @@ function NpcVehicleDrivingExt:update(unit, t, dt) end
 ---@return unknown
 function NpcVehicleDrivingExt:_display_debug_info() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function NpcVehicleDrivingExt:set_target_unit(unit) end
 

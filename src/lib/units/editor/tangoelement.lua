@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : TangoAwardElement
 TangoAwardElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TangoAwardElement:init(unit) end
 
@@ -23,7 +23,7 @@ function TangoAwardElement:set_element_data(data) end
 ---@field new fun(self, ...) : TangoFilterElement
 TangoFilterElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TangoFilterElement:init(unit) end
 

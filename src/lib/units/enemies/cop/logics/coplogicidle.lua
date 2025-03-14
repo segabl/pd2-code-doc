@@ -26,12 +26,12 @@ function CopLogicIdle.queued_update(data) end
 function CopLogicIdle._upd_enemy_detection(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicIdle._upd_pathing(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicIdle._upd_scan(data, my_data) end
 
@@ -86,7 +86,7 @@ function CopLogicIdle._chk_valid_stare_path(data) end
 function CopLogicIdle._chk_stare_into_wall_2(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param my_pos any
 ---@param look_pos any
 ---@return unknown
@@ -136,19 +136,19 @@ function CopLogicIdle._get_all_paths(data) end
 function CopLogicIdle._set_verified_paths(data, verified_paths) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicIdle._chk_focus_on_attention_object(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param my_pos any
 ---@param look_pos any
 ---@return unknown
 function CopLogicIdle._chk_turn_needed(data, my_data, my_pos, look_pos) end
 
 ---@param data logicdata
----@param attention_objects any
+---@param attention_objects table<userdata, attentiondata>
 ---@param reaction_func any
 ---@return unknown
 function CopLogicIdle._get_priority_attention(data, attention_objects, reaction_func) end
@@ -158,7 +158,7 @@ function CopLogicIdle._get_priority_attention(data, attention_objects, reaction_
 function CopLogicIdle._upd_curious_reaction(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param spin any
 ---@return unknown
 function CopLogicIdle._turn_by_spin(data, my_data, spin) end
@@ -169,25 +169,25 @@ function CopLogicIdle._turn_by_spin(data, my_data, spin) end
 function CopLogicIdle._chk_objective_needs_travel(data, new_objective) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param objective any
 ---@return unknown
 function CopLogicIdle._upd_stance_and_pose(data, my_data, objective) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param objective any
 ---@return unknown
 function CopLogicIdle._perform_objective_action(data, my_data, objective) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@param objective any
 ---@return unknown
 function CopLogicIdle._upd_stop_old_action(data, my_data, objective) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicIdle._chk_has_old_action(data, my_data) end
 

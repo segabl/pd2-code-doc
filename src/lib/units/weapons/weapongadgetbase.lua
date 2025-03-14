@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : WeaponGadgetBase
 WeaponGadgetBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponGadgetBase:init(unit) end
 
@@ -54,7 +54,7 @@ function WeaponGadgetBase:is_underbarrel() end
 ---@return unknown
 function WeaponGadgetBase:overrides_weapon_firing() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponGadgetBase:destroy(unit) end
 

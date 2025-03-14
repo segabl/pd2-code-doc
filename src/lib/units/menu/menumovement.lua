@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : MenuMovement
 MenuMovement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MenuMovement:init(unit) end
 

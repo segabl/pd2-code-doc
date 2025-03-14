@@ -8,7 +8,7 @@ HuskCopBase = {}
 ---@return unknown
 function HuskCopBase:post_init() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function HuskCopBase:pre_destroy(unit) end
 

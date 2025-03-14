@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : BaseInteractionExt
 BaseInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BaseInteractionExt:init(unit) end
 
@@ -319,7 +319,7 @@ function ECMJammerInteractionExt:set_active(active, sync, ...) end
 ---@field new fun(self, ...) : ReviveInteractionExt
 ReviveInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@param ... any
 ---@return unknown
 function ReviveInteractionExt:init(unit, ...) end
@@ -384,7 +384,7 @@ function ReviveInteractionExt:load(data) end
 ---@field new fun(self, ...) : GageAssignmentInteractionExt
 GageAssignmentInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function GageAssignmentInteractionExt:init(unit) end
 
@@ -418,7 +418,7 @@ function AmmoBagInteractionExt:interact(player) end
 ---@field new fun(self, ...) : SentryGunInteractionExt
 SentryGunInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SentryGunInteractionExt:init(unit) end
 
@@ -645,7 +645,7 @@ function ZipLineInteractionExt:interact(player) end
 ---@field new fun(self, ...) : IntimitateInteractionExt
 IntimitateInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@param ... any
 ---@return unknown
 function IntimitateInteractionExt:init(unit, ...) end
@@ -732,7 +732,7 @@ function CarryInteractionExt:_get_modified_timer() end
 function CarryInteractionExt:register_collision_callbacks() end
 
 ---@param tag any
----@param unit any
+---@param unit Unit
 ---@param body any
 ---@param other_unit any
 ---@param other_body any
@@ -945,7 +945,7 @@ function MissionElementInteractionExt:load(data) end
 ---@field new fun(self, ...) : DrivingInteractionExt
 DrivingInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function DrivingInteractionExt:init(unit) end
 
@@ -999,7 +999,7 @@ function DrivingInteractionExt:_setup_ray_objects() end
 ---@field new fun(self, ...) : CivilianHeisterInteractionExt
 CivilianHeisterInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CivilianHeisterInteractionExt:init(unit) end
 
@@ -1055,7 +1055,7 @@ function CivilianHeisterInteractionExt:_play_voice_line(snd_event) end
 ---@return unknown
 function CivilianHeisterInteractionExt:_reenable_ext() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -1076,7 +1076,7 @@ function CivilianHeisterInteractionExt:play_minigame_vo(state) end
 ---@field new fun(self, ...) : SafehouseNPCInteractionExt
 SafehouseNPCInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function SafehouseNPCInteractionExt:init(unit) end
 
@@ -1096,7 +1096,7 @@ function SafehouseNPCInteractionExt:_reenable_ext() end
 ---@field new fun(self, ...) : ButlerInteractionExt
 ButlerInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ButlerInteractionExt:init(unit) end
 
@@ -1105,7 +1105,7 @@ function ButlerInteractionExt:init(unit) end
 ---@field new fun(self, ...) : AccessFBIFilesInteractionExt
 AccessFBIFilesInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessFBIFilesInteractionExt:init(unit) end
 
@@ -1122,7 +1122,7 @@ function AccessFBIFilesInteractionExt:interact(player) end
 ---@field new fun(self, ...) : AccessPD2StashInteractionExt
 AccessPD2StashInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessPD2StashInteractionExt:init(unit) end
 
@@ -1139,7 +1139,7 @@ function AccessPD2StashInteractionExt:interact(player) end
 ---@field new fun(self, ...) : AccessBankInvadersInteractionExt
 AccessBankInvadersInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessBankInvadersInteractionExt:init(unit) end
 
@@ -1178,11 +1178,11 @@ function AccessWeaponMenuInteractionExt:interact(player) end
 ---@field new fun(self, ...) : AccessCrimeNetInteractionExt
 AccessCrimeNetInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function AccessCrimeNetInteractionExt:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -1193,7 +1193,7 @@ function AccessCrimeNetInteractionExt:update(unit, t, dt) end
 ---@field new fun(self, ...) : PlayerTurretInteractionExt
 PlayerTurretInteractionExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerTurretInteractionExt:init(unit) end
 

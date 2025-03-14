@@ -4,11 +4,11 @@
 ---@field new fun(self, ...) : CopSound
 CopSound = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopSound:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopSound:destroy(unit) end
 
@@ -56,12 +56,12 @@ function CopSound:sync_say_str(full_sound) end
 ---@return unknown
 function CopSound:speaking(t) end
 
----@param unit any
+---@param unit Unit
 ---@param queue_name any
 ---@return unknown
 function CopSound:anim_clbk_play_sound(unit, queue_name) end
 
----@param unit any
+---@param unit Unit
 ---@param source_name any
 ---@return unknown
 function CopSound:anim_clbk_stop_sound(unit, source_name) end

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : WeaponFlashLight
 WeaponFlashLight = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponFlashLight:init(unit) end
 
@@ -19,7 +19,7 @@ function WeaponFlashLight:set_npc() end
 ---@return unknown
 function WeaponFlashLight:_check_state(current_state) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function WeaponFlashLight:destroy(unit) end
 
@@ -27,7 +27,7 @@ function WeaponFlashLight:destroy(unit) end
 ---@return unknown
 function WeaponFlashLight:sync_net_event(event_id) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

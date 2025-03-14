@@ -4,13 +4,13 @@
 ---@field new fun(self, ...) : ManageSpawnedUnits
 ManageSpawnedUnits = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ManageSpawnedUnits:init(unit) end
 
 ---@param unit_id any
 ---@param align_obj_name any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ManageSpawnedUnits:spawn_unit(unit_id, align_obj_name, unit) end
 
@@ -19,7 +19,7 @@ function ManageSpawnedUnits:spawned_units() end
 
 ---@param joint_table any
 ---@param unit_id any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ManageSpawnedUnits:spawn_and_link_unit(joint_table, unit_id, unit) end
 
@@ -43,7 +43,7 @@ function ManageSpawnedUnits:local_push_child_unit(unit_id, mass, pow, vec3_a, ve
 ---@return unknown
 function ManageSpawnedUnits:remove_unit(unit_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ManageSpawnedUnits:destroy(unit) end
 

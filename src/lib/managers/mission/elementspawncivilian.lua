@@ -23,7 +23,7 @@ function ElementSpawnCivilian:units() end
 function ElementSpawnCivilian:produce(params) end
 
 ---@param name any
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ElementSpawnCivilian:event(name, unit) end
 

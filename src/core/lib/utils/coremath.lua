@@ -9,13 +9,17 @@ math.Y = Vector3(0, 1, 0)
 ---@param r any
 ---@param g any
 ---@param b any
----@return any
+---@return number h
+---@return number s
+---@return number v
 function rgb_to_hsv(r, g, b) end
 
 ---@param h any
 ---@param s any
 ---@param v any
----@return any
+---@return number r
+---@return number g
+---@return number b
 function hsv_to_rgb(h, s, v) end
 
 ---@param type any
@@ -37,7 +41,7 @@ function rotation_to_string(r, f) end
 ---@return any
 function width_mul(aspect_ratio) end
 
----@param unit any
+---@param unit Unit
 ---@param source any
 ---@param target any
 ---@param middle any

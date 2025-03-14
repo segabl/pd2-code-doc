@@ -10,11 +10,11 @@ BuffBalloon = {}
 ---@return unknown
 function BuffBalloon.spawn(pos, rot, buff_id) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BuffBalloon:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

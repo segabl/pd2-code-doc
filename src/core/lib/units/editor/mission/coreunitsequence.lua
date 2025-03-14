@@ -14,7 +14,7 @@ UnitSequenceUnitElement = {}
 ---@return unknown
 function UnitSequenceUnitElement:init(...) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CoreUnitSequenceUnitElement:init(unit) end
 

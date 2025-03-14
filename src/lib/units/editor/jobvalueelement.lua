@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : JobValueUnitElement
 JobValueUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function JobValueUnitElement:init(unit) end
 
@@ -19,7 +19,7 @@ function JobValueUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : JobValueFilterUnitElement
 JobValueFilterUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function JobValueFilterUnitElement:init(unit) end
 
@@ -33,7 +33,7 @@ function JobValueFilterUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : ApplyJobValueUnitElement
 ApplyJobValueUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ApplyJobValueUnitElement:init(unit) end
 

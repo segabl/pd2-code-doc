@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerFreefall
 PlayerFreefall = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerFreefall:init(unit) end
 

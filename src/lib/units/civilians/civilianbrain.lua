@@ -5,11 +5,11 @@
 ---@field new fun(self, ...) : CivilianBrain
 CivilianBrain = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CivilianBrain:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown
@@ -41,7 +41,7 @@ function CivilianBrain:on_cool_state_changed(state) end
 ---@return unknown
 function CivilianBrain:on_hostage_move_interaction(interacting_unit, command) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CivilianBrain:on_hostage_follow_objective_failed(unit) end
 

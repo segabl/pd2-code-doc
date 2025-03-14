@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : VitHelicopterSync
 VitHelicopterSync = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VitHelicopterSync:init(unit) end
 

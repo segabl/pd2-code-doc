@@ -4,14 +4,14 @@
 ---@field new fun(self, ...) : VehicleSpotlightExt
 VehicleSpotlightExt = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function VehicleSpotlightExt:init(unit) end
 
 ---@return unknown
 function VehicleSpotlightExt:_init_tweak_data() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

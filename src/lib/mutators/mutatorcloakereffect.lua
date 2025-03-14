@@ -31,19 +31,19 @@ function MutatorCloakerEffect:reset_to_default() end
 ---@return unknown
 function MutatorCloakerEffect:OnPlayerCloakerKicked(cloaker_unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MutatorCloakerEffect:effect_smoke(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MutatorCloakerEffect:effect_fire(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MutatorCloakerEffect:effect_explode(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MutatorCloakerEffect:effect_random(unit) end
 

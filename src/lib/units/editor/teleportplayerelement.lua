@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : TeleportPlayerUnitElement
 TeleportPlayerUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TeleportPlayerUnitElement:init(unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : BowWeaponBase
 BowWeaponBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function BowWeaponBase:init(unit) end
 
@@ -28,7 +28,7 @@ function BowWeaponBase:set_tased_shot(bool) end
 ---@return unknown
 function BowWeaponBase:trigger_released(...) end
 
----@param unit any
+---@param unit Unit
 ---@param is_dead any
 ---@param attacker any
 ---@param damage_percent any
@@ -103,7 +103,7 @@ function BowWeaponBase:charge_max_t() end
 ---@field new fun(self, ...) : CrossbowWeaponBase
 CrossbowWeaponBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CrossbowWeaponBase:init(unit) end
 
@@ -113,7 +113,7 @@ function CrossbowWeaponBase:should_reload_immediately() end
 ---@return unknown
 function CrossbowWeaponBase:charge_fail() end
 
----@param unit any
+---@param unit Unit
 ---@param is_dead any
 ---@param attacker any
 ---@param damage_percent any

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : LootPileUnitElement
 LootPileUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function LootPileUnitElement:init(unit) end
 

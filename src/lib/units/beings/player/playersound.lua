@@ -4,11 +4,11 @@
 ---@field new fun(self, ...) : PlayerSound
 PlayerSound = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerSound:init(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerSound:destroy(unit) end
 
@@ -19,7 +19,7 @@ function PlayerSound:_play(sound_name, source_name) end
 
 ---@param instance any
 ---@param event_type any
----@param unit any
+---@param unit Unit
 ---@param sound_source any
 ---@param label any
 ---@param identifier any

@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : TimerGui
 TimerGui = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function TimerGui:init(unit) end
 
@@ -75,7 +75,7 @@ function TimerGui:start(timer) end
 ---@return unknown
 function TimerGui:sync_start(timer) end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

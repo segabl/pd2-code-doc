@@ -4,14 +4,14 @@
 ---@field new fun(self, ...) : FlamethrowerEffectExtension
 FlamethrowerEffectExtension = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FlamethrowerEffectExtension:init(unit) end
 
 ---@return unknown
 function FlamethrowerEffectExtension:setup_default() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

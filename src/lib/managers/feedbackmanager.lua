@@ -48,7 +48,7 @@ function FeedBack:set_enabled(feedback_type, enabled) end
 ---@return unknown
 function FeedBack:is_enabled(feedback_type) end
 
----@param unit any
+---@param unit Unit
 ---@param effect any
 ---@return unknown
 function FeedBack:set_unit(unit, effect) end
@@ -100,7 +100,7 @@ function FeedBackEffect:set_enabled(enabled) end
 ---@return unknown
 function FeedBackEffect:is_enabled() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FeedBackEffect:set_unit(unit) end
 
@@ -139,7 +139,7 @@ FeedBackrumble = {}
 ---@return unknown
 function FeedBackrumble:init(name) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FeedBackrumble:set_unit(unit) end
 
@@ -171,7 +171,7 @@ function FeedBackCameraShake:init(name) end
 ---@return unknown
 function FeedBackEffect:set_viewport(vp) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FeedBackEffect:set_unit(unit) end
 
@@ -199,7 +199,7 @@ FeedBackAboveCameraEffect = {}
 ---@return unknown
 function FeedBackAboveCameraEffect:init(name) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FeedBackAboveCameraEffect:set_unit(unit) end
 

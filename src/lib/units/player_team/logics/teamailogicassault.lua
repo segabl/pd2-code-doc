@@ -59,7 +59,7 @@ function TeamAILogicAssault.death_clbk(data, damage_info) end
 function TeamAILogicAssault.on_detected_enemy_destroyed(data, enemy_unit) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function TeamAILogicAssault._chk_request_combat_chatter(data, my_data) end
 

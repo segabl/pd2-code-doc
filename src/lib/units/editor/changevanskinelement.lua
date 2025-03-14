@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : ChangeVanSkinUnitElement
 ChangeVanSkinUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ChangeVanSkinUnitElement:init(unit) end
 
@@ -17,7 +17,7 @@ function ChangeVanSkinUnitElement:_build_panel(panel, panel_sizer) end
 ---@return unknown
 function ChangeVanSkinUnitElement:layer_finished() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ChangeVanSkinUnitElement:load_unit(unit) end
 
@@ -41,11 +41,11 @@ function ChangeVanSkinUnitElement:update_editing() end
 ---@return unknown
 function ChangeVanSkinUnitElement:select_unit() end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ChangeVanSkinUnitElement:_remove_unit(unit) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ChangeVanSkinUnitElement:_add_unit(unit) end
 
@@ -53,7 +53,7 @@ function ChangeVanSkinUnitElement:_add_unit(unit) end
 ---@return unknown
 function ChangeVanSkinUnitElement:add_triggers(vc) end
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function ChangeVanSkinUnitElement:can_select_unit(unit) end
 

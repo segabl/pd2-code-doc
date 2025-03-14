@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : MoneyUnitElement
 MoneyUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function MoneyUnitElement:init(unit) end
 
@@ -22,7 +22,7 @@ function MoneyUnitElement:_build_panel(panel, panel_sizer) end
 ---@field new fun(self, ...) : FilterMoneyUnitElement
 FilterMoneyUnitElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FilterMoneyUnitElement:init(unit) end
 

@@ -26,17 +26,17 @@ function CopLogicFlee.update(data) end
 function CopLogicFlee._update_enemy_detection(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicFlee._upd_shoot(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicFlee._update_pathing(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicFlee._update_cover_pathing(data, my_data) end
 
@@ -56,12 +56,12 @@ function CopLogicFlee.action_complete_clbk(data, action) end
 function CopLogicFlee._update_cover(data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicFlee._cancel_cover_pathing(data, my_data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicFlee._cancel_flee_pathing(data, my_data) end
 

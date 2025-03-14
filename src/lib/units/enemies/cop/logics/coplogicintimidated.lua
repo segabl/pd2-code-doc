@@ -28,7 +28,7 @@ function CopLogicIntimidated.death_clbk(data, damage_info) end
 function CopLogicIntimidated.queued_update(rubbish, data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicIntimidated._update_enemy_detection(data, my_data) end
 
@@ -51,7 +51,7 @@ function CopLogicIntimidated.can_activate() end
 function CopLogicIntimidated.on_intimidated(data, amount, aggressor_unit) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicIntimidated._register_harassment_SO(data, my_data) end
 
@@ -74,7 +74,7 @@ function CopLogicIntimidated.on_harassment_SO_action_start(ignore_this, data, re
 function CopLogicIntimidated.on_harassment_SO_failed(ignore_this, data, receiver_unit) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicIntimidated._unregister_harassment_SO(data, my_data) end
 
@@ -108,7 +108,7 @@ function CopLogicIntimidated.on_alert(data, alert_data) end
 function CopLogicIntimidated.is_available_for_assignment(data, objective) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicIntimidated._add_delayed_rescue_SO(data, my_data) end
 
@@ -118,7 +118,7 @@ function CopLogicIntimidated._add_delayed_rescue_SO(data, my_data) end
 function CopLogicIntimidated.register_rescue_SO(ignore_this, data) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicIntimidated._unregister_rescue_SO(data, my_data) end
 
@@ -130,7 +130,7 @@ function CopLogicIntimidated.on_rescue_SO_administered(ignore_this, data, receiv
 
 ---@param ignore_this any
 ---@param data logicdata
----@param unit any
+---@param unit Unit
 ---@return unknown
 function CopLogicIntimidated.rescue_SO_verification(ignore_this, data, unit) end
 

@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : FleePointElement
 FleePointElement = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function FleePointElement:init(unit) end
 

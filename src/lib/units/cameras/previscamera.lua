@@ -4,7 +4,7 @@
 ---@field new fun(self, ...) : PrevisCamera
 PrevisCamera = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PrevisCamera:init(unit) end
 
@@ -14,7 +14,7 @@ function PrevisCamera:start() end
 ---@return unknown
 function PrevisCamera:stop() end
 
----@param unit any
+---@param unit Unit
 ---@param t any
 ---@param dt any
 ---@return unknown

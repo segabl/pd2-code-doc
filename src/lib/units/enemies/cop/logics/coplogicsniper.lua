@@ -39,7 +39,7 @@ function CopLogicSniper._chk_crouch_visibility(my_pos, target_pos, slotmask) end
 function CopLogicSniper.action_complete_clbk(data, action) end
 
 ---@param data logicdata
----@param my_data any
+---@param my_data table
 ---@return unknown
 function CopLogicSniper._upd_aim(data, my_data) end
 

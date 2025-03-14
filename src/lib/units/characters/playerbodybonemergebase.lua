@@ -5,7 +5,7 @@
 ---@field new fun(self, ...) : PlayerBodyBoneMergeBase
 PlayerBodyBoneMergeBase = {}
 
----@param unit any
+---@param unit Unit
 ---@return unknown
 function PlayerBodyBoneMergeBase:init(unit) end
 
