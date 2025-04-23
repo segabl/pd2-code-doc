@@ -7,7 +7,7 @@
 ---@field private __temp table
 ---@field private __temp_next table
 ---@field private __free table
-local ScriptValue = {}
+ScriptValue = {}
 
 function ScriptValue:free() end
 function ScriptValue:save() end

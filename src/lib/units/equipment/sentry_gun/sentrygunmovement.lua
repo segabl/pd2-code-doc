@@ -68,7 +68,7 @@ function SentryGunMovement:set_active(state) end
 ---@return unknown
 function SentryGunMovement:set_idle(state) end
 
----@return unknown
+---@return NavTracker
 function SentryGunMovement:nav_tracker() end
 
 ---@param attention any

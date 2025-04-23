@@ -9,7 +9,7 @@
 ---@field private __properties table
 ---@field private __tostring function
 ---@field private __index function
-local Entity = {}
+Entity = {}
 
 ---Returns the string representation of the entity
 ---@return string

@@ -5,7 +5,7 @@
 ---@field protected script_value false
 ---@field protected script_reference true
 ---@field private __gc function
-local ScriptReference = {}
+ScriptReference = {}
 
 ---@param extension unknown
 function ScriptReference:set_extension(extension) end

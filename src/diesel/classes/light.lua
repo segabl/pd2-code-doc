@@ -109,8 +109,6 @@ function Light:to_local(...) end
 
 function Light:to_world(...) end
 
-function Light:tostring(...) end
-
 function Light:unlink(...) end
 
 function Light:visibility(...) end

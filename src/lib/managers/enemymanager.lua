@@ -55,7 +55,7 @@ function EnemyManager:set_gfx_lod_enabled(state) end
 
 ---@param slotmask any
 ---@param cam_pos any
----@param cam_nav_tracker any
+---@param cam_nav_tracker NavTracker
 ---@return unknown
 function EnemyManager:chk_any_unit_in_slotmask_visible(slotmask, cam_pos, cam_nav_tracker) end
 

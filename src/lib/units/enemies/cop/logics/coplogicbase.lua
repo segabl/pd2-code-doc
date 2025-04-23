@@ -14,7 +14,7 @@
 ---@field m_rot Rotation
 ---@field m_pos Vector3
 ---@field m_head_pos Vector3
----@field nav_tracker any
+---@field nav_tracker NavTracker
 ---@field is_local_player boolean
 ---@field is_husk_player boolean
 ---@field is_human_player boolean

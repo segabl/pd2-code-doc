@@ -14,7 +14,7 @@ function PlayerMovement:post_init() end
 ---@return unknown
 function PlayerMovement:attention_handler() end
 
----@return unknown
+---@return NavTracker
 function PlayerMovement:nav_tracker() end
 
 ---@return unknown
@@ -103,7 +103,7 @@ function PlayerMovement:get_object(object_name) end
 ---@return unknown
 function PlayerMovement:downed() end
 
----@return unknown
+---@return PlayerMovementState
 function PlayerMovement:current_state() end
 
 ---@return unknown

@@ -176,7 +176,7 @@ function HuskPlayerMovement:set_rotation(rot) end
 ---@return unknown
 function HuskPlayerMovement:set_m_rotation(rot) end
 
----@return unknown
+---@return NavTracker
 function HuskPlayerMovement:nav_tracker() end
 
 ---@return unknown

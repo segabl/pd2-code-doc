@@ -303,13 +303,12 @@ function NavigationManager:print_rect_info() end
 ---@return unknown
 function NavigationManager:draw_path(path, color_link, color_node, duration) end
 
----@param start_pos any
----@param allow_disabled any
----@return unknown
+---@param start_pos Vector3
+---@param allow_disabled boolean
+---@return NavTracker
 function NavigationManager:create_nav_tracker(start_pos, allow_disabled) end
 
----@param nav_tracker any
----@return unknown
+---@param nav_tracker NavTracker
 function NavigationManager:destroy_nav_tracker(nav_tracker) end
 
 ---@param i_room any

@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class InputController: ScriptReference
-local InputController = {}
+InputController = {}
 
 function InputController:axis_index() end
 function InputController:clear_axis_triggers() end

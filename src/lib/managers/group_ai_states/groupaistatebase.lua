@@ -890,7 +890,7 @@ function GroupAIStateBase:remove_preferred_spawn_points(id) end
 
 ---@param unit Unit
 ---@param handler any
----@param nav_tracker any
+---@param nav_tracker NavTracker
 ---@param team any
 ---@param SO_access any
 ---@return any

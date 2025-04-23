@@ -24,7 +24,7 @@ function CopMovement:set_character_anim_variables() end
 ---@return unknown
 function CopMovement:set_new_anim_global(new_global) end
 
----@return unknown
+---@return NavTracker
 function CopMovement:nav_tracker() end
 
 ---@param pos any

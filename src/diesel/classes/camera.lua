@@ -80,8 +80,6 @@ function Camera:to_local(...) end
 
 function Camera:to_world(...) end
 
-function Camera:tostring(...) end
-
 function Camera:unlink(...) end
 
 function Camera:visibility(...) end
