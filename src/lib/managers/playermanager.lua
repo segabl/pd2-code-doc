@@ -1442,7 +1442,7 @@ function PlayerManager:max_body_bags() end
 ---@return any
 function PlayerManager:change_player_look(new_look) end
 
----@return any
+---@return ChildTimer
 function PlayerManager:player_timer() end
 
 ---@param name_id any

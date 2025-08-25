@@ -162,11 +162,11 @@ function ProjectileBase:destroy(...) end
 ---@return unknown
 function ProjectileBase.throw_projectile(projectile_type, pos, dir, owner_peer_id) end
 
----@param projectile_type any
----@param pos any
----@param dir any
----@param thrower_unit any
----@return unknown
+---@param projectile_type string
+---@param pos Vector3
+---@param dir Vector3
+---@param thrower_unit? Unit
+---@return Unit
 function ProjectileBase.throw_projectile_npc(projectile_type, pos, dir, thrower_unit) end
 
 ---@return unknown

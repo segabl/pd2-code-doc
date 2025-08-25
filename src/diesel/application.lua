@@ -293,7 +293,9 @@ function Application:system(...) end
 
 function Application:throw_exception(...) end
 
----Returns the time in seconds since game startup
+---Returns the application time  
+---Equivalent to the game timer's time  
+---@see TimerManager.game
 ---@return number
 function Application:time() end
 

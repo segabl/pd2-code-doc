@@ -44,7 +44,8 @@ function Unit:anim_playing_to(...) end
 
 function Unit:anim_set_time(...) end
 
-function Unit:anim_state_machine(...) end
+---@return StateMachineInstance
+function Unit:anim_state_machine() end
 
 function Unit:anim_stop(...) end
 
@@ -188,7 +189,7 @@ function Unit:get_object(name) end
 
 ---Returns a list of all the unit's objects of a given type
 ---@param type Idstring
----@return any[]
+---@return Object3D[]
 function Unit:get_objects_by_type(type) end
 
 function Unit:get_phantom_index(...) end
@@ -350,7 +351,7 @@ function Unit:push_sphere(...) end
 
 function Unit:radius(...) end
 
----Tests for collisions between two positions, ignoring the unit that's doing the raycast  
+---Tests for collisions between two positions, ignoring the unit that's doing the raycast
 ---@param type "ray"
 ---@param from Vector3
 ---@param to Vector3
@@ -448,7 +449,7 @@ function Unit:set_position(pos) end
 
 function Unit:set_radius(...) end
 
----Sets the unit's rotation 
+---Sets the unit's rotation
 ---@param rot Rotation
 function Unit:set_rotation(rot) end
 

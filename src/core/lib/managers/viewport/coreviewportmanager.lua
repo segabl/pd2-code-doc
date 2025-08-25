@@ -149,16 +149,16 @@ function ViewportManager:_prioritize_and_activate() end
 ---@return unknown
 function ViewportManager:first_active_world_viewport() end
 
----@return unknown
+---@return Camera
 function ViewportManager:get_current_camera() end
 
----@return unknown
+---@return Vector3
 function ViewportManager:get_current_camera_position() end
 
----@return unknown
+---@return Rotation
 function ViewportManager:get_current_camera_rotation() end
 
----@return unknown
+---@return WorldViewPort
 function ViewportManager:get_active_vp() end
 
 ---@return unknown

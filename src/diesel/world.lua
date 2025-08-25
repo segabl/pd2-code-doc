@@ -186,15 +186,15 @@ function World:set_unit_bounds(...) end
 
 ---Spawns a unit in the world
 ---@param name Idstring
----@param pos Vector3?
----@param rot Rotation?
+---@param pos Vector3
+---@param rot Rotation
 ---@return Unit
 function World:spawn_unit(name, pos, rot) end
 
 ---Spawns a unit without any of its extensions in the world
 ---@param name Idstring
----@param pos Vector3?
----@param rot Rotation?
+---@param pos Vector3
+---@param rot Rotation
 ---@return Unit
 function World:spawn_unit_without_extensions(name, pos, rot) end
 

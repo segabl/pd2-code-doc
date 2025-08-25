@@ -22,18 +22,16 @@ function DynamicResourceManager:is_ready_to_close() end
 ---@return unknown
 function DynamicResourceManager._get_resource_key(resource_type, resource_name, package_name) end
 
----@param resource_type any
----@param resource_name any
----@param package_name any
----@param complete_clbk any
----@return unknown
+---@param resource_type Idstring
+---@param resource_name Idstring
+---@param package_name string
+---@param complete_clbk? fun(status: boolean, resource_type: Idstring, resource_name: Idstring)
 function DynamicResourceManager:load(resource_type, resource_name, package_name, complete_clbk) end
 
----@param resource_type any
----@param resource_name any
----@param package_name any
----@param keep_using any
----@return unknown
+---@param resource_type Idstring
+---@param resource_name Idstring
+---@param package_name string
+---@param keep_using? boolean
 function DynamicResourceManager:unload(resource_type, resource_name, package_name, keep_using) end
 
 ---@param resource_type any

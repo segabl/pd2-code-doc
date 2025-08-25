@@ -115,7 +115,7 @@ function CopBrain:search_for_path_to_cover(search_id, cover, offset_pos, access_
 ---@return unknown
 function CopBrain:search_for_coarse_path(search_id, to_seg, verify_clbk, access_neg) end
 
----@param new_action_data any
+---@param new_action_data table
 ---@return unknown
 function CopBrain:action_request(new_action_data) end
 

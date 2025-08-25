@@ -36,6 +36,9 @@
 
 ---@class logicdata
 ---@field name string
+---@field logic CopLogicBase
+---@field t number
+---@field dt number
 ---@field unit Unit
 ---@field brain CopBrain|HuskCopBrain|CivilianBrain|TeamAIBrain
 ---@field active_searches table

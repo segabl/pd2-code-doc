@@ -1824,8 +1824,8 @@ function BlackMarketManager:_verify_crew_gloves(glove_id) end
 ---@return unknown
 function BlackMarketManager:is_weapon_allowed_for_crew(weapon_id) end
 
----@param weapon_category any
----@return unknown
+---@param weapon_category string
+---@return boolean
 function BlackMarketManager:is_weapon_category_allowed_for_crew(weapon_category) end
 
 ---@param category any
