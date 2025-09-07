@@ -21,8 +21,10 @@ function Brush:center_text(pos, text, right, up) end
 
 ---@param pos Vector3
 ---@param radius number
----@param verts? number
-function Brush:circle(pos, radius, verts) end
+---@param w number
+---@param axis? Vector3
+---@param verts? integer
+function Brush:circle(pos, radius, w, axis, verts) end
 
 ---@param from Vector3
 ---@param to Vector3

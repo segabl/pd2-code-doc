@@ -3,16 +3,6 @@
 ---@class mrotationlib
 mrotation = {}
 
----Adds `r2` to `r1`
----@param r1 Rotation
----@param r2 Rotation
-function mrotation.add(r1, r2) end
-
----Returns a copy of `r`
----@param r Rotation
----@return Rotation
-function mrotation.copy(r) end
-
 ---Returns whether `r1` and `r2` are equal
 ---@param r1 Rotation
 ---@param r2 Rotation
@@ -63,16 +53,6 @@ function mrotation.set_look_at(r, dir, up) end
 ---@param up Vector3
 function mrotation.set_look_from_to(r, from, to, up) end
 
----Sets the pitch of `r`
----@param r Rotation
----@param pitch number
-function mrotation.set_pitch(r, pitch) end
-
----Sets the roll of `r`
----@param r Rotation
----@param roll number
-function mrotation.set_roll(r, roll) end
-
 ---Sets the vector components of `r`
 ---@param r Rotation
 ---@param x Vector3
@@ -87,11 +67,6 @@ function mrotation.set_xyz(r, x, y, z) end
 ---@param roll number
 function mrotation.set_yaw_pitch_roll(r, yaw, pitch, roll) end
 
----Sets the yaw of `r`
----@param r Rotation
----@param yaw number
-function mrotation.set_yaw(r, yaw) end
-
 ---Sets `r` to zero
 function mrotation.set_zero(r) end
 
@@ -101,13 +76,6 @@ function mrotation.set_zero(r) end
 ---@param r3 Rotation
 ---@param t number
 function mrotation.slerp(r1, r2, r3, t) end
-
----Steps from `r2` to `r3` by `step` and stores the result in `r1`
----@param r1 Rotation
----@param r2 Rotation
----@param r3 Rotation
----@param step number
-function mrotation.step(r1, r2, r3, step) end
 
 ---Sets `v` to the x component of `r`
 ---@param r Rotation
