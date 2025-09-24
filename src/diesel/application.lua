@@ -112,13 +112,17 @@ function Application:draw_sphere(...) end
 
 function Application:draw_sphere_unpaused(...) end
 
-function Application:editor(...) end
+---Returns whether the engine is in editor mode
+---@return boolean
+function Application:editor() end
 
 function Application:error(...) end
 
 function Application:error_no_stack(...) end
 
-function Application:ews_enabled(...) end
+---Returns whether the game was launched with "-ews" as a launch argument
+---@return boolean
+function Application:ews_enabled() end
 
 function Application:exec(...) end
 
@@ -189,7 +193,9 @@ function Application:paused(...) end
 
 function Application:pop_debug_scope(...) end
 
-function Application:production_build(...) end
+---Returns whether the engine is in a production build
+---@return boolean
+function Application:production_build() end
 
 function Application:push_debug_scope(...) end
 
@@ -249,6 +255,10 @@ function Application:set_default_letter(...) end
 
 function Application:set_dynamic_timestep(...) end
 
+---Sets the global EWS AppWindow for rendering the game in editor. Available in production versions of the engine only.
+---@param window any EWSAppWindow, no class made in code docs
+function Application:set_ews_window(window) end
+
 function Application:set_file_streamer_settings(...) end
 
 function Application:set_fixed_timestep(...) end
@@ -279,9 +289,14 @@ function Application:short_game_name() end
 
 function Application:sleep(...) end
 
-function Application:stack(...) end
+---Returns a dump of the current Lua stack, in the same format as crash.txt. Identical to Application:stack_dump(), but takes no inputs
+---@return string
+function Application:stack() end
 
-function Application:stack_dump(...) end
+---Returns a dump of the current Lua stack, in the same format as crash.txt
+---@param font_type? string Can be not provided or: "error" or "warning"
+---@return string
+function Application:stack_dump(font_type) end
 
 function Application:stack_dump_error(...) end
 
